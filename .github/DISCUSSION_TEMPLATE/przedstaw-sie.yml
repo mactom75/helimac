@@ -1,9 +1,0 @@
-title: "Cześć, jestem "
-body:
-  - type: textarea
-    id: kim
-    attributes: {label: Kim jesteś i czym się zajmujesz?}
-    validations: {required: true}
-  - type: textarea
-    id: pomoc
-    attributes: {label: W czym możesz pomóc projektowi? (albo co Cię interesuje)}

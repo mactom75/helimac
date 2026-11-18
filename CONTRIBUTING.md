@@ -1,31 +1,33 @@
-# Jak współtworzyć Helimac
+# Contributing to HELIMAC
 
-Dziękujemy za zainteresowanie! Każda pomoc się liczy — od poprawki literówki po projekt przekładni.
+Thank you for your interest! Every contribution counts — from fixing a typo to designing the transmission.
+*Po polsku też możesz pisać — Polish is welcome everywhere in the project.*
 
-## Gdzie co pisać
+## Where to post
 
-- **Pytanie, pomysł, luźna dyskusja** → [Discussions](../../discussions)
-- **Konkretne zadanie, błąd, propozycja zmiany** → [Issues](../../issues) (wybierz szablon)
-- **Gotowa zmiana w plikach** → Pull Request
+- **Question, idea, open discussion** → [Discussions](../../discussions)
+- **Specific task, error, change proposal** → [Issues](../../issues) (choose a template)
+- **Ready changes to files** → Pull Request
 
-## Pliki projektu
+## Project files
 
-- **CAD:** dołączaj plik źródłowy (np. FreeCAD `.FCStd`, Fusion `.f3d`) **oraz** format wymienny (`.step`) i rysunek `.pdf`.
-- **Elektronika:** preferowany KiCad; dołącz PDF schematu.
-- **Obliczenia:** Python w `calc/` (z testem) albo arkusz + PDF z opisem założeń.
-- **Duże pliki** (> 50 MB, filmy, skany) — przez Git LFS albo jako załącznik do wydania (Release).
-- Każdy podfolder w `hardware/` i `electronics/` ma `README.md` — aktualizuj w nim status i listę plików.
+- **CAD:** include the source file (e.g. FreeCAD `.FCStd`, Fusion `.f3d`) **and** an exchange format (`.step`) and a `.pdf` drawing.
+- **Electronics:** KiCad preferred; include a PDF of the schematic.
+- **Calculations:** Python in `calc/` (with a test), or a spreadsheet plus a PDF describing the assumptions.
+- **Units:** SI (metres, kilograms, newtons, watts).
+- **Large files** (> 50 MB, videos, scans) — attach them to a Release.
+- Each subfolder in `hardware/` and `electronics/` has a `README.md` — update the file list and status there.
 
-## Pull Request krok po kroku
+## Pull Request steps
 
-1. Zrób fork i gałąź, np. `rama/mocowanie-silnika`.
-2. Opisz zmianę w PR (szablon pomoże), dodaj wpis w `DZIENNIK.md`, jeśli to istotny postęp.
-3. Zmiany dotyczące bezpieczeństwa lotu wymagają przeglądu co najmniej jednej osoby z odpowiedniej dziedziny.
+1. Fork and create a branch, e.g. `frame/motor-mount`.
+2. Describe the change (the template helps). Add a [BUILD_LOG.md](BUILD_LOG.md) entry for notable progress.
+3. Changes affecting flight safety need review by at least one person with relevant expertise.
 
-## Licencje wkładu
+## Licensing of contributions
 
-Wnosząc wkład, zgadzasz się na jego udostępnienie na licencjach projektu (patrz [LICENSE](LICENSE)).
+By contributing you agree to release your contribution under the project licences (see [LICENSE](LICENSE)).
 
-## Zachowanie
+## Conduct
 
-Obowiązuje [Kodeks postępowania](CODE_OF_CONDUCT.md).
+The [Code of Conduct](CODE_OF_CONDUCT.md) applies.

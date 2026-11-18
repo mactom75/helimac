@@ -1,0 +1,16 @@
+name: "🐞 Error / Błąd"
+description: Error in calculations, drawings, documentation or software / Błąd w obliczeniach, rysunku, dokumentacji lub oprogramowaniu
+title: "[ERROR] "
+labels: ["error"]
+body:
+  - type: input
+    id: file
+    attributes: {label: "File / location — Plik / miejsce"}
+    validations: {required: true}
+  - type: textarea
+    id: description
+    attributes: {label: "What is wrong? / Co jest nie tak?"}
+    validations: {required: true}
+  - type: textarea
+    id: expected
+    attributes: {label: "What should it be? / Jak powinno być?"}

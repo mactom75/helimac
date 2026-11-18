@@ -1,10 +1,10 @@
-# Obliczenia
+# Calculations
 
-`helimac_calc.py` — wstępny kalkulator mocy w zawisie i czasu lotu (teoria strumieniowa).
+`helimac_calc.py` — early estimate of hover power and flight time (momentum theory).
 
 ```bash
 python3 calc/helimac_calc.py --mtom 300 --d 6.5 --bat-kwh 16 --sweep
 pytest -q calc/tests
 ```
 
-Wyniki są orientacyjne — patrz komentarze w kodzie.
+Results are rough estimates only — see comments in the code.

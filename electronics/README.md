@@ -1,3 +1,3 @@
-# Elektronika i napęd
+# Electronics & powertrain
 
-Licencja: CERN-OHL-S-2.0. ⚡ Wysokie napięcie — zobacz [SAFETY.md](../SAFETY.md).
+Licence: CERN-OHL-S-2.0. ⚡ High voltage — see [SAFETY.md](../SAFETY.md).

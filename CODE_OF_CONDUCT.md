@@ -1,11 +1,11 @@
-# Kodeks postępowania
+# Code of Conduct
 
-Projekt Helimac stosuje zasady [Contributor Covenant 2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
+HELIMAC follows the [Contributor Covenant 2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
 
-W skrócie:
-- Szanujemy się nawzajem bez względu na doświadczenie, pochodzenie czy poglądy.
-- Krytykujemy rozwiązania, nie ludzi. Konkretnie i z uzasadnieniem.
-- Nie bagatelizujemy uwag dotyczących bezpieczeństwa.
-- Nękanie, obraźliwe treści i spam skutkują usunięciem z projektu.
+In short:
+- We respect each other regardless of experience, nationality, language, background or views.
+- We criticise solutions, not people — specifically and with reasons.
+- We never dismiss safety concerns.
+- Harassment, abusive content and spam lead to removal from the project.
 
-Problemy zgłaszaj opiekunowi projektu (dane kontaktowe w profilu właściciela repozytorium).
+Report problems to the project maintainer, Tomasz Maciąg (contact via the repository owner's GitHub profile).

@@ -1,0 +1,11 @@
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Area / Obszar"
+      options: [Structure, Rotors, Powertrain & transmission, Battery, Avionics, Software, Regulations, Testing, Other]
+    validations: {required: true}
+  - type: textarea
+    id: topic
+    attributes: {label: "Topic / Temat"}
+    validations: {required: true}

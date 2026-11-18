@@ -1,12 +1,12 @@
-## Co zmienia ten PR?
+## What does this PR change? / Co zmienia ten PR?
 
-## Obszar
-<!-- rama / wirnik / napęd / bateria / awionika / oprogramowanie / dokumentacja ... -->
+## Area / Obszar
+<!-- frame / rotor / powertrain / battery / avionics / software / docs ... -->
 
-## Status zmienianych plików
-- [ ] 💭 pomysł  - [ ] 📐 obliczone  - [ ] 🧪 zmierzone  - [ ] ✅ do zatwierdzenia
+## Status of changed files
+- [ ] 💭 idea  - [ ] 📐 calculated  - [ ] 🧪 measured  - [ ] ✅ ready for approval
 
-## Lista kontrolna
-- [ ] Dołączono pliki źródłowe i format wymienny (STEP/PDF) — jeśli dotyczy
-- [ ] Zaktualizowano README podfolderu i/lub `docs/parametry.md`
-- [ ] Zmiana może wpływać na bezpieczeństwo lotu (wymaga przeglądu specjalisty)
+## Checklist
+- [ ] Source files and exchange format (STEP/PDF) included — if applicable
+- [ ] Subfolder README and/or `docs/parameters.md` updated
+- [ ] May affect flight safety (needs specialist review)

@@ -1,22 +1,22 @@
-Helimac — licencje
+HELIMAC — licences
 
-Projekt używa trzech licencji, w zależności od rodzaju pliku:
+The project uses three licences depending on the type of file:
 
-1. Sprzęt — pliki CAD, rysunki, schematy, płytki PCB, listy materiałów (BOM)
-   w katalogach hardware/ i electronics/:
+1. Hardware — CAD files, drawings, schematics, PCBs, bills of materials (BOM)
+   in hardware/ and electronics/:
    CERN Open Hardware Licence Version 2 – Strongly Reciprocal (CERN-OHL-S-2.0)
-   Pełny tekst: LICENSES/CERN-OHL-S-2.0.txt
+   Full text: LICENSES/CERN-OHL-S-2.0.txt
 
-2. Oprogramowanie — katalogi calc/ i firmware/:
+2. Software — calc/ and firmware/:
    GNU General Public License v3.0 or later (GPL-3.0-or-later)
-   Pełny tekst: LICENSES/GPL-3.0-or-later.txt
+   Full text: LICENSES/GPL-3.0-or-later.txt
 
-3. Dokumentacja — katalog docs/ oraz pliki .md:
+3. Documentation — docs/ and .md files:
    Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA-4.0)
-   Pełny tekst: LICENSES/CC-BY-SA-4.0.txt
+   Full text: LICENSES/CC-BY-SA-4.0.txt
 
-Copyright (c) 2026 Autorzy projektu Helimac
+Copyright (c) 2026 Tomasz Maciąg and HELIMAC contributors
 
-BRAK GWARANCJI: Projekt jest udostępniany „tak jak jest”, bez jakiejkolwiek
-gwarancji. Budowa i użytkowanie statku powietrznego na podstawie tych materiałów
-odbywa się wyłącznie na własną odpowiedzialność. Zobacz SAFETY.md.
+NO WARRANTY: This project is provided "as is", without warranty of any kind.
+Building or operating an aircraft based on these materials is entirely at your
+own risk. See SAFETY.md.

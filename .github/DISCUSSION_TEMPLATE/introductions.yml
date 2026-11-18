@@ -1,0 +1,12 @@
+title: "Hi, I'm "
+body:
+  - type: input
+    id: country
+    attributes: {label: "Country / Kraj"}
+  - type: textarea
+    id: who
+    attributes: {label: "Who are you and what do you do? / Kim jesteś i czym się zajmujesz?"}
+    validations: {required: true}
+  - type: textarea
+    id: help
+    attributes: {label: "How can you help, or what interests you? / W czym możesz pomóc?"}

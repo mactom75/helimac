@@ -1,12 +1,12 @@
-# Plan prac
+# Roadmap
 
-Etapy są odhaczane i uzupełniane w miarę postępu. Kolejność etapów 4–7 wynika z zasad w [SAFETY.md](SAFETY.md).
+Stages are ticked off and extended as work progresses. The order of stages 4–7 follows the rules in [SAFETY.md](SAFETY.md).
 
-- [ ] **0. Start** — repozytorium, zasady, zespół
-- [ ] **1. Założenia** — wymagania, przepisy, parametry wstępne (`docs/parametry.md`)
-- [ ] **2. Koncepcja** — układ wirników, napęd, bateria, bilans mas
-- [ ] **3. Projekt wstępny** — CAD głównych zespołów, obliczenia wytrzymałościowe
-- [ ] **4. Testy stanowiskowe** — silnik + przekładnia + wirnik na stanowisku, bateria + BMS
-- [ ] **5. Prototyp na uwięzi** — bez pilota
-- [ ] **6. Loty bezzałogowe**
-- [ ] **7. Próby załogowe** — tylko po spełnieniu wymogów przepisów krajowych
+- [ ] **0. Start** — repository, rules, team
+- [ ] **1. Requirements** — requirements, regulations, initial parameters ([docs/parameters.md](docs/parameters.md))
+- [ ] **2. Concept** — rotor layout, powertrain, battery, mass budget
+- [ ] **3. Preliminary design** — CAD of main assemblies, strength calculations
+- [ ] **4. Bench tests** — motor + transmission + rotor on a test stand; battery + BMS
+- [ ] **5. Tethered prototype** — no pilot
+- [ ] **6. Uncrewed flights**
+- [ ] **7. Crewed trials** — only once national regulatory requirements are met

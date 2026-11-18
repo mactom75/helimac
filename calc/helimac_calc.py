@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """
-Helimac – wstępny kalkulator osiągów (teoria strumieniowa / momentum theory).
+HELIMAC – early performance estimator (momentum theory).
 
-To jest narzędzie do WSTĘPNEGO doboru parametrów (rozmiar wirnika, moc, bateria).
-NIE zastępuje analizy BEMT/CFD, prób na stanowisku ani oceny konstruktora.
+For EARLY sizing only (rotor size, power, battery).
+It does NOT replace BEMT/CFD analysis, bench tests or engineering judgement.
 
-Użycie:
-    python3 calc/helimac_calc.py                 # wariant bazowy
+Usage:
+    python3 calc/helimac_calc.py                 # baseline
     python3 calc/helimac_calc.py --mtom 300 --d 6.5 --bat-kwh 16
-    python3 calc/helimac_calc.py --sweep         # tabela dla różnych średnic wirnika
+    python3 calc/helimac_calc.py --sweep         # table for several rotor diameters
 
-Licencja: GPL-3.0-or-later
+Licence: GPL-3.0-or-later
 """
 from __future__ import annotations
 
@@ -22,7 +22,7 @@ G = 9.80665  # m/s^2
 
 
 def air_density(altitude_m: float = 0.0, temp_offset_c: float = 0.0) -> float:
-    """Gęstość powietrza wg atmosfery wzorcowej ISA (troposfera) z odchyłką temperatury."""
+    """Air density, ISA troposphere, with optional temperature offset."""
     t0 = 288.15
     lapse = 0.0065
     t = t0 - lapse * altitude_m
@@ -32,14 +32,14 @@ def air_density(altitude_m: float = 0.0, temp_offset_c: float = 0.0) -> float:
 
 @dataclass
 class Design:
-    mtom_kg: float = 300.0          # masa startowa [kg] – limit Aneksu I dla 1-os. śmigłowca
-    rotor_d_m: float = 6.5          # średnica wirnika głównego [m]
-    figure_of_merit: float = 0.70   # sprawność aerodynamiczna wirnika w zawisie (0.6–0.78)
-    tail_power_frac: float = 0.10   # udział mocy wirnika ogonowego / antymomentu
-    drive_eff: float = 0.90         # silnik + sterownik + przekładnia
-    battery_kwh: float = 16.0       # energia nominalna pakietu [kWh]
-    usable_frac: float = 0.80       # użyteczna część energii (rezerwa + degradacja)
-    reserve_min: float = 5.0        # rezerwa lądowania [min]
+    mtom_kg: float = 300.0          # take-off mass [kg] – Annex I limit for single-seat helicopter
+    rotor_d_m: float = 6.5          # main rotor diameter [m]
+    figure_of_merit: float = 0.70   # rotor hover efficiency (0.6–0.78)
+    tail_power_frac: float = 0.10   # tail rotor / anti-torque power fraction
+    drive_eff: float = 0.90         # motor + controller + gearbox
+    battery_kwh: float = 16.0       # nominal pack energy [kWh]
+    usable_frac: float = 0.80       # usable fraction (margin + ageing)
+    reserve_min: float = 5.0        # landing reserve [min]
     altitude_m: float = 0.0
     temp_offset_c: float = 0.0
 
@@ -57,12 +57,12 @@ class Design:
 
     @property
     def disk_loading(self) -> float:
-        """Obciążenie powierzchni wirnika [N/m^2]."""
+        """Disk loading [N/m^2]."""
         return self.thrust_n / self.disk_area
 
     @property
     def induced_velocity(self) -> float:
-        """Prędkość indukowana w zawisie [m/s]."""
+        """Induced velocity in hover [m/s]."""
         return math.sqrt(self.thrust_n / (2 * self.rho * self.disk_area))
 
     @property
@@ -92,46 +92,46 @@ class Design:
 
 
 def report(d: Design) -> str:
-    lines = [
-        "=== Helimac – wstępne osiągi w zawisie (teoria strumieniowa) ===",
-        f"MTOM                         : {d.mtom_kg:8.1f} kg",
-        f"Średnica wirnika             : {d.rotor_d_m:8.2f} m  (pow. {d.disk_area:.1f} m²)",
-        f"Gęstość powietrza            : {d.rho:8.4f} kg/m³ (wys. {d.altitude_m:.0f} m, ΔT {d.temp_offset_c:+.0f} °C)",
-        f"Obciążenie pow. wirnika      : {d.disk_loading:8.1f} N/m²",
-        f"Prędkość indukowana          : {d.induced_velocity:8.2f} m/s",
-        f"Moc idealna                  : {d.ideal_power_w/1000:8.1f} kW",
-        f"Moc wirnika (FM={d.figure_of_merit:.2f})        : {d.rotor_power_w/1000:8.1f} kW",
-        f"Moc na wale (+ogon {d.tail_power_frac:.0%})      : {d.hover_shaft_power_w/1000:8.1f} kW",
-        f"Moc elektryczna (η={d.drive_eff:.2f})     : {d.hover_electric_power_w/1000:8.1f} kW",
-        f"Bateria                      : {d.battery_kwh:8.1f} kWh (użyteczne {d.usable_frac:.0%})",
-        f"Czas zawisu (cała en. użyt.) : {d.hover_endurance_min:8.1f} min",
-        f"Czas zawisu minus rezerwa    : {d.endurance_minus_reserve_min:8.1f} min (rezerwa {d.reserve_min:.0f} min)",
-        "",
-        "UWAGA: wynik orientacyjny. Lot postępowy przy ~60–80 km/h zwykle wymaga",
-        "mniej mocy niż zawis; manewry, wiatr i wysoka temperatura – więcej.",
+    rows = [
+        ("MTOM", f"{d.mtom_kg:.1f} kg"),
+        ("Rotor diameter", f"{d.rotor_d_m:.2f} m (disk {d.disk_area:.1f} m²)"),
+        ("Air density", f"{d.rho:.4f} kg/m³ (alt {d.altitude_m:.0f} m, ΔT {d.temp_offset_c:+.0f} °C)"),
+        ("Disk loading", f"{d.disk_loading:.1f} N/m²"),
+        ("Induced velocity", f"{d.induced_velocity:.2f} m/s"),
+        ("Ideal power", f"{d.ideal_power_w/1000:.1f} kW"),
+        (f"Rotor power (FM {d.figure_of_merit:.2f})", f"{d.rotor_power_w/1000:.1f} kW"),
+        (f"Shaft power (+tail {d.tail_power_frac:.0%})", f"{d.hover_shaft_power_w/1000:.1f} kW"),
+        (f"Electrical power (eff {d.drive_eff:.2f})", f"{d.hover_electric_power_w/1000:.1f} kW"),
+        ("Battery", f"{d.battery_kwh:.1f} kWh ({d.usable_frac:.0%} usable)"),
+        ("Hover time (all usable)", f"{d.hover_endurance_min:.1f} min"),
+        ("Hover time minus reserve", f"{d.endurance_minus_reserve_min:.1f} min (reserve {d.reserve_min:.0f} min)"),
     ]
+    lines = ["=== HELIMAC – early hover performance (momentum theory) ==="]
+    lines += [f"{k:<30}: {v}" for k, v in rows]
+    lines += ["", "NOTE: rough estimate. Forward flight at ~60–80 km/h usually needs",
+              "less power than hover; manoeuvres, wind and heat need more."]
     return "\n".join(lines)
 
 
 def sweep(base: Design) -> str:
-    rows = ["  D [m] | obc. [N/m²] | P_el [kW] | zawis [min]", "-" * 50]
+    rows = ["  D [m] | DL [N/m²] | P_el [kW] | hover [min]", "-" * 48]
     for d_m in [5.5, 6.0, 6.5, 7.0, 7.5]:
         d = Design(**{**base.__dict__, "rotor_d_m": d_m})
         rows.append(
-            f"  {d_m:5.1f} | {d.disk_loading:11.1f} | {d.hover_electric_power_w/1000:9.1f} | {d.hover_endurance_min:11.1f}"
+            f"  {d_m:5.1f} | {d.disk_loading:9.1f} | {d.hover_electric_power_w/1000:9.1f} | {d.hover_endurance_min:11.1f}"
         )
     return "\n".join(rows)
 
 
 def main() -> None:
-    p = argparse.ArgumentParser(description="Helimac – kalkulator osiągów w zawisie")
-    p.add_argument("--mtom", type=float, default=300.0, help="masa startowa [kg]")
-    p.add_argument("--d", type=float, default=6.5, help="średnica wirnika [m]")
+    p = argparse.ArgumentParser(description="HELIMAC – hover performance estimator")
+    p.add_argument("--mtom", type=float, default=300.0, help="take-off mass [kg]")
+    p.add_argument("--d", type=float, default=6.5, help="rotor diameter [m]")
     p.add_argument("--fm", type=float, default=0.70, help="figure of merit")
-    p.add_argument("--bat-kwh", type=float, default=16.0, help="energia baterii [kWh]")
-    p.add_argument("--alt", type=float, default=0.0, help="wysokość gęstościowa [m]")
-    p.add_argument("--dt", type=float, default=0.0, help="odchyłka temp. od ISA [°C]")
-    p.add_argument("--sweep", action="store_true", help="tabela dla różnych średnic")
+    p.add_argument("--bat-kwh", type=float, default=16.0, help="battery energy [kWh]")
+    p.add_argument("--alt", type=float, default=0.0, help="altitude [m]")
+    p.add_argument("--dt", type=float, default=0.0, help="temperature offset from ISA [°C]")
+    p.add_argument("--sweep", action="store_true", help="table for several diameters")
     a = p.parse_args()
 
     d = Design(mtom_kg=a.mtom, rotor_d_m=a.d, figure_of_merit=a.fm,

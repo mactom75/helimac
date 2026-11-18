@@ -1,0 +1,17 @@
+name: "💡 Proposal or task / Propozycja lub zadanie"
+description: New solution, improvement or task / Nowe rozwiązanie, ulepszenie lub zadanie
+labels: ["proposal"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Area / Obszar"
+      options: [Frame, Main rotor, Tail rotor, Transmission, Landing gear, Powertrain, Battery, Avionics, Software, Calculations, Regulations, Documentation, Other]
+    validations: {required: true}
+  - type: textarea
+    id: description
+    attributes: {label: "Proposal / Opis propozycji"}
+    validations: {required: true}
+  - type: textarea
+    id: rationale
+    attributes: {label: "Rationale (calculations, sources, experience) / Uzasadnienie"}

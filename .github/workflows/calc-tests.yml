@@ -1,4 +1,4 @@
-name: Testy obliczeń
+name: Calculation tests
 on:
   push: {paths: ["calc/**"]}
   pull_request: {paths: ["calc/**"]}

@@ -1,0 +1,16 @@
+name: "⚠️ Safety issue / Problem bezpieczeństwa"
+description: An error or risk that may affect people or the structure / Błąd lub ryzyko dla ludzi lub konstrukcji
+title: "[SAFETY] "
+labels: ["safety", "priority"]
+body:
+  - type: textarea
+    id: description
+    attributes: {label: "Problem / Opis problemu", description: "What is wrong and where (file, drawing, calculation)?"}
+    validations: {required: true}
+  - type: textarea
+    id: consequences
+    attributes: {label: "Possible consequences / Możliwe skutki"}
+    validations: {required: true}
+  - type: textarea
+    id: fix
+    attributes: {label: "Proposed fix (if known) / Proponowane rozwiązanie"}

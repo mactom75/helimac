@@ -1,13 +1,13 @@
-# Oprogramowanie
+# Software
 
-**Status:** 💭 do rozpoczęcia
+**Status:** 💭 not started
 
-## Pliki
+## Files
 
-| Plik | Opis | Status | Wersja |
+| File | Description | Status | Version |
 |---|---|---|---|
 | | | | |
 
-## Założenia i notatki
+## Assumptions & notes
 
-## Otwarte pytania
+## Open questions
