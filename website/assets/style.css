@@ -353,3 +353,18 @@ p { max-width: var(--measure); margin: 0 0 1rem; }
 .donor-list .donor-name { font-weight: 800; font-style: italic; }
 .donor-list time { font-size: var(--step--1); color: var(--ink-soft); font-variant-numeric: tabular-nums; }
 .donor-list li.empty { grid-column: 1 / -1; border: 0; color: var(--ink-soft); font-style: italic; }
+
+/* grafiki z modelu CAD w sekcji napędu */
+.cad { margin-top: 3rem; }
+.cad-title { font-size: var(--step-3); }
+.cad-lead { color: var(--ink-soft); margin-top: 0.25rem; }
+.cad h4 { font-size: var(--step-1); font-style: italic; font-weight: 800; margin: 2.25rem 0 0.25rem; }
+.cad h4 + p { color: var(--ink-soft); max-width: var(--measure); margin: 0; }
+.cad .cad-gallery { margin-top: 1rem; }
+.cad-gallery a { background: #fff; border: 1px solid var(--line-soft); border-bottom: 4px solid var(--red); }
+.cad-gallery img { aspect-ratio: 4 / 3; object-fit: contain; object-position: center; padding: 0.5rem; }
+.cad-gallery li.tall img { aspect-ratio: 3 / 4; }
+.cad-gallery li.wide { grid-column: 1 / -1; }
+.cad-gallery li.wide img { aspect-ratio: auto; padding: 1.5rem 1rem; }
+@media (min-width: 40rem) { .cad-gallery.quad { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 60rem) { .cad-gallery.quad { grid-template-columns: repeat(4, 1fr); } }
