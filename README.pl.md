@@ -48,6 +48,8 @@ Pliki i parametry są publikowane **stopniowo, w miarę postępu projektu i budo
 
 ▶️ **YouTube:** [@Helimac-pl](https://www.youtube.com/@Helimac-pl) — filmy z budowy, prób i postępów.
 
+☕ **Wesprzyj budowę:** [buycoffee.to/helimac](https://buycoffee.to/helimac) — każda kawa to wkład w części i próby na hamowni.
+
 ## Jak dołączyć
 
 1. **Przywitaj się** w [Discussions → Introductions](../../discussions).

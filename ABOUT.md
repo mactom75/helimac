@@ -61,6 +61,7 @@ This time I want to go from an idea to a real, flying machine.
 ## Current project channel
 
 - HELIMAC on YouTube: <https://www.youtube.com/@Helimac-pl>
+- Support the build: <https://buycoffee.to/helimac>
 
 ## Archive (the first HeliMac)
 

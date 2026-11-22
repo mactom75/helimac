@@ -61,6 +61,7 @@ Tym razem chcę przejść od pomysłu do rzeczywistej, latającej maszyny.
 ## Obecny kanał projektu
 
 - YouTube HELIMAC: <https://www.youtube.com/@Helimac-pl>
+- Wesprzyj budowę: <https://buycoffee.to/helimac>
 
 ## Materiały archiwalne (pierwszy HeliMac)
 

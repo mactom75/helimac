@@ -74,6 +74,8 @@ We especially welcome: aircraft structural engineers, rotor and flight-dynamics 
 
 ▶️ **YouTube:** [@Helimac-pl](https://www.youtube.com/@Helimac-pl) — build videos, tests and progress updates.
 
+☕ **Support the build:** [buycoffee.to/helimac](https://buycoffee.to/helimac) — every coffee helps pay for parts and dynamometer tests.
+
 ## Communication
 
 | Channel | Use it for |
@@ -83,6 +85,7 @@ We especially welcome: aircraft structural engineers, rotor and flight-dynamics 
 | **Pull Requests** | contributing files |
 | **Releases** | downloadable file packages (drawings, PDFs, BOM) per version |
 | **YouTube** | [@Helimac-pl](https://www.youtube.com/@Helimac-pl) — videos of the build and tests |
+| **Support** | [buycoffee.to/helimac](https://buycoffee.to/helimac) — help pay for parts and tests |
 
 ## Licences
 
