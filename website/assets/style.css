@@ -329,3 +329,27 @@ p { max-width: var(--measure); margin: 0 0 1rem; }
 .btn-big { min-height: 58px; padding: 0 2rem; font-size: var(--step-0); justify-self: start; }
 @media (min-width: 62rem) { .gallery.concept { grid-template-columns: repeat(4, 1fr); } }
 .gallery.concept img { aspect-ratio: 4 / 3; object-position: center; }
+
+/* wsparcie: finansowanie z wpłat + lista darczyńców */
+.support { align-items: start; }
+.support-text h2 { max-width: 24ch; }
+.support-text strong { color: var(--ink); }
+.support .intro { color: var(--ink); }
+.support p + p { margin-top: 0.9rem; }
+.support-points { list-style: none; padding: 0; margin: 1.25rem 0 0; display: grid; gap: 0.6rem; max-width: var(--measure); }
+.support-points li { position: relative; padding-left: 1.6rem; color: var(--ink-soft); }
+.support-points li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 0.95rem; height: 0.4rem; background: var(--red); transform: skewX(var(--skew)); }
+.support-actions { display: grid; gap: 0.75rem; justify-items: start; align-self: center; }
+.support-actions .soon { font-size: var(--step--1); color: var(--ink-soft); font-style: italic; margin: 0; }
+.nav-support { color: var(--red-deep) !important; font-weight: 800 !important; }
+
+.donors { margin-top: 2rem; padding: clamp(1.25rem, 3vw, 2rem); border: 2px solid var(--ink); position: relative; }
+.donors::before { content: ""; position: absolute; top: -2px; left: -2px; width: 5rem; height: 6px; background: var(--red); }
+.donors h3 { font-size: var(--step-2); margin-bottom: 0.25rem; }
+.donors-count { color: var(--ink-soft); margin: 0 0 1rem; }
+.donors-count strong { font-size: var(--step-2); font-style: italic; font-weight: 900; color: var(--red); }
+.donor-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem 1.5rem; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); }
+.donor-list li { display: flex; justify-content: space-between; gap: 0.75rem; padding: 0.5rem 0; border-bottom: 1px solid var(--line-soft); }
+.donor-list .donor-name { font-weight: 800; font-style: italic; }
+.donor-list time { font-size: var(--step--1); color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.donor-list li.empty { grid-column: 1 / -1; border: 0; color: var(--ink-soft); font-style: italic; }
