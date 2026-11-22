@@ -19,7 +19,7 @@ Status: 💭 idea · 📐 calculated · 🧪 measured · ✅ approved
 | Motor | radial flux, outer rotor, 24 slots / 20 poles; ≈ 20.6 kW hover, ≈ 24.6 kW climb, ≈ 27 kW peak at 4970 rpm | 📐 | axial-flux alternative rejected |
 | Transmission | cycloidal 10:1, two 20 mm cams | 📐 | |
 | Transmission torque (hover / climb) | 395 / 472 N·m | 📐 | |
-| Collective actuators | 5 × electric servo: 3 lower rotor, 2 upper rotor | 📐 | rev J2 model |
+| Collective actuators | electric servos (rev J2 model: 3 lower rotor, 2 upper rotor; owner to confirm – lower rotor may be fixed pitch) | 📐 | rev J2 model |
 | Inverter | MC-P rev D1, SiC C3M0016120K | 📐 | [MC-P](../electronics/mc-p-inverter/README.md) |
 | Battery | 40.3 kg, 112S, ≈ 400 V | 📐 | |
 | Hover power (rotor) | 20.7 kW, FM 0.805 | 📐 | `calc/helimac_calc.py` |

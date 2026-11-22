@@ -34,6 +34,7 @@
       <li><a href="#inspiration">Inspiration</a></li>
       <li><a href="#design">Design</a></li>
       <li><a href="#drive">Drive</a></li>
+      <li><a href="#safety-design">Safety</a></li>
       <li><a href="#plan">Plan</a></li>
       <li><a href="#log">Build log</a></li>
       <li><a href="#history">History</a></li>
@@ -63,7 +64,7 @@
     <figure class="drawing">
       <svg viewBox="0 0 1060 680" role="img" aria-labelledby="dwg-title dwg-desc" xmlns="http://www.w3.org/2000/svg">
   <title id="dwg-title">HELIMAC rev J2, right side view</title>
-  <desc id="dwg-desc">Technical drawing: two counter-rotating 4500&nbsp;mm rotors at 2395 and 2785&nbsp;mm above ground. Below them the swashplate with electric actuators, transmission and motor, and the suspension plate with carabiner. Ø45 carbon-tube frame: a hang-glider-style A-frame in front (two legs) and a single rear leg behind the pilot that carries the battery and inverter and reaches down under the saddle to the footrest, 380 mm above ground. The pilot hangs on a carabiner.</desc>
+  <desc id="dwg-desc">Technical drawing: two counter-rotating 4500&nbsp;mm rotors at 2395 and 2785&nbsp;mm above ground. Below them the collective pitch actuators, transmission and motor, and the suspension plate with carabiner. Ø45 carbon-tube frame: a hang-glider-style A-frame in front (two legs) and a single rear leg behind the pilot that carries the battery and inverter and reaches down under the saddle to the footrest, 380 mm above ground. The pilot hangs on a carabiner.</desc>
   <defs>
     <marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
       <path d="M0 1.5 L10 5 L0 8.5 z" class="d-arrow"/>
@@ -101,7 +102,7 @@
   <path d="M908 139 L950 139.5 L950 144.5 L908 145 z" class="d-tip"/>
   <rect x="480" y="131" width="40" height="20" rx="4" class="d-hub"/>
 
-  <!-- tarcza sterująca (skok ogólny), siłowniki: 3 wirnik dolny + 2 wirnik górny -->
+  <!-- siłowniki skoku ogólnego (bez tarczy sterującej); podział na wirniki do potwierdzenia -->
   <rect x="466" y="154" width="68" height="9" rx="2" class="d-accent"/>
   <rect x="446" y="160" width="14" height="22" rx="2" class="d-body"/>
   <rect x="540" y="160" width="14" height="22" rx="2" class="d-body"/>
@@ -172,7 +173,7 @@
     <line x1="770" y1="176" x2="770" y2="146" class="d-ext"/><circle cx="770" cy="143" r="2.5" class="d-arrow"/>
     <text x="764" y="174" class="d-note" text-anchor="end">lower rotor</text>
     <line x1="440" y1="158" x2="360" y2="158" class="d-ext"/>
-    <text x="354" y="163" class="d-note" text-anchor="end">swashplate, actuators</text>
+    <text x="354" y="163" class="d-note" text-anchor="end">collective pitch actuators</text>
     <line x1="458" y1="200" x2="360" y2="200" class="d-ext"/>
     <text x="354" y="205" class="d-note" text-anchor="end">cycloidal transmission + motor</text>
     <line x1="446" y1="262" x2="360" y2="250" class="d-ext"/>
@@ -191,7 +192,7 @@
     <text x="666" y="593" class="d-note">rear leg to footrest, 380 mm</text>
   </g>
 </svg>
-      <ul class="legend" aria-hidden="true"><li>coaxial rotors</li><li>swashplate</li><li>drive</li><li>plate and carabiner</li><li>inverter, battery</li><li>saddle, rear leg, footrest</li><li>front CFRP A-frame</li><li>pilot up to 110 kg</li></ul>
+      <ul class="legend" aria-hidden="true"><li>coaxial rotors</li><li>collective actuators</li><li>drive</li><li>plate and carabiner</li><li>inverter, battery</li><li>saddle, rear leg, footrest</li><li>front CFRP A-frame</li><li>pilot up to 110 kg</li></ul>
       <figcaption>Right side view, design rev J2. As on Schöffmann’s machine: the drive above the head, a hang-glider-style A-frame in front and a rear leg, all carbon tube, the pilot hanging in a harness on a saddle. Dimensions in millimetres; the pilot is drawn as a dashed line.</figcaption>
     </figure>
   </div>
@@ -249,7 +250,7 @@
       <div>
         <h2>Design rev J2</h2>
         <p class="intro">Two counter-rotating rotors on one axis, no tail rotor. An electric motor drives them through a cycloidal transmission; the MC-P inverter and control electronics are designed in-house.</p>
-        <p>The controls are simple: the pilot changes direction by shifting body weight, because rigid hubs carry the moment from the rotors to the frame. Blade pitch (collective) is set by electric actuators — three for the lower rotor and two for the upper, and a pitch difference between the upper and lower rotor turns the machine about its vertical axis. There is no tail rotor and no cyclic pitch.</p>
+        <p>The controls are simple: the pilot changes direction by shifting body weight, because rigid hubs carry the moment from the rotors to the frame. Blade pitch (collective) is set by electric actuators, and a pitch difference between the upper and lower rotor turns the machine about its vertical axis. There is no tail rotor and no cyclic pitch.</p>
         <p>The target is the ultralight category of Annex I to Regulation (EU) 2018/1139: a single-seat helicopter with a maximum take-off mass of up to 300&nbsp;kg, which falls under national rules rather than EASA certification.</p>
       </div>
       <div>
@@ -265,7 +266,7 @@
               <tr><th scope="row">Hover power (rotor)</th><td>20.7&nbsp;kW, FM 0.805</td></tr>
               <tr><th scope="row">Motor</th><td>radial flux, outer rotor; ≈&nbsp;21&nbsp;kW in hover (peak ≈&nbsp;27&nbsp;kW), 4970&nbsp;rpm</td></tr>
               <tr><th scope="row">Transmission</th><td>cycloidal, 395 / 472&nbsp;N·m (hover / climb)</td></tr>
-              <tr><th scope="row">Controls</th><td>direction: weight shift; collective: 5&nbsp;electric actuators (3 lower rotor, 2 upper)</td></tr>
+              <tr><th scope="row">Controls</th><td>direction: weight shift; collective: electric actuators</td></tr>
               <tr><th scope="row">Inverter</th><td>MC-P rev D1, SiC MOSFETs</td></tr>
               <tr><th scope="row">Flight time</th><td>≈&nbsp;14 / 25&nbsp;min (200&nbsp;Wh/kg cells)</td></tr>
             </tbody>
@@ -330,6 +331,50 @@
     <p class="note">Details and files: <a href="https://github.com/mactom75/helimac/tree/main/hardware">hardware/</a>, <a href="https://github.com/mactom75/helimac/tree/main/electronics">electronics/</a>, <a href="https://github.com/mactom75/helimac/blob/main/docs/design-rev-J2.md">design-rev-J2.md</a>.</p>
   </section>
 
+  <section id="safety-design" class="wrap">
+    <h2>Designed for safety</h2>
+    <p class="intro">We design HELIMAC so that a single fault does not end in an accident. Every assembly is calculated with a margin and tested on a bench before it goes into the machine.</p>
+    <div class="parts safety-parts">
+      <article><h3>Strength margins</h3><p>Blades, hubs, frame and seat are sized for ultimate loads (load factor × 1.5). For example:</p>
+        <ul><li>blade – stress up to 600&nbsp;MPa in the carbon composite;</li><li>frame – margin 1.8 for a side impact and 2.3 against buckling;</li><li>suspension carabiner – at least 25&nbsp;kN against a design load of 7.2&nbsp;kN.</li></ul></article>
+      <article><h3>Vibration</h3><p>Blade natural frequencies stay well away from resonance across the whole speed range (flap 1.46/rev, in-plane 2.42/rev). Rotors and motor are balanced to grade G2.5.</p></article>
+      <article><h3>Bearings and gearing</h3><p>The bearings that set service intervals last at least as long as in the previous design revision. A PT100 sensor measures oil temperature, with a warning at 105&nbsp;°C.</p></article>
+      <article><h3>400&nbsp;V electrics</h3><ul><li>Fuse and contactor with soft pre-charge of the capacitors.</li><li>Isolation between the high-voltage side and the controls.</li><li>1.5&nbsp;kV insulation test before the first start.</li><li>On a short circuit the inverter transistors switch off within a fraction of a microsecond.</li></ul></article>
+      <article><h3>Two independent control channels</h3><p>Channels A and B each have their own supply from one of the two battery packs, their own drivers and actuators. They monitor each other, and a third angle sensor decides which one is right. A jammed actuator disconnects through an overload clutch and the others carry on alone.</p></article>
+      <article><h3>Check before every flight</h3><p>Each actuator runs through its full travel on its own. A current difference above 15&nbsp;% blocks take-off.</p></article>
+    </div>
+
+    <div class="safety-cols">
+      <div>
+        <h3>Autorotation – what happens when power is lost</h3>
+        <p>When power is lost, rotor speed falls from 500 to 420&nbsp;rpm in about 0.55&nbsp;s. That is too fast for the pilot, so an automatic system does it. The controller detects the drop in motor current and speed and within 0.35&nbsp;s lowers the blade pitch to about 1–1.5°. The rotors go into autorotation: the air flowing up through the rotor keeps them turning.</p>
+        <p>Rate of descent (calculated):</p>
+        <ul class="ticks"><li>at 20&nbsp;m/s forward speed – about 4.6&nbsp;m/s;</li><li>straight down, with no forward speed – about 14&nbsp;m/s, too fast to land.</li></ul>
+        <p>Near the ground the pilot raises blade pitch (the flare). The rotors’ stored energy brakes the descent.</p>
+        <p class="callout"><strong>The zone we avoid.</strong> As in any helicopter, hovering is safe only up to about 5&nbsp;m above the ground or above about 150&nbsp;m. In between there is neither the time nor the height to pick up speed and enter autorotation.</p>
+      </div>
+      <div>
+        <h3>Handling – how quickly the machine responds</h3>
+        <dl class="principles">
+          <div><dt>Climb and descent</dt><dd>Changing blade pitch changes thrust in about 0.2&nbsp;s. Changing thrust through rotor speed would take 2–3&nbsp;s.</dd></div>
+          <div><dt>Yaw</dt><dd>A ±1° pitch difference between the upper and lower rotor gives about ±55&nbsp;N·m of torque, so no tail rotor is needed.</dd></div>
+          <div><dt>Direction</dt><dd>The pilot shifts body weight, as on a hang glider. At 25&nbsp;m/s that is about 27&nbsp;cm forward.</dd></div>
+          <div><dt>Top speed</dt><dd>About 25&nbsp;m/s (90&nbsp;km/h). Above that the nose-up moment and blade vibration grow.</dd></div>
+          <div><dt>Precision</dt><dd>Actuator encoders resolve 0.09° of rotation, about 0.01&nbsp;mm of travel at the blade lever.</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="how-calc">
+      <h3>How we calculate</h3>
+      <p>All values are calculated today, not measured. We publish the methods and scripts so anyone can check them:</p>
+      <ul class="ticks"><li>rotors – blade element momentum theory (BEM) including the effect of the upper rotor on the lower one;</li><li>motor – finite element analysis (FEA) of the magnetic field and a thermal balance;</li><li>gearing – Hertz contact stress, L10 bearing life, oil temperature;</li><li>blades – composite ply strength, natural frequencies, torsional divergence;</li><li>frame – strength and buckling of the carbon tubes, centre of gravity.</li></ul>
+      <p>Every number will be verified by tests: the dynamometer (395&nbsp;N·m for 30&nbsp;min, then 50&nbsp;h), tethered rotor tests and uncrewed flights.</p>
+      <p class="ask">A review of our calculations by experienced engineers is the most valuable help we can get.</p>
+      <p class="note">The autorotation and yaw figures are estimates for the current version (225&nbsp;kg), scaled from a full simulation at 200&nbsp;kg; a new simulation will confirm them. The frame margins apply to revision J – the new frame layout is being recalculated.</p>
+    </div>
+  </section>
+
   <section id="plan" class="wrap band-carbon">
     <h2>Build plan</h2>
     <p class="intro">The test order follows the safety rules: a person gets on board only after bench tests, tethered tests and uncrewed flights.</p>
@@ -346,7 +391,7 @@
           </ul>
         </div>
       </li>
-      <li><div><h3>Airframe</h3><p>Frame, collective and swashplate, blades; blade modal test.</p></div></li>
+      <li><div><h3>Airframe</h3><p>Frame, collective pitch actuators, blades; blade modal test.</p></div></li>
       <li><div><h3>Tethered rotor tests</h3><p>No pilot, inside a defined safety zone.</p></div></li>
       <li><div><h3>Uncrewed flights</h3><p>The machine in the air, nobody on board.</p></div></li>
       <li><div><h3>Crewed trials</h3><p>Only once national regulatory requirements are met.</p></div></li>

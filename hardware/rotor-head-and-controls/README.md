@@ -1,4 +1,4 @@
-# Coaxial rotor head, swashplate (PK), collective
+# Coaxial rotor head, air-guide ring (PK), collective
 
 **Status:** 📐 rev J2 designed — files to be published
 

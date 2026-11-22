@@ -8,7 +8,7 @@ Stages are ticked off and extended as work progresses. Testing order follows [SA
   - [ ] MC-C control board design
   - [ ] Manufacture of motor, cycloidal transmission, MC-P
   - [ ] Dynamometer: 395 N·m / 30 min, then 50 h endurance
-- [ ] **Stage 2 — airframe** — frame, collective/swashplate, blades
+- [ ] **Stage 2 — airframe** — frame, collective actuators, blades
   - [ ] Blade modal test
 - [ ] **Stage 3 — tethered rotor tests** (no pilot)
 - [ ] **Stage 4 — uncrewed flights**
