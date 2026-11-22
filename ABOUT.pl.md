@@ -20,6 +20,14 @@ Nazwa HELIMAC łączy słowa **HELI**kopter i **MAC**iąg. Nie jest nowa — w l
 
 Projekt finansowałem głównie z prywatnych środków. Bez inwestora nie dało się doprowadzić go do gotowej maszyny i musiałem odłożyć działalność wynalazczą, żeby skupić się na pracy zarobkowej. Dziś, patrząc na rozwój pojazdów takich jak Jetson ONE, widzę, że kierunek, nad którym pracowałem ponad dekadę temu, miał przyszłość.
 
+## Lekcja: liczy się moment
+
+Przy wdrażaniu przełomowych technologii i budowaniu startupu ważny jest nie tylko sam pomysł, ale także **moment wdrożenia**. Za wcześnie — rynek nie jest gotowy, żeby go przyjąć. Za późno — inni są już dalej. Trzeba trafić w odpowiedni czas.
+
+Uważam, że z HeliMac w latach 2013–2015 było właśnie **za wcześnie**. Pomysł był dobry i gdyby znalazł się inwestor, HeliMac mógł powstać wcześniej niż na przykład [Jetson ONE](https://jetson.com/) ([Wikipedia](https://pl.wikipedia.org/wiki/Jetson_ONE)). Firma Jetson powstała w 2017 roku, a jej pierwszy prototyp poleciał na początku 2018 roku — kilka lat po tym, jak zaczynałem pracę nad HeliMac.
+
+Dziś ten moment jest inny: rynek pojazdów eVTOL istnieje, baterie, silniki i elektronika mocy są dużo lepsze, a sztuczna inteligencja daje jednej osobie możliwości, które wtedy wymagały całego zespołu.
+
 Pracowałem też nad innymi projektami, m.in. **Cukrzyca-Monitor D+Sensor** (od 2013 r.) — koncepcją opaski na nadgarstek ostrzegającej przed hipoglikemią, rozwijaną z dr. inż. Tomaszem Marciniakiem z ówczesnego Uniwersytetu Technologiczno-Przyrodniczego w Bydgoszczy, prof. Krzysztofem Narkiewiczem i specjalistami Gdańskiego Uniwersytetu Medycznego.
 
 ## HELIMAC dziś — dlaczego teraz

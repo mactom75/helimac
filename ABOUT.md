@@ -20,6 +20,14 @@ The name HELIMAC combines **HELI**copter and **MAC**iąg. It is not new: in 2013
 
 I funded the project mostly from private savings. Without an investor it could not be taken to a finished machine, and I had to set inventing aside and focus on paid work. Today, watching vehicles like Jetson ONE emerge, I can see that the direction I was working on over a decade ago had a future.
 
+## A lesson: timing matters
+
+When launching a startup or bringing a breakthrough technology to market, the idea alone is not enough — **timing** matters just as much. Too early, and the market is not ready to accept it. Too late, and others are already ahead. You have to find the right moment.
+
+I believe HeliMac in 2013–2015 was simply **too early**. The idea was good, and with an investor HeliMac could have flown before vehicles such as [Jetson ONE](https://jetson.com/) ([Wikipedia](https://en.wikipedia.org/wiki/Jetson_One)). Jetson was founded in 2017 and its first prototype flew in early 2018 — several years after I started working on HeliMac.
+
+Today the moment is different: the eVTOL market exists, batteries, motors and power electronics have improved enormously, and AI gives a single person capabilities that once required a whole team.
+
 I also worked on other projects, including **D+Sensor** (from 2013), a wrist-worn device concept to warn of hypoglycaemia, developed with Dr. Tomasz Marciniak of the then University of Technology and Life Sciences in Bydgoszcz, Prof. Krzysztof Narkiewicz and specialists from the Medical University of Gdańsk.
 
 ## HELIMAC today — why now
