@@ -102,7 +102,7 @@
   <path d="M908 139 L950 139.5 L950 144.5 L908 145 z" class="d-tip"/>
   <rect x="480" y="131" width="40" height="20" rx="4" class="d-hub"/>
 
-  <!-- siłowniki skoku ogólnego (bez tarczy sterującej); podział na wirniki do potwierdzenia -->
+  <!-- siłowniki skoku ogólnego (bez tarczy sterującej): 2 wirnik górny + 3 wirnik dolny -->
   <rect x="466" y="154" width="68" height="9" rx="2" class="d-accent"/>
   <rect x="446" y="160" width="14" height="22" rx="2" class="d-body"/>
   <rect x="540" y="160" width="14" height="22" rx="2" class="d-body"/>
@@ -250,7 +250,7 @@
       <div>
         <h2>Konstrukcja rev J2</h2>
         <p class="intro">Dwa przeciwbieżne wirniki na jednej osi, bez wirnika ogonowego. Silnik elektryczny napędza je przez przekładnię cykloidalną, a falownik MC-P i elektronikę sterującą projektujemy sami.</p>
-        <p>Sterowanie jest proste: kierunek lotu pilot zmienia balansem ciała, bo sztywne piasty przenoszą moment z wirników na ramę. Kąt łopat (skok ogólny) ustawiają siłowniki elektryczne, a różnica kątów wirnika górnego i dolnego obraca maszynę wokół osi. Nie ma wirnika ogonowego ani skoku cyklicznego.</p>
+        <p>Sterowanie jest proste: kierunek lotu pilot zmienia balansem ciała, bo sztywne piasty przenoszą moment z wirników na ramę. Kąt łopat (skok ogólny) ustawia pięć siłowników elektrycznych — dwa dla wirnika górnego i trzy dla dolnego, a różnica kątów wirnika górnego i dolnego obraca maszynę wokół osi. Nie ma wirnika ogonowego ani skoku cyklicznego.</p>
         <p>Celem jest kategoria ultralekka z Załącznika I do rozporządzenia (UE) 2018/1139: śmigłowiec jednomiejscowy o maksymalnej masie startowej do 300&nbsp;kg, podlegający przepisom krajowym, a nie certyfikacji EASA.</p>
       </div>
       <div>
@@ -266,7 +266,7 @@
               <tr><th scope="row">Moc zawisu (wirnik)</th><td>20,7&nbsp;kW, FM 0,805</td></tr>
               <tr><th scope="row">Silnik</th><td>promieniowy, wirnik zewnętrzny; ≈&nbsp;21&nbsp;kW w zawisie (szczytowo ≈&nbsp;27&nbsp;kW), 4970&nbsp;obr/min</td></tr>
               <tr><th scope="row">Przekładnia</th><td>cykloidalna, 395 / 472&nbsp;N·m (zawis / wznoszenie)</td></tr>
-              <tr><th scope="row">Sterowanie</th><td>kierunek: balans ciała; skok ogólny: siłowniki elektryczne</td></tr>
+              <tr><th scope="row">Sterowanie</th><td>kierunek: balans ciała; skok ogólny: 5&nbsp;siłowników (2 wirnik górny, 3 dolny)</td></tr>
               <tr><th scope="row">Falownik</th><td>MC-P rev D1, tranzystory SiC</td></tr>
               <tr><th scope="row">Czas lotu</th><td>≈&nbsp;14 / 25&nbsp;min (ogniwa 200&nbsp;Wh/kg)</td></tr>
             </tbody>
@@ -274,6 +274,16 @@
         </div>
         <p class="note">Wszystkie wartości są obliczone, jeszcze nie zmierzone. Szczegóły i historia zmian: <a href="https://github.com/mactom75/helimac/blob/main/docs/design-rev-J2.md">design-rev-J2.md</a>, <a href="https://github.com/mactom75/helimac/blob/main/docs/parameters.md">parameters.md</a>.</p>
       </div>
+    </div>
+    <div class="pitch">
+      <h3>Jak ustawiany jest kąt łopat</h3>
+      <p>Kąt łopat ustawia 5 siłowników Feetech STS3250. Każdy steruje naraz wszystkimi łopatami swojego wirnika, a nie pojedynczą łopatą.</p>
+      <div class="parts">
+        <article><h3>Wirnik górny – 2 siłowniki</h3><ul><li>Oba pchają jedną wspólną dźwignię. Dźwignia przesuwa pręt węglowy Ø12, który biegnie wewnątrz kolumny i masztu.</li><li>Na szczycie piasty pręt porusza krzyżak, a ten przez 2 cięgła obraca obie łopaty górne o ten sam kąt.</li><li>Dwa siłowniki są tu dla bezpieczeństwa: jeden jest zasilany z kanału A, drugi z kanału B. Gdy jeden się zatnie, drugi sam przestawi kąt.</li></ul></article>
+        <article><h3>Wirnik dolny – 3 siłowniki</h3><ul><li>Pchają nieruchomy pierścień otaczający maszt. Pod nim jest łożysko Ø330 i pierścień obracający się razem z wirnikiem, połączony 2 cięgłami z łopatami.</li><li>Siłowniki są trzy, bo pierścień musi mieć 3 punkty podparcia, żeby przesuwał się równo i się nie przekrzywiał. Dwa są zasilane z kanału A, jeden z B.</li></ul></article>
+        <article><h3>Dlaczego nie każda łopata osobno</h3><ul><li>HELIMAC zmienia tylko skok ogólny, czyli jednakowy kąt wszystkich łopat wirnika. Większy kąt daje większy ciąg, mniejszy – mniejszy ciąg albo autorotację.</li><li>Nie ma skoku cyklicznego, który w zwykłym śmigłowcu przechyla wirnik i nadaje kierunek lotu. Tę funkcję przejmuje przesunięcie ciała pilota.</li><li>Osobny siłownik na każdą łopatę to siłowniki na obracającej się piaście z zasilaniem przez złącze obrotowe, około 10 razy szybsza praca (przy 500&nbsp;obr/min kąt zmieniałby się 8 razy na sekundę) i dużo bardziej złożone zabezpieczenia – większa masa, koszt i ryzyko bez korzyści.</li><li>Obrót maszyny wokół osi daje różnica kątów wirnika górnego i dolnego, ustawiana tymi samymi siłownikami. Wirnik ogonowy ani płetwa nie są potrzebne.</li></ul></article>
+      </div>
+      <p class="callout"><strong>W skrócie:</strong> 5 siłowników ustawia tylko 2 kąty, jeden na wirnik. Nadmiar siłowników to zapas na wypadek awarii.</p>
     </div>
   </section>
 
@@ -347,7 +357,7 @@
     <div class="safety-cols">
       <div>
         <h3>Autorotacja – co się dzieje po zaniku mocy</h3>
-        <p>Po zaniku mocy obroty wirników spadają z 500 do 420&nbsp;obr/min w około 0,55&nbsp;s. Pilot nie zdąży zareagować, dlatego robi to automat. Sterownik wykrywa spadek prądu silnika i obrotów i w ciągu 0,35&nbsp;s zmniejsza kąt łopat do około 1–1,5°. Wirniki przechodzą w autorotację: powietrze przepływające przez wirnik podtrzymuje ich obroty.</p>
+        <p>Po zaniku mocy obroty wirników spadają z 500 do 420&nbsp;obr/min w około 0,55&nbsp;s. Pilot nie zdąży zareagować, dlatego robi to automat. Sterownik wykrywa spadek prądu silnika i obrotów i w ciągu 0,35&nbsp;s zmniejsza kąt łopat obu wirników do około 1–1,5°. Wirniki przechodzą w autorotację: powietrze przepływające przez wirnik podtrzymuje ich obroty.</p>
         <p>Prędkość opadania (z obliczeń):</p>
         <ul class="ticks"><li>przy prędkości lotu 20&nbsp;m/s – około 4,6&nbsp;m/s;</li><li>pionowo, bez prędkości poziomej – około 14&nbsp;m/s, czyli za szybko na lądowanie.</li></ul>
         <p>Przy ziemi pilot zwiększa kąt łopat (tzw. flara). Energia obrotów wirników wyhamowuje opadanie.</p>

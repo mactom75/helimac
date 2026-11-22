@@ -9,7 +9,7 @@ Project progress — newest entries first. Entries may be in English and/or Poli
 
 - Project website launched at [helimac.pl](https://helimac.pl/) (Polish) and [helimac.pl/en](https://helimac.pl/en/) (English), hosted on GitHub Pages from `website/`.
 - Design idea stated: inspired by Dr. Franz Schöffmann's backpack helicopter — radical simplicity, weight-shift piloting like a hang glider, easy transport.
-- Controls: direction by weight shift (rigid hubs, no cyclic); collective via electric actuators, no swashplate; yaw by differential pitch.
+- Controls: direction by weight shift (rigid hubs, no cyclic); collective via 5 electric actuators (2 upper rotor, 3 lower rotor), no swashplate; yaw by differential pitch.
 
 ## 2026-11-22 — CAD graphics rev J2
 

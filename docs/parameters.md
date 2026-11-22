@@ -19,7 +19,7 @@ Status: 💭 idea · 📐 calculated · 🧪 measured · ✅ approved
 | Motor | radial flux, outer rotor, 24 slots / 20 poles; ≈ 20.6 kW hover, ≈ 24.6 kW climb, ≈ 27 kW peak at 4970 rpm | 📐 | axial-flux alternative rejected |
 | Transmission | cycloidal 10:1, two 20 mm cams | 📐 | |
 | Transmission torque (hover / climb) | 395 / 472 N·m | 📐 | |
-| Collective actuators | electric servos (rev J2 model: 3 lower rotor, 2 upper rotor; owner to confirm – lower rotor may be fixed pitch) | 📐 | rev J2 model |
+| Collective actuators | 5 × Feetech STS3250, collective only: upper rotor 2 (shared lever → Ø12 carbon rod in column/mast → spider → 2 links; channels A + B), lower rotor 3 (stationary ring → Ø330 bearing → rotating ring → 2 links; 2 × A + 1 × B) | ✅ | owner, 2026-11-22 |
 | Inverter | MC-P rev D1, SiC C3M0016120K | 📐 | [MC-P](../electronics/mc-p-inverter/README.md) |
 | Battery | 40.3 kg, 112S, ≈ 400 V | 📐 | |
 | Hover power (rotor) | 20.7 kW, FM 0.805 | 📐 | `calc/helimac_calc.py` |
