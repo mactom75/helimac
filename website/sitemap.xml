@@ -5,11 +5,13 @@
     <lastmod>2026-11-22</lastmod>
     <xhtml:link rel="alternate" hreflang="pl" href="https://helimac.pl/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://helimac.pl/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://helimac.pl/"/>
   </url>
   <url>
     <loc>https://helimac.pl/en/</loc>
     <lastmod>2026-11-22</lastmod>
     <xhtml:link rel="alternate" hreflang="pl" href="https://helimac.pl/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://helimac.pl/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://helimac.pl/"/>
   </url>
 </urlset>
