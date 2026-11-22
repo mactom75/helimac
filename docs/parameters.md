@@ -31,6 +31,6 @@ Status: 💭 idea · 📐 calculated · 🧪 measured · ✅ approved
 | Date | Parameter | Was → Now | Reason |
 |---|---|---|---|
 | 2026-11-21 | Pilot mass | 90 → 110 kg | rev J |
-| 2026-11-21 | Empty mass | 69.7 → 74.9 kg | rev J / J2 changes |
+| 2026-11-21 | Mass without battery | 69.7 → 74.9 kg | rev J / J2 changes |
 | 2026-11-21 | Hover power | 17.4 → 20.7 kW | higher take-off mass |
 | 2026-11-21 | Blade chord | root 180 → 198 mm, tip 114 → 125.4 mm (+10 %) | rev J |
