@@ -70,6 +70,10 @@ We especially welcome: aircraft structural engineers, rotor and flight-dynamics 
 
 **Languages:** English is the main project language. Polish is equally welcome — write in whichever you're comfortable with.
 
+## Follow the build
+
+▶️ **YouTube:** [@Helimac-pl](https://www.youtube.com/@Helimac-pl) — build videos, tests and progress updates.
+
 ## Communication
 
 | Channel | Use it for |
@@ -78,6 +82,7 @@ We especially welcome: aircraft structural engineers, rotor and flight-dynamics 
 | **Issues** | specific tasks, errors in calculations/docs, change proposals |
 | **Pull Requests** | contributing files |
 | **Releases** | downloadable file packages (drawings, PDFs, BOM) per version |
+| **YouTube** | [@Helimac-pl](https://www.youtube.com/@Helimac-pl) — videos of the build and tests |
 
 ## Licences
 

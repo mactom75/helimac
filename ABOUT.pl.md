@@ -58,6 +58,10 @@ Tym razem chcę przejść od pomysłu do rzeczywistej, latającej maszyny.
 
 — Tomasz Maciąg, Bydgoszcz
 
+## Obecny kanał projektu
+
+- YouTube HELIMAC: <https://www.youtube.com/@Helimac-pl>
+
 ## Materiały archiwalne (pierwszy HeliMac)
 
 - Polskie Radio PiK — „Bydgoszczanin pracuje nad ciekawym wynalazkiem”, 7.03.2014: <https://www.radiopik.pl/77,12719,bydgoszczanin-pracuje-nad-ciekawym-wynalazkiem>

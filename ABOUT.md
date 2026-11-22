@@ -58,6 +58,10 @@ This time I want to go from an idea to a real, flying machine.
 
 — Tomasz Maciąg, Bydgoszcz, Poland
 
+## Current project channel
+
+- HELIMAC on YouTube: <https://www.youtube.com/@Helimac-pl>
+
 ## Archive (the first HeliMac)
 
 - Polish Radio PiK, 7 March 2014 (PL): <https://www.radiopik.pl/77,12719,bydgoszczanin-pracuje-nad-ciekawym-wynalazkiem>

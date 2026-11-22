@@ -44,6 +44,10 @@ Pliki i parametry są publikowane **stopniowo, w miarę postępu projektu i budo
 - Plan prac: [ROADMAP.md](ROADMAP.md)
 - Kalkulator wstępnych szacunków: [calc/](calc/)
 
+## Śledź budowę
+
+▶️ **YouTube:** [@Helimac-pl](https://www.youtube.com/@Helimac-pl) — filmy z budowy, prób i postępów.
+
 ## Jak dołączyć
 
 1. **Przywitaj się** w [Discussions → Introductions](../../discussions).
