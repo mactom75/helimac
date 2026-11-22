@@ -12,7 +12,7 @@
 
 **HELIMAC** is an international, open-source project to design and build a light, single-seat helicopter with a fully electric powertrain.
 
-The name combines **HELI**copter and **MAC**iąg — the surname of the project's founder, **Tomasz Maciąg** from Bydgoszcz, Poland.
+The name combines **HELI**copter and **MAC**iąg — the surname of the project's founder, **Tomasz Maciąg** from Bydgoszcz, Poland. It continues his original **HeliMac** project (2013–2015), now redesigned from scratch and developed with the help of AI tools. **[Read the story →](ABOUT.md)**
 
 ### Goals
 
@@ -48,6 +48,7 @@ Files and specifications are published **progressively, as the design and the ve
 
 ```
 helimac/
+├── ABOUT.md              founder and project history
 ├── BUILD_LOG.md          progress log
 ├── docs/                 design revision, parameters, regulations
 ├── calc/                 calculations and tools (Python) + tests

@@ -12,7 +12,7 @@
 
 **HELIMAC** to międzynarodowy projekt open source, którego celem jest zaprojektowanie i zbudowanie lekkiego, jednoosobowego śmigłowca z napędem w pełni elektrycznym.
 
-Nazwa łączy słowa **HELI**kopter i **MAC**iąg — nazwisko założyciela projektu, **Tomasza Maciąga** z Bydgoszczy.
+Nazwa łączy słowa **HELI**kopter i **MAC**iąg — nazwisko założyciela projektu, **Tomasza Maciąga** z Bydgoszczy. To nawiązanie do jego pierwszego projektu **HeliMac** (2013–2015), dziś zaprojektowanego od nowa z pomocą narzędzi AI. **[Przeczytaj historię →](ABOUT.pl.md)**
 
 ### Cele
 
