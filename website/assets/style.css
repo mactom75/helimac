@@ -321,3 +321,9 @@ p { max-width: var(--measure); margin: 0 0 1rem; }
 .parts h3, .audience h3 { font-size: var(--step-0); margin-bottom: 0.4rem; }
 .parts p, .audience p { font-size: var(--step--1); color: var(--ink-soft); margin: 0; }
 .join-head { margin-top: 2rem; }
+
+/* wsparcie */
+.support { display: grid; gap: 1.5rem 3rem; align-items: center; grid-template-columns: 1fr; background: var(--paper); padding: clamp(1.5rem, 4vw, 2.5rem); border-left: 8px solid var(--red); }
+@media (min-width: 56rem) { .support { grid-template-columns: 1fr auto; } }
+.support p { color: var(--ink-soft); margin: 0; }
+.btn-big { min-height: 58px; padding: 0 2rem; font-size: var(--step-0); justify-self: start; }
