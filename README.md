@@ -2,7 +2,7 @@
 
 **Open-source single-seat electric helicopter**
 
-🇬🇧 English · [🇵🇱 Polski](README.pl.md)
+🇬🇧 English · [🇵🇱 Polski](README.pl.md) · 🌐 **Website: [helimac.pl](https://helimac.pl/en/)**
 
 > ⚠️ **Early concept stage.** Nothing in this repository is yet a verified, buildable design. Read [SAFETY.md](SAFETY.md) before anything else.
 

@@ -2,7 +2,7 @@
 
 **Jednoosobowy śmigłowiec elektryczny — projekt open source**
 
-[🇬🇧 English](README.md) · 🇵🇱 Polski
+[🇬🇧 English](README.md) · 🇵🇱 Polski · 🌐 **Strona: [helimac.pl](https://helimac.pl/)**
 
 > ⚠️ **Wczesna faza koncepcyjna.** Nic w tym repozytorium nie jest jeszcze zweryfikowaną, gotową do budowy konstrukcją. Przed czymkolwiek przeczytaj [SAFETY.pl.md](SAFETY.pl.md).
 
