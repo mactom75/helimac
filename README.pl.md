@@ -21,7 +21,7 @@ wirniki współosiowe · sterowanie balansem ciała · napęd elektryczny 400 V 
 | Chcę… | Przejdź do |
 |---|---|
 | 👀 **zobaczyć konstrukcję** | [Konstrukcja rev J2](docs/design-rev-J2.md) (EN) · [parametry](docs/parameters.md) (EN) · [strona](https://helimac.pl/) |
-| 📦 **pobrać pliki** | [Pliki produkcyjne rev J2](production/README.pl.md) — rysunki, DXF, STEP, STL, KiCad, gerbery (ZIP) |
+| 📦 **pobrać pliki** | [Najnowsze wydanie (4 paczki ZIP)](../../releases/latest) · [przeglądaj pliki produkcyjne](production/README.pl.md) — rysunki, DXF, STEP, STL, KiCad, gerbery |
 | 🛠️ **pomóc w budowie** | [Otwarte zadania (Issues)](../../issues) · [Discussions](../../discussions) · [Jak współtworzyć](CONTRIBUTING.md) |
 | ▶️ **śledzić budowę** | [YouTube @Helimac-pl](https://www.youtube.com/@Helimac-pl) · [dziennik budowy](BUILD_LOG.md) · [plan prac](ROADMAP.md) |
 | ☕ **wesprzeć projekt** | [buycoffee.to/helimac](https://buycoffee.to/helimac) — każda kawa to wkład w części i próby na hamowni |

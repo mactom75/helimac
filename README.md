@@ -21,7 +21,7 @@ coaxial rotors · weight-shift control · 400 V electric drive · built in the o
 | I want to… | Go to |
 |---|---|
 | 👀 **see the design** | [Design rev J2](docs/design-rev-J2.md) · [parameters](docs/parameters.md) · [website](https://helimac.pl/en/) |
-| 📦 **download the files** | [Production files rev J2](production/) — drawings, DXF, STEP, STL, KiCad, Gerbers (ZIP) |
+| 📦 **download the files** | [Latest release (4 ZIP packages)](../../releases/latest) · [browse production files](production/) — drawings, DXF, STEP, STL, KiCad, Gerbers |
 | 🛠️ **help build it** | [Open tasks (Issues)](../../issues) · [Discussions](../../discussions) · [How to contribute](CONTRIBUTING.md) |
 | ▶️ **follow the build** | [YouTube @Helimac-pl](https://www.youtube.com/@Helimac-pl) · [build log](BUILD_LOG.md) · [roadmap](ROADMAP.md) |
 | ☕ **support the project** | [buycoffee.to/helimac](https://buycoffee.to/helimac) — every coffee goes to parts and dynamometer tests |
