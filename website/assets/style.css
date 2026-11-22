@@ -310,3 +310,13 @@ p { max-width: var(--measure); margin: 0 0 1rem; }
 .head-bar.brand-auto .brand { transition: opacity .25s, transform .25s; }
 .head-bar.brand-auto:not(.show-brand) .brand { opacity: 0; transform: translateX(-12px); pointer-events: none; }
 @media (prefers-reduced-motion: reduce) { .head-bar.brand-auto .brand { transition: none; } }
+
+/* napęd i odbiorcy — kafle z ukośną krawędzią */
+.parts, .audience { display: grid; gap: 1rem; grid-template-columns: 1fr; margin: 1.75rem 0 0; }
+@media (min-width: 40rem) { .parts, .audience { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 62rem) { .parts { grid-template-columns: repeat(3, 1fr); } .audience { grid-template-columns: repeat(5, 1fr); } }
+.parts article, .audience article { background: var(--paper); padding: 1.1rem 1.2rem 1.2rem; border-top: 4px solid var(--ink); position: relative; }
+.parts article::before, .audience article::before { content: ""; position: absolute; top: -4px; left: 0; width: 3rem; height: 4px; background: var(--red); }
+.parts h3, .audience h3 { font-size: var(--step-0); margin-bottom: 0.4rem; }
+.parts p, .audience p { font-size: var(--step--1); color: var(--ink-soft); margin: 0; }
+.join-head { margin-top: 2rem; }

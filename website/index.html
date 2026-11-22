@@ -33,10 +33,11 @@
     <ul>
       <li><a href="#inspiracja">Inspiracja</a></li>
       <li><a href="#konstrukcja">Konstrukcja</a></li>
+      <li><a href="#naped">Napęd</a></li>
       <li><a href="#plan">Plan</a></li>
       <li><a href="#dziennik">Dziennik budowy</a></li>
       <li><a href="#historia">Historia</a></li>
-      <li><a href="#dolacz">Dołącz</a></li>
+      <li><a href="#dolacz">Dla kogo</a></li>
       <li><a class="lang" href="/en/" hreflang="en" lang="en">English</a></li>
     </ul>
   </nav>
@@ -48,12 +49,12 @@
     <div class="hero-top">
     <div class="hero-text">
     <h1>Jednoosobowy śmigłowiec elektryczny, sterowany jak lotnia.</h1>
-    <p class="lede">HELIMAC to współosiowy śmigłowiec z napędem elektrycznym, projektowany w Bydgoszczy jako maszyna skrajnie prosta: łatwa w transporcie, w pilotażu i w obsłudze. Pilot steruje balansem ciała. Projekt jest otwarty — publikujemy rysunki, obliczenia, oprogramowanie, wyniki prób i błędy.</p>
+    <p class="lede">HELIMAC to współosiowy śmigłowiec z napędem elektrycznym, projektowany w Bydgoszczy jako maszyna skrajnie prosta: łatwa w transporcie, w pilotażu i w obsłudze. Pilot steruje balansem ciała. Projekt jest otwarty dla majsterkowiczów, konstruktorów, elektroników i fanów druku 3D — od uczniów po zawodowców. Publikujemy rysunki, obliczenia, oprogramowanie, wyniki prób i błędy.</p>
     <div class="actions">
       <a class="btn btn-primary" href="https://github.com/mactom75/helimac"><span>Repozytorium na GitHubie</span></a>
       <a class="btn" href="#historia"><span>Historia projektu</span></a>
     </div>
-    <p class="status">Etap 1 z 5: napęd i zasilanie na hamowni.</p>
+    <p class="status">Etap 1 z 5: projekt mechaniczny i elektroniczny — zaczynamy od napędu.</p>
     </div>
     <figure class="hero-logo"><img src="/assets/img/logo-600.webp" srcset="/assets/img/logo-320.webp 320w, /assets/img/logo-600.webp 600w, /assets/img/logo-1200.webp 1200w" sizes="(min-width: 62rem) 38rem, 92vw" width="1200" height="516" alt="HELIMAC" fetchpriority="high"></figure>
     </div>
@@ -276,6 +277,20 @@
     </div>
   </section>
 
+  <section id="naped" class="wrap">
+    <h2>Teraz: projekt napędu</h2>
+    <p class="intro">Na tym etapie zajmujemy się projektem mechanicznym i elektronicznym. Zaczynamy od napędu — serca maszyny — który najpierw przejdzie próby na hamowni.</p>
+    <div class="parts">
+      <article><h3>Silnik elektryczny</h3><p>Silnik z magnesami trwałymi, ok.&nbsp;25&nbsp;kW przy ok.&nbsp;4970&nbsp;obr/min. Pakiet 280 blach, magnesy neodymowe. Projektowany od podstaw, z plikami do wycięcia blach.</p></article>
+      <article><h3>Przekładnia cykloidalna 10:1</h3><p>Obracający się korpus na nieruchomej kolumnie, dwie krzywki 20&nbsp;mm na rolkach igiełkowych. Kąpiel olejowa, żebra i dwa wentylatory. Moment 395&nbsp;N·m w zawisie.</p></article>
+      <article><h3>Przekładnia nawrotna</h3><p>Koła stożkowe odwracają kierunek obrotów dla górnego wirnika. Dzięki temu oba wirniki napędza jeden silnik.</p></article>
+      <article><h3>Falownik MC-P</h3><p>Własny falownik 400&nbsp;V na tranzystorach SiC, płytka 215&nbsp;×&nbsp;116&nbsp;mm projektowana w KiCad. Chłodzenie radiatorem i dwoma wentylatorami.</p></article>
+      <article><h3>Sterownik MC-C</h3><p>Płytka sterująca z mikrokontrolerem STM32: sterowanie silnikiem, wentylatorami, czujniki temperatury i rejestracja pomiarów.</p></article>
+      <article><h3>Hamownia</h3><p>Cel etapu: 395&nbsp;N·m przez 30 minut, olej poniżej 100&nbsp;°C, a potem 50 godzin pracy. Wszystkie wyniki publikujemy.</p></article>
+    </div>
+    <p class="note">Szczegóły i pliki: <a href="https://github.com/mactom75/helimac/tree/main/hardware">hardware/</a>, <a href="https://github.com/mactom75/helimac/tree/main/electronics">electronics/</a>, <a href="https://github.com/mactom75/helimac/blob/main/docs/design-rev-J2.md">design-rev-J2.md</a>.</p>
+  </section>
+
   <section id="plan" class="wrap band-carbon">
     <h2>Plan budowy</h2>
     <p class="intro">Kolejność prób wynika z zasad bezpieczeństwa: człowiek wsiada do maszyny dopiero po próbach stanowiskowych, na uwięzi i lotach bezzałogowych.</p>
@@ -382,22 +397,22 @@
   </div>
 
   <section id="dolacz" class="wrap">
-    <h2>Dołącz do projektu</h2>
-    <p class="intro">Szukamy ludzi, którzy sprawdzą obliczenia, skrytykują rozwiązania i pomogą zweryfikować je w praktyce. Piszcie po polsku lub po angielsku.</p>
+    <h2>Dla kogo jest HELIMAC</h2>
+    <p class="intro">Dla wszystkich, których cieszy budowanie: majsterkowiczów, konstruktorów, elektroników i fanów druku 3D — zawodowo i hobbystycznie, także dla uczniów i studentów. Każdy może się czegoś nauczyć i coś dołożyć.</p>
+    <div class="audience">
+      <article><h3>Majsterkowicze i mechanicy</h3><p>Obróbka, montaż, przyrządy, stanowisko hamowni. Wasze doświadczenie z warsztatu jest tu na wagę złota.</p></article>
+      <article><h3>Druk 3D</h3><p>Części z ASA i kompozytów, np. pierścień kierujący powietrze drukowany w sześciu segmentach, obudowy, przyrządy, modele testowe.</p></article>
+      <article><h3>Elektronika i programowanie</h3><p>Falownik SiC, płytka sterująca STM32, czujniki, BMS i oprogramowanie. Projekty w KiCad, kod na GitHubie.</p></article>
+      <article><h3>Konstruktorzy i inżynierowie</h3><p>CAD, obliczenia wytrzymałościowe, wirniki, baterie, przepisy. Przegląd i krytyka obliczeń są dla nas najcenniejsze.</p></article>
+      <article><h3>Uczniowie i studenci</h3><p>Obliczenia w Pythonie, modele CAD, druk 3D, pomiary, dokumentacja, tematy projektów i prac dyplomowych. Najlepsza nauka to prawdziwa maszyna.</p></article>
+    </div>
+    <p class="note">Prace przy napędzie, baterii 400&nbsp;V i próbach wirnika wykonują wyłącznie dorośli z odpowiednimi kwalifikacjami. Młodsi uczestnicy biorą udział w projektowaniu, obliczeniach i druku 3D pod opieką dorosłych.</p>
+    <h3 class="join-head">Jak dołączyć</h3>
     <ol class="join-steps">
       <li><h3><a href="https://github.com/mactom75/helimac/discussions">Przedstaw się</a></h3><p>w GitHub Discussions, w wątku Introductions.</p></li>
       <li><h3><a href="https://github.com/mactom75/helimac/blob/main/CONTRIBUTING.md">Przeczytaj zasady</a></h3><p>CONTRIBUTING i SAFETY — krótkie i konkretne.</p></li>
       <li><h3><a href="https://github.com/mactom75/helimac/issues">Wybierz zadanie</a></h3><p>z listy Issues albo zaproponuj własne.</p></li>
     </ol>
-    <h3>Szczególnie przydadzą się</h3>
-    <ul class="wanted">
-      <li>konstruktorzy struktur lotniczych</li>
-      <li>specjaliści od wirników i dynamiki lotu</li>
-      <li>inżynierowie energoelektroniki i baterii</li>
-      <li>piloci śmigłowców</li>
-      <li>mechanicy lotniczy</li>
-      <li>znawcy przepisów dla lekkich statków powietrznych</li>
-    </ul>
   </section>
 
   <section id="kontakt" class="wrap">

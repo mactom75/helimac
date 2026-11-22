@@ -33,10 +33,11 @@
     <ul>
       <li><a href="#inspiration">Inspiration</a></li>
       <li><a href="#design">Design</a></li>
+      <li><a href="#drive">Drive</a></li>
       <li><a href="#plan">Plan</a></li>
       <li><a href="#log">Build log</a></li>
       <li><a href="#history">History</a></li>
-      <li><a href="#join">Get involved</a></li>
+      <li><a href="#join">Who it’s for</a></li>
       <li><a class="lang" href="/" hreflang="pl" lang="pl">Polski</a></li>
     </ul>
   </nav>
@@ -48,12 +49,12 @@
     <div class="hero-top">
     <div class="hero-text">
     <h1>A single-seat electric helicopter, steered like a hang glider.</h1>
-    <p class="lede">HELIMAC is a coaxial helicopter with an electric powertrain, designed in Bydgoszcz, Poland, to be as simple as possible: easy to transport, to fly and to maintain. The pilot steers by shifting body weight. The project is open — we publish drawings, calculations, software, test results and mistakes.</p>
+    <p class="lede">HELIMAC is a coaxial helicopter with an electric powertrain, designed in Bydgoszcz, Poland, to be as simple as possible: easy to transport, to fly and to maintain. The pilot steers by shifting body weight. The project is open to makers, designers, electronics people and 3D-printing fans — from school pupils to professionals. We publish drawings, calculations, software, test results and mistakes.</p>
     <div class="actions">
       <a class="btn btn-primary" href="https://github.com/mactom75/helimac"><span>Repository on GitHub</span></a>
       <a class="btn" href="#history"><span>Project history</span></a>
     </div>
-    <p class="status">Stage 1 of 5: powertrain and power supply on the dynamometer.</p>
+    <p class="status">Stage 1 of 5: mechanical and electronic design — starting with the drive.</p>
     </div>
     <figure class="hero-logo"><img src="/assets/img/logo-600.webp" srcset="/assets/img/logo-320.webp 320w, /assets/img/logo-600.webp 600w, /assets/img/logo-1200.webp 1200w" sizes="(min-width: 62rem) 38rem, 92vw" width="1200" height="516" alt="HELIMAC" fetchpriority="high"></figure>
     </div>
@@ -276,6 +277,20 @@
     </div>
   </section>
 
+  <section id="drive" class="wrap">
+    <h2>Now: designing the drive</h2>
+    <p class="intro">At this stage we are working on the mechanical and electronic design. We start with the drive — the heart of the machine — which will be tested on a dynamometer first.</p>
+    <div class="parts">
+      <article><h3>Electric motor</h3><p>Permanent-magnet motor, about 25&nbsp;kW at about 4970&nbsp;rpm. A stack of 280 laminations and neodymium magnets. Designed from scratch, with files for cutting the laminations.</p></article>
+      <article><h3>Cycloidal gearbox 10:1</h3><p>A rotating housing on a stationary column, two 20&nbsp;mm cams on needle rollers. Oil bath, cooling fins and two fans. 395&nbsp;N·m of torque in hover.</p></article>
+      <article><h3>Reversing gearbox</h3><p>Bevel gears reverse the direction for the upper rotor, so a single motor drives both rotors.</p></article>
+      <article><h3>MC-P inverter</h3><p>An in-house 400&nbsp;V inverter with SiC MOSFETs on a 215&nbsp;×&nbsp;116&nbsp;mm board designed in KiCad, cooled by a heatsink and two fans.</p></article>
+      <article><h3>MC-C controller</h3><p>An STM32 control board: motor and fan control, temperature sensors and data logging.</p></article>
+      <article><h3>Dynamometer</h3><p>Stage goal: 395&nbsp;N·m for 30 minutes with oil below 100&nbsp;°C, then 50 hours of running. All results will be published.</p></article>
+    </div>
+    <p class="note">Details and files: <a href="https://github.com/mactom75/helimac/tree/main/hardware">hardware/</a>, <a href="https://github.com/mactom75/helimac/tree/main/electronics">electronics/</a>, <a href="https://github.com/mactom75/helimac/blob/main/docs/design-rev-J2.md">design-rev-J2.md</a>.</p>
+  </section>
+
   <section id="plan" class="wrap band-carbon">
     <h2>Build plan</h2>
     <p class="intro">The test order follows the safety rules: a person gets on board only after bench tests, tethered tests and uncrewed flights.</p>
@@ -382,22 +397,22 @@
   </div>
 
   <section id="join" class="wrap">
-    <h2>Get involved</h2>
-    <p class="intro">We are looking for people who will check the calculations, challenge the design and help verify it in practice. Write in English or Polish.</p>
+    <h2>Who HELIMAC is for</h2>
+    <p class="intro">For everyone who enjoys building things: makers, designers, electronics people and 3D-printing fans — professionals and hobbyists, school pupils and university students too. Everyone can learn something and contribute something.</p>
+    <div class="audience">
+      <article><h3>Makers and mechanics</h3><p>Machining, assembly, jigs and the dynamometer rig. Workshop experience is worth its weight in gold here.</p></article>
+      <article><h3>3D printing</h3><p>Parts in ASA and composites — such as the air-guide ring printed in six segments — housings, jigs and test models.</p></article>
+      <article><h3>Electronics and software</h3><p>The SiC inverter, an STM32 control board, sensors, BMS and software. KiCad projects, code on GitHub.</p></article>
+      <article><h3>Designers and engineers</h3><p>CAD, strength calculations, rotors, batteries, regulations. Reviewing and challenging our calculations is the most valuable help.</p></article>
+      <article><h3>Pupils and students</h3><p>Python calculations, CAD models, 3D printing, measurements, documentation, project and thesis topics. A real machine is the best way to learn.</p></article>
+    </div>
+    <p class="note">Work on the drive, the 400&nbsp;V battery and rotor tests is done only by qualified adults. Younger participants take part in design, calculations and 3D printing under adult supervision.</p>
+    <h3 class="join-head">How to join</h3>
     <ol class="join-steps">
       <li><h3><a href="https://github.com/mactom75/helimac/discussions">Say hello</a></h3><p>in GitHub Discussions, under Introductions.</p></li>
       <li><h3><a href="https://github.com/mactom75/helimac/blob/main/CONTRIBUTING.md">Read the rules</a></h3><p>CONTRIBUTING and SAFETY — short and to the point.</p></li>
       <li><h3><a href="https://github.com/mactom75/helimac/issues">Pick a task</a></h3><p>from Issues, or propose your own.</p></li>
     </ol>
-    <h3>We especially welcome</h3>
-    <ul class="wanted">
-      <li>aircraft structural engineers</li>
-      <li>rotor and flight-dynamics specialists</li>
-      <li>power-electronics and battery engineers</li>
-      <li>helicopter pilots</li>
-      <li>aircraft mechanics</li>
-      <li>people who know light-aircraft regulations in their country</li>
-    </ul>
   </section>
 
   <section id="contact" class="wrap">
