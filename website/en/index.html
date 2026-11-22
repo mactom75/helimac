@@ -12,8 +12,11 @@
 <meta property="og:description" content="A radically simple electric coaxial helicopter steered by weight shift. Open-source project.">
 <meta property="og:url" content="https://helimac.pl/en/">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#e6eaec">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:image" content="https://helimac.pl/assets/img/og-helimac.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/archivo-latin-standard-italic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/archivo-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/style.css">
 <script>document.documentElement.classList.replace("no-js","js")</script>
@@ -24,7 +27,7 @@
 
 <div class="head-bar">
 <header class="wrap site-head" id="site-head">
-  <a class="wordmark" href="/en/">HELIMAC</a>
+  <a class="brand" href="/en/" aria-label="HELIMAC — home"><img src="/assets/img/logo-600.webp" srcset="/assets/img/logo-320.webp 320w, /assets/img/logo-600.webp 600w, /assets/img/logo-1200.webp 1200w" sizes="110px" width="320" height="137" alt="HELIMAC"></a>
   <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
   <nav id="menu" aria-label="Main">
     <ul>
@@ -42,132 +45,151 @@
 
 <main id="content">
   <div class="wrap hero">
+    <div class="hero-top">
+    <div class="hero-text">
     <h1>A single-seat electric helicopter, steered like a hang glider.</h1>
     <p class="lede">HELIMAC is a coaxial helicopter with an electric powertrain, designed in Bydgoszcz, Poland, to be as simple as possible: easy to transport, to fly and to maintain. The pilot steers by shifting body weight. The project is open — we publish drawings, calculations, software, test results and mistakes.</p>
     <div class="actions">
-      <a class="btn btn-primary" href="https://github.com/mactom75/helimac">Repository on GitHub</a>
-      <a class="btn" href="#history">Project history</a>
+      <a class="btn btn-primary" href="https://github.com/mactom75/helimac"><span>Repository on GitHub</span></a>
+      <a class="btn" href="#history"><span>Project history</span></a>
     </div>
     <p class="status">Stage 1 of 5: powertrain and power supply on the dynamometer.</p>
+    </div>
+    <figure class="hero-logo"><img src="/assets/img/logo-600.webp" srcset="/assets/img/logo-320.webp 320w, /assets/img/logo-600.webp 600w, /assets/img/logo-1200.webp 1200w" sizes="(min-width: 62rem) 38rem, 92vw" width="1200" height="516" alt="HELIMAC" fetchpriority="high"></figure>
+    </div>
 
     <figure class="drawing">
       <svg viewBox="0 0 1060 680" role="img" aria-labelledby="dwg-title dwg-desc" xmlns="http://www.w3.org/2000/svg">
   <title id="dwg-title">HELIMAC rev J2, side view</title>
-  <desc id="dwg-desc">Technical drawing of a coaxial helicopter: two 4500&nbsp;mm rotors at 2395 and 2785&nbsp;mm above ground, with the transmission, motor, skid frame, pilot seat and battery below.</desc>
+  <desc id="dwg-desc">Technical drawing: two counter-rotating 4500&nbsp;mm rotors at 2395 and 2785&nbsp;mm above ground. Below them the swashplate with two actuators, transmission and motor, and the suspension plate with carabiner. The machine stands on three carbon-tube legs; the pilot sits on a saddle hung below the drive, with the inverter and battery behind.</desc>
   <defs>
     <marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
       <path d="M0 1.5 L10 5 L0 8.5 z" class="d-arrow"/>
     </marker>
   </defs>
 
-  <!-- oś wirnika -->
+  <!-- oś wirników -->
   <line x1="500" y1="40" x2="500" y2="636" class="d-center"/>
 
   <!-- grunt -->
-  <line x1="270" y1="620" x2="740" y2="620" class="d-ground"/>
+  <line x1="250" y1="620" x2="760" y2="620" class="d-ground"/>
   <g class="d-hatch">
-    <line x1="280" y1="632" x2="292" y2="620"/><line x1="304" y1="632" x2="316" y2="620"/><line x1="328" y1="632" x2="340" y2="620"/>
-    <line x1="352" y1="632" x2="364" y2="620"/><line x1="376" y1="632" x2="388" y2="620"/><line x1="400" y1="632" x2="412" y2="620"/>
-    <line x1="424" y1="632" x2="436" y2="620"/><line x1="448" y1="632" x2="460" y2="620"/><line x1="472" y1="632" x2="484" y2="620"/>
-    <line x1="496" y1="632" x2="508" y2="620"/><line x1="520" y1="632" x2="532" y2="620"/><line x1="544" y1="632" x2="556" y2="620"/>
-    <line x1="568" y1="632" x2="580" y2="620"/><line x1="592" y1="632" x2="604" y2="620"/><line x1="616" y1="632" x2="628" y2="620"/>
-    <line x1="640" y1="632" x2="652" y2="620"/><line x1="664" y1="632" x2="676" y2="620"/><line x1="688" y1="632" x2="700" y2="620"/>
-    <line x1="712" y1="632" x2="724" y2="620"/>
+    <line x1="262" y1="632" x2="274" y2="620"/><line x1="286" y1="632" x2="298" y2="620"/><line x1="310" y1="632" x2="322" y2="620"/>
+    <line x1="334" y1="632" x2="346" y2="620"/><line x1="358" y1="632" x2="370" y2="620"/><line x1="382" y1="632" x2="394" y2="620"/>
+    <line x1="406" y1="632" x2="418" y2="620"/><line x1="430" y1="632" x2="442" y2="620"/><line x1="454" y1="632" x2="466" y2="620"/>
+    <line x1="478" y1="632" x2="490" y2="620"/><line x1="502" y1="632" x2="514" y2="620"/><line x1="526" y1="632" x2="538" y2="620"/>
+    <line x1="550" y1="632" x2="562" y2="620"/><line x1="574" y1="632" x2="586" y2="620"/><line x1="598" y1="632" x2="610" y2="620"/>
+    <line x1="622" y1="632" x2="634" y2="620"/><line x1="646" y1="632" x2="658" y2="620"/><line x1="670" y1="632" x2="682" y2="620"/>
+    <line x1="694" y1="632" x2="706" y2="620"/><line x1="718" y1="632" x2="730" y2="620"/><line x1="742" y1="632" x2="754" y2="620"/>
   </g>
 
   <!-- wirnik górny (2785&nbsp;mm) -->
-  <rect x="50" y="61" width="900" height="5" rx="2" class="d-body"/>
-  <rect x="50" y="60" width="26" height="7" class="d-tip"/>
-  <rect x="924" y="60" width="26" height="7" class="d-tip"/>
-  <rect x="484" y="54" width="32" height="18" rx="3" class="d-body"/>
+  <path d="M50 63 L476 60 L524 60 L950 63 L950 66 L524 67 L476 67 L50 66 z" class="d-body"/>
+  <path d="M50 61.5 L92 61 L92 67 L50 66.5 z" class="d-tip"/>
+  <path d="M908 61 L950 61.5 L950 66.5 L908 67 z" class="d-tip"/>
+  <rect x="482" y="53" width="36" height="20" rx="4" class="d-hub"/>
 
-  <!-- maszt współosiowy -->
-  <rect x="494" y="70" width="12" height="70" class="d-body"/>
+  <!-- maszt -->
+  <rect x="494" y="72" width="12" height="62" class="d-body"/>
 
   <!-- wirnik dolny (2395&nbsp;mm) -->
-  <rect x="50" y="139" width="900" height="5" rx="2" class="d-body"/>
-  <rect x="50" y="138" width="26" height="7" class="d-tip"/>
-  <rect x="924" y="138" width="26" height="7" class="d-tip"/>
-  <rect x="482" y="132" width="36" height="18" rx="3" class="d-body"/>
+  <path d="M50 141 L476 138 L524 138 L950 141 L950 144 L524 145 L476 145 L50 144 z" class="d-body"/>
+  <path d="M50 139.5 L92 139 L92 145 L50 144.5 z" class="d-tip"/>
+  <path d="M908 139 L950 139.5 L950 144.5 L908 145 z" class="d-tip"/>
+  <rect x="480" y="131" width="40" height="20" rx="4" class="d-hub"/>
 
-  <!-- tarcza sterująca, przekładnia cykloidalna, silnik -->
-  <rect x="470" y="154" width="60" height="10" rx="2" class="d-body"/>
-  <rect x="462" y="166" width="76" height="50" rx="6" class="d-body"/>
-  <rect x="468" y="218" width="64" height="40" rx="4" class="d-body"/>
-  <line x1="476" y1="228" x2="524" y2="228" class="d-ink" stroke-width="1.2"/>
-  <line x1="476" y1="238" x2="524" y2="238" class="d-ink" stroke-width="1.2"/>
-  <line x1="476" y1="248" x2="524" y2="248" class="d-ink" stroke-width="1.2"/>
+  <!-- tarcza sterująca (skok ogólny) z 2 siłownikami -->
+  <rect x="466" y="154" width="68" height="9" rx="2" class="d-accent"/>
+  <rect x="446" y="160" width="14" height="22" rx="2" class="d-body"/>
+  <rect x="540" y="160" width="14" height="22" rx="2" class="d-body"/>
+  <!-- przekładnia cykloidalna z żebrami chłodzenia -->
+  <rect x="458" y="166" width="84" height="48" rx="6" class="d-body"/>
+  <g class="d-fin"><line x1="466" y1="172" x2="466" y2="208"/><line x1="476" y1="172" x2="476" y2="208"/><line x1="486" y1="172" x2="486" y2="208"/><line x1="514" y1="172" x2="514" y2="208"/><line x1="524" y1="172" x2="524" y2="208"/><line x1="534" y1="172" x2="534" y2="208"/></g>
+  <!-- silnik -->
+  <rect x="466" y="216" width="68" height="40" rx="5" class="d-body"/>
+  <line x1="472" y1="236" x2="528" y2="236" class="d-thin"/>
+  <!-- płyta zawieszenia + karabinek -->
+  <rect x="446" y="258" width="108" height="7" rx="2" class="d-ink-fill"/>
+  <path d="M503 265 q-6 4 0 10 q6 4 0 10" class="d-ink" stroke-width="3"/>
 
-  <!-- kolumna i rama -->
-  <path d="M506 258 L506 300 Q506 310 516 318 L546 342 L546 500" class="d-ink" stroke-width="5"/>
-  <path d="M440 500 L600 500" class="d-ink" stroke-width="5"/>
-  <!-- nogi CFRP -->
-  <path d="M462 500 L392 612" class="d-ink" stroke-width="4.5"/>
-  <path d="M584 500 L644 612" class="d-ink" stroke-width="4.5"/>
-  <!-- płozy -->
-  <path d="M300 598 Q304 612 322 612 L690 612" class="d-ink" stroke-width="4.5"/>
-  <!-- siedzisko i oparcie -->
-  <path d="M440 488 L528 488 L540 380" class="d-ink" stroke-width="4"/>
-  <!-- akumulator 400&nbsp;V -->
-  <rect x="552" y="392" width="62" height="104" rx="4" class="d-body"/>
-  <line x1="566" y1="410" x2="600" y2="410" class="d-ink" stroke-width="1.2"/>
-  <line x1="566" y1="420" x2="600" y2="420" class="d-ink" stroke-width="1.2"/>
-  <!-- falownik MC-P -->
-  <rect x="520" y="270" width="22" height="46" rx="2" class="d-body"/>
-  <!-- podnóżek -->
-  <path d="M376 586 L420 586 L440 500" class="d-ink" stroke-width="3"/>
-  <!-- dźwignia skoku ogólnego -->
-  <path d="M452 484 L414 446" class="d-ink" stroke-width="3"/>
-  <circle cx="412" cy="444" r="5" class="d-fill"/>
+  <!-- trzy nogi CFRP (w widoku z boku: przednia i dwie tylne nakładające się) -->
+  <path d="M458 262 L312 612" class="d-leg"/>
+  <path d="M542 262 L688 612" class="d-leg"/>
+  <path d="M500 262 L560 612" class="d-leg-far"/>
+  <circle cx="312" cy="613" r="6" class="d-ink-fill"/>
+  <circle cx="688" cy="613" r="6" class="d-ink-fill"/>
+  <circle cx="560" cy="613" r="5" class="d-ink-fill"/>
 
-  <!-- pilot 110&nbsp;kg — linia widmowa (część przyległa) -->
+  <!-- kręgosłup: rura od karabinka do siodełka -->
+  <path d="M503 285 L516 300 L520 466" class="d-ink" stroke-width="5"/>
+  <!-- falownik MC-P i akumulator na kręgosłupie -->
+  <rect x="524" y="318" width="24" height="44" rx="2" class="d-body"/>
+  <rect x="524" y="368" width="44" height="92" rx="4" class="d-accent"/>
+  <line x1="532" y1="384" x2="560" y2="384" class="d-thin-w"/>
+  <line x1="532" y1="394" x2="560" y2="394" class="d-thin-w"/>
+  <!-- siodełko -->
+  <path d="M470 462 Q500 456 528 464 L524 470 Q498 466 472 468 z" class="d-ink-fill"/>
+  <!-- podnóżek (odwrócone T) -->
+  <path d="M520 470 L478 544" class="d-ink" stroke-width="3.5"/>
+  <path d="M456 545 L500 545" class="d-ink" stroke-width="5"/>
+
+  <!-- pilot 110 kg — linia widmowa -->
   <g class="d-phantom">
-    <circle cx="482" cy="336" r="21"/>
-    <path d="M490 360 Q512 372 520 420 L526 482"/>
-    <path d="M468 362 Q456 400 460 440 L470 484"/>
-    <path d="M470 484 L404 488 Q392 490 392 504 L392 580"/>
-    <path d="M526 482 L420 482"/>
-    <path d="M476 382 L430 430 L414 444"/>
+    <circle cx="488" cy="305" r="21"/>
+    <path d="M466 300 Q486 276 510 298"/>
+    <path d="M500 325 Q511 340 511 380 L509 458"/>
+    <path d="M476 326 Q460 352 462 392 Q463 428 470 456"/>
+    <path d="M470 456 L420 464 L450 540 L488 546"/>
+    <path d="M509 466 L428 480 L456 538"/>
+    <path d="M492 338 L458 378 L402 398"/>
   </g>
 
   <!-- wymiar: średnica wirnika -->
   <line x1="50" y1="58" x2="50" y2="18" class="d-ext"/>
   <line x1="950" y1="58" x2="950" y2="18" class="d-ext"/>
   <line x1="50" y1="28" x2="950" y2="28" class="d-dim dim-draw" pathLength="1" marker-start="url(#arr)" marker-end="url(#arr)"/>
-  <g class="dim-label"><rect x="446" y="14" width="108" height="26" fill="var(--paper)"/>
-  <text x="500" y="34" text-anchor="middle" class="d-text">Ø&nbsp;4500</text></g>
+  <g class="dim-label"><rect x="440" y="13" width="120" height="28" class="d-label-bg"/>
+  <text x="500" y="34" text-anchor="middle" class="d-text">Ø 4500</text></g>
 
   <!-- wymiary: wysokości wirników -->
   <line x1="954" y1="141" x2="1000" y2="141" class="d-ext"/>
   <line x1="954" y1="63" x2="1050" y2="63" class="d-ext"/>
-  <line x1="740" y1="620" x2="1050" y2="620" class="d-ext"/>
+  <line x1="760" y1="620" x2="1050" y2="620" class="d-ext"/>
   <line x1="990" y1="620" x2="990" y2="141" class="d-dim dim-draw late" pathLength="1" marker-start="url(#arr)" marker-end="url(#arr)"/>
   <line x1="1040" y1="620" x2="1040" y2="63" class="d-dim dim-draw later" pathLength="1" marker-start="url(#arr)" marker-end="url(#arr)"/>
   <g class="dim-label">
-    <rect x="972" y="352" width="36" height="66" fill="var(--paper)"/>
+    <rect x="972" y="350" width="36" height="70" class="d-label-bg"/>
     <text transform="translate(997 385) rotate(-90)" text-anchor="middle" class="d-text">2395</text>
-    <rect x="1022" y="310" width="36" height="66" fill="var(--paper)"/>
+    <rect x="1022" y="308" width="36" height="70" class="d-label-bg"/>
     <text transform="translate(1047 343) rotate(-90)" text-anchor="middle" class="d-text">2785</text>
   </g>
 
   <!-- odnośniki -->
   <g class="dim-label callouts">
-    <line x1="230" y1="100" x2="230" y2="66" class="d-ext"/><circle cx="230" cy="64" r="2.5" class="d-arrow"/>
+    <line x1="230" y1="100" x2="230" y2="67" class="d-ext"/><circle cx="230" cy="64" r="2.5" class="d-arrow"/>
     <text x="236" y="98" class="d-note">upper rotor</text>
     <line x1="230" y1="176" x2="230" y2="146" class="d-ext"/><circle cx="230" cy="143" r="2.5" class="d-arrow"/>
     <text x="236" y="174" class="d-note">lower rotor</text>
-    <line x1="462" y1="190" x2="380" y2="210" class="d-ext"/>
-    <text x="374" y="215" text-anchor="end" class="d-note">cycloidal transmission + motor</text>
-    <line x1="542" y1="292" x2="640" y2="292" class="d-ext"/>
-    <text x="646" y="297" class="d-note">MC-P inverter</text>
-    <line x1="614" y1="444" x2="700" y2="444" class="d-ext"/>
-    <text x="706" y="449" class="d-note">400&nbsp;V battery</text>
-    <line x1="462" y1="320" x2="380" y2="300" class="d-ext"/>
-    <text x="374" y="300" text-anchor="end" class="d-note">pilot up to 110&nbsp;kg</text>
+    <line x1="560" y1="158" x2="640" y2="158" class="d-ext"/>
+    <text x="646" y="163" class="d-note">swashplate, 2 actuators</text>
+    <line x1="542" y1="200" x2="640" y2="200" class="d-ext"/>
+    <text x="646" y="205" class="d-note">cycloidal transmission + motor</text>
+    <line x1="554" y1="262" x2="640" y2="250" class="d-ext"/>
+    <text x="646" y="255" class="d-note">suspension plate + carabiner</text>
+    <line x1="548" y1="340" x2="640" y2="320" class="d-ext"/>
+    <text x="646" y="325" class="d-note">MC-P inverter</text>
+    <line x1="568" y1="414" x2="700" y2="414" class="d-ext"/>
+    <text x="706" y="419" class="d-note">400 V battery</text>
+    <line x1="470" y1="300" x2="380" y2="280" class="d-ext"/>
+    <text x="374" y="285" text-anchor="end" class="d-note">pilot up to 110 kg</text>
+    <line x1="472" y1="465" x2="300" y2="465" class="d-ext"/>
+    <text x="294" y="470" text-anchor="end" class="d-note">saddle and footrest</text>
+    <line x1="350" y1="520" x2="290" y2="540" class="d-ext"/>
+    <text x="284" y="545" text-anchor="end" class="d-note">3 CFRP legs Ø45</text>
   </g>
 </svg>
-      <ul class="legend" aria-hidden="true"><li>upper and lower rotor</li><li>transmission + motor</li><li>MC-P inverter</li><li>400 V battery</li><li>pilot up to 110 kg</li><li>skid frame</li></ul>
-      <figcaption>Side view, design rev J2. Dimensions in millimetres: rotor diameter and rotor heights above ground. The pilot is drawn as a phantom line.</figcaption>
+      <ul class="legend" aria-hidden="true"><li>coaxial rotors</li><li>swashplate</li><li>drive</li><li>plate and carabiner</li><li>inverter, battery</li><li>saddle, footrest</li><li>3 CFRP legs</li><li>pilot up to 110 kg</li></ul>
+      <figcaption>Side view, design rev J2. As on Schöffmann’s machine: the drive above the head, three carbon-tube legs, the pilot hanging in a harness on a saddle. Dimensions in millimetres; the pilot is drawn as a dashed line.</figcaption>
     </figure>
   </div>
 
@@ -251,7 +273,7 @@
     </div>
   </section>
 
-  <section id="plan" class="wrap">
+  <section id="plan" class="wrap band-carbon">
     <h2>Build plan</h2>
     <p class="intro">The test order follows the safety rules: a person gets on board only after bench tests, tethered tests and uncrewed flights.</p>
     <ol class="stages">
@@ -385,8 +407,9 @@
   </section>
 </main>
 
-<footer class="wrap site-foot">
-  <p>HELIMAC, Tomasz Maciąg, Bydgoszcz, Poland. Open-source project provided without warranty.</p>
+<footer class="wrap site-foot band-carbon">
+  <a class="foot-logo" href="/en/" aria-label="HELIMAC — home"><img src="/assets/img/logo-dark-320.webp" srcset="/assets/img/logo-dark-320.webp 320w, /assets/img/logo-dark-600.webp 600w" sizes="180px" width="320" height="142" alt="HELIMAC" loading="lazy"></a>
+  <p>Tomasz Maciąg, Bydgoszcz, Poland. Open-source project provided without warranty.</p>
   <p>Licences: hardware CERN-OHL-S-2.0, software GPL-3.0-or-later, documentation CC BY-SA 4.0. This site uses no cookies and no tracking.</p>
 </footer>
 </body>

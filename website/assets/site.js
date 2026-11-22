@@ -40,3 +40,14 @@
   }, { rootMargin: '-30% 0px -60% 0px' });
   Object.keys(links).forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
 })();
+
+// Logo w nagłówku pojawia się dopiero, gdy duże logo z części otwierającej zniknie z ekranu.
+(function () {
+  var big = document.querySelector('.hero-logo');
+  var bar = document.querySelector('.head-bar');
+  if (!big || !bar || !('IntersectionObserver' in window)) return;
+  bar.classList.add('brand-auto');
+  new IntersectionObserver(function (e) {
+    bar.classList.toggle('show-brand', !e[0].isIntersecting);
+  }, { rootMargin: '-70px 0px 0px 0px' }).observe(big);
+})();
