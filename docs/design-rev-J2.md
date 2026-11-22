@@ -3,6 +3,10 @@
 **Status:** current design revision. Revisions H / H1 are withdrawn.
 Rev J was created when the standard pilot mass was raised from 90 kg to **110 kg** (height 1.70–1.90 m).
 
+## CAD graphics
+
+Rendered views and sections from the rev J2 CAD model: [drive unit](../hardware/README.md#drive-unit-rev-j2) · [motor](../hardware/motor/README.md) · [cycloidal transmission](../hardware/transmission/README.md) · [blades](../hardware/blades/README.md) · [MC-P inverter](../electronics/mc-p-inverter/README.md). Also shown on [helimac.pl](https://helimac.pl/en/#drive).
+
 ## Key figures
 
 | Quantity | Rev J2 | Rev H (for reference) |

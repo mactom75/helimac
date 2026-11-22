@@ -11,6 +11,10 @@ Project progress — newest entries first. Entries may be in English and/or Poli
 - Design idea stated: inspired by Dr. Franz Schöffmann's backpack helicopter — radical simplicity, weight-shift piloting like a hang glider, easy transport.
 - Controls: direction by weight shift (rigid hubs, no cyclic); collective via swashplate with 2 electric actuators; yaw by differential pitch.
 
+## 2026-11-22 — CAD graphics rev J2
+
+- 14 graphics from the rev J2 CAD model added to the assembly pages: drive unit, motor, cycloidal transmission, blades (3D-printed core segments), MC-P inverter.
+
 ## 2026-11-22 — Public repository
 
 - HELIMAC published as an open-source project on GitHub.

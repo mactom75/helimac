@@ -3,6 +3,23 @@
 **Current revision: rev D1** (design rev J2, pilot 110 kg) · **Status:** 📐 designed, DRC clean — 400 V design review pending before manufacture
 Revisions B, C and D are withdrawn — do not build.
 
+## CAD graphics (rev J2)
+
+From the rev J2 CAD model (design chat, 22.11.2026). Click an image for full size.
+
+[![Component side: isolated gate drivers, current sensors, film capacitors, power terminals along the top edge](../../website/assets/img/cad/20-falownik-mc-p-plytka-gora-1400.webp)](../../website/assets/img/cad/20-falownik-mc-p-plytka-gora-1400.webp)  
+*Component side: isolated gate drivers, current sensors, film capacitors, power terminals along the top edge*
+
+[![Transistor side: six SiC transistors in TO-247-4 packages, clipped to the heatsink](../../website/assets/img/cad/21-falownik-mc-p-plytka-dol-1400.webp)](../../website/assets/img/cad/21-falownik-mc-p-plytka-dol-1400.webp)  
+*Transistor side: six SiC transistors in TO-247-4 packages, clipped to the heatsink*
+
+[![Board in 3D (simplified component bodies from package dimensions)](../../website/assets/img/cad/22-falownik-mc-p-3d-gora-1400.webp)](../../website/assets/img/cad/22-falownik-mc-p-3d-gora-1400.webp)  
+*Board in 3D (simplified component bodies from package dimensions)*
+
+[![With the 190 × 80 mm heatsink and two 80 mm fans blowing across the fins](../../website/assets/img/cad/23-falownik-mc-p-3d-z-radiatorem-1400.webp)](../../website/assets/img/cad/23-falownik-mc-p-3d-z-radiatorem-1400.webp)  
+*With the 190 × 80 mm heatsink and two 80 mm fans blowing across the fins*
+
+
 Rev D1 = rev D with one BOM change: Q1–Q6 **C3M0016120K** instead of C3M0021120K (same TO-247-4 footprint; board and Gerbers unchanged).
 
 ## Operating point (rev J2)
