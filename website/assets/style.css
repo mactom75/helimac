@@ -395,3 +395,16 @@ ul.ticks li::before { content: ""; position: absolute; left: 0; top: 0.6em; widt
 .pitch .parts { margin-top: 1.25rem; }
 .pitch .parts ul { margin: 0; padding-left: 1.1rem; font-size: var(--step--1); color: var(--ink-soft); }
 .pitch .parts ul li + li { margin-top: 0.35rem; }
+
+/* obliczenia MES silnika */
+.fem { margin-top: 1.75rem; padding: clamp(1rem, 3vw, 1.75rem); background: var(--paper); border-left: 5px solid var(--red); }
+.fem h5 { font-size: var(--step-1); font-style: italic; font-weight: 800; margin: 0 0 0.4rem; }
+.fem > p { max-width: var(--measure); margin: 0; }
+.fem-steps { max-width: var(--measure); margin: 0.75rem 0 0; padding-left: 1.4rem; color: var(--ink-soft); }
+.fem-steps li + li { margin-top: 0.45rem; }
+.fem-steps li::marker { color: var(--red-deep); font-weight: 800; }
+.fem .fem-result { margin-top: 1rem; color: var(--ink); }
+.fem .note { margin-top: 0.6rem; }
+.fem-gallery { margin-top: 1.25rem !important; }
+@media (min-width: 40rem) { .fem-gallery { grid-template-columns: repeat(2, 1fr); } }
+.fem-gallery img { padding: 0.25rem; }
