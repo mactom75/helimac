@@ -327,3 +327,5 @@ p { max-width: var(--measure); margin: 0 0 1rem; }
 @media (min-width: 56rem) { .support { grid-template-columns: 1fr auto; } }
 .support p { color: var(--ink-soft); margin: 0; }
 .btn-big { min-height: 58px; padding: 0 2rem; font-size: var(--step-0); justify-self: start; }
+@media (min-width: 62rem) { .gallery.concept { grid-template-columns: repeat(4, 1fr); } }
+.gallery.concept img { aspect-ratio: 4 / 3; object-position: center; }
