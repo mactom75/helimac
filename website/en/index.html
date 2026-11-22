@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HELIMAC — open-source single-seat electric helicopter</title>
+<meta name="description" content="HELIMAC is a single-seat coaxial helicopter with an electric powertrain, designed in Bydgoszcz, Poland, and published as open source.">
+<link rel="canonical" href="https://helimac.pl/en/">
+<link rel="alternate" hreflang="pl" href="https://helimac.pl/">
+<link rel="alternate" hreflang="en" href="https://helimac.pl/en/">
+<meta property="og:title" content="HELIMAC — open-source single-seat electric helicopter">
+<meta property="og:description" content="A coaxial electric helicopter built in the open: drawings, calculations, software and test results.">
+<meta property="og:url" content="https://helimac.pl/en/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#e6eaec">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/archivo-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="wrap site-head">
+  <a class="wordmark" href="/en/">HELIMAC</a>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="#design">Design</a></li>
+      <li><a href="#plan">Plan</a></li>
+      <li><a href="#log">Build log</a></li>
+      <li><a href="#history">History</a></li>
+      <li><a href="#join">Get involved</a></li>
+      <li><a class="lang" href="/" hreflang="pl" lang="pl">Polski</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="content">
+  <div class="wrap hero">
+    <h1>A single-seat electric helicopter, built in the open.</h1>
+    <p class="lede">HELIMAC is a coaxial helicopter with an electric powertrain, designed from scratch in Bydgoszcz, Poland. We publish everything: drawings, calculations, software, test results — and mistakes.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="https://github.com/mactom75/helimac">Repository on GitHub</a>
+      <a class="btn" href="#history">Project history</a>
+    </div>
+    <p class="status">Stage 1 of 5: powertrain and power supply on the dynamometer.</p>
+
+    <figure class="drawing">
+      <svg viewBox="0 0 1060 680" role="img" aria-labelledby="dwg-title dwg-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="dwg-title">HELIMAC rev J2, side view</title>
+  <desc id="dwg-desc">Technical drawing of a coaxial helicopter: two 4500&nbsp;mm rotors at 2395 and 2785&nbsp;mm above ground, with the transmission, motor, skid frame, pilot seat and battery below.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M0 1.5 L10 5 L0 8.5 z" class="d-arrow"/>
+    </marker>
+  </defs>
+
+  <!-- oś wirnika -->
+  <line x1="500" y1="40" x2="500" y2="636" class="d-center"/>
+
+  <!-- grunt -->
+  <line x1="270" y1="620" x2="740" y2="620" class="d-ground"/>
+  <g class="d-hatch">
+    <line x1="280" y1="632" x2="292" y2="620"/><line x1="304" y1="632" x2="316" y2="620"/><line x1="328" y1="632" x2="340" y2="620"/>
+    <line x1="352" y1="632" x2="364" y2="620"/><line x1="376" y1="632" x2="388" y2="620"/><line x1="400" y1="632" x2="412" y2="620"/>
+    <line x1="424" y1="632" x2="436" y2="620"/><line x1="448" y1="632" x2="460" y2="620"/><line x1="472" y1="632" x2="484" y2="620"/>
+    <line x1="496" y1="632" x2="508" y2="620"/><line x1="520" y1="632" x2="532" y2="620"/><line x1="544" y1="632" x2="556" y2="620"/>
+    <line x1="568" y1="632" x2="580" y2="620"/><line x1="592" y1="632" x2="604" y2="620"/><line x1="616" y1="632" x2="628" y2="620"/>
+    <line x1="640" y1="632" x2="652" y2="620"/><line x1="664" y1="632" x2="676" y2="620"/><line x1="688" y1="632" x2="700" y2="620"/>
+    <line x1="712" y1="632" x2="724" y2="620"/>
+  </g>
+
+  <!-- wirnik górny (2785&nbsp;mm) -->
+  <rect x="50" y="61" width="900" height="5" rx="2" class="d-body"/>
+  <rect x="50" y="60" width="26" height="7" class="d-tip"/>
+  <rect x="924" y="60" width="26" height="7" class="d-tip"/>
+  <rect x="484" y="54" width="32" height="18" rx="3" class="d-body"/>
+
+  <!-- maszt współosiowy -->
+  <rect x="494" y="70" width="12" height="70" class="d-body"/>
+
+  <!-- wirnik dolny (2395&nbsp;mm) -->
+  <rect x="50" y="139" width="900" height="5" rx="2" class="d-body"/>
+  <rect x="50" y="138" width="26" height="7" class="d-tip"/>
+  <rect x="924" y="138" width="26" height="7" class="d-tip"/>
+  <rect x="482" y="132" width="36" height="18" rx="3" class="d-body"/>
+
+  <!-- tarcza sterująca, przekładnia cykloidalna, silnik -->
+  <rect x="470" y="154" width="60" height="10" rx="2" class="d-body"/>
+  <rect x="462" y="166" width="76" height="50" rx="6" class="d-body"/>
+  <rect x="468" y="218" width="64" height="40" rx="4" class="d-body"/>
+  <line x1="476" y1="228" x2="524" y2="228" class="d-ink" stroke-width="1.2"/>
+  <line x1="476" y1="238" x2="524" y2="238" class="d-ink" stroke-width="1.2"/>
+  <line x1="476" y1="248" x2="524" y2="248" class="d-ink" stroke-width="1.2"/>
+
+  <!-- kolumna i rama -->
+  <path d="M506 258 L506 300 Q506 310 516 318 L546 342 L546 500" class="d-ink" stroke-width="5"/>
+  <path d="M440 500 L600 500" class="d-ink" stroke-width="5"/>
+  <!-- nogi CFRP -->
+  <path d="M462 500 L392 612" class="d-ink" stroke-width="4.5"/>
+  <path d="M584 500 L644 612" class="d-ink" stroke-width="4.5"/>
+  <!-- płozy -->
+  <path d="M300 598 Q304 612 322 612 L690 612" class="d-ink" stroke-width="4.5"/>
+  <!-- siedzisko i oparcie -->
+  <path d="M440 488 L528 488 L540 380" class="d-ink" stroke-width="4"/>
+  <!-- akumulator 400&nbsp;V -->
+  <rect x="552" y="392" width="62" height="104" rx="4" class="d-body"/>
+  <line x1="566" y1="410" x2="600" y2="410" class="d-ink" stroke-width="1.2"/>
+  <line x1="566" y1="420" x2="600" y2="420" class="d-ink" stroke-width="1.2"/>
+  <!-- falownik MC-P -->
+  <rect x="520" y="270" width="22" height="46" rx="2" class="d-body"/>
+  <!-- podnóżek -->
+  <path d="M376 586 L420 586 L440 500" class="d-ink" stroke-width="3"/>
+  <!-- dźwignia skoku ogólnego -->
+  <path d="M452 484 L414 446" class="d-ink" stroke-width="3"/>
+  <circle cx="412" cy="444" r="5" class="d-fill"/>
+
+  <!-- pilot 110&nbsp;kg — linia widmowa (część przyległa) -->
+  <g class="d-phantom">
+    <circle cx="482" cy="336" r="21"/>
+    <path d="M490 360 Q512 372 520 420 L526 482"/>
+    <path d="M468 362 Q456 400 460 440 L470 484"/>
+    <path d="M470 484 L404 488 Q392 490 392 504 L392 580"/>
+    <path d="M526 482 L420 482"/>
+    <path d="M476 382 L430 430 L414 444"/>
+  </g>
+
+  <!-- wymiar: średnica wirnika -->
+  <line x1="50" y1="58" x2="50" y2="18" class="d-ext"/>
+  <line x1="950" y1="58" x2="950" y2="18" class="d-ext"/>
+  <line x1="50" y1="28" x2="950" y2="28" class="d-dim dim-draw" pathLength="1" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  <g class="dim-label"><rect x="446" y="14" width="108" height="26" fill="var(--paper)"/>
+  <text x="500" y="34" text-anchor="middle" class="d-text">Ø&nbsp;4500</text></g>
+
+  <!-- wymiary: wysokości wirników -->
+  <line x1="954" y1="141" x2="1000" y2="141" class="d-ext"/>
+  <line x1="954" y1="63" x2="1050" y2="63" class="d-ext"/>
+  <line x1="740" y1="620" x2="1050" y2="620" class="d-ext"/>
+  <line x1="990" y1="620" x2="990" y2="141" class="d-dim dim-draw late" pathLength="1" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  <line x1="1040" y1="620" x2="1040" y2="63" class="d-dim dim-draw later" pathLength="1" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  <g class="dim-label">
+    <rect x="972" y="352" width="36" height="66" fill="var(--paper)"/>
+    <text transform="translate(997 385) rotate(-90)" text-anchor="middle" class="d-text">2395</text>
+    <rect x="1022" y="310" width="36" height="66" fill="var(--paper)"/>
+    <text transform="translate(1047 343) rotate(-90)" text-anchor="middle" class="d-text">2785</text>
+  </g>
+
+  <!-- odnośniki -->
+  <g class="dim-label callouts">
+    <line x1="230" y1="100" x2="230" y2="66" class="d-ext"/><circle cx="230" cy="64" r="2.5" class="d-arrow"/>
+    <text x="236" y="98" class="d-note">upper rotor</text>
+    <line x1="230" y1="176" x2="230" y2="146" class="d-ext"/><circle cx="230" cy="143" r="2.5" class="d-arrow"/>
+    <text x="236" y="174" class="d-note">lower rotor</text>
+    <line x1="462" y1="190" x2="380" y2="210" class="d-ext"/>
+    <text x="374" y="215" text-anchor="end" class="d-note">cycloidal transmission + motor</text>
+    <line x1="542" y1="292" x2="640" y2="292" class="d-ext"/>
+    <text x="646" y="297" class="d-note">MC-P inverter</text>
+    <line x1="614" y1="444" x2="700" y2="444" class="d-ext"/>
+    <text x="706" y="449" class="d-note">400&nbsp;V battery</text>
+    <line x1="462" y1="320" x2="380" y2="300" class="d-ext"/>
+    <text x="374" y="300" text-anchor="end" class="d-note">pilot up to 110&nbsp;kg</text>
+  </g>
+</svg>
+      <figcaption>Side view, design rev J2. Dimensions in millimetres: rotor diameter and rotor heights above ground. The pilot is drawn as a phantom line.</figcaption>
+    </figure>
+  </div>
+
+  <section id="design" class="wrap">
+    <div class="split">
+      <div>
+        <h2>Design rev J2</h2>
+        <p class="intro">Two counter-rotating rotors on one axis, no tail rotor. An electric motor drives them through a cycloidal transmission; the MC-P inverter and control electronics are designed in-house.</p>
+        <p>The target is the ultralight category of Annex I to Regulation (EU) 2018/1139: a single-seat helicopter with a maximum take-off mass of up to 300&nbsp;kg, which falls under national rules rather than EASA certification.</p>
+      </div>
+      <div>
+        <div class="title-block">
+          <table>
+            <caption>HELIMAC rev J2 <span>as of 21 Nov 2026</span></caption>
+            <tbody>
+              <tr><th scope="row">Configuration</th><td>coaxial, 2 rotors Ø&nbsp;4.5&nbsp;m, 500&nbsp;rpm</td></tr>
+              <tr><th scope="row">Pilot</th><td>up to 110&nbsp;kg, height 1.70–1.90&nbsp;m</td></tr>
+              <tr><th scope="row">Take-off mass</th><td>225.2&nbsp;kg (rotor limit 225.3&nbsp;kg)</td></tr>
+              <tr><th scope="row">Empty mass</th><td>74.9&nbsp;kg</td></tr>
+              <tr><th scope="row">Battery</th><td>40.3&nbsp;kg, 112S, ≈&nbsp;400&nbsp;V</td></tr>
+              <tr><th scope="row">Hover power (rotor)</th><td>20.7&nbsp;kW, FM 0.805</td></tr>
+              <tr><th scope="row">Motor</th><td>radial flux, ≈&nbsp;25&nbsp;kW at ≈&nbsp;4970&nbsp;rpm</td></tr>
+              <tr><th scope="row">Transmission</th><td>cycloidal, 395 / 472&nbsp;N·m (hover / climb)</td></tr>
+              <tr><th scope="row">Inverter</th><td>MC-P rev D1, SiC MOSFETs</td></tr>
+              <tr><th scope="row">Flight time</th><td>≈&nbsp;14 / 25&nbsp;min (200&nbsp;Wh/kg cells)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">All values are calculated, not yet measured. Details and change history: <a href="https://github.com/mactom75/helimac/blob/main/docs/design-rev-J2.md">design-rev-J2.md</a>, <a href="https://github.com/mactom75/helimac/blob/main/docs/parameters.md">parameters.md</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plan" class="wrap">
+    <h2>Build plan</h2>
+    <p class="intro">The test order follows the safety rules: a person gets on board only after bench tests, tethered tests and uncrewed flights.</p>
+    <ol class="stages">
+      <li class="now">
+        <div>
+          <h3>Powertrain and power supply</h3>
+          <p><span class="state">In progress.</span> Target: 50&nbsp;hours on the dynamometer.</p>
+          <ul>
+            <li>400&nbsp;V design review of the MC-P rev D1 inverter</li>
+            <li>MC-C control board design</li>
+            <li>manufacture of the motor, cycloidal transmission and inverter</li>
+            <li>dynamometer: 395&nbsp;N·m for 30&nbsp;minutes, then 50&nbsp;hours</li>
+          </ul>
+        </div>
+      </li>
+      <li><div><h3>Airframe</h3><p>Frame, collective and swashplate, blades; blade modal test.</p></div></li>
+      <li><div><h3>Tethered rotor tests</h3><p>No pilot, inside a defined safety zone.</p></div></li>
+      <li><div><h3>Uncrewed flights</h3><p>The machine in the air, nobody on board.</p></div></li>
+      <li><div><h3>Crewed trials</h3><p>Only once national regulatory requirements are met.</p></div></li>
+    </ol>
+  </section>
+
+  <section id="log" class="wrap">
+    <h2>Build log</h2>
+    <ol class="log" reversed>
+      <li>
+        <time datetime="2026-11-22">22 Nov 2026</time>
+        <div>
+          <h3>Public repository</h3>
+          <ul>
+            <li>HELIMAC published on GitHub as an open-source project.</li>
+            <li>Motor: an axial-flux (YASA-type) alternative was analysed and rejected; the radial-flux motor stays.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <time datetime="2026-11-21">21 Nov 2026</time>
+        <div>
+          <h3>Design rev J2 for a 110&nbsp;kg pilot</h3>
+          <ul>
+            <li>Standard pilot mass raised to 110&nbsp;kg, leading to revisions J and J2. Bearing life at least that of rev H.</li>
+            <li>Take-off mass 225.2&nbsp;kg, hover power 20.7&nbsp;kW.</li>
+            <li>MC-P inverter: compact rev D (215 × 116&nbsp;mm, 40 % less area), then rev D1 with C3M0016120K SiC MOSFETs; cooled by two fans.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <time datetime="2026-11-18">18 Nov 2026</time>
+        <div>
+          <h3>Project start</h3>
+          <ul>
+            <li>Build order: powertrain and power supply first; frame, collective and blades in stage 2.</li>
+            <li>Electronics (MC-P inverter, MC-C controller, avionics) designed in-house.</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+    <p class="note">Full log: <a href="https://github.com/mactom75/helimac/blob/main/BUILD_LOG.md">BUILD_LOG.md</a>.</p>
+  </section>
+
+  <section id="history" class="wrap">
+    <h2>From HeliMac to HELIMAC</h2>
+    <div class="split">
+      <div>
+        <p class="history-years">2013–2015</p>
+        <p>The name combines <b>heli</b>copter and <b>Mac</b>iąg. Tomasz Maciąg, a hands-on engineer with many years in refrigeration and automation, worked on HeliMac in 2013–2015: a concept for a single-person electric vertical take-off vehicle. He built a team, ran powertrain tests and worked with, among others, Military Aviation Works No. 2 in Bydgoszcz and the KOMEL Institute.</p>
+        <p>Funded mostly from private savings, the project never found an investor. In hindsight it was simply too early: Jetson was founded in 2017, several years after HeliMac had been covered by the Polish media.</p>
+      </div>
+      <div>
+        <h3>HeliMac in the media</h3>
+        <ul class="press">
+          <li><b>2014</b><span><a href="https://www.radiopik.pl/77,12719,bydgoszczanin-pracuje-nad-ciekawym-wynalazkiem" hreflang="pl">Polish Radio PiK feature (in Polish)</a></span></li>
+          <li><b>2015</b><span>TVP1 “Jak to działa?” (“How does it work?”), episode 88, aired 23 May 2015</span></li>
+          <li><b>Online</b><span><a href="https://www.komputerswiat.pl/nauka-i-technika/transport/helimac-polski-elektryczny-pojazd-latajacy-zrewolucjonizuje-sposob-podrozowania/6hpmym8" hreflang="pl">Komputer Świat article (in Polish)</a></span></li>
+          <li><b>Video</b><span>powertrain tests: <a href="https://www.youtube.com/watch?v=o2PyM_OupfE">video 1</a>, <a href="https://www.youtube.com/watch?v=exJB4CINHs8">video 2</a></span></li>
+          <li><b>Indiegogo</b><span><a href="https://www.indiegogo.com/en/projects/tomaszmacig/helimac">the original campaign</a></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin-top:3rem">Why now</h3>
+    <p>Today's HELIMAC continues that project, but it is a new design. The difference is artificial intelligence: work that in 2015 had to be split among many paid specialists can now be carried by one person with the help of AI tools.</p>
+    <table class="then-now">
+      <thead><tr><th scope="col">Then — separate people</th><th scope="col">Today — supported by AI</th></tr></thead>
+      <tbody>
+        <tr><td>mechanical designer</td><td>assembly concepts, bearing selection, strength calculations</td></tr>
+        <tr><td>power electronics engineer</td><td>MC-P inverter schematics and boards, thermal budget</td></tr>
+        <tr><td>aerodynamicist</td><td>rotor sizing, hover power, flight time</td></tr>
+        <tr><td>battery specialist</td><td>400&nbsp;V pack, BMS, energy budget</td></tr>
+        <tr><td>software developer</td><td>control software, calculators, tests</td></tr>
+        <tr><td>technical writer, translator</td><td>documentation in English and Polish</td></tr>
+      </tbody>
+    </table>
+    <p class="note">AI does not replace physical tests, measurements, making parts or review by experienced engineers. That is why the project is open. Full story: <a href="https://github.com/mactom75/helimac/blob/main/ABOUT.md">ABOUT.md</a>.</p>
+  </section>
+
+  <div class="wrap">
+    <aside class="safety" aria-labelledby="safety">
+      <h2 id="safety">Safety first</h2>
+      <p>A 4.5&nbsp;m rotor, a 400&nbsp;V battery and an uncertified design are three independent sources of lethal risk. Nothing in this project is yet a verified, buildable design. Everything is provided without any warranty.</p>
+      <p>Rules for testing, high-voltage work and reporting problems: <a href="https://github.com/mactom75/helimac/blob/main/SAFETY.md">SAFETY.md</a>.</p>
+    </aside>
+  </div>
+
+  <section id="join" class="wrap">
+    <h2>Get involved</h2>
+    <p class="intro">We are looking for people who will check the calculations, challenge the design and help verify it in practice. Write in English or Polish.</p>
+    <ol class="join-steps">
+      <li><h3><a href="https://github.com/mactom75/helimac/discussions">Say hello</a></h3><p>in GitHub Discussions, under Introductions.</p></li>
+      <li><h3><a href="https://github.com/mactom75/helimac/blob/main/CONTRIBUTING.md">Read the rules</a></h3><p>CONTRIBUTING and SAFETY — short and to the point.</p></li>
+      <li><h3><a href="https://github.com/mactom75/helimac/issues">Pick a task</a></h3><p>from Issues, or propose your own.</p></li>
+    </ol>
+    <h3>We especially welcome</h3>
+    <ul class="wanted">
+      <li>aircraft structural engineers</li>
+      <li>rotor and flight-dynamics specialists</li>
+      <li>power-electronics and battery engineers</li>
+      <li>helicopter pilots</li>
+      <li>aircraft mechanics</li>
+      <li>people who know light-aircraft regulations in their country</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="wrap">
+    <h2>Contact</h2>
+    <dl class="contact">
+      <div><dt>Email</dt><dd><a href="mailto:kontakt@helimac.pl">kontakt@helimac.pl</a></dd></div>
+      <div><dt>Questions and technical discussion</dt><dd><a href="https://github.com/mactom75/helimac/discussions">GitHub Discussions</a></dd></div>
+    </dl>
+  </section>
+</main>
+
+<footer class="wrap site-foot">
+  <p>HELIMAC, Tomasz Maciąg, Bydgoszcz, Poland. Open-source project provided without warranty.</p>
+  <p>Licences: hardware CERN-OHL-S-2.0, software GPL-3.0-or-later, documentation CC BY-SA 4.0. This site uses no cookies and no tracking.</p>
+</footer>
+</body>
+</html>
