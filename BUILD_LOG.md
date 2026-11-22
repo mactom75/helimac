@@ -5,6 +5,10 @@ Project progress — newest entries first. Entries may be in English and/or Poli
 
 ---
 
+## 2026-11-22 — Drive unit mass corrected on ZS-00
+
+- General assembly drawing ZS-00 (package J1): drive unit mass corrected from "approx. 27.7 kg" to **approx. 38.5 kg** (without blades and frame adapter), matching the parts list (rev H 35.4 kg + rev J/J2 changes +3.05 kg). With the frame adapter and two upper collective servos ≈ 40 kg; machine mass 74.9 kg unchanged.
+
 ## 2026-11-22 — Graphics PDFs, blade chord clarified
 
 - PDF sheets with CAD graphics, A3 sketches (drive section, inverter wiring) and motor FEM plots in [docs/graphics/](docs/graphics/).
