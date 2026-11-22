@@ -30,7 +30,7 @@ Rendered views and sections from the rev J2 CAD model: [drive unit](../hardware/
 | Cycloidal transmission | 20 mm cams, K 75×83×20 cages, NKI 10/20 rollers (36 pcs), housing +14 mm, oil 0.90 l, 2 × NF-A8 PWM fans in the air-guide ring (PK) | +0.95 kg |
 | Motor | 56 mm stack (280 laminations), 8 turns, 8 × Ø 0.63 mm, magnets 25 × 11.2 × 5 mm, shaft +6 mm | +0.6 kg |
 | Bearings | RB11020 (110×160×20); 6210-2RS1 + 7210 BEP (upper hub); planet cages K15×19×17; mast 323 mm, drive +5 mm | +1.5 kg |
-| Blades | chord 198 → 125.4 mm, θ0.75R upper 9.69° / lower 10.43°, 4.25 kg each | +0.95 kg |
+| Blades | chord +10 %: 198 mm constant to r = 1000 mm, tapering to 125.4 mm at the tip (rev H: 180 / 114 mm), θ0.75R upper 9.69° / lower 10.43°, 4.25 kg each | +0.95 kg |
 | Frame | CFRP legs Ø 45 × 2.5 (sockets Ø 40 g6), side safety factor 1.80 | +0.64 kg |
 | Seat | battery 50 mm aft, footrest 450 mm, XL harness | +0.34 kg |
 | Air-guide ring (PK), lower collective | ring 95 mm high, C10/C11 +6 mm, C13 links +19 mm, C07 rod 832 mm | +0.05 kg |

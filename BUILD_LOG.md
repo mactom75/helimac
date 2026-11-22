@@ -5,6 +5,11 @@ Project progress — newest entries first. Entries may be in English and/or Poli
 
 ---
 
+## 2026-11-22 — Graphics PDFs, blade chord clarified
+
+- PDF sheets with CAD graphics, A3 sketches (drive section, inverter wiring) and motor FEM plots in [docs/graphics/](docs/graphics/).
+- Blade chord (rev J): 198 mm constant to r = 1 m, linear taper to 125.4 mm at the tip — "198 → 125.4" means root → tip, not a change between revisions.
+
 ## 2026-11-22 — Production files rev J2 published
 
 - New folder [production/](production/) with four ZIP packages ready to download: **J1** drive unit rev J2 (drawings, 18 DXF cutting files, 41 STEP parts + full assembly), **J2** rotor blades rev J (drawings, CNC sections, STL for cores and jigs), **J3** frame, seat, PK ring, lower collective rev J2 (drawings, STEP, STL), **MC-P** inverter rev D1 (KiCad 7 project, Gerbers, BOM, CPL, schematic, mechanical drawing).
