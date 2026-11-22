@@ -64,136 +64,123 @@
     <figure class="drawing">
       <svg viewBox="0 0 1060 680" role="img" aria-labelledby="dwg-title dwg-desc" xmlns="http://www.w3.org/2000/svg">
   <title id="dwg-title">HELIMAC rev J2, widok z prawej strony</title>
-  <desc id="dwg-desc">Rysunek techniczny: dwa przeciwbieżne wirniki o średnicy 4500&nbsp;mm na wysokości 2395 i 2785&nbsp;mm nad gruntem. Pod nimi siłowniki skoku ogólnego, przekładnia i silnik, płyta zawieszenia z karabinkiem. Rama z rur węglowych Ø45: z przodu trójkąt jak w lotni (dwie nogi), za plecami pilota jedna noga tylna z akumulatorem i falownikiem, która pod siodełkiem sięga do podnóżka, 380 mm nad ziemią. Pilot wisi na karabinku.</desc>
+  <desc id="dwg-desc">Rysunek techniczny: dwa przeciwbieżne wirniki o średnicy 4500&nbsp;mm na wysokości 2395 i 2785&nbsp;mm nad gruntem. Pod wirnikami przekładnia nawrotna, przekładnia cykloidalna z żebrami chłodzącymi, silnik i płyta ramy z karabinkiem; kąt łopat ustawia pięć siłowników. Rama z rur węglowych Ø45: z przodu trójkąt jak w lotni, który pilot trzyma rękami, za plecami noga tylna z akumulatorem i falownikiem, sięgająca pod siodełkiem do podnóżka 380&nbsp;mm nad ziemią.</desc>
   <defs>
-    <marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
-      <path d="M0 1.5 L10 5 L0 8.5 z" class="d-arrow"/>
-    </marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M0 1.5 L10 5 L0 8.5 z" class="d-arrow"/></marker>
+    <linearGradient id="g-metal" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#c9cfd6"/><stop offset=".45" stop-color="#f4f6f8"/><stop offset="1" stop-color="#b9c0c8"/></linearGradient>
+    <linearGradient id="g-dark" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#2a3038"/><stop offset=".5" stop-color="#4a525c"/><stop offset="1" stop-color="#1c2127"/></linearGradient>
+    <linearGradient id="g-red" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#b8000a"/><stop offset=".5" stop-color="#ff2a2f"/><stop offset="1" stop-color="#a30009"/></linearGradient>
+    <linearGradient id="g-tube" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#0e1013"/><stop offset=".45" stop-color="#4a525c"/><stop offset="1" stop-color="#0e1013"/></linearGradient>
+    <pattern id="p-carbon" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#1b2026"/><path d="M0 6 L6 0" stroke="#2e353e" stroke-width="1.4"/></pattern>
   </defs>
-
-  <!-- oś wirników -->
-  <line x1="500" y1="40" x2="500" y2="636" class="d-center"/>
-
-  <!-- grunt -->
+  <line x1="500" y1="28" x2="500" y2="640" class="d-center"/>
   <line x1="250" y1="620" x2="760" y2="620" class="d-ground"/>
-  <g class="d-hatch">
-    <line x1="262" y1="632" x2="274" y2="620"/><line x1="286" y1="632" x2="298" y2="620"/><line x1="310" y1="632" x2="322" y2="620"/>
-    <line x1="334" y1="632" x2="346" y2="620"/><line x1="358" y1="632" x2="370" y2="620"/><line x1="382" y1="632" x2="394" y2="620"/>
-    <line x1="406" y1="632" x2="418" y2="620"/><line x1="430" y1="632" x2="442" y2="620"/><line x1="454" y1="632" x2="466" y2="620"/>
-    <line x1="478" y1="632" x2="490" y2="620"/><line x1="502" y1="632" x2="514" y2="620"/><line x1="526" y1="632" x2="538" y2="620"/>
-    <line x1="550" y1="632" x2="562" y2="620"/><line x1="574" y1="632" x2="586" y2="620"/><line x1="598" y1="632" x2="610" y2="620"/>
-    <line x1="622" y1="632" x2="634" y2="620"/><line x1="646" y1="632" x2="658" y2="620"/><line x1="670" y1="632" x2="682" y2="620"/>
-    <line x1="694" y1="632" x2="706" y2="620"/><line x1="718" y1="632" x2="730" y2="620"/><line x1="742" y1="632" x2="754" y2="620"/>
+  <g class="d-hatch"><line x1="262" y1="632" x2="274" y2="620"/><line x1="286" y1="632" x2="298" y2="620"/><line x1="310" y1="632" x2="322" y2="620"/><line x1="334" y1="632" x2="346" y2="620"/><line x1="358" y1="632" x2="370" y2="620"/><line x1="382" y1="632" x2="394" y2="620"/><line x1="406" y1="632" x2="418" y2="620"/><line x1="430" y1="632" x2="442" y2="620"/><line x1="454" y1="632" x2="466" y2="620"/><line x1="478" y1="632" x2="490" y2="620"/><line x1="502" y1="632" x2="514" y2="620"/><line x1="526" y1="632" x2="538" y2="620"/><line x1="550" y1="632" x2="562" y2="620"/><line x1="574" y1="632" x2="586" y2="620"/><line x1="598" y1="632" x2="610" y2="620"/><line x1="622" y1="632" x2="634" y2="620"/><line x1="646" y1="632" x2="658" y2="620"/><line x1="670" y1="632" x2="682" y2="620"/><line x1="694" y1="632" x2="706" y2="620"/><line x1="718" y1="632" x2="730" y2="620"/><line x1="742" y1="632" x2="754" y2="620"/></g>
+  <!-- noga tylna CFRP Ø45: za plecami pilota, niesie akumulator i falownik, sięga do podnóżka (D12, do przeliczenia) -->
+  <path d="M478 194 C470 215 466 240 466 262 L466 372 C466 394 476 410 494 432 L533 532" class="d-tube"/>
+  <path d="M478 194 C470 215 466 240 466 262 L466 372 C466 394 476 410 494 432 L533 532" class="d-tube-hi"/>
+  <circle cx="536" cy="540" r="7.5" class="d-ink-fill"/><circle cx="536" cy="540" r="3" fill="#6b7480"/>
+  <!-- akumulator 112S, 2 pakiety -->
+  <rect x="418" y="286" width="44" height="92" rx="5" fill="url(#g-red)" stroke="#0e1013" stroke-width="2"/>
+  <line x1="418" y1="332" x2="462" y2="332" stroke="#0e1013" stroke-width="1.4"/>
+  <g stroke="#fff" stroke-width="1.6" opacity=".85"><line x1="426" y1="298" x2="452" y2="298"/><line x1="426" y1="304" x2="446" y2="304"/><line x1="426" y1="344" x2="452" y2="344"/><line x1="426" y1="350" x2="446" y2="350"/></g>
+  <rect x="462" y="292" width="5" height="80" fill="#0e1013"/>
+  <!-- falownik MC-P: radiator z żebrami + 2 wentylatory -->
+  <rect x="430" y="232" width="32" height="46" rx="3" fill="url(#g-metal)" stroke="#0e1013" stroke-width="1.8"/>
+  <g stroke="#7d8792" stroke-width="1.1"><line x1="434" y1="236" x2="434" y2="274"/><line x1="438" y1="236" x2="438" y2="274"/><line x1="442" y1="236" x2="442" y2="274"/><line x1="446" y1="236" x2="446" y2="274"/><line x1="450" y1="236" x2="450" y2="274"/><line x1="454" y1="236" x2="454" y2="274"/><line x1="458" y1="236" x2="458" y2="274"/></g>
+  <rect x="424" y="238" width="7" height="34" rx="1.5" fill="#1c2127"/>
+  <!-- pilot 1,80 m / do 110 kg – sylwetka -->
+  <g class="d-pilot">
+    <path d="M498 372 L556 452 L541 528" class="d-limb thigh far"/>
+    <path d="M541 530 L566 533" class="d-foot far"/>
+    <path d="M482 276 C478 300 478 330 482 352 C484 366 490 376 502 378 L520 376 C524 352 526 322 524 296 C523 282 518 272 506 268 C496 266 486 268 482 276 Z" class="d-torso"/>
+    <path d="M481 296 L524 296 M482 352 C496 360 512 360 522 352" class="d-harness"/>
+    <path d="M502 374 L566 448 L544 532" class="d-limb thigh"/>
+    <path d="M543 535 L572 538" class="d-foot"/>
+    <path d="M510 284 L516 332 L541 336" class="d-arm"/>
+    <circle cx="543" cy="336" r="5.5" class="d-hand"/>
+    <path d="M500 258 L512 258 L512 270 L500 270 Z" class="d-torso"/>
+    <circle cx="508" cy="240" r="20" class="d-head"/>
+    <path d="M486 242 C486 222 498 214 509 214 C523 214 531 225 531 236 L520 237 L516 232 L488 244 Z" class="d-helmet"/>
+    <path d="M523 239 L531 239 L530 250 L521 248 Z" class="d-visor"/>
   </g>
-
-  <g transform="matrix(-1 0 0 1 1000 0)"><!-- widok z prawej: odbicie lustrzane -->
-  <!-- wirnik górny (2785&nbsp;mm) -->
-  <path d="M50 63 L476 60 L524 60 L950 63 L950 66 L524 67 L476 67 L50 66 z" class="d-body"/>
-  <path d="M50 61.5 L92 61 L92 67 L50 66.5 z" class="d-tip"/>
-  <path d="M908 61 L950 61.5 L950 66.5 L908 67 z" class="d-tip"/>
-  <rect x="482" y="53" width="36" height="20" rx="4" class="d-hub"/>
-
-  <!-- maszt -->
-  <rect x="494" y="72" width="12" height="62" class="d-body"/>
-
-  <!-- wirnik dolny (2395&nbsp;mm) -->
-  <path d="M50 141 L476 138 L524 138 L950 141 L950 144 L524 145 L476 145 L50 144 z" class="d-body"/>
-  <path d="M50 139.5 L92 139 L92 145 L50 144.5 z" class="d-tip"/>
-  <path d="M908 139 L950 139.5 L950 144.5 L908 145 z" class="d-tip"/>
-  <rect x="480" y="131" width="40" height="20" rx="4" class="d-hub"/>
-
-  <!-- siłowniki skoku ogólnego (bez tarczy sterującej): 2 wirnik górny + 3 wirnik dolny -->
-  <rect x="466" y="154" width="68" height="9" rx="2" class="d-accent"/>
-  <rect x="446" y="160" width="14" height="22" rx="2" class="d-body"/>
-  <rect x="540" y="160" width="14" height="22" rx="2" class="d-body"/>
-  <!-- przekładnia cykloidalna z żebrami chłodzenia -->
-  <rect x="458" y="166" width="84" height="48" rx="6" class="d-body"/>
-  <g class="d-fin"><line x1="466" y1="172" x2="466" y2="208"/><line x1="476" y1="172" x2="476" y2="208"/><line x1="486" y1="172" x2="486" y2="208"/><line x1="514" y1="172" x2="514" y2="208"/><line x1="524" y1="172" x2="524" y2="208"/><line x1="534" y1="172" x2="534" y2="208"/></g>
-  <!-- silnik -->
-  <rect x="466" y="216" width="68" height="40" rx="5" class="d-body"/>
-  <line x1="472" y1="236" x2="528" y2="236" class="d-thin"/>
-  <!-- płyta zawieszenia + karabinek -->
-  <rect x="446" y="258" width="108" height="7" rx="2" class="d-ink-fill"/>
-  <path d="M492 265 q-6 4 0 10 q6 4 0 10" class="d-ink" stroke-width="3"/>
-
-  <!-- trójkąt przedni jak w lotni: 2 nogi CFRP Ø45×2,5 (±60° od kierunku lotu, w widoku z boku nakładają się) – układ D12, do przeliczenia -->
-  <path d="M479 262 L429 560" class="d-leg"/>
-  <circle cx="429" cy="561" r="6" class="d-ink-fill"/>
-
-  <!-- noga tylna (kręgosłup) CFRP Ø45×2 za plecami pilota: bateria i elektronika, sięga do podnóżka -->
-  <path d="M506 265 L520 304 L522 456 Q522 472 512 486 L478 544" class="d-leg"/>
-
-  <!-- falownik MC-P i akumulator na kolumnie, za plecami pilota -->
-  <rect x="524" y="318" width="24" height="44" rx="2" class="d-body"/>
-  <rect x="524" y="368" width="44" height="92" rx="4" class="d-accent"/>
-  <line x1="532" y1="384" x2="560" y2="384" class="d-thin-w"/>
-  <line x1="532" y1="394" x2="560" y2="394" class="d-thin-w"/>
-  <!-- siodełko -->
-  <path d="M470 462 Q500 456 528 464 L524 470 Q498 466 472 468 z" class="d-ink-fill"/>
-  <!-- podnóżek ⊥: poprzeczka 450 mm w poprzek (z boku widoczna jako przekrój), 380 mm nad ziemią -->
-  <circle cx="478" cy="544" r="8" class="d-ink-fill"/>
-
-  <!-- pilot 110 kg — linia widmowa -->
-  <g class="d-phantom">
-    <circle cx="488" cy="305" r="21"/>
-    <path d="M466 300 Q486 276 510 298"/>
-    <path d="M500 325 Q511 340 511 380 L509 458"/>
-    <path d="M476 326 Q460 352 462 392 Q463 428 470 456"/>
-    <path d="M470 456 L420 464 L450 540 L488 546"/>
-    <path d="M509 466 L428 480 L456 538"/>
-    <path d="M492 338 L462 376 L430 398"/>
-  </g>
-
-  </g>
-
-  <!-- wymiar: średnica wirnika -->
-  <line x1="50" y1="58" x2="50" y2="18" class="d-ext"/>
-  <line x1="950" y1="58" x2="950" y2="18" class="d-ext"/>
-  <line x1="50" y1="28" x2="950" y2="28" class="d-dim dim-draw" pathLength="1" marker-start="url(#arr)" marker-end="url(#arr)"/>
-  <g class="dim-label"><rect x="440" y="13" width="120" height="28" class="d-label-bg"/>
-  <text x="500" y="34" text-anchor="middle" class="d-text">Ø 4500</text></g>
-
-  <!-- wymiary: wysokości wirników -->
-  <line x1="954" y1="141" x2="1000" y2="141" class="d-ext"/>
-  <line x1="954" y1="63" x2="1050" y2="63" class="d-ext"/>
+  <path d="M474 376 C490 370 512 370 532 376 L530 384 C512 380 492 380 476 384 Z" class="d-ink-fill"/>
+  <line x1="502" y1="382" x2="470" y2="400" class="d-ink" stroke-width="3"/>
+  <!-- trójkąt przedni jak w lotni: 2 nogi CFRP Ø45×2,5 (±60°, z boku nakładają się), skrócone – D12 -->
+  <path d="M522 192 L571 560" class="d-tube"/><path d="M522 192 L571 560" class="d-tube-hi"/>
+  <rect x="563" y="556" width="16" height="9" rx="3" class="d-ink-fill"/>
+  <!-- płyta ramy / adapter K03, karabinek -->
+  <rect x="452" y="187" width="96" height="7" rx="2" fill="url(#g-dark)" stroke="#0e1013" stroke-width="1.2"/>
+  <path d="M500 194 C493 196 493 210 500 212 C507 210 507 196 500 194 Z" fill="none" stroke="#e8070f" stroke-width="2.6"/>
+  <!-- 2 siłowniki wirnika górnego: wspólna dźwignia → pręt Ø12 w kolumnie -->
+  <rect x="510" y="196" width="18" height="10" rx="2" class="d-servo"/><rect x="530" y="196" width="10" height="10" rx="2" class="d-servo"/>
+  <line x1="504" y1="200" x2="512" y2="200" class="d-ink" stroke-width="2"/>
+  <!-- silnik 24/20, wirnik zewnętrzny Ø236 -->
+  <rect x="476" y="172" width="48" height="15" rx="3" fill="url(#g-dark)" stroke="#0e1013" stroke-width="1.6"/>
+  <g stroke="#6b7480" stroke-width="1"><line x1="481" y1="174" x2="481" y2="185"/><line x1="486" y1="174" x2="486" y2="185"/><line x1="491" y1="174" x2="491" y2="185"/><line x1="496" y1="174" x2="496" y2="185"/><line x1="501" y1="174" x2="501" y2="185"/><line x1="506" y1="174" x2="506" y2="185"/><line x1="511" y1="174" x2="511" y2="185"/><line x1="516" y1="174" x2="516" y2="185"/><line x1="521" y1="174" x2="521" y2="185"/></g>
+  <!-- przekładnia cykloidalna 10:1, korpus z żebrami, pierścień PK z 2 wentylatorami -->
+  <rect x="464" y="149" width="72" height="22" rx="3" fill="url(#g-red)" stroke="#0e1013" stroke-width="1.8"/>
+  <g stroke="#7a0006" stroke-width="1.2"><line x1="468" y1="152" x2="468" y2="168"/><line x1="472" y1="152" x2="472" y2="168"/><line x1="476" y1="152" x2="476" y2="168"/><line x1="480" y1="152" x2="480" y2="168"/><line x1="484" y1="152" x2="484" y2="168"/><line x1="488" y1="152" x2="488" y2="168"/><line x1="492" y1="152" x2="492" y2="168"/><line x1="496" y1="152" x2="496" y2="168"/><line x1="500" y1="152" x2="500" y2="168"/><line x1="504" y1="152" x2="504" y2="168"/><line x1="508" y1="152" x2="508" y2="168"/><line x1="512" y1="152" x2="512" y2="168"/><line x1="516" y1="152" x2="516" y2="168"/><line x1="520" y1="152" x2="520" y2="168"/><line x1="524" y1="152" x2="524" y2="168"/><line x1="528" y1="152" x2="528" y2="168"/><line x1="532" y1="152" x2="532" y2="168"/></g>
+  <rect x="459" y="152" width="82" height="16" rx="3" fill="none" stroke="#0e1013" stroke-width="1" stroke-dasharray="4 3"/>
+  <!-- 3 siłowniki wirnika dolnego (z boku widoczne 2), pierścień nieruchomy + łożysko Ø330 -->
+  <rect x="444" y="139" width="14" height="13" rx="2" class="d-servo"/><rect x="542" y="139" width="14" height="13" rx="2" class="d-servo"/>
+  <rect x="458" y="143" width="84" height="5" rx="1.5" fill="#6b7480" stroke="#0e1013" stroke-width="1"/>
+  <rect x="476" y="133" width="48" height="13" rx="3" class="d-hub"/>
+  <path d="M434.0 137.8 L50.0 128.4 L50.0 131.6 L434.0 144.2 z" class="d-blade"/>
+  <path d="M92.0 129.3 L50.0 128.4 L50.0 131.6 L92.0 133.1 z" class="d-tip"/>
+  <rect x="434.0" y="136.5" width="26" height="9" rx="2" class="d-grip"/>
+  <path d="M566.0 137.8 L950.0 128.4 L950.0 131.6 L566.0 144.2 z" class="d-blade"/>
+  <path d="M908.0 129.3 L950.0 128.4 L950.0 131.6 L908.0 133.1 z" class="d-tip"/>
+  <rect x="540.0" y="136.5" width="26" height="9" rx="2" class="d-grip"/>
+  <ellipse cx="500" cy="130.0" rx="450" ry="7" class="d-disc"/>
+  <!-- przekładnia nawrotna stożkowa z32/z16 -->
+  <path d="M484 132 L488 112 L512 112 L516 132 Z" fill="url(#g-metal)" stroke="#0e1013" stroke-width="1.8"/>
+  <line x1="486" y1="122" x2="514" y2="122" stroke="#7d8792" stroke-width="1"/>
+  <rect x="494" y="68" width="12" height="44" fill="url(#g-tube)" stroke="#0e1013" stroke-width="1.4"/>
+  <rect x="480" y="55" width="40" height="13" rx="3" class="d-hub"/>
+  <path d="M434.0 59.8 L50.0 50.4 L50.0 53.6 L434.0 66.2 z" class="d-blade"/>
+  <path d="M92.0 51.3 L50.0 50.4 L50.0 53.6 L92.0 55.1 z" class="d-tip"/>
+  <rect x="434.0" y="58.5" width="26" height="9" rx="2" class="d-grip"/>
+  <path d="M566.0 59.8 L950.0 50.4 L950.0 53.6 L566.0 66.2 z" class="d-blade"/>
+  <path d="M908.0 51.3 L950.0 50.4 L950.0 53.6 L908.0 55.1 z" class="d-tip"/>
+  <rect x="540.0" y="58.5" width="26" height="9" rx="2" class="d-grip"/>
+  <ellipse cx="500" cy="52.0" rx="450" ry="7" class="d-disc"/>
+  <rect x="497" y="47" width="6" height="8" rx="1" class="d-ink-fill"/>
+  <line x1="50" y1="40" x2="50" y2="14" class="d-ext"/>
+  <line x1="950" y1="40" x2="950" y2="14" class="d-ext"/>
+  <line x1="50" y1="22" x2="950" y2="22" class="d-dim dim-draw" pathLength="1" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  <g class="dim-label"><rect x="440" y="8" width="120" height="28" class="d-label-bg"/><text x="500" y="29" text-anchor="middle" class="d-text">Ø 4500</text></g>
+  <line x1="530" y1="141" x2="1000" y2="141" class="d-ext"/>
+  <line x1="530" y1="63" x2="1050" y2="63" class="d-ext"/>
   <line x1="760" y1="620" x2="1050" y2="620" class="d-ext"/>
   <line x1="990" y1="620" x2="990" y2="141" class="d-dim dim-draw late" pathLength="1" marker-start="url(#arr)" marker-end="url(#arr)"/>
   <line x1="1040" y1="620" x2="1040" y2="63" class="d-dim dim-draw later" pathLength="1" marker-start="url(#arr)" marker-end="url(#arr)"/>
   <g class="dim-label">
-    <rect x="972" y="350" width="36" height="70" class="d-label-bg"/>
-    <text transform="translate(997 385) rotate(-90)" text-anchor="middle" class="d-text">2395</text>
-    <rect x="1022" y="308" width="36" height="70" class="d-label-bg"/>
-    <text transform="translate(1047 343) rotate(-90)" text-anchor="middle" class="d-text">2785</text>
+    <rect x="972" y="350" width="36" height="70" class="d-label-bg"/><text transform="translate(997 385) rotate(-90)" text-anchor="middle" class="d-text">2395</text>
+    <rect x="1022" y="308" width="36" height="70" class="d-label-bg"/><text transform="translate(1047 343) rotate(-90)" text-anchor="middle" class="d-text">2785</text>
   </g>
-
-  <!-- odnośniki -->
+  <line x1="545" y1="540" x2="700" y2="540" class="d-ext"/>
+  <line x1="690" y1="620" x2="690" y2="540" class="d-dim dim-draw later" pathLength="1" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  <g class="dim-label"><rect x="672" y="562" width="36" height="38" class="d-label-bg"/><text transform="translate(697 581) rotate(-90)" text-anchor="middle" class="d-text" font-size="16">380</text></g>
   <g class="dim-label callouts">
-    <line x1="770" y1="100" x2="770" y2="67" class="d-ext"/><circle cx="770" cy="64" r="2.5" class="d-arrow"/>
-    <text x="764" y="98" class="d-note" text-anchor="end">wirnik górny</text>
-    <line x1="770" y1="176" x2="770" y2="146" class="d-ext"/><circle cx="770" cy="143" r="2.5" class="d-arrow"/>
-    <text x="764" y="174" class="d-note" text-anchor="end">wirnik dolny</text>
-    <line x1="440" y1="158" x2="360" y2="158" class="d-ext"/>
-    <text x="354" y="163" class="d-note" text-anchor="end">siłowniki skoku ogólnego</text>
-    <line x1="458" y1="200" x2="360" y2="200" class="d-ext"/>
-    <text x="354" y="205" class="d-note" text-anchor="end">przekładnia cykloidalna + silnik</text>
-    <line x1="446" y1="262" x2="360" y2="250" class="d-ext"/>
-    <text x="354" y="255" class="d-note" text-anchor="end">płyta zawieszenia + karabinek</text>
-    <line x1="452" y1="340" x2="360" y2="320" class="d-ext"/>
-    <text x="354" y="325" class="d-note" text-anchor="end">falownik MC-P</text>
-    <line x1="432" y1="414" x2="300" y2="414" class="d-ext"/>
-    <text x="294" y="419" class="d-note" text-anchor="end">akumulator 400 V</text>
-    <line x1="530" y1="300" x2="620" y2="280" class="d-ext"/>
-    <text x="626" y="285" class="d-note">pilot do 110 kg</text>
-    <line x1="528" y1="465" x2="700" y2="465" class="d-ext"/>
-    <text x="706" y="470" class="d-note">siodełko</text>
-    <line x1="565" y1="520" x2="710" y2="540" class="d-ext"/>
-    <text x="716" y="545" class="d-note">trójkąt przedni: 2 nogi CFRP Ø45</text>
-    <line x1="532" y1="548" x2="660" y2="588" class="d-ext"/>
-    <text x="666" y="593" class="d-note">noga tylna do podnóżka, 380 mm</text>
+    <line x1="770" y1="56" x2="794" y2="87" class="d-ext"/><circle cx="770" cy="56" r="2.5" class="d-arrow"/><text x="800" y="92" class="d-note">wirnik górny</text>
+    <line x1="770" y1="134" x2="794" y2="165" class="d-ext"/><circle cx="770" cy="134" r="2.5" class="d-arrow"/><text x="800" y="170" class="d-note">wirnik dolny</text>
+    <line x1="488" y1="120" x2="386" y2="95" class="d-ext"/><circle cx="488" cy="120" r="2.5" class="d-arrow"/><text x="380" y="100" class="d-note" text-anchor="end">przekładnia nawrotna</text>
+    <line x1="446" y1="150" x2="386" y2="161" class="d-ext"/><circle cx="446" cy="150" r="2.5" class="d-arrow"/><text x="380" y="166" class="d-note" text-anchor="end">siłowniki skoku (3 + 2)</text>
+    <line x1="464" y1="164" x2="386" y2="185" class="d-ext"/><circle cx="464" cy="164" r="2.5" class="d-arrow"/><text x="380" y="190" class="d-note" text-anchor="end">przekładnia cykloidalna 10:1</text>
+    <line x1="476" y1="182" x2="386" y2="207" class="d-ext"/><circle cx="476" cy="182" r="2.5" class="d-arrow"/><text x="380" y="212" class="d-note" text-anchor="end">silnik 24/20</text>
+    <line x1="454" y1="192" x2="386" y2="231" class="d-ext"/><circle cx="454" cy="192" r="2.5" class="d-arrow"/><text x="380" y="236" class="d-note" text-anchor="end">płyta ramy + karabinek</text>
+    <line x1="428" y1="254" x2="386" y2="257" class="d-ext"/><circle cx="428" cy="254" r="2.5" class="d-arrow"/><text x="380" y="262" class="d-note" text-anchor="end">falownik MC-P</text>
+    <line x1="418" y1="332" x2="386" y2="327" class="d-ext"/><circle cx="418" cy="332" r="2.5" class="d-arrow"/><text x="380" y="332" class="d-note" text-anchor="end">akumulator 400 V</text>
+    <line x1="470" y1="404" x2="386" y2="425" class="d-ext"/><circle cx="470" cy="404" r="2.5" class="d-arrow"/><text x="380" y="430" class="d-note" text-anchor="end">noga tylna CFRP</text>
+    <line x1="528" y1="234" x2="634" y2="231" class="d-ext"/><circle cx="528" cy="234" r="2.5" class="d-arrow"/><text x="640" y="236" class="d-note">pilot do 110 kg</text>
+    <line x1="530" y1="379" x2="634" y2="375" class="d-ext"/><circle cx="530" cy="379" r="2.5" class="d-arrow"/><text x="640" y="380" class="d-note">siodełko</text>
+    <line x1="560" y1="484" x2="634" y2="467" class="d-ext"/><circle cx="560" cy="484" r="2.5" class="d-arrow"/><text x="640" y="472" class="d-note">trójkąt przedni: 2 nogi CFRP Ø45</text>
+    <line x1="542" y1="537" x2="714" y2="515" class="d-ext"/><circle cx="542" cy="537" r="2.5" class="d-arrow"/><text x="720" y="520" class="d-note">podnóżek</text>
   </g>
 </svg>
-      <ul class="legend" aria-hidden="true"><li>wirniki współosiowe</li><li>siłowniki skoku ogólnego</li><li>napęd</li><li>płyta i karabinek</li><li>falownik, akumulator</li><li>siodełko, noga tylna, podnóżek</li><li>trójkąt przedni CFRP</li><li>pilot do 110 kg</li></ul>
-      <figcaption>Widok z prawej strony, konstrukcja rev J2. Jak w maszynie Schöffmanna: napęd nad głową, trójkąt z przodu jak w lotni i noga tylna z rur węglowych, pilot zawieszony w uprzęży na siodełku. Wymiary w milimetrach, pilot narysowany linią przerywaną.</figcaption>
+      <ul class="legend" aria-hidden="true"><li>wirniki współosiowe</li><li>siłowniki skoku (3 + 2)</li><li>przekładnie i silnik</li><li>płyta i karabinek</li><li>falownik, akumulator</li><li>siodełko, noga tylna, podnóżek</li><li>trójkąt przedni CFRP</li><li>pilot do 110 kg</li></ul>
+      <figcaption>Widok z prawej strony, konstrukcja rev J2. Jak w maszynie Schöffmanna: napęd nad głową, trójkąt z przodu jak w lotni i noga tylna z rur węglowych, pilot zawieszony w uprzęży na siodełku. Wymiary w milimetrach. Układ ramy (trójkąt i noga tylna) jest w trakcie przeliczania.</figcaption>
     </figure>
   </div>
 

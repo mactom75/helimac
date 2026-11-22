@@ -408,3 +408,24 @@ ul.ticks li::before { content: ""; position: absolute; left: 0; top: 0.6em; widt
 .fem-gallery { margin-top: 1.25rem !important; }
 @media (min-width: 40rem) { .fem-gallery { grid-template-columns: repeat(2, 1fr); } }
 .fem-gallery img { padding: 0.25rem; }
+
+/* rysunek boczny – wersja szczegółowa (22.11.2026) */
+.d-blade  { fill: #2a3038; stroke: var(--ink); stroke-width: 0.8; }
+.d-grip   { fill: #6b7480; stroke: var(--ink); stroke-width: 1; }
+.d-disc   { fill: none; stroke: var(--steel); stroke-width: 0.9; stroke-dasharray: 6 5; opacity: .8; }
+.d-tube   { fill: none; stroke: var(--ink); stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; }
+.d-tube-hi { fill: none; stroke: #59626d; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transform: translate(-1.5px, 0); }
+.d-servo  { fill: var(--ink); stroke: var(--red); stroke-width: 1.4; }
+.d-strap  { stroke: #b8000a; stroke-width: 1.6; fill: none; stroke-dasharray: 5 3; }
+.d-pilot .d-torso { fill: #dfe3e8; stroke: #8b949e; stroke-width: 1.4; }
+.d-pilot .d-head  { fill: #eef0f2; stroke: #8b949e; stroke-width: 1.4; }
+.d-pilot .d-helmet { fill: var(--red); stroke: var(--ink); stroke-width: 1.2; }
+.d-pilot .d-visor { fill: #1c2127; }
+.d-pilot .d-limb  { fill: none; stroke: #c4cad1; stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; }
+.d-pilot .d-limb.far { stroke: #aab2bb; }
+.d-pilot .d-foot  { stroke: #2a3038; stroke-width: 7; stroke-linecap: round; }
+.d-pilot .d-foot.far { stroke: #4a525c; }
+.d-pilot .d-arm   { fill: none; stroke: #b5bcc4; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; }
+.d-pilot .d-hand  { fill: #2a3038; }
+.d-pilot .d-harness { fill: none; stroke: #2a3038; stroke-width: 3; stroke-linecap: round; }
+.d-pilot .d-limb.thigh { stroke-width: 17; }
