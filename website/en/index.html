@@ -63,7 +63,7 @@
     <figure class="drawing">
       <svg viewBox="0 0 1060 680" role="img" aria-labelledby="dwg-title dwg-desc" xmlns="http://www.w3.org/2000/svg">
   <title id="dwg-title">HELIMAC rev J2, right side view</title>
-  <desc id="dwg-desc">Technical drawing: two counter-rotating 4500&nbsp;mm rotors at 2395 and 2785&nbsp;mm above ground. Below them the swashplate with two actuators, transmission and motor, and the suspension plate with carabiner. The machine stands on three carbon-tube legs; the pilot sits on a saddle hung below the drive, with the inverter and battery behind.</desc>
+  <desc id="dwg-desc">Technical drawing: two counter-rotating 4500&nbsp;mm rotors at 2395 and 2785&nbsp;mm above ground. Below them the swashplate with two actuators, transmission and motor, and the suspension plate with carabiner. Carbon-tube frame: two legs splayed to the sides and a central column running from the plate behind the pilot’s back, under the saddle, down to the footrest. The inverter and battery sit on the column behind the pilot.</desc>
   <defs>
     <marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
       <path d="M0 1.5 L10 5 L0 8.5 z" class="d-arrow"/>
@@ -113,28 +113,24 @@
   <line x1="472" y1="236" x2="528" y2="236" class="d-thin"/>
   <!-- płyta zawieszenia + karabinek -->
   <rect x="446" y="258" width="108" height="7" rx="2" class="d-ink-fill"/>
-  <path d="M503 265 q-6 4 0 10 q6 4 0 10" class="d-ink" stroke-width="3"/>
+  <path d="M492 265 q-6 4 0 10 q6 4 0 10" class="d-ink" stroke-width="3"/>
 
-  <!-- trzy nogi CFRP (w widoku z boku: przednia i dwie tylne nakładające się) -->
+  <!-- dwie nogi CFRP rozstawione na boki (w widoku z boku nakładają się) -->
   <path d="M466 262 L372 612" class="d-leg"/>
-  <path d="M540 262 L640 612" class="d-leg"/>
-  <path d="M500 262 L590 612" class="d-leg-far"/>
   <circle cx="372" cy="613" r="6" class="d-ink-fill"/>
-  <circle cx="640" cy="613" r="6" class="d-ink-fill"/>
-  <circle cx="590" cy="613" r="5" class="d-ink-fill"/>
 
-  <!-- kręgosłup: rura od karabinka do siodełka -->
-  <path d="M503 285 L516 300 L520 466" class="d-ink" stroke-width="5"/>
-  <!-- falownik MC-P i akumulator na kręgosłupie -->
+  <!-- kolumna centralna CFRP: od płyty za plecami pilota, pod siodełkiem do podnóżka (jak u Schöffmanna) -->
+  <path d="M506 265 L520 304 L522 456 Q522 472 512 486 L480 538" class="d-leg"/>
+
+  <!-- falownik MC-P i akumulator na kolumnie, za plecami pilota -->
   <rect x="524" y="318" width="24" height="44" rx="2" class="d-body"/>
   <rect x="524" y="368" width="44" height="92" rx="4" class="d-accent"/>
   <line x1="532" y1="384" x2="560" y2="384" class="d-thin-w"/>
   <line x1="532" y1="394" x2="560" y2="394" class="d-thin-w"/>
   <!-- siodełko -->
   <path d="M470 462 Q500 456 528 464 L524 470 Q498 466 472 468 z" class="d-ink-fill"/>
-  <!-- podnóżek (odwrócone T) -->
-  <path d="M520 470 L478 544" class="d-ink" stroke-width="3.5"/>
-  <path d="M456 545 L500 545" class="d-ink" stroke-width="5"/>
+  <!-- podnóżek na końcu kolumny -->
+  <rect x="450" y="537" width="54" height="9" rx="4.5" class="d-ink-fill"/>
 
   <!-- pilot 110 kg — linia widmowa -->
   <g class="d-phantom">
@@ -188,13 +184,15 @@
     <line x1="530" y1="300" x2="620" y2="280" class="d-ext"/>
     <text x="626" y="285" class="d-note">pilot up to 110 kg</text>
     <line x1="528" y1="465" x2="700" y2="465" class="d-ext"/>
-    <text x="706" y="470" class="d-note">saddle and footrest</text>
+    <text x="706" y="470" class="d-note">saddle</text>
     <line x1="603" y1="520" x2="710" y2="540" class="d-ext"/>
-    <text x="716" y="545" class="d-note">3 CFRP legs Ø45</text>
+    <text x="716" y="545" class="d-note">2 CFRP legs Ø45, splayed</text>
+    <line x1="550" y1="545" x2="660" y2="588" class="d-ext"/>
+    <text x="666" y="593" class="d-note">CFRP column with footrest</text>
   </g>
 </svg>
-      <ul class="legend" aria-hidden="true"><li>coaxial rotors</li><li>swashplate</li><li>drive</li><li>plate and carabiner</li><li>inverter, battery</li><li>saddle, footrest</li><li>3 CFRP legs</li><li>pilot up to 110 kg</li></ul>
-      <figcaption>Right side view, design rev J2. As on Schöffmann’s machine: the drive above the head, three carbon-tube legs, the pilot hanging in a harness on a saddle. Dimensions in millimetres; the pilot is drawn as a dashed line.</figcaption>
+      <ul class="legend" aria-hidden="true"><li>coaxial rotors</li><li>swashplate</li><li>drive</li><li>plate and carabiner</li><li>inverter, battery</li><li>saddle, column with footrest</li><li>2 CFRP legs</li><li>pilot up to 110 kg</li></ul>
+      <figcaption>Right side view, design rev J2. As on Schöffmann’s machine: the drive above the head, two legs and a footrest column made of carbon tube, the pilot hanging in a harness on a saddle. Dimensions in millimetres; the pilot is drawn as a dashed line.</figcaption>
     </figure>
   </div>
 

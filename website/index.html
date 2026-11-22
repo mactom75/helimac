@@ -63,7 +63,7 @@
     <figure class="drawing">
       <svg viewBox="0 0 1060 680" role="img" aria-labelledby="dwg-title dwg-desc" xmlns="http://www.w3.org/2000/svg">
   <title id="dwg-title">HELIMAC rev J2, widok z prawej strony</title>
-  <desc id="dwg-desc">Rysunek techniczny: dwa przeciwbieżne wirniki o średnicy 4500&nbsp;mm na wysokości 2395 i 2785&nbsp;mm nad gruntem. Pod nimi tarcza sterująca z dwoma siłownikami, przekładnia i silnik, płyta zawieszenia z karabinkiem. Maszyna stoi na trzech nogach z rur węglowych, pilot siedzi na siodełku podwieszonym pod napędem, za nim falownik i akumulator.</desc>
+  <desc id="dwg-desc">Rysunek techniczny: dwa przeciwbieżne wirniki o średnicy 4500&nbsp;mm na wysokości 2395 i 2785&nbsp;mm nad gruntem. Pod nimi tarcza sterująca z dwoma siłownikami, przekładnia i silnik, płyta zawieszenia z karabinkiem. Rama z rur węglowych: dwie nogi rozstawione na boki i kolumna centralna, która biegnie od płyty za plecami pilota, pod siodełkiem, do podnóżka. Na kolumnie, za pilotem, falownik i akumulator.</desc>
   <defs>
     <marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
       <path d="M0 1.5 L10 5 L0 8.5 z" class="d-arrow"/>
@@ -113,28 +113,24 @@
   <line x1="472" y1="236" x2="528" y2="236" class="d-thin"/>
   <!-- płyta zawieszenia + karabinek -->
   <rect x="446" y="258" width="108" height="7" rx="2" class="d-ink-fill"/>
-  <path d="M503 265 q-6 4 0 10 q6 4 0 10" class="d-ink" stroke-width="3"/>
+  <path d="M492 265 q-6 4 0 10 q6 4 0 10" class="d-ink" stroke-width="3"/>
 
-  <!-- trzy nogi CFRP (w widoku z boku: przednia i dwie tylne nakładające się) -->
+  <!-- dwie nogi CFRP rozstawione na boki (w widoku z boku nakładają się) -->
   <path d="M466 262 L372 612" class="d-leg"/>
-  <path d="M540 262 L640 612" class="d-leg"/>
-  <path d="M500 262 L590 612" class="d-leg-far"/>
   <circle cx="372" cy="613" r="6" class="d-ink-fill"/>
-  <circle cx="640" cy="613" r="6" class="d-ink-fill"/>
-  <circle cx="590" cy="613" r="5" class="d-ink-fill"/>
 
-  <!-- kręgosłup: rura od karabinka do siodełka -->
-  <path d="M503 285 L516 300 L520 466" class="d-ink" stroke-width="5"/>
-  <!-- falownik MC-P i akumulator na kręgosłupie -->
+  <!-- kolumna centralna CFRP: od płyty za plecami pilota, pod siodełkiem do podnóżka (jak u Schöffmanna) -->
+  <path d="M506 265 L520 304 L522 456 Q522 472 512 486 L480 538" class="d-leg"/>
+
+  <!-- falownik MC-P i akumulator na kolumnie, za plecami pilota -->
   <rect x="524" y="318" width="24" height="44" rx="2" class="d-body"/>
   <rect x="524" y="368" width="44" height="92" rx="4" class="d-accent"/>
   <line x1="532" y1="384" x2="560" y2="384" class="d-thin-w"/>
   <line x1="532" y1="394" x2="560" y2="394" class="d-thin-w"/>
   <!-- siodełko -->
   <path d="M470 462 Q500 456 528 464 L524 470 Q498 466 472 468 z" class="d-ink-fill"/>
-  <!-- podnóżek (odwrócone T) -->
-  <path d="M520 470 L478 544" class="d-ink" stroke-width="3.5"/>
-  <path d="M456 545 L500 545" class="d-ink" stroke-width="5"/>
+  <!-- podnóżek na końcu kolumny -->
+  <rect x="450" y="537" width="54" height="9" rx="4.5" class="d-ink-fill"/>
 
   <!-- pilot 110 kg — linia widmowa -->
   <g class="d-phantom">
@@ -188,13 +184,15 @@
     <line x1="530" y1="300" x2="620" y2="280" class="d-ext"/>
     <text x="626" y="285" class="d-note">pilot do 110 kg</text>
     <line x1="528" y1="465" x2="700" y2="465" class="d-ext"/>
-    <text x="706" y="470" class="d-note">siodełko i podnóżek</text>
+    <text x="706" y="470" class="d-note">siodełko</text>
     <line x1="603" y1="520" x2="710" y2="540" class="d-ext"/>
-    <text x="716" y="545" class="d-note">3 nogi CFRP Ø45</text>
+    <text x="716" y="545" class="d-note">2 nogi CFRP Ø45, na boki</text>
+    <line x1="550" y1="545" x2="660" y2="588" class="d-ext"/>
+    <text x="666" y="593" class="d-note">kolumna CFRP z podnóżkiem</text>
   </g>
 </svg>
-      <ul class="legend" aria-hidden="true"><li>wirniki współosiowe</li><li>tarcza sterująca</li><li>napęd</li><li>płyta i karabinek</li><li>falownik, akumulator</li><li>siodełko, podnóżek</li><li>3 nogi CFRP</li><li>pilot do 110 kg</li></ul>
-      <figcaption>Widok z prawej strony, konstrukcja rev J2. Jak w maszynie Schöffmanna: napęd nad głową, trzy nogi z rur węglowych, pilot zawieszony w uprzęży na siodełku. Wymiary w milimetrach, pilot narysowany linią przerywaną.</figcaption>
+      <ul class="legend" aria-hidden="true"><li>wirniki współosiowe</li><li>tarcza sterująca</li><li>napęd</li><li>płyta i karabinek</li><li>falownik, akumulator</li><li>siodełko, kolumna z podnóżkiem</li><li>2 nogi CFRP</li><li>pilot do 110 kg</li></ul>
+      <figcaption>Widok z prawej strony, konstrukcja rev J2. Jak w maszynie Schöffmanna: napęd nad głową, dwie nogi i kolumna z podnóżkiem z rur węglowych, pilot zawieszony w uprzęży na siodełku. Wymiary w milimetrach, pilot narysowany linią przerywaną.</figcaption>
     </figure>
   </div>
 
