@@ -60,7 +60,7 @@
 
     <figure class="drawing">
       <svg viewBox="0 0 1060 680" role="img" aria-labelledby="dwg-title dwg-desc" xmlns="http://www.w3.org/2000/svg">
-  <title id="dwg-title">HELIMAC rev J2, side view</title>
+  <title id="dwg-title">HELIMAC rev J2, right side view</title>
   <desc id="dwg-desc">Technical drawing: two counter-rotating 4500&nbsp;mm rotors at 2395 and 2785&nbsp;mm above ground. Below them the swashplate with two actuators, transmission and motor, and the suspension plate with carabiner. The machine stands on three carbon-tube legs; the pilot sits on a saddle hung below the drive, with the inverter and battery behind.</desc>
   <defs>
     <marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
@@ -83,6 +83,7 @@
     <line x1="694" y1="632" x2="706" y2="620"/><line x1="718" y1="632" x2="730" y2="620"/><line x1="742" y1="632" x2="754" y2="620"/>
   </g>
 
+  <g transform="matrix(-1 0 0 1 1000 0)"><!-- widok z prawej: odbicie lustrzane -->
   <!-- wirnik górny (2785&nbsp;mm) -->
   <path d="M50 63 L476 60 L524 60 L950 63 L950 66 L524 67 L476 67 L50 66 z" class="d-body"/>
   <path d="M50 61.5 L92 61 L92 67 L50 66.5 z" class="d-tip"/>
@@ -144,6 +145,8 @@
     <path d="M492 338 L462 376 L430 398"/>
   </g>
 
+  </g>
+
   <!-- wymiar: średnica wirnika -->
   <line x1="50" y1="58" x2="50" y2="18" class="d-ext"/>
   <line x1="950" y1="58" x2="950" y2="18" class="d-ext"/>
@@ -166,30 +169,30 @@
 
   <!-- odnośniki -->
   <g class="dim-label callouts">
-    <line x1="230" y1="100" x2="230" y2="67" class="d-ext"/><circle cx="230" cy="64" r="2.5" class="d-arrow"/>
-    <text x="236" y="98" class="d-note">upper rotor</text>
-    <line x1="230" y1="176" x2="230" y2="146" class="d-ext"/><circle cx="230" cy="143" r="2.5" class="d-arrow"/>
-    <text x="236" y="174" class="d-note">lower rotor</text>
-    <line x1="560" y1="158" x2="640" y2="158" class="d-ext"/>
-    <text x="646" y="163" class="d-note">swashplate, 2 actuators</text>
-    <line x1="542" y1="200" x2="640" y2="200" class="d-ext"/>
-    <text x="646" y="205" class="d-note">cycloidal transmission + motor</text>
-    <line x1="554" y1="262" x2="640" y2="250" class="d-ext"/>
-    <text x="646" y="255" class="d-note">suspension plate + carabiner</text>
-    <line x1="548" y1="340" x2="640" y2="320" class="d-ext"/>
-    <text x="646" y="325" class="d-note">MC-P inverter</text>
-    <line x1="568" y1="414" x2="700" y2="414" class="d-ext"/>
-    <text x="706" y="419" class="d-note">400 V battery</text>
-    <line x1="470" y1="300" x2="380" y2="280" class="d-ext"/>
-    <text x="374" y="285" text-anchor="end" class="d-note">pilot up to 110 kg</text>
-    <line x1="472" y1="465" x2="300" y2="465" class="d-ext"/>
-    <text x="294" y="470" text-anchor="end" class="d-note">saddle and footrest</text>
-    <line x1="397" y1="520" x2="290" y2="540" class="d-ext"/>
-    <text x="284" y="545" text-anchor="end" class="d-note">3 CFRP legs Ø45</text>
+    <line x1="770" y1="100" x2="770" y2="67" class="d-ext"/><circle cx="770" cy="64" r="2.5" class="d-arrow"/>
+    <text x="764" y="98" class="d-note" text-anchor="end">upper rotor</text>
+    <line x1="770" y1="176" x2="770" y2="146" class="d-ext"/><circle cx="770" cy="143" r="2.5" class="d-arrow"/>
+    <text x="764" y="174" class="d-note" text-anchor="end">lower rotor</text>
+    <line x1="440" y1="158" x2="360" y2="158" class="d-ext"/>
+    <text x="354" y="163" class="d-note" text-anchor="end">swashplate, 2 actuators</text>
+    <line x1="458" y1="200" x2="360" y2="200" class="d-ext"/>
+    <text x="354" y="205" class="d-note" text-anchor="end">cycloidal transmission + motor</text>
+    <line x1="446" y1="262" x2="360" y2="250" class="d-ext"/>
+    <text x="354" y="255" class="d-note" text-anchor="end">suspension plate + carabiner</text>
+    <line x1="452" y1="340" x2="360" y2="320" class="d-ext"/>
+    <text x="354" y="325" class="d-note" text-anchor="end">MC-P inverter</text>
+    <line x1="432" y1="414" x2="300" y2="414" class="d-ext"/>
+    <text x="294" y="419" class="d-note" text-anchor="end">400 V battery</text>
+    <line x1="530" y1="300" x2="620" y2="280" class="d-ext"/>
+    <text x="626" y="285" class="d-note">pilot up to 110 kg</text>
+    <line x1="528" y1="465" x2="700" y2="465" class="d-ext"/>
+    <text x="706" y="470" class="d-note">saddle and footrest</text>
+    <line x1="603" y1="520" x2="710" y2="540" class="d-ext"/>
+    <text x="716" y="545" class="d-note">3 CFRP legs Ø45</text>
   </g>
 </svg>
       <ul class="legend" aria-hidden="true"><li>coaxial rotors</li><li>swashplate</li><li>drive</li><li>plate and carabiner</li><li>inverter, battery</li><li>saddle, footrest</li><li>3 CFRP legs</li><li>pilot up to 110 kg</li></ul>
-      <figcaption>Side view, design rev J2. As on Schöffmann’s machine: the drive above the head, three carbon-tube legs, the pilot hanging in a harness on a saddle. Dimensions in millimetres; the pilot is drawn as a dashed line.</figcaption>
+      <figcaption>Right side view, design rev J2. As on Schöffmann’s machine: the drive above the head, three carbon-tube legs, the pilot hanging in a harness on a saddle. Dimensions in millimetres; the pilot is drawn as a dashed line.</figcaption>
     </figure>
   </div>
 
