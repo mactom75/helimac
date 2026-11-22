@@ -14,7 +14,6 @@ Project progress — newest entries first. Entries may be in English and/or Poli
 ## 2026-11-22 — Public repository
 
 - HELIMAC published as an open-source project on GitHub.
-- Motor: axial-flux (YASA-type) alternative analysed and rejected; radial-flux motor of rev J kept.
 
 ## 2026-11-21 — Design rev J2 (pilot 110 kg)
 
