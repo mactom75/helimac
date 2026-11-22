@@ -1,104 +1,86 @@
-# 🚁 HELIMAC
+<p align="center">
+  <a href="https://helimac.pl/en/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="website/assets/img/logo-dark-600.webp">
+      <img src="website/assets/img/logo-600.png" alt="HELIMAC" width="420">
+    </picture>
+  </a>
+</p>
 
-**Open-source single-seat electric helicopter**
+<p align="center"><b>Open-source single-seat electric helicopter</b><br>
+coaxial rotors · weight-shift control · 400 V electric drive · built in the open</p>
 
-🇬🇧 English · [🇵🇱 Polski](README.pl.md) · 🌐 **Website: [helimac.pl](https://helimac.pl/en/)**
-
-> ⚠️ **Early concept stage.** Nothing in this repository is yet a verified, buildable design. Read [SAFETY.md](SAFETY.md) before anything else.
+<p align="center">
+  🇬🇧 English · <a href="README.pl.md">🇵🇱 Polski</a> · 🌐 <a href="https://helimac.pl/en/">helimac.pl</a> · ▶️ <a href="https://www.youtube.com/@Helimac-pl">YouTube</a> · ☕ <a href="https://buycoffee.to/helimac">Support</a>
+</p>
 
 ---
 
-## About
+## Start here
 
-**HELIMAC** is an international, open-source project to design and build a light, single-seat helicopter with a fully electric powertrain.
+| I want to… | Go to |
+|---|---|
+| 👀 **see the design** | [Design rev J2](docs/design-rev-J2.md) · [parameters](docs/parameters.md) · [website](https://helimac.pl/en/) |
+| 📦 **download the files** | [Production files rev J2](production/) — drawings, DXF, STEP, STL, KiCad, Gerbers (ZIP) |
+| 🛠️ **help build it** | [Open tasks (Issues)](../../issues) · [Discussions](../../discussions) · [How to contribute](CONTRIBUTING.md) |
+| ▶️ **follow the build** | [YouTube @Helimac-pl](https://www.youtube.com/@Helimac-pl) · [build log](BUILD_LOG.md) · [roadmap](ROADMAP.md) |
+| ☕ **support the project** | [buycoffee.to/helimac](https://buycoffee.to/helimac) — every coffee goes to parts and dynamometer tests |
 
-The name combines **HELI**copter and **MAC**iąg — the surname of the project's founder, **Tomasz Maciąg** from Bydgoszcz, Poland. It continues his original **HeliMac** project (2013–2015), now redesigned from scratch and developed with the help of AI tools. **[Read the story →](ABOUT.md)**
+> ⚠️ **Prototype in design — not an approved aircraft.** All values are calculated, not yet measured. Read [SAFETY.md](SAFETY.md) before building anything.
 
-### Goals
+<p align="center">
+  <a href="hardware/README.md#drive-unit-rev-j2"><img src="website/assets/img/cad/01-naped-izometria-1400.webp" alt="HELIMAC drive unit — CAD model rev J2" width="640"></a><br>
+  <sub>Drive unit rev J2: motor, cycloidal transmission 10:1, reversing gearbox and rotor hubs (CAD model)</sub>
+</p>
 
-- Design a single-seat electric helicopter openly, together with contributors from around the world.
-- Aim for the ultralight category of **Annex I to Regulation (EU) 2018/1139** (single-seat helicopter, MTOM ≤ 300 kg), which falls under national rules rather than EASA certification — see [docs/regulations.md](docs/regulations.md).
-- Use parts and processes available to a well-equipped workshop.
-- Publish everything: drawings, calculations, software, test results — and mistakes.
+## What is HELIMAC?
+
+A light, single-seat helicopter with a fully electric drive, designed openly with contributors from around the world. Every drawing, calculation, piece of software, test result — and mistake — is published here.
+
+The name combines **HELI**copter and **MAC**iąg — the surname of the founder, **Tomasz Maciąg** from Bydgoszcz, Poland. It continues his original **HeliMac** project (2013–2015), now redesigned from scratch with the help of AI tools. **[Read the story →](ABOUT.md)**
+
+Target category: single-seat ultralight helicopter, MTOM ≤ 300 kg ([Annex I to Regulation (EU) 2018/1139](docs/regulations.md) — national rules instead of EASA certification).
 
 ## Current design — rev J2
 
 | | |
 |---|---|
-| Configuration | coaxial, 2 rotors Ø 4.5 m, 500 rpm |
+| Configuration | coaxial, 2 × 2-blade rotors Ø 4.5 m, 500 rpm, no tail rotor |
+| Control | direction by pilot weight shift (no cyclic) · collective by electric actuators · yaw by upper/lower collective difference |
 | Pilot | up to 110 kg |
-| Take-off mass | 225.2 kg (empty machine 74.9 kg, battery 40.3 kg) |
+| Take-off mass | 225.2 kg (machine without battery 74.9 kg, battery 40.3 kg) |
 | Hover power | 20.7 kW |
-| Powertrain | radial-flux motor → cycloidal transmission; in-house SiC inverter MC-P |
-| Battery | 112S, ≈ 400 V |
-| Current stage | **Stage 1 — powertrain + power supply** (dynamometer) |
+| Drive | outer-rotor PMSM motor (≈ 21 kW hover) → cycloidal transmission 10:1 → reversing bevel gearbox |
+| Electronics | in-house SiC inverter **MC-P** rev D1 (KiCad) · control board **MC-C** in design |
+| Battery | 112S Li-ion, ≈ 400 V |
+| Flight time (calc.) | ≈ 14 min hover / ≈ 25 min mixed (200 Wh/kg cells) |
+| **Current stage** | **Stage 1 — drive + power supply** → dynamometer 395 N·m / 30 min, then 50 h |
 
-Full details: [docs/design-rev-J2.md](docs/design-rev-J2.md).
+## What's where
 
-## Current status
-
-Files and specifications are published **progressively, as the design and the vehicle are built**.
-
-- Progress: [BUILD_LOG.md](BUILD_LOG.md)
-- Current design parameters: [docs/parameters.md](docs/parameters.md)
-- Plan: [ROADMAP.md](ROADMAP.md)
-- **Production files** (drawings, DXF, STEP, STL, KiCad, Gerbers — ZIP downloads): [production/](production/)
-- Early-estimate tool (hover power, endurance, rotor size): [calc/](calc/)
-
-## Repository layout
-
-```
-helimac/
-├── ABOUT.md              founder and project history
-├── BUILD_LOG.md          progress log
-├── docs/                 design revision, parameters, regulations
-├── calc/                 calculations and tools (Python) + tests
-├── production/           production packages rev J2 (ZIP downloads)
-├── hardware/             mechanical design (CAD, drawings, BOM)
-│   ├── frame/  seat/  rotor-head-and-controls/  blades/  transmission/  motor/
-├── electronics/          MC-P inverter, MC-C controller, battery + BMS, avionics
-├── firmware/             software (monitoring, displays, logging)
-├── LICENSES/             full licence texts
-└── .github/              issue/discussion templates, CI
-```
+| Folder | Inside |
+|---|---|
+| [production/](production/) | **ready-to-make files** rev J2 — 4 ZIP packages (J1 drive, J2 blades, J3 frame & seat, MC-P inverter) |
+| [hardware/](hardware/) | assembly overviews with CAD graphics: frame, seat, rotor head & controls, blades, transmission, motor |
+| [electronics/](electronics/) | MC-P inverter, MC-C controller, battery + BMS, avionics |
+| [docs/](docs/) | design revision, parameters, regulations, [graphics (PDF)](docs/graphics/) |
+| [calc/](calc/) | performance calculator (Python) |
+| [firmware/](firmware/) | software (to come) |
 
 ## Get involved
 
-1. **Say hello** in [Discussions → Introductions](../../discussions).
-2. **Read** [CONTRIBUTING.md](CONTRIBUTING.md) and [SAFETY.md](SAFETY.md).
-3. **Pick a task** from [Issues](../../issues) or propose your own.
+We especially welcome aircraft structural engineers, rotor and flight-dynamics specialists, power-electronics and battery engineers, helicopter pilots, aircraft mechanics, makers with 3D printers and CNC, and people who know light-aircraft rules in their country.
 
-We especially welcome: aircraft structural engineers, rotor and flight-dynamics specialists, power-electronics and battery engineers, helicopter pilots, aircraft mechanics, and people familiar with light-aircraft regulations in their country.
+1. **Say hello** in [Discussions](../../discussions).
+2. **Pick a task** from [Issues](../../issues) — e.g. [#1 400 V inverter review](../../issues/1) or [#6 calculator](../../issues/6) (good first issue).
+3. **Read** [CONTRIBUTING.md](CONTRIBUTING.md) and [SAFETY.md](SAFETY.md).
 
-**Languages:** English is the main project language. Polish is equally welcome — write in whichever you're comfortable with.
-
-## Follow the build
-
-▶️ **YouTube:** [@Helimac-pl](https://www.youtube.com/@Helimac-pl) — build videos, tests and progress updates.
-
-☕ **Support the build:** [buycoffee.to/helimac](https://buycoffee.to/helimac) — every coffee helps pay for parts and dynamometer tests.
-
-## Communication
-
-| Channel | Use it for |
-|---|---|
-| **Discussions** | ideas, questions, technical discussions, introductions |
-| **Issues** | specific tasks, errors in calculations/docs, change proposals |
-| **Pull Requests** | contributing files |
-| **Releases** | downloadable file packages (drawings, PDFs, BOM) per version |
-| **YouTube** | [@Helimac-pl](https://www.youtube.com/@Helimac-pl) — videos of the build and tests |
-| **Support** | [buycoffee.to/helimac](https://buycoffee.to/helimac) — help pay for parts and tests |
+English is the main project language; Polish is equally welcome.
 
 ## Licences
 
-| What | Licence |
-|---|---|
-| Hardware (CAD, drawings, schematics, BOM) | [CERN-OHL-S-2.0](LICENSES/CERN-OHL-S-2.0.txt) |
-| Software (`calc/`, `firmware/`) | [GPL-3.0-or-later](LICENSES/GPL-3.0-or-later.txt) |
-| Documentation (`docs/`, `.md` files) | [CC-BY-SA-4.0](LICENSES/CC-BY-SA-4.0.txt) |
-
-See [LICENSE](LICENSE). Provided **without any warranty**.
+Hardware: [CERN-OHL-S-2.0](LICENSES/CERN-OHL-S-2.0.txt) · Software: [GPL-3.0-or-later](LICENSES/GPL-3.0-or-later.txt) · Documentation: [CC-BY-SA-4.0](LICENSES/CC-BY-SA-4.0.txt) · The HELIMAC name and logo are not covered by these licences ([branding/](branding/)). Provided **without any warranty** — see [LICENSE](LICENSE).
 
 ---
 
-**Founder & maintainer:** Tomasz Maciąg · Bydgoszcz, Poland
+**Founder & maintainer:** Tomasz Maciąg · Bydgoszcz, Poland · [helimac.pl](https://helimac.pl/en/)

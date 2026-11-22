@@ -3,6 +3,12 @@
 **Current revision: rev D1** (design rev J2, pilot 110 kg) · **Status:** 📐 designed, DRC clean — 400 V design review pending before manufacture
 Revisions B, C and D are withdrawn — do not build.
 
+## Files
+
+**Production files:** [MC-P inverter rev D1](../../production/electronics/MC-P-inverter-revD1/) · [ZIP](../../production/downloads/HELIMAC_MC-P_inverter_revD1.zip)
+
+KiCad 7 project, Gerbers, BOM and CPL (LCSC part numbers), schematic PDF, mechanical drawing, STEP, DRC report, heatsink calculation.
+
 ## CAD graphics (rev J2)
 
 From the rev J2 CAD model (design chat, 22.11.2026). Click an image for full size.
@@ -18,7 +24,6 @@ From the rev J2 CAD model (design chat, 22.11.2026). Click an image for full siz
 
 [![With the 190 × 80 mm heatsink and two 80 mm fans blowing across the fins](../../website/assets/img/cad/23-falownik-mc-p-3d-z-radiatorem-1400.webp)](../../website/assets/img/cad/23-falownik-mc-p-3d-z-radiatorem-1400.webp)  
 *With the 190 × 80 mm heatsink and two 80 mm fans blowing across the fins*
-
 
 Rev D1 = rev D with one BOM change: Q1–Q6 **C3M0016120K** instead of C3M0021120K (same TO-247-4 footprint; board and Gerbers unchanged).
 
@@ -69,9 +74,3 @@ PWM_BL = pin 16, PWM_CH = pin 40, PWM_CL = pin 39; pins 15, 17, 18, 19 = GND.
 
 1. Insulation test 1.5 kV DC: 400 V circuits vs. low-voltage ground and vs. heatsink, leakage < 1 mA.
 2. First power-up from a current-limited laboratory supply.
-
-## Files
-
-| File | Description | Status | Revision |
-|---|---|---|---|
-| | KiCad project, Gerbers, BOM, pick-and-place | to be published | D1 |
