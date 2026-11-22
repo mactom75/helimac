@@ -429,3 +429,4 @@ ul.ticks li::before { content: ""; position: absolute; left: 0; top: 0.6em; widt
 .d-pilot .d-hand  { fill: #2a3038; }
 .d-pilot .d-harness { fill: none; stroke: #2a3038; stroke-width: 3; stroke-linecap: round; }
 .d-pilot .d-limb.thigh { stroke-width: 17; }
+.title-block small { display: block; font-size: 0.82em; font-weight: 400; color: var(--ink-soft); }

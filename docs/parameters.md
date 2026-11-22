@@ -23,7 +23,8 @@ Status: 💭 idea · 📐 calculated · 🧪 measured · ✅ approved
 | Inverter | MC-P rev D1, SiC C3M0016120K | 📐 | [MC-P](../electronics/mc-p-inverter/README.md) |
 | Battery | 40.3 kg, 112S, ≈ 400 V | 📐 | |
 | Hover power (rotor) | 20.7 kW, FM 0.805 | 📐 | `calc/helimac_calc.py` |
-| Flight time | ≈ 14 / 25 min (200 Wh/kg cells) | 📐 | |
+| Flight time (hover / mixed) | pilot 110 kg: ≈ 14 / 25 min; pilot 90 kg: ≈ 16 / 27–28 min (200 Wh/kg cells; mixed = 30 % hover, 70 % cruise) | 📐 | BEM rev J2 |
+| Take-off mass with 90 kg pilot | 205.2 kg, hover power 18.2 kW | 📐 | BEM rev J2 |
 | Emergency / recovery system | — | 💭 | |
 
 ## Change history
