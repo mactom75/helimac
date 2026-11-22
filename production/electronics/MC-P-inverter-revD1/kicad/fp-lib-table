@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "helimac")(type "KiCad")(uri "${KIPRJMOD}/lib/helimac.pretty")(options "")(descr "HELIMAC custom footprints"))
+)

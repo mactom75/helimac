@@ -1,0 +1,16 @@
+(version 1)
+# Helimac MC-P – izolacja wg domen potencjałów (klasy sieci: HVP, HVN, SWA/SWB/SWC, MID, Default=NN)
+(rule "HV-HV rozne domeny, zewnetrzne"
+  (layer outer)
+  (condition "A.NetName != '' && B.NetName != '' && A.NetClass != B.NetClass && A.NetClass != 'Default' && B.NetClass != 'Default' && !(A.Type == 'Pad' && B.Type == 'Pad')")
+  (constraint clearance (min 2.0mm)))
+(rule "HV-HV rozne domeny, wewnetrzne"
+  (layer inner)
+  (condition "A.NetName != '' && B.NetName != '' && A.NetClass != B.NetClass && A.NetClass != 'Default' && B.NetClass != 'Default'")
+  (constraint clearance (min 0.8mm)))
+(rule "NN-HV izolacja wzmocniona (poza padami izolatorow)"
+  (condition "A.NetName != '' && B.NetName != '' && A.NetClass != B.NetClass && (A.NetClass == 'Default' || B.NetClass == 'Default') && !(A.Type == 'Pad' && B.Type == 'Pad')")
+  (constraint clearance (min 4.9mm)))
+(rule "MID miedzy soba"
+  (condition "A.NetClass == 'MID' && B.NetClass == 'MID' && A.NetName != B.NetName && !(A.Type == 'Pad' && B.Type == 'Pad')")
+  (constraint clearance (min 0.5mm)))

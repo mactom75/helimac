@@ -1,0 +1,41 @@
+[
+ {
+  "wariant": "1x NF-A8 wzdłuż, 180 x 70 x 40",
+  "Q_m3h": 14.8,
+  "v": 2.16,
+  "dp_Pa": 17.1,
+  "h": 41.5,
+  "eta": 0.85,
+  "A_m2": 0.253,
+  "Rth_sa": 0.223,
+  "T_rad_zawis": 98.0,
+  "Tj_zawis": 124.4,
+  "T_rad_wzn_ustalona": 136.2
+ },
+ {
+  "wariant": "2x NF-A8 w poprzek, 180 x 70 x 40",
+  "Q_m3h": 50.0,
+  "v": 2.75,
+  "dp_Pa": 12.8,
+  "h": 45.3,
+  "eta": 0.84,
+  "A_m2": 0.261,
+  "Rth_sa": 0.134,
+  "T_rad_zawis": 74.9,
+  "Tj_zawis": 101.3,
+  "T_rad_wzn_ustalona": 97.8
+ },
+ {
+  "wariant": "2x NF-A8 w poprzek, 190 x 80 x 50",
+  "Q_m3h": 57.3,
+  "v": 2.42,
+  "dp_Pa": 11.2,
+  "h": 43.6,
+  "eta": 0.78,
+  "A_m2": 0.387,
+  "Rth_sa": 0.105,
+  "T_rad_zawis": 67.3,
+  "Tj_zawis": 93.7,
+  "T_rad_wzn_ustalona": 85.3
+ }
+]

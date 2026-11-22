@@ -42,6 +42,7 @@ Files and specifications are published **progressively, as the design and the ve
 - Progress: [BUILD_LOG.md](BUILD_LOG.md)
 - Current design parameters: [docs/parameters.md](docs/parameters.md)
 - Plan: [ROADMAP.md](ROADMAP.md)
+- **Production files** (drawings, DXF, STEP, STL, KiCad, Gerbers — ZIP downloads): [production/](production/)
 - Early-estimate tool (hover power, endurance, rotor size): [calc/](calc/)
 
 ## Repository layout
@@ -52,6 +53,7 @@ helimac/
 ├── BUILD_LOG.md          progress log
 ├── docs/                 design revision, parameters, regulations
 ├── calc/                 calculations and tools (Python) + tests
+├── production/           production packages rev J2 (ZIP downloads)
 ├── hardware/             mechanical design (CAD, drawings, BOM)
 │   ├── frame/  seat/  rotor-head-and-controls/  blades/  transmission/  motor/
 ├── electronics/          MC-P inverter, MC-C controller, battery + BMS, avionics

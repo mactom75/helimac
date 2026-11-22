@@ -42,6 +42,7 @@ Pliki i parametry są publikowane **stopniowo, w miarę postępu projektu i budo
 - Postępy: [BUILD_LOG.md](BUILD_LOG.md)
 - Aktualne parametry: [docs/parameters.md](docs/parameters.md)
 - Plan prac: [ROADMAP.md](ROADMAP.md)
+- **Pliki produkcyjne** (rysunki, DXF, STEP, STL, KiCad, gerbery – paczki ZIP): [production/](production/README.pl.md)
 - Kalkulator wstępnych szacunków: [calc/](calc/)
 
 ## Śledź budowę

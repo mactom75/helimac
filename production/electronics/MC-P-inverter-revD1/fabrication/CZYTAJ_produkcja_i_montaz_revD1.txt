@@ -1,0 +1,37 @@
+HELIMAC MC-P rev D1 (projekt rev J – pilot 110 kg)
+ZMIANA względem rev D: tylko BOM – Q1–Q6 C3M0016120K (LCSC C5713523) zamiast C3M0021120K. Płytka, gerbery i pozycje bez zmian.
+  Powód: prąd fazy 56 A zawis / 86 A wznoszenie; straty 287 W, Tj ≈ 99 °C (2× NF-A8, 40 °C otoczenia) zamiast 113 °C.
+  DESAT bez zmian (ochrona zwarciowa, próg UCC21750 9 V – 2 diody). Ładunek bramki 211 nC – moc zasilaczy izolowanych < 0,1 W, bez zmian.
+  Instalacja DC: przewody 25 mm², bezpiecznik i stycznik ≥ 125 A ciągłego.
+
+HELIMAC MC-P rev D – płytka mocy falownika 3-fazowego, UKŁAD ZWARTY (400 V DC, SiC 1200 V)
+=========================================================================================
+Wymiar 215 x 116 mm (rev C: 340 x 122 mm) – powierzchnia mniejsza o 40 %. Schemat elektryczny bez zmian.
+ZAMÓWIENIE PCB (JLCPCB)
+  Helimac_MC-P_gerber_revD1.zip | 4 warstwy | 1,6 mm | FR-4 TG155+ | miedź 2 oz zewn. + 2 oz WEWN. (stos JLC3313)
+  L1 F.Cu (DC+, kanały faz) – L2 In1 (DC-, kanały faz, +5V NN) – L3 In2 (DC+, węzły SW, GND NN) – L4 B.Cu (DC-, SW, wyspy)
+  ENIG, maska zielona, opis biały, test elektryczny (flying probe).
+MONTAŻ (PCBA)
+  BOM: Helimac_MC-P_BOM_JLCPCB_revD1.csv | pozycje: MC-P_CPL_JLCPCB_revD1.csv | sprawdzić obroty w podglądzie JLC
+  SMD góra; THT: Q1–Q6 (TO-247-4 na stronie DOLNEJ, metalem w dół), PS1–PS6, U3/U6/U9, J6, J7.
+  Ręcznie: kondensatory foliowe C61–C64 (lut + klej), zaciski M5.
+UKŁAD
+  - Rząd 6 tranzystorów pod płytką na jednym radiatorze; nad każdym kolumna: diody DESAT, wyspa sterownika, sterownik + izolowany zasilacz.
+  - Czujnik prądu między gałęziami QH/QL każdej fazy, kanał fazy 14 mm prosto do zacisku.
+  - Zaciski przy górnej krawędzi: Faza A (50;9), DC+ (88;9), Faza B (114;9), DC- (151;9), Faza C (176;9).
+  - Szyna DC: 4 płaszczyzny + 66 przelotek zszywających; pod kanałami faz 33,7 mm (In2 + B.Cu, 2 oz).
+  - Pomiar napięcia szyny + izolowane 5 V w kolumnie po lewej.
+MECHANIKA (Helimac_MC-P_rysunek_mechaniczny_revD1.pdf)
+  - Tranzystory: przekładka AlN/Al2O3 0,6–1 mm + pasta, docisk klipsem sprężynowym TO-247 w rowku cokołu – brak otworów w płytce.
+    Kolejność: klipsy i tranzystory na radiatorze -> płytka na wyprowadzenia i tuleje H5–H7 -> lutowanie.
+  - Radiator AlMgSi: cokół 190x22x8 (styk z Q1–Q6), podstawa 190x80x8, żebra 50 mm (grubość 1,2 / odstęp 2,8 mm).
+  - Chłodzenie: 2 x Noctua NF-A8 PWM nadmuch W POPRZEK żeber (jeden wentylator jest za słaby – obliczenia: MC-P_radiator_obliczenia_revD.json).
+    Szacunek (powietrze 40 °C): zawis 260 W -> radiator ok. 67 °C, złącze ok. 94 °C; wznoszenie ustalone 432 W -> radiator ok. 85 °C.
+  - Otwory H1–H8 Ø3,2 bez metalizacji; pole bez miedzi R5 (400 V) / R3,5 (NN). Zaciski M5: 2,5 N·m, przewody odciążone na obudowie.
+ZASADY / KONTROLA
+  - Odstępy wg grup napięć (MC-P.kicad_dru): 2,0 mm 400 V–400 V na zewnątrz, 0,8 mm wewnątrz, 4,9 mm NN–400 V; miedź 400 V >= 3 mm od krawędzi.
+  - DRC: 0 niepołączonych, 0 naruszeń odstępów i otworów; zgodność schemat–płytka 159/159 elementów.
+  - Zostały tylko uwagi kosmetyczne opisu (silk) i biblioteczne.
+BADANIA: hipot 1,5 kV DC (400 V względem NN i radiatora, < 1 mA); pierwsze zasilenie z zasilacza z ograniczeniem prądu.
+PRZED ZAMÓWIENIEM: przegląd przez energoelektronika; dostępność części w JLCPCB.
+ZŁĄCZE J6 (zmiany pinów): PWM_BL = pin 16, PWM_CH = pin 40, PWM_CL = pin 39; piny 15, 17, 18, 19 = GND.

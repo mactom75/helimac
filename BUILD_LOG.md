@@ -5,6 +5,12 @@ Project progress — newest entries first. Entries may be in English and/or Poli
 
 ---
 
+## 2026-11-22 — Production files rev J2 published
+
+- New folder [production/](production/) with four ZIP packages ready to download: **J1** drive unit rev J2 (drawings, 18 DXF cutting files, 41 STEP parts + full assembly), **J2** rotor blades rev J (drawings, CNC sections, STL for cores and jigs), **J3** frame, seat, PK ring, lower collective rev J2 (drawings, STEP, STL), **MC-P** inverter rev D1 (KiCad 7 project, Gerbers, BOM, CPL, schematic, mechanical drawing).
+- MC-P sources updated to rev D1: Q1–Q6 = C3M0016120K (16 mΩ) in the schematic and PCB; schematic PDF regenerated.
+- Frame layout is being recalculated — frame tubes not to be made yet.
+
 ## 2026-11-22 — Website helimac.pl
 
 - Project website launched at [helimac.pl](https://helimac.pl/) (Polish) and [helimac.pl/en](https://helimac.pl/en/) (English), hosted on GitHub Pages from `website/`.
