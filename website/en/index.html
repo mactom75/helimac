@@ -63,7 +63,7 @@
     <figure class="drawing">
       <svg viewBox="0 0 1060 680" role="img" aria-labelledby="dwg-title dwg-desc" xmlns="http://www.w3.org/2000/svg">
   <title id="dwg-title">HELIMAC rev J2, right side view</title>
-  <desc id="dwg-desc">Technical drawing: two counter-rotating 4500&nbsp;mm rotors at 2395 and 2785&nbsp;mm above ground. Below them the swashplate with two actuators, transmission and motor, and the suspension plate with carabiner. Ø45 carbon-tube frame: a hang-glider-style A-frame in front (two legs, feet 400 mm ahead of the axis) and a single rear leg behind the pilot that carries the battery and inverter and reaches down under the saddle to the footrest, 380 mm above ground. The pilot hangs on a carabiner.</desc>
+  <desc id="dwg-desc">Technical drawing: two counter-rotating 4500&nbsp;mm rotors at 2395 and 2785&nbsp;mm above ground. Below them the swashplate with electric actuators, transmission and motor, and the suspension plate with carabiner. Ø45 carbon-tube frame: a hang-glider-style A-frame in front (two legs) and a single rear leg behind the pilot that carries the battery and inverter and reaches down under the saddle to the footrest, 380 mm above ground. The pilot hangs on a carabiner.</desc>
   <defs>
     <marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
       <path d="M0 1.5 L10 5 L0 8.5 z" class="d-arrow"/>
@@ -101,7 +101,7 @@
   <path d="M908 139 L950 139.5 L950 144.5 L908 145 z" class="d-tip"/>
   <rect x="480" y="131" width="40" height="20" rx="4" class="d-hub"/>
 
-  <!-- tarcza sterująca (skok ogólny) z 2 siłownikami -->
+  <!-- tarcza sterująca (skok ogólny), siłowniki: 3 wirnik dolny + 2 wirnik górny -->
   <rect x="466" y="154" width="68" height="9" rx="2" class="d-accent"/>
   <rect x="446" y="160" width="14" height="22" rx="2" class="d-body"/>
   <rect x="540" y="160" width="14" height="22" rx="2" class="d-body"/>
@@ -115,7 +115,7 @@
   <rect x="446" y="258" width="108" height="7" rx="2" class="d-ink-fill"/>
   <path d="M492 265 q-6 4 0 10 q6 4 0 10" class="d-ink" stroke-width="3"/>
 
-  <!-- trójkąt przedni jak w lotni: 2 nogi CFRP Ø45×2,5 (±60° od kierunku lotu, w widoku z boku nakładają się); stopy 400 mm przed osią (okrąg stóp Ø1600) -->
+  <!-- trójkąt przedni jak w lotni: 2 nogi CFRP Ø45×2,5 (±60° od kierunku lotu, w widoku z boku nakładają się) – układ D12, do przeliczenia -->
   <path d="M479 262 L429 560" class="d-leg"/>
   <circle cx="429" cy="561" r="6" class="d-ink-fill"/>
 
@@ -129,7 +129,7 @@
   <line x1="532" y1="394" x2="560" y2="394" class="d-thin-w"/>
   <!-- siodełko -->
   <path d="M470 462 Q500 456 528 464 L524 470 Q498 466 472 468 z" class="d-ink-fill"/>
-  <!-- podnóżek ⊥: poprzeczka 400 mm w poprzek (z boku widoczna jako przekrój), 380 mm nad ziemią -->
+  <!-- podnóżek ⊥: poprzeczka 450 mm w poprzek (z boku widoczna jako przekrój), 380 mm nad ziemią -->
   <circle cx="478" cy="544" r="8" class="d-ink-fill"/>
 
   <!-- pilot 110 kg — linia widmowa -->
@@ -172,7 +172,7 @@
     <line x1="770" y1="176" x2="770" y2="146" class="d-ext"/><circle cx="770" cy="143" r="2.5" class="d-arrow"/>
     <text x="764" y="174" class="d-note" text-anchor="end">lower rotor</text>
     <line x1="440" y1="158" x2="360" y2="158" class="d-ext"/>
-    <text x="354" y="163" class="d-note" text-anchor="end">swashplate, 2 actuators</text>
+    <text x="354" y="163" class="d-note" text-anchor="end">swashplate, actuators</text>
     <line x1="458" y1="200" x2="360" y2="200" class="d-ext"/>
     <text x="354" y="205" class="d-note" text-anchor="end">cycloidal transmission + motor</text>
     <line x1="446" y1="262" x2="360" y2="250" class="d-ext"/>
@@ -212,7 +212,7 @@
           <div><dt>Easy transport</dt><dd>A machine you can take apart and carry in an ordinary car.</dd></div>
           <div><dt>Safety</dt><dd>Fly low and slow, test in stages. Safety is a design goal in its own right, not an assumption.</dd></div>
         </dl>
-        <p class="note">The differences: HELIMAC has an electric powertrain instead of a combustion engine — fewer parts, less noise, no exhaust. It also has variable blade pitch set by two electric actuators. On loss of power the pitch drops automatically, which by calculation allows an autorotative landing.</p>
+        <p class="note">The differences: HELIMAC has an electric powertrain instead of a combustion engine — fewer parts, less noise, no exhaust. It also has variable blade pitch set by electric actuators. On loss of power the pitch drops automatically, which by calculation allows an autorotative landing.</p>
       </div>
     </div>
     <ul class="gallery">
@@ -249,7 +249,7 @@
       <div>
         <h2>Design rev J2</h2>
         <p class="intro">Two counter-rotating rotors on one axis, no tail rotor. An electric motor drives them through a cycloidal transmission; the MC-P inverter and control electronics are designed in-house.</p>
-        <p>The controls are simple: the pilot changes direction by shifting body weight, because rigid hubs carry the moment from the rotors to the frame. Blade pitch (collective) is set by a swashplate driven by two electric actuators, and a pitch difference between the upper and lower rotor turns the machine about its vertical axis. There is no tail rotor and no cyclic pitch.</p>
+        <p>The controls are simple: the pilot changes direction by shifting body weight, because rigid hubs carry the moment from the rotors to the frame. Blade pitch (collective) is set by electric actuators — three for the lower rotor and two for the upper, and a pitch difference between the upper and lower rotor turns the machine about its vertical axis. There is no tail rotor and no cyclic pitch.</p>
         <p>The target is the ultralight category of Annex I to Regulation (EU) 2018/1139: a single-seat helicopter with a maximum take-off mass of up to 300&nbsp;kg, which falls under national rules rather than EASA certification.</p>
       </div>
       <div>
@@ -260,12 +260,12 @@
               <tr><th scope="row">Configuration</th><td>coaxial, 2 rotors Ø&nbsp;4.5&nbsp;m, 500&nbsp;rpm</td></tr>
               <tr><th scope="row">Pilot</th><td>up to 110&nbsp;kg, height 1.70–1.90&nbsp;m</td></tr>
               <tr><th scope="row">Take-off mass</th><td>225.2&nbsp;kg (rotor limit 225.3&nbsp;kg)</td></tr>
-              <tr><th scope="row">Empty mass</th><td>74.9&nbsp;kg</td></tr>
+              <tr><th scope="row">Mass without battery</th><td>74.9&nbsp;kg</td></tr>
               <tr><th scope="row">Battery</th><td>40.3&nbsp;kg, 112S, ≈&nbsp;400&nbsp;V</td></tr>
               <tr><th scope="row">Hover power (rotor)</th><td>20.7&nbsp;kW, FM 0.805</td></tr>
-              <tr><th scope="row">Motor</th><td>radial flux, ≈&nbsp;25&nbsp;kW at ≈&nbsp;4970&nbsp;rpm</td></tr>
+              <tr><th scope="row">Motor</th><td>radial flux, outer rotor; ≈&nbsp;21&nbsp;kW in hover (peak ≈&nbsp;27&nbsp;kW), 4970&nbsp;rpm</td></tr>
               <tr><th scope="row">Transmission</th><td>cycloidal, 395 / 472&nbsp;N·m (hover / climb)</td></tr>
-              <tr><th scope="row">Controls</th><td>direction: weight shift; collective: swashplate, 2&nbsp;electric actuators</td></tr>
+              <tr><th scope="row">Controls</th><td>direction: weight shift; collective: 5&nbsp;electric actuators (3 lower rotor, 2 upper)</td></tr>
               <tr><th scope="row">Inverter</th><td>MC-P rev D1, SiC MOSFETs</td></tr>
               <tr><th scope="row">Flight time</th><td>≈&nbsp;14 / 25&nbsp;min (200&nbsp;Wh/kg cells)</td></tr>
             </tbody>
@@ -280,11 +280,11 @@
     <h2>Now: designing the drive</h2>
     <p class="intro">At this stage we are working on the mechanical and electronic design. We start with the drive — the heart of the machine — which will be tested on a dynamometer first.</p>
     <div class="parts">
-      <article><h3>Electric motor</h3><p>Permanent-magnet motor, about 25&nbsp;kW at about 4970&nbsp;rpm. A stack of 280 laminations and neodymium magnets. Designed from scratch, with files for cutting the laminations.</p></article>
+      <article><h3>Electric motor</h3><p>Outer-rotor permanent-magnet motor: about 21&nbsp;kW in hover, about 25&nbsp;kW in climb, 4970&nbsp;rpm. A stack of 280 laminations and neodymium magnets. Designed from scratch, with files for cutting the laminations.</p></article>
       <article><h3>Cycloidal gearbox 10:1</h3><p>A rotating housing on a stationary column, two 20&nbsp;mm cams on needle rollers. Oil bath, cooling fins and two fans. 395&nbsp;N·m of torque in hover.</p></article>
       <article><h3>Reversing gearbox</h3><p>Bevel gears reverse the direction for the upper rotor, so a single motor drives both rotors.</p></article>
       <article><h3>MC-P inverter</h3><p>An in-house 400&nbsp;V inverter with SiC MOSFETs on a 215&nbsp;×&nbsp;116&nbsp;mm board designed in KiCad, cooled by a heatsink and two fans.</p></article>
-      <article><h3>MC-C controller</h3><p>An STM32 control board: motor and fan control, temperature sensors and data logging.</p></article>
+      <article><h3>MC-C controller</h3><p>Control board (in design): motor control (FOC), fans, temperature sensors and data logging.</p></article>
       <article><h3>Dynamometer</h3><p>Stage goal: 395&nbsp;N·m for 30 minutes with oil below 100&nbsp;°C, then 50 hours of running. All results will be published.</p></article>
     </div>
     <div class="cad" id="cad">
@@ -321,7 +321,7 @@
         <li><figure><a href="/assets/img/cad/23-falownik-mc-p-3d-z-radiatorem-1400.webp"><img src="/assets/img/cad/23-falownik-mc-p-3d-z-radiatorem-700.webp" srcset="/assets/img/cad/23-falownik-mc-p-3d-z-radiatorem-700.webp 700w, /assets/img/cad/23-falownik-mc-p-3d-z-radiatorem-1400.webp 1400w" sizes="(min-width: 60rem) 30vw, (min-width: 40rem) 46vw, 92vw" width="700" height="430" alt="With the 190 × 80 mm heatsink and two 80 mm fans blowing across the fins" loading="lazy" decoding="async"></a><figcaption>With the 190&nbsp;×&nbsp;80&nbsp;mm heatsink and two 80&nbsp;mm fans blowing across the fins</figcaption></figure></li>
       </ul>
       <h4>Rotor blades</h4>
-      <p>2.25&nbsp;m radius. The blade core is printed in ASA on an ordinary 3D printer and wrapped in carbon fibre. Chord 198&nbsp;mm out to 1&nbsp;m radius, then tapering to 125&nbsp;mm at the tip; 12° of twist.</p>
+      <p>2.25&nbsp;m radius. The blade core is printed in ASA on an ordinary 3D printer and wrapped in carbon fibre. Chord 198&nbsp;mm out to 1&nbsp;m radius, then tapering to 125&nbsp;mm at the tip; −12° twist per radius (about 10° along the blade).</p>
       <ul class="gallery cad-gallery">
         <li class="wide"><figure><a href="/assets/img/cad/30-lopata-segmenty-druk3d-1400.webp"><img src="/assets/img/cad/30-lopata-segmenty-druk3d-700.webp" srcset="/assets/img/cad/30-lopata-segmenty-druk3d-700.webp 700w, /assets/img/cad/30-lopata-segmenty-druk3d-1400.webp 1400w" sizes="(min-width: 60rem) 30vw, (min-width: 40rem) 46vw, 92vw" width="700" height="163" alt="Core of 10 segments — each fits a 256 × 256 mm print bed; colours show the split into parts" loading="lazy" decoding="async"></a><figcaption>Core of 10 segments — each fits a 256&nbsp;×&nbsp;256&nbsp;mm print bed; colours show the split into parts</figcaption></figure></li>
         <li><figure><a href="/assets/img/cad/31-lopata-nasada-i-rdzenie-1400.webp"><img src="/assets/img/cad/31-lopata-nasada-i-rdzenie-700.webp" srcset="/assets/img/cad/31-lopata-nasada-i-rdzenie-700.webp 700w, /assets/img/cad/31-lopata-nasada-i-rdzenie-1400.webp 1400w" sizes="(min-width: 60rem) 30vw, (min-width: 40rem) 46vw, 92vw" width="700" height="452" alt="Blade root: flange and the first core segments" loading="lazy" decoding="async"></a><figcaption>Blade root: flange and the first core segments</figcaption></figure></li>
@@ -478,7 +478,7 @@
     <div class="audience">
       <article><h3>Makers and mechanics</h3><p>Machining, assembly, jigs and the dynamometer rig. Workshop experience is worth its weight in gold here.</p></article>
       <article><h3>3D printing</h3><p>Parts in ASA and composites — such as the air-guide ring printed in six segments — housings, jigs and test models.</p></article>
-      <article><h3>Electronics and software</h3><p>The SiC inverter, an STM32 control board, sensors, BMS and software. KiCad projects, code on GitHub.</p></article>
+      <article><h3>Electronics and software</h3><p>The SiC inverter, the MC-C control board, sensors, BMS and software. KiCad projects, code on GitHub.</p></article>
       <article><h3>Designers and engineers</h3><p>CAD, strength calculations, rotors, batteries, regulations. Reviewing and challenging our calculations is the most valuable help.</p></article>
       <article><h3>Pupils and students</h3><p>Python calculations, CAD models, 3D printing, measurements, documentation, project and thesis topics. A real machine is the best way to learn.</p></article>
     </div>

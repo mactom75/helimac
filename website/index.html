@@ -63,7 +63,7 @@
     <figure class="drawing">
       <svg viewBox="0 0 1060 680" role="img" aria-labelledby="dwg-title dwg-desc" xmlns="http://www.w3.org/2000/svg">
   <title id="dwg-title">HELIMAC rev J2, widok z prawej strony</title>
-  <desc id="dwg-desc">Rysunek techniczny: dwa przeciwbieżne wirniki o średnicy 4500&nbsp;mm na wysokości 2395 i 2785&nbsp;mm nad gruntem. Pod nimi tarcza sterująca z dwoma siłownikami, przekładnia i silnik, płyta zawieszenia z karabinkiem. Rama z rur węglowych Ø45: z przodu trójkąt jak w lotni (dwie nogi, stopy 400 mm przed osią), za plecami pilota jedna noga tylna z akumulatorem i falownikiem, która pod siodełkiem sięga do podnóżka, 380 mm nad ziemią. Pilot wisi na karabinku.</desc>
+  <desc id="dwg-desc">Rysunek techniczny: dwa przeciwbieżne wirniki o średnicy 4500&nbsp;mm na wysokości 2395 i 2785&nbsp;mm nad gruntem. Pod nimi tarcza sterująca z siłownikami elektrycznymi, przekładnia i silnik, płyta zawieszenia z karabinkiem. Rama z rur węglowych Ø45: z przodu trójkąt jak w lotni (dwie nogi), za plecami pilota jedna noga tylna z akumulatorem i falownikiem, która pod siodełkiem sięga do podnóżka, 380 mm nad ziemią. Pilot wisi na karabinku.</desc>
   <defs>
     <marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
       <path d="M0 1.5 L10 5 L0 8.5 z" class="d-arrow"/>
@@ -101,7 +101,7 @@
   <path d="M908 139 L950 139.5 L950 144.5 L908 145 z" class="d-tip"/>
   <rect x="480" y="131" width="40" height="20" rx="4" class="d-hub"/>
 
-  <!-- tarcza sterująca (skok ogólny) z 2 siłownikami -->
+  <!-- tarcza sterująca (skok ogólny), siłowniki: 3 wirnik dolny + 2 wirnik górny -->
   <rect x="466" y="154" width="68" height="9" rx="2" class="d-accent"/>
   <rect x="446" y="160" width="14" height="22" rx="2" class="d-body"/>
   <rect x="540" y="160" width="14" height="22" rx="2" class="d-body"/>
@@ -115,7 +115,7 @@
   <rect x="446" y="258" width="108" height="7" rx="2" class="d-ink-fill"/>
   <path d="M492 265 q-6 4 0 10 q6 4 0 10" class="d-ink" stroke-width="3"/>
 
-  <!-- trójkąt przedni jak w lotni: 2 nogi CFRP Ø45×2,5 (±60° od kierunku lotu, w widoku z boku nakładają się); stopy 400 mm przed osią (okrąg stóp Ø1600) -->
+  <!-- trójkąt przedni jak w lotni: 2 nogi CFRP Ø45×2,5 (±60° od kierunku lotu, w widoku z boku nakładają się) – układ D12, do przeliczenia -->
   <path d="M479 262 L429 560" class="d-leg"/>
   <circle cx="429" cy="561" r="6" class="d-ink-fill"/>
 
@@ -129,7 +129,7 @@
   <line x1="532" y1="394" x2="560" y2="394" class="d-thin-w"/>
   <!-- siodełko -->
   <path d="M470 462 Q500 456 528 464 L524 470 Q498 466 472 468 z" class="d-ink-fill"/>
-  <!-- podnóżek ⊥: poprzeczka 400 mm w poprzek (z boku widoczna jako przekrój), 380 mm nad ziemią -->
+  <!-- podnóżek ⊥: poprzeczka 450 mm w poprzek (z boku widoczna jako przekrój), 380 mm nad ziemią -->
   <circle cx="478" cy="544" r="8" class="d-ink-fill"/>
 
   <!-- pilot 110 kg — linia widmowa -->
@@ -172,7 +172,7 @@
     <line x1="770" y1="176" x2="770" y2="146" class="d-ext"/><circle cx="770" cy="143" r="2.5" class="d-arrow"/>
     <text x="764" y="174" class="d-note" text-anchor="end">wirnik dolny</text>
     <line x1="440" y1="158" x2="360" y2="158" class="d-ext"/>
-    <text x="354" y="163" class="d-note" text-anchor="end">tarcza sterująca, 2 siłowniki</text>
+    <text x="354" y="163" class="d-note" text-anchor="end">tarcza sterująca, siłowniki</text>
     <line x1="458" y1="200" x2="360" y2="200" class="d-ext"/>
     <text x="354" y="205" class="d-note" text-anchor="end">przekładnia cykloidalna + silnik</text>
     <line x1="446" y1="262" x2="360" y2="250" class="d-ext"/>
@@ -212,7 +212,7 @@
           <div><dt>Łatwy transport</dt><dd>Maszyna, którą da się rozłożyć i przewieźć zwykłym samochodem.</dd></div>
           <div><dt>Bezpieczeństwo</dt><dd>Lot nisko i wolno, próby etapami. Bezpieczeństwo to osobny cel projektu, a nie założenie.</dd></div>
         </dl>
-        <p class="note">Różnice: HELIMAC ma napęd elektryczny zamiast spalinowego — mniej części, mniej hałasu, bez spalin. Ma też zmienny kąt łopat ustawiany dwoma siłownikami elektrycznymi. Po zaniku mocy kąt opada automatycznie, co według obliczeń pozwala wylądować autorotacyjnie.</p>
+        <p class="note">Różnice: HELIMAC ma napęd elektryczny zamiast spalinowego — mniej części, mniej hałasu, bez spalin. Ma też zmienny kąt łopat ustawiany siłownikami elektrycznymi. Po zaniku mocy kąt opada automatycznie, co według obliczeń pozwala wylądować autorotacyjnie.</p>
       </div>
     </div>
     <ul class="gallery">
@@ -249,7 +249,7 @@
       <div>
         <h2>Konstrukcja rev J2</h2>
         <p class="intro">Dwa przeciwbieżne wirniki na jednej osi, bez wirnika ogonowego. Silnik elektryczny napędza je przez przekładnię cykloidalną, a falownik MC-P i elektronikę sterującą projektujemy sami.</p>
-        <p>Sterowanie jest proste: kierunek lotu pilot zmienia balansem ciała, bo sztywne piasty przenoszą moment z wirników na ramę. Kąt łopat (skok ogólny) ustawia tarcza sterująca z dwoma siłownikami elektrycznymi, a różnica kątów wirnika górnego i dolnego obraca maszynę wokół osi. Nie ma wirnika ogonowego ani skoku cyklicznego.</p>
+        <p>Sterowanie jest proste: kierunek lotu pilot zmienia balansem ciała, bo sztywne piasty przenoszą moment z wirników na ramę. Kąt łopat (skok ogólny) ustawiają siłowniki elektryczne — trzy dla wirnika dolnego i dwa dla górnego, a różnica kątów wirnika górnego i dolnego obraca maszynę wokół osi. Nie ma wirnika ogonowego ani skoku cyklicznego.</p>
         <p>Celem jest kategoria ultralekka z Załącznika I do rozporządzenia (UE) 2018/1139: śmigłowiec jednomiejscowy o maksymalnej masie startowej do 300&nbsp;kg, podlegający przepisom krajowym, a nie certyfikacji EASA.</p>
       </div>
       <div>
@@ -260,12 +260,12 @@
               <tr><th scope="row">Układ</th><td>współosiowy, 2 wirniki Ø&nbsp;4,5&nbsp;m, 500&nbsp;obr/min</td></tr>
               <tr><th scope="row">Pilot</th><td>do 110&nbsp;kg, wzrost 1,70–1,90&nbsp;m</td></tr>
               <tr><th scope="row">Masa startowa</th><td>225,2&nbsp;kg (limit wirnika 225,3&nbsp;kg)</td></tr>
-              <tr><th scope="row">Masa pustej maszyny</th><td>74,9&nbsp;kg</td></tr>
+              <tr><th scope="row">Masa maszyny bez akumulatora</th><td>74,9&nbsp;kg</td></tr>
               <tr><th scope="row">Akumulator</th><td>40,3&nbsp;kg, 112S, ≈&nbsp;400&nbsp;V</td></tr>
               <tr><th scope="row">Moc zawisu (wirnik)</th><td>20,7&nbsp;kW, FM 0,805</td></tr>
-              <tr><th scope="row">Silnik</th><td>promieniowy, ≈&nbsp;25&nbsp;kW przy ≈&nbsp;4970&nbsp;obr/min</td></tr>
+              <tr><th scope="row">Silnik</th><td>promieniowy, wirnik zewnętrzny; ≈&nbsp;21&nbsp;kW w zawisie (szczytowo ≈&nbsp;27&nbsp;kW), 4970&nbsp;obr/min</td></tr>
               <tr><th scope="row">Przekładnia</th><td>cykloidalna, 395 / 472&nbsp;N·m (zawis / wznoszenie)</td></tr>
-              <tr><th scope="row">Sterowanie</th><td>kierunek: balans ciała; skok ogólny: tarcza sterująca, 2&nbsp;siłowniki elektryczne</td></tr>
+              <tr><th scope="row">Sterowanie</th><td>kierunek: balans ciała; skok ogólny: 5&nbsp;siłowników elektrycznych (3 wirnik dolny, 2 górny)</td></tr>
               <tr><th scope="row">Falownik</th><td>MC-P rev D1, tranzystory SiC</td></tr>
               <tr><th scope="row">Czas lotu</th><td>≈&nbsp;14 / 25&nbsp;min (ogniwa 200&nbsp;Wh/kg)</td></tr>
             </tbody>
@@ -280,11 +280,11 @@
     <h2>Teraz: projekt napędu</h2>
     <p class="intro">Na tym etapie zajmujemy się projektem mechanicznym i elektronicznym. Zaczynamy od napędu — serca maszyny — który najpierw przejdzie próby na hamowni.</p>
     <div class="parts">
-      <article><h3>Silnik elektryczny</h3><p>Silnik z magnesami trwałymi, ok.&nbsp;25&nbsp;kW przy ok.&nbsp;4970&nbsp;obr/min. Pakiet 280 blach, magnesy neodymowe. Projektowany od podstaw, z plikami do wycięcia blach.</p></article>
+      <article><h3>Silnik elektryczny</h3><p>Silnik z magnesami trwałymi i wirnikiem zewnętrznym: ok.&nbsp;21&nbsp;kW w zawisie, ok.&nbsp;25&nbsp;kW przy wznoszeniu, 4970&nbsp;obr/min. Pakiet 280 blach, magnesy neodymowe. Projektowany od podstaw, z plikami do wycięcia blach.</p></article>
       <article><h3>Przekładnia cykloidalna 10:1</h3><p>Obracający się korpus na nieruchomej kolumnie, dwie krzywki 20&nbsp;mm na rolkach igiełkowych. Kąpiel olejowa, żebra i dwa wentylatory. Moment 395&nbsp;N·m w zawisie.</p></article>
       <article><h3>Przekładnia nawrotna</h3><p>Koła stożkowe odwracają kierunek obrotów dla górnego wirnika. Dzięki temu oba wirniki napędza jeden silnik.</p></article>
       <article><h3>Falownik MC-P</h3><p>Własny falownik 400&nbsp;V na tranzystorach SiC, płytka 215&nbsp;×&nbsp;116&nbsp;mm projektowana w KiCad. Chłodzenie radiatorem i dwoma wentylatorami.</p></article>
-      <article><h3>Sterownik MC-C</h3><p>Płytka sterująca z mikrokontrolerem STM32: sterowanie silnikiem, wentylatorami, czujniki temperatury i rejestracja pomiarów.</p></article>
+      <article><h3>Sterownik MC-C</h3><p>Płytka sterująca (w projekcie): sterowanie silnikiem (FOC), wentylatorami, czujniki temperatury i rejestracja pomiarów.</p></article>
       <article><h3>Hamownia</h3><p>Cel etapu: 395&nbsp;N·m przez 30 minut, olej poniżej 100&nbsp;°C, a potem 50 godzin pracy. Wszystkie wyniki publikujemy.</p></article>
     </div>
     <div class="cad" id="model">
@@ -321,7 +321,7 @@
         <li><figure><a href="/assets/img/cad/23-falownik-mc-p-3d-z-radiatorem-1400.webp"><img src="/assets/img/cad/23-falownik-mc-p-3d-z-radiatorem-700.webp" srcset="/assets/img/cad/23-falownik-mc-p-3d-z-radiatorem-700.webp 700w, /assets/img/cad/23-falownik-mc-p-3d-z-radiatorem-1400.webp 1400w" sizes="(min-width: 60rem) 30vw, (min-width: 40rem) 46vw, 92vw" width="700" height="430" alt="Z radiatorem 190 × 80 mm i dwoma wentylatorami 80 mm, nadmuch w poprzek żeber" loading="lazy" decoding="async"></a><figcaption>Z radiatorem 190&nbsp;×&nbsp;80&nbsp;mm i dwoma wentylatorami 80&nbsp;mm, nadmuch w poprzek żeber</figcaption></figure></li>
       </ul>
       <h4>Łopaty wirnika</h4>
-      <p>Promień 2,25&nbsp;m. Rdzeń łopaty drukowany z ASA na zwykłej drukarce 3D i oklejany włóknem węglowym. Cięciwa 198&nbsp;mm do promienia 1&nbsp;m, dalej zwęża się do 125&nbsp;mm na końcu; łopata jest skręcona o&nbsp;12°.</p>
+      <p>Promień 2,25&nbsp;m. Rdzeń łopaty drukowany z ASA na zwykłej drukarce 3D i oklejany włóknem węglowym. Cięciwa 198&nbsp;mm do promienia 1&nbsp;m, dalej zwęża się do 125&nbsp;mm na końcu; skręcenie −12° na promień (ok.&nbsp;10° na długości łopaty).</p>
       <ul class="gallery cad-gallery">
         <li class="wide"><figure><a href="/assets/img/cad/30-lopata-segmenty-druk3d-1400.webp"><img src="/assets/img/cad/30-lopata-segmenty-druk3d-700.webp" srcset="/assets/img/cad/30-lopata-segmenty-druk3d-700.webp 700w, /assets/img/cad/30-lopata-segmenty-druk3d-1400.webp 1400w" sizes="(min-width: 60rem) 30vw, (min-width: 40rem) 46vw, 92vw" width="700" height="163" alt="Rdzeń z 10 segmentów — każdy mieści się na stole drukarki 256 × 256 mm; kolory pokazują podział na części" loading="lazy" decoding="async"></a><figcaption>Rdzeń z 10 segmentów — każdy mieści się na stole drukarki 256&nbsp;×&nbsp;256&nbsp;mm; kolory pokazują podział na części</figcaption></figure></li>
         <li><figure><a href="/assets/img/cad/31-lopata-nasada-i-rdzenie-1400.webp"><img src="/assets/img/cad/31-lopata-nasada-i-rdzenie-700.webp" srcset="/assets/img/cad/31-lopata-nasada-i-rdzenie-700.webp 700w, /assets/img/cad/31-lopata-nasada-i-rdzenie-1400.webp 1400w" sizes="(min-width: 60rem) 30vw, (min-width: 40rem) 46vw, 92vw" width="700" height="452" alt="Nasada łopaty: kołnierz i pierwsze segmenty rdzenia" loading="lazy" decoding="async"></a><figcaption>Nasada łopaty: kołnierz i pierwsze segmenty rdzenia</figcaption></figure></li>
@@ -478,7 +478,7 @@
     <div class="audience">
       <article><h3>Majsterkowicze i mechanicy</h3><p>Obróbka, montaż, przyrządy, stanowisko hamowni. Wasze doświadczenie z warsztatu jest tu na wagę złota.</p></article>
       <article><h3>Druk 3D</h3><p>Części z ASA i kompozytów, np. pierścień kierujący powietrze drukowany w sześciu segmentach, obudowy, przyrządy, modele testowe.</p></article>
-      <article><h3>Elektronika i programowanie</h3><p>Falownik SiC, płytka sterująca STM32, czujniki, BMS i oprogramowanie. Projekty w KiCad, kod na GitHubie.</p></article>
+      <article><h3>Elektronika i programowanie</h3><p>Falownik SiC, płytka sterująca MC-C, czujniki, BMS i oprogramowanie. Projekty w KiCad, kod na GitHubie.</p></article>
       <article><h3>Konstruktorzy i inżynierowie</h3><p>CAD, obliczenia wytrzymałościowe, wirniki, baterie, przepisy. Przegląd i krytyka obliczeń są dla nas najcenniejsze.</p></article>
       <article><h3>Uczniowie i studenci</h3><p>Obliczenia w Pythonie, modele CAD, druk 3D, pomiary, dokumentacja, tematy projektów i prac dyplomowych. Najlepsza nauka to prawdziwa maszyna.</p></article>
     </div>
