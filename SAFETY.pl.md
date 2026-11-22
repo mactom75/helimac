@@ -2,7 +2,7 @@
 
 [🇬🇧 English](SAFETY.md) · 🇵🇱 Polski
 
-Śmigłowiec to maszyna, której awaria często kończy się śmiercią. Wirnik o średnicy kilku metrów, wysokonapięciowa bateria o energii kilkunastu kWh i lot bez certyfikowanej konstrukcji to trzy niezależne źródła śmiertelnego ryzyka.
+Śmigłowiec to maszyna, której awaria często kończy się śmiercią. Wirnik o średnicy kilku metrów, bateria 400 V o energii kilku kWh i lot bez certyfikowanej konstrukcji to trzy niezależne źródła śmiertelnego ryzyka.
 
 ## Zasady projektu
 

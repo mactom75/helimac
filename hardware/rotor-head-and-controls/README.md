@@ -1,0 +1,13 @@
+# Coaxial rotor head, swashplate (PK), collective
+
+**Status:** 📐 rev J2 designed — files to be published
+
+## Files
+
+| File | Description | Status | Revision |
+|---|---|---|---|
+| | | | |
+
+## Notes
+
+## Open questions

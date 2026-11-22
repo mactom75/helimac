@@ -6,8 +6,8 @@ For EARLY sizing only (rotor size, power, battery).
 It does NOT replace BEMT/CFD analysis, bench tests or engineering judgement.
 
 Usage:
-    python3 calc/helimac_calc.py                 # baseline
-    python3 calc/helimac_calc.py --mtom 300 --d 6.5 --bat-kwh 16
+    python3 calc/helimac_calc.py                 # HELIMAC rev J2 baseline (coaxial)
+    python3 calc/helimac_calc.py --mtom 225 --d 4.5 --bat-kwh 8.06
     python3 calc/helimac_calc.py --sweep         # table for several rotor diameters
 
 Licence: GPL-3.0-or-later
@@ -32,12 +32,12 @@ def air_density(altitude_m: float = 0.0, temp_offset_c: float = 0.0) -> float:
 
 @dataclass
 class Design:
-    mtom_kg: float = 300.0          # take-off mass [kg] – Annex I limit for single-seat helicopter
-    rotor_d_m: float = 6.5          # main rotor diameter [m]
-    figure_of_merit: float = 0.70   # rotor hover efficiency (0.6–0.78)
-    tail_power_frac: float = 0.10   # tail rotor / anti-torque power fraction
+    mtom_kg: float = 225.2          # take-off mass [kg] – HELIMAC rev J2 (pilot 110 kg)
+    rotor_d_m: float = 4.5          # rotor diameter [m] – coaxial pair, same diameter
+    figure_of_merit: float = 0.805  # system hover FM vs. single-disk ideal power (rev J2)
+    tail_power_frac: float = 0.0    # anti-torque power fraction (0 for coaxial; ~0.10 with tail rotor)
     drive_eff: float = 0.90         # motor + controller + gearbox
-    battery_kwh: float = 16.0       # nominal pack energy [kWh]
+    battery_kwh: float = 8.06       # nominal pack energy [kWh] – 40.3 kg × 200 Wh/kg
     usable_frac: float = 0.80       # usable fraction (margin + ageing)
     reserve_min: float = 5.0        # landing reserve [min]
     altitude_m: float = 0.0
@@ -99,7 +99,7 @@ def report(d: Design) -> str:
         ("Disk loading", f"{d.disk_loading:.1f} N/m²"),
         ("Induced velocity", f"{d.induced_velocity:.2f} m/s"),
         ("Ideal power", f"{d.ideal_power_w/1000:.1f} kW"),
-        (f"Rotor power (FM {d.figure_of_merit:.2f})", f"{d.rotor_power_w/1000:.1f} kW"),
+        (f"Rotor power (FM {d.figure_of_merit:.3f})", f"{d.rotor_power_w/1000:.1f} kW"),
         (f"Shaft power (+tail {d.tail_power_frac:.0%})", f"{d.hover_shaft_power_w/1000:.1f} kW"),
         (f"Electrical power (eff {d.drive_eff:.2f})", f"{d.hover_electric_power_w/1000:.1f} kW"),
         ("Battery", f"{d.battery_kwh:.1f} kWh ({d.usable_frac:.0%} usable)"),
@@ -115,27 +115,28 @@ def report(d: Design) -> str:
 
 def sweep(base: Design) -> str:
     rows = ["  D [m] | DL [N/m²] | P_el [kW] | hover [min]", "-" * 48]
-    for d_m in [5.5, 6.0, 6.5, 7.0, 7.5]:
+    for d_m in [4.0, 4.25, 4.5, 4.75, 5.0, 5.5]:
         d = Design(**{**base.__dict__, "rotor_d_m": d_m})
         rows.append(
-            f"  {d_m:5.1f} | {d.disk_loading:9.1f} | {d.hover_electric_power_w/1000:9.1f} | {d.hover_endurance_min:11.1f}"
+            f"  {d_m:5.2f} | {d.disk_loading:9.1f} | {d.hover_electric_power_w/1000:9.1f} | {d.hover_endurance_min:11.1f}"
         )
     return "\n".join(rows)
 
 
 def main() -> None:
     p = argparse.ArgumentParser(description="HELIMAC – hover performance estimator")
-    p.add_argument("--mtom", type=float, default=300.0, help="take-off mass [kg]")
-    p.add_argument("--d", type=float, default=6.5, help="rotor diameter [m]")
-    p.add_argument("--fm", type=float, default=0.70, help="figure of merit")
-    p.add_argument("--bat-kwh", type=float, default=16.0, help="battery energy [kWh]")
+    p.add_argument("--mtom", type=float, default=225.2, help="take-off mass [kg]")
+    p.add_argument("--d", type=float, default=4.5, help="rotor diameter [m]")
+    p.add_argument("--fm", type=float, default=0.805, help="figure of merit")
+    p.add_argument("--bat-kwh", type=float, default=8.06, help="battery energy [kWh]")
     p.add_argument("--alt", type=float, default=0.0, help="altitude [m]")
+    p.add_argument("--tail", type=float, default=0.0, help="anti-torque power fraction (0 = coaxial)")
     p.add_argument("--dt", type=float, default=0.0, help="temperature offset from ISA [°C]")
     p.add_argument("--sweep", action="store_true", help="table for several diameters")
     a = p.parse_args()
 
     d = Design(mtom_kg=a.mtom, rotor_d_m=a.d, figure_of_merit=a.fm,
-               battery_kwh=a.bat_kwh, altitude_m=a.alt, temp_offset_c=a.dt)
+               battery_kwh=a.bat_kwh, tail_power_frac=a.tail, altitude_m=a.alt, temp_offset_c=a.dt)
     print(report(d))
     if a.sweep:
         print()

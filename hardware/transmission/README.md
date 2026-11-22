@@ -1,13 +1,13 @@
-# Transmission
+# Cycloidal transmission
 
-**Status:** 💭 not started
+**Status:** 📐 rev J2 designed — files to be published
 
 ## Files
 
-| File | Description | Status | Version |
+| File | Description | Status | Revision |
 |---|---|---|---|
 | | | | |
 
-## Assumptions & notes
+## Notes
 
 ## Open questions

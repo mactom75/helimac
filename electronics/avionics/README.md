@@ -1,13 +1,13 @@
-# Avionics
+# Avionics (AV)
 
 **Status:** 💭 not started
 
 ## Files
 
-| File | Description | Status | Version |
+| File | Description | Status | Revision |
 |---|---|---|---|
 | | | | |
 
-## Assumptions & notes
+## Notes
 
 ## Open questions

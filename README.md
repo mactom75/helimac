@@ -21,6 +21,20 @@ The name combines **HELI**copter and **MAC**iąg — the surname of the project'
 - Use parts and processes available to a well-equipped workshop.
 - Publish everything: drawings, calculations, software, test results — and mistakes.
 
+## Current design — rev J2
+
+| | |
+|---|---|
+| Configuration | coaxial, 2 rotors Ø 4.5 m, 500 rpm |
+| Pilot | up to 110 kg |
+| Take-off mass | 225.2 kg (empty machine 74.9 kg, battery 40.3 kg) |
+| Hover power | 20.7 kW |
+| Powertrain | radial-flux motor → cycloidal transmission; in-house SiC inverter MC-P |
+| Battery | 112S, ≈ 400 V |
+| Current stage | **Stage 1 — powertrain + power supply** (dynamometer) |
+
+Full details: [docs/design-rev-J2.md](docs/design-rev-J2.md).
+
 ## Current status
 
 Files and specifications are published **progressively, as the design and the vehicle are built**.
@@ -35,11 +49,11 @@ Files and specifications are published **progressively, as the design and the ve
 ```
 helimac/
 ├── BUILD_LOG.md          progress log
-├── docs/                 parameters, regulations, design decisions
+├── docs/                 design revision, parameters, regulations
 ├── calc/                 calculations and tools (Python) + tests
 ├── hardware/             mechanical design (CAD, drawings, BOM)
-│   ├── frame/  main-rotor/  tail-rotor/  transmission/  landing-gear/
-├── electronics/          powertrain, battery + BMS, avionics
+│   ├── frame/  seat/  rotor-head-and-controls/  blades/  transmission/  motor/
+├── electronics/          MC-P inverter, MC-C controller, battery + BMS, avionics
 ├── firmware/             software (monitoring, displays, logging)
 ├── LICENSES/             full licence texts
 └── .github/              issue/discussion templates, CI

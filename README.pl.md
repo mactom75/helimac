@@ -21,6 +21,20 @@ Nazwa łączy słowa **HELI**kopter i **MAC**iąg — nazwisko założyciela pro
 - Korzystać z części i technologii dostępnych w dobrze wyposażonym warsztacie.
 - Publikować wszystko: rysunki, obliczenia, oprogramowanie, wyniki testów — i błędy.
 
+## Aktualna konstrukcja — rev J2
+
+| | |
+|---|---|
+| Układ | współosiowy, 2 wirniki Ø 4,5 m, 500 obr/min |
+| Pilot | do 110 kg |
+| Masa startowa | 225,2 kg (maszyna 74,9 kg, bateria 40,3 kg) |
+| Moc zawisu | 20,7 kW |
+| Napęd | silnik promieniowy → przekładnia cykloidalna; własny falownik SiC MC-P |
+| Bateria | 112S, ≈ 400 V |
+| Obecny etap | **Etap 1 — napęd + zasilanie** (hamownia) |
+
+Szczegóły (EN): [docs/design-rev-J2.md](docs/design-rev-J2.md).
+
 ## Aktualny stan
 
 Pliki i parametry są publikowane **stopniowo, w miarę postępu projektu i budowy maszyny**.

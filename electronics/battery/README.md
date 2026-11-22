@@ -1,13 +1,13 @@
 # Battery & BMS
 
-**Status:** 💭 not started
+**Status:** 📐 40.3 kg pack — details to be published
 
 ## Files
 
-| File | Description | Status | Version |
+| File | Description | Status | Revision |
 |---|---|---|---|
 | | | | |
 
-## Assumptions & notes
+## Notes
 
 ## Open questions

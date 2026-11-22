@@ -2,7 +2,7 @@
 
 🇬🇧 English · [🇵🇱 Polski](SAFETY.pl.md)
 
-A helicopter is a machine whose failures are often fatal. A rotor several metres in diameter, a high-voltage battery storing over ten kWh, and flying an uncertified design are three independent sources of lethal risk.
+A helicopter is a machine whose failures are often fatal. A rotor several metres in diameter, a 400 V battery storing several kWh, and flying an uncertified design are three independent sources of lethal risk.
 
 ## Project rules
 

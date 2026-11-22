@@ -28,3 +28,9 @@ def test_bigger_rotor_needs_less_power():
 def test_endurance_scales_with_battery():
     a, b = Design(battery_kwh=10), Design(battery_kwh=20)
     assert math.isclose(b.hover_endurance_min, 2 * a.hover_endurance_min, rel_tol=1e-9)
+
+
+def test_rev_j2_rotor_power_matches_design_doc():
+    # rev J2 design document: hover rotor power 20.7 kW at 225.2 kg, D 4.5 m, FM 0.805
+    d = Design()
+    assert math.isclose(d.rotor_power_w / 1000, 20.7, abs_tol=0.3)
