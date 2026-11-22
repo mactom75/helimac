@@ -251,6 +251,7 @@ p { max-width: var(--measure); margin: 0 0 1rem; }
 
 .contact { display: grid; gap: 1rem 3rem; grid-template-columns: 1fr; margin-top: 1rem; }
 @media (min-width: 45rem) { .contact { grid-template-columns: repeat(2, minmax(0, 22rem)); } }
+@media (min-width: 64rem) { .contact { grid-template-columns: repeat(3, minmax(0, 20rem)); } }
 .contact dt { font-size: var(--step--1); color: var(--ink-soft); }
 .contact dd { margin: 0.15rem 0 0; font-size: var(--step-1); font-weight: 600; overflow-wrap: anywhere; }
 
