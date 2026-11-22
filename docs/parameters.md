@@ -9,7 +9,7 @@ Status: 💭 idea · 📐 calculated · 🧪 measured · ✅ approved
 | Seats | 1 | ✅ | project goal |
 | Pilot mass (standard) | 110 kg, height 1.70–1.90 m | ✅ | owner decision, rev J |
 | Take-off mass | 225.2 kg (rotor limit 225.3 kg) | 📐 | mass budget rev J2 |
-| Machine mass without battery | 74.9 kg | 📐 | mass budget rev J2 |
+| Machine mass without battery / with battery | 74.9 kg / 115.2 kg (battery 40.3 kg) | 📐 | mass budget rev J2 |
 | Rotor configuration | coaxial, 2 rotors | ✅ | |
 | Rotor diameter | 4.5 m | 📐 | |
 | Rotor speed | 500 rpm | 📐 | |
