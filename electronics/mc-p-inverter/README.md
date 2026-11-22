@@ -57,4 +57,4 @@ PWM_BL = pin 16, PWM_CH = pin 40, PWM_CL = pin 39; pins 15, 17, 18, 19 = GND.
 
 | File | Description | Status | Revision |
 |---|---|---|---|
-| | PCB source project, Gerbers, BOM, pick-and-place | to be published | D1 |
+| | KiCad project, Gerbers, BOM, pick-and-place | to be published | D1 |
