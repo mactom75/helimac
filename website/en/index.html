@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,13 +16,17 @@
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/assets/fonts/archivo-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/style.css">
+<script>document.documentElement.classList.replace("no-js","js")</script>
+<script src="/assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
 
-<header class="wrap site-head">
+<div class="head-bar">
+<header class="wrap site-head" id="site-head">
   <a class="wordmark" href="/en/">HELIMAC</a>
-  <nav aria-label="Main">
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav id="menu" aria-label="Main">
     <ul>
       <li><a href="#design">Design</a></li>
       <li><a href="#plan">Plan</a></li>
@@ -33,6 +37,7 @@
     </ul>
   </nav>
 </header>
+</div>
 
 <main id="content">
   <div class="wrap hero">
@@ -160,6 +165,7 @@
     <text x="374" y="300" text-anchor="end" class="d-note">pilot up to 110&nbsp;kg</text>
   </g>
 </svg>
+      <ul class="legend" aria-hidden="true"><li>upper and lower rotor</li><li>transmission + motor</li><li>MC-P inverter</li><li>400 V battery</li><li>pilot up to 110 kg</li><li>skid frame</li></ul>
       <figcaption>Side view, design rev J2. Dimensions in millimetres: rotor diameter and rotor heights above ground. The pilot is drawn as a phantom line.</figcaption>
     </figure>
   </div>

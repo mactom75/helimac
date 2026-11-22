@@ -28,6 +28,10 @@
   --line: #4f6a84;
   --tip: #e8b500;
   --white: #f7f9fa;
+  --panel: #18222e;
+  --panel-fg: #f7f9fa;
+  --panel-soft: #cfd7de;
+  color-scheme: light dark;
 
   --step--1: 0.875rem;
   --step-0: 1.0625rem;
@@ -74,16 +78,36 @@ a:hover { text-decoration-color: var(--ink); text-decoration-thickness: 2px; }
 .wrap { max-width: 72rem; margin: 0 auto; padding: 0 var(--gutter); }
 
 /* ---------- nagłówek ---------- */
+.head-bar {
+  position: sticky; top: 0; z-index: 20;
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent; transition: border-color .2s;
+}
+.head-bar.scrolled { border-bottom-color: var(--paper-deep); }
 .site-head {
-  display: flex; align-items: baseline; justify-content: space-between; gap: 1rem 2rem;
-  flex-wrap: wrap; padding-top: 1.25rem; padding-bottom: 1.25rem;
+  display: flex; align-items: center; justify-content: space-between; gap: 0.5rem 2rem;
+  flex-wrap: wrap; padding-top: 0.9rem; padding-bottom: 0.9rem;
+}
+.menu-btn {
+  display: none; font: inherit; font-weight: 600; font-size: var(--step--1); color: var(--ink);
+  background: transparent; border: 2px solid var(--ink); border-radius: 2px; padding: 0.45rem 0.9rem; min-height: 44px; cursor: pointer;
+}
+@media (max-width: 46rem) {
+  .js .menu-btn { display: inline-flex; align-items: center; gap: 0.5rem; }
+  .js .site-head nav { display: none; width: 100%; }
+  .js .site-head.open nav { display: block; }
+  .site-head nav ul { flex-direction: column; gap: 0; padding: 0.5rem 0 0.25rem; }
+  .site-head nav li { border-top: 1px solid var(--paper-deep); }
+  .site-head nav a { display: block; padding: 0.8rem 0; font-size: var(--step-0); }
+  .lang { display: inline-block !important; margin: 0.6rem 0; padding: 0.4rem 0.8rem !important; }
 }
 .wordmark {
   font-weight: 800; font-stretch: 125%; font-size: var(--step-1);
   letter-spacing: 0.02em; text-decoration: none;
 }
 .site-head nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; margin: 0; padding: 0; }
-.site-head nav a { text-decoration: none; font-size: var(--step--1); font-weight: 500; }
+.site-head nav a { text-decoration: none; font-size: var(--step--1); font-weight: 500; display: inline-block; padding: 0.4rem 0; }
 .site-head nav a:hover { text-decoration: underline; }
 .lang { border: 1px solid var(--ink); padding: 0.05rem 0.5rem; border-radius: 2px; }
 
@@ -96,7 +120,7 @@ a:hover { text-decoration-color: var(--ink); text-decoration-thickness: 2px; }
 .hero .lede { font-size: var(--step-1); line-height: 1.45; max-width: var(--measure); margin: 1.25rem 0 0; color: var(--ink-soft); }
 .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
 .btn {
-  display: inline-block; padding: 0.7rem 1.2rem; font-weight: 600; text-decoration: none;
+  display: inline-flex; align-items: center; min-height: 48px; padding: 0.7rem 1.2rem; font-weight: 600; text-decoration: none;
   border: 2px solid var(--ink); border-radius: 2px; font-size: var(--step--1);
 }
 .btn-primary { background: var(--ink); color: var(--white); }
@@ -145,7 +169,7 @@ a:hover { text-decoration-color: var(--ink); text-decoration-thickness: 2px; }
 }
 
 /* ---------- sekcje ---------- */
-main section.wrap { padding-top: clamp(3.5rem, 8vw, 6rem); scroll-margin-top: 1rem; }
+main section.wrap { padding-top: clamp(3.5rem, 8vw, 6rem); scroll-margin-top: 4.5rem; }
 h2 {
   font-size: var(--step-3); line-height: 1.1; font-weight: 750; font-stretch: 112%;
   letter-spacing: -0.01em; margin: 0 0 1rem; max-width: 20ch;
@@ -209,12 +233,12 @@ p { max-width: var(--measure); margin: 0 0 1rem; }
 
 /* bezpieczeństwo */
 .safety {
-  margin-top: clamp(3.5rem, 8vw, 6rem); background: var(--ink); color: var(--white);
+  margin-top: clamp(3.5rem, 8vw, 6rem); background: var(--panel); color: var(--panel-fg);
   padding: clamp(1.5rem, 4vw, 2.5rem); border-left: 10px solid var(--tip);
 }
-.safety h2 { color: var(--white); font-size: var(--step-2); }
-.safety p { color: #cfd7de; }
-.safety a { color: var(--white); text-decoration-color: var(--tip); }
+.safety h2 { color: var(--panel-fg); font-size: var(--step-2); }
+.safety p { color: var(--panel-soft); }
+.safety a { color: var(--panel-fg); text-decoration-color: var(--tip); }
 
 /* dołącz */
 .join-steps { counter-reset: j; list-style: none; padding: 0; margin: 1.5rem 0; display: grid; gap: 1rem; }
@@ -240,3 +264,33 @@ p { max-width: var(--measure); margin: 0 0 1rem; }
 .site-foot p { margin: 0; }
 .press li { display: grid; grid-template-columns: 5.5rem 1fr; gap: 1rem; }
 @media (max-width: 40rem) { .drawing .callouts { display: none; } }
+
+/* legenda rysunku — tylko na wąskich ekranach, gdzie odnośniki są ukryte */
+.legend { display: none; }
+@media (max-width: 40rem) {
+  .legend { display: grid; grid-template-columns: 1fr 1fr; gap: 0.2rem 1rem; list-style: none; padding: 0; margin: 0.75rem 0 0; font-size: var(--step--1); }
+  .legend li::before { content: ""; display: inline-block; width: 0.55rem; height: 0.55rem; border: 1.5px solid var(--ink); background: var(--paper-deep); margin-right: 0.45rem; }
+}
+
+/* telefony: czytelny tekst, bez ściśniętych kolumn */
+@media (max-width: 30rem) {
+  :root { --step-0: 1.0625rem; --step--1: 0.9375rem; --step-1: 1.1875rem; }
+  .actions .btn { flex: 1 1 100%; justify-content: center; }
+  .title-block th { width: 40%; }
+  .press li { grid-template-columns: 1fr; gap: 0.1rem; }
+  .then-now { font-size: var(--step--1); }
+}
+
+/* tryb ciemny wg ustawień systemu */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #121a23; --paper-deep: #263240; --ink: #e8edf0; --ink-soft: #a9b6c2;
+    --line: #8fa9c2; --tip: #f2c200; --white: #19232e;
+    --panel: #0b1118; --panel-fg: #e8edf0; --panel-soft: #b4c0cb;
+  }
+  .btn-primary { color: #121a23; }
+  .btn-primary:hover { color: #121a23; }
+  .d-tip { stroke: #121a23; }
+}
+.site-head nav a[aria-current] { text-decoration: underline; text-decoration-color: var(--tip); text-decoration-thickness: 3px; text-underline-offset: 0.35em; }
+.site-head nav a.lang { padding: 0.3rem 0.75rem; }

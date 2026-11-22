@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pl">
+<html lang="pl" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,13 +16,17 @@
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/assets/fonts/archivo-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/style.css">
+<script>document.documentElement.classList.replace("no-js","js")</script>
+<script src="/assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#tresc">Przejdź do treści</a>
 
-<header class="wrap site-head">
+<div class="head-bar">
+<header class="wrap site-head" id="site-head">
   <a class="wordmark" href="/">HELIMAC</a>
-  <nav aria-label="Główna">
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav id="menu" aria-label="Główna">
     <ul>
       <li><a href="#konstrukcja">Konstrukcja</a></li>
       <li><a href="#plan">Plan</a></li>
@@ -33,6 +37,7 @@
     </ul>
   </nav>
 </header>
+</div>
 
 <main id="tresc">
   <div class="wrap hero">
@@ -160,6 +165,7 @@
     <text x="374" y="300" text-anchor="end" class="d-note">pilot do 110&nbsp;kg</text>
   </g>
 </svg>
+      <ul class="legend" aria-hidden="true"><li>wirnik górny i dolny</li><li>przekładnia + silnik</li><li>falownik MC-P</li><li>akumulator 400 V</li><li>pilot do 110 kg</li><li>rama na płozach</li></ul>
       <figcaption>Widok z boku, konstrukcja rev J2. Wymiary w milimetrach: średnica wirników i ich wysokość nad gruntem. Pilot narysowany linią widmową.</figcaption>
     </figure>
   </div>
