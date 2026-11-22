@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HELIMAC — jednoosobowy śmigłowiec elektryczny open source</title>
-<meta name="description" content="HELIMAC to jednoosobowy współosiowy śmigłowiec z napędem elektrycznym, projektowany w Bydgoszczy i publikowany jako open source.">
+<meta name="description" content="HELIMAC to jednoosobowy elektryczny śmigłowiec współosiowy sterowany balansem ciała, jak lotnia. Skrajnie prosty, projektowany w Bydgoszczy jako open source.">
 <link rel="canonical" href="https://helimac.pl/">
 <link rel="alternate" hreflang="pl" href="https://helimac.pl/">
 <link rel="alternate" hreflang="en" href="https://helimac.pl/en/">
 <meta property="og:title" content="HELIMAC — jednoosobowy śmigłowiec elektryczny open source">
-<meta property="og:description" content="Współosiowy śmigłowiec elektryczny budowany otwarcie: rysunki, obliczenia, oprogramowanie i wyniki prób.">
+<meta property="og:description" content="Skrajnie prosty, elektryczny śmigłowiec współosiowy sterowany balansem ciała. Projekt open source.">
 <meta property="og:url" content="https://helimac.pl/">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#e6eaec">
@@ -28,6 +28,7 @@
   <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
   <nav id="menu" aria-label="Główna">
     <ul>
+      <li><a href="#inspiracja">Inspiracja</a></li>
       <li><a href="#konstrukcja">Konstrukcja</a></li>
       <li><a href="#plan">Plan</a></li>
       <li><a href="#dziennik">Dziennik budowy</a></li>
@@ -41,8 +42,8 @@
 
 <main id="tresc">
   <div class="wrap hero">
-    <h1>Jednoosobowy śmigłowiec elektryczny, budowany otwarcie.</h1>
-    <p class="lede">HELIMAC to współosiowy śmigłowiec z napędem elektrycznym, projektowany od podstaw w Bydgoszczy. Publikujemy wszystko: rysunki, obliczenia, oprogramowanie, wyniki prób — i błędy.</p>
+    <h1>Jednoosobowy śmigłowiec elektryczny, sterowany jak lotnia.</h1>
+    <p class="lede">HELIMAC to współosiowy śmigłowiec z napędem elektrycznym, projektowany w Bydgoszczy jako maszyna skrajnie prosta: łatwa w transporcie, w pilotażu i w obsłudze. Pilot steruje balansem ciała. Projekt jest otwarty — publikujemy rysunki, obliczenia, oprogramowanie, wyniki prób i błędy.</p>
     <div class="actions">
       <a class="btn btn-primary" href="https://github.com/mactom75/helimac">Repozytorium na GitHubie</a>
       <a class="btn" href="#historia">Historia projektu</a>
@@ -169,6 +170,54 @@
       <figcaption>Widok z boku, konstrukcja rev J2. Wymiary w milimetrach: średnica wirników i ich wysokość nad gruntem. Pilot narysowany linią widmową.</figcaption>
     </figure>
   </div>
+
+  <section id="inspiracja" class="wrap">
+    <h2>Inspiracja: śmigłowiec plecakowy Franza Schöffmanna</h2>
+    <div class="split">
+      <div>
+        <p class="intro">HELIMAC nawiązuje do jednej z najprostszych latających konstrukcji śmigłowcowych: jednoosobowego śmigłowca dr. Franza Schöffmanna ze Stockerau w Austrii, który latał od około 2004 roku.</p>
+        <p>Dwa przeciwbieżne wirniki nad głową pilota, napęd tuż pod nimi i rama z trzech rur, która jest jednocześnie podwoziem i uchwytem. Nie ma kabiny ani wirnika ogonowego. Pilot wisi w uprzęży i kieruje maszyną, przesuwając ciężar ciała — tak jak w lotni. Konstrukcja zbudowana w przydomowym warsztacie zainspirowała amatorskich konstruktorów na całym świecie.</p>
+        <p class="note">Źródła: <a href="https://www.youtube.com/watch?v=aWG-rq8X1Mg">film z lotów na YouTube</a>, <a href="https://www.rotaryforum.com/threads/another-attempt-back-pack-helicopter.6647/page-58">wątek „Another attempt, back-pack helicopter” na RotaryForum</a>.</p>
+      </div>
+      <div>
+        <h3>Co z tego bierzemy</h3>
+        <dl class="principles">
+          <div><dt>Prostota</dt><dd>Jak najmniej części i mechanizmów. Każdy element, którego nie ma, nie może się zepsuć.</dd></div>
+          <div><dt>Pilotaż ciałem</dt><dd>Kierunek lotu zmienia się przechyleniem ciała, intuicyjnie, jak w lotni.</dd></div>
+          <div><dt>Łatwy transport</dt><dd>Maszyna, którą da się rozłożyć i przewieźć zwykłym samochodem.</dd></div>
+          <div><dt>Bezpieczeństwo</dt><dd>Lot nisko i wolno, próby etapami. Bezpieczeństwo to osobny cel projektu, a nie założenie.</dd></div>
+        </dl>
+        <p class="note">Różnica: zamiast silnika spalinowego HELIMAC ma napęd elektryczny i własną elektronikę — mniej części, mniej hałasu, bez spalin.</p>
+      </div>
+    </div>
+    <ul class="gallery">
+      <li><figure>
+        <a href="/assets/img/schoffmann/maszyna-na-statywie.webp" aria-label="otwórz zdjęcie w pełnym rozmiarze"><img src="/assets/img/schoffmann/maszyna-na-statywie-700.webp" srcset="/assets/img/schoffmann/maszyna-na-statywie-700.webp 700w, /assets/img/schoffmann/maszyna-na-statywie.webp 1400w" sizes="(min-width: 60rem) 23rem, (min-width: 40rem) 45vw, 92vw" width="1400" height="1294" loading="lazy" decoding="async" alt="Maszyna na ziemi: wirniki, napęd i trzy rury ramy."></a>
+        <figcaption>Maszyna na ziemi: wirniki, napęd i trzy rury ramy.</figcaption>
+      </figure></li>
+      <li><figure>
+        <a href="/assets/img/schoffmann/glowica-wirnikow.webp" aria-label="otwórz zdjęcie w pełnym rozmiarze"><img src="/assets/img/schoffmann/glowica-wirnikow-700.webp" srcset="/assets/img/schoffmann/glowica-wirnikow-700.webp 700w, /assets/img/schoffmann/glowica-wirnikow.webp 1400w" sizes="(min-width: 60rem) 23rem, (min-width: 40rem) 45vw, 92vw" width="1400" height="872" loading="lazy" decoding="async" alt="Dwa przeciwbieżne wirniki i napęd tuż pod nimi."></a>
+        <figcaption>Dwa przeciwbieżne wirniki i napęd tuż pod nimi.</figcaption>
+      </figure></li>
+      <li><figure>
+        <a href="/assets/img/schoffmann/przygotowanie.webp" aria-label="otwórz zdjęcie w pełnym rozmiarze"><img src="/assets/img/schoffmann/przygotowanie-700.webp" srcset="/assets/img/schoffmann/przygotowanie-700.webp 700w, /assets/img/schoffmann/przygotowanie.webp 1400w" sizes="(min-width: 60rem) 23rem, (min-width: 40rem) 45vw, 92vw" width="1400" height="1262" loading="lazy" decoding="async" alt="Pilot wchodzi pod wirniki i zapina uprząż."></a>
+        <figcaption>Pilot wchodzi pod wirniki i zapina uprząż.</figcaption>
+      </figure></li>
+      <li><figure>
+        <a href="/assets/img/schoffmann/start.webp" aria-label="otwórz zdjęcie w pełnym rozmiarze"><img src="/assets/img/schoffmann/start-700.webp" srcset="/assets/img/schoffmann/start-700.webp 700w, /assets/img/schoffmann/start.webp 1400w" sizes="(min-width: 60rem) 23rem, (min-width: 40rem) 45vw, 92vw" width="1400" height="1201" loading="lazy" decoding="async" alt="Start z biegu: pilot odrywa się od ziemi."></a>
+        <figcaption>Start z biegu: pilot odrywa się od ziemi.</figcaption>
+      </figure></li>
+      <li><figure>
+        <a href="/assets/img/schoffmann/lot.webp" aria-label="otwórz zdjęcie w pełnym rozmiarze"><img src="/assets/img/schoffmann/lot-700.webp" srcset="/assets/img/schoffmann/lot-700.webp 700w, /assets/img/schoffmann/lot.webp 1400w" sizes="(min-width: 60rem) 23rem, (min-width: 40rem) 45vw, 92vw" width="1400" height="1020" loading="lazy" decoding="async" alt="Lot. Pilot trzyma rury ramy i steruje balansem ciała."></a>
+        <figcaption>Lot. Pilot trzyma rury ramy i steruje balansem ciała.</figcaption>
+      </figure></li>
+      <li><figure>
+        <a href="/assets/img/schoffmann/zawis.webp" aria-label="otwórz zdjęcie w pełnym rozmiarze"><img src="/assets/img/schoffmann/zawis-700.webp" srcset="/assets/img/schoffmann/zawis-700.webp 700w, /assets/img/schoffmann/zawis.webp 1400w" sizes="(min-width: 60rem) 23rem, (min-width: 40rem) 45vw, 92vw" width="1400" height="1245" loading="lazy" decoding="async" alt="Zawis nisko nad ziemią."></a>
+        <figcaption>Zawis nisko nad ziemią.</figcaption>
+      </figure></li>
+    </ul>
+    <p class="note">Zdjęcia: kadry z filmu z lotów Franza Schöffmanna, oczyszczone i powiększone. Prawa do materiału należą do jego autorów. <a href="https://www.youtube.com/watch?v=aWG-rq8X1Mg">Zobacz cały film</a>.</p>
+  </section>
 
   <section id="konstrukcja" class="wrap">
     <div class="split">

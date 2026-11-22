@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HELIMAC — open-source single-seat electric helicopter</title>
-<meta name="description" content="HELIMAC is a single-seat coaxial helicopter with an electric powertrain, designed in Bydgoszcz, Poland, and published as open source.">
+<meta name="description" content="HELIMAC is a single-seat electric coaxial helicopter steered by weight shift, like a hang glider. Radically simple, designed in Bydgoszcz, Poland, as open source.">
 <link rel="canonical" href="https://helimac.pl/en/">
 <link rel="alternate" hreflang="pl" href="https://helimac.pl/">
 <link rel="alternate" hreflang="en" href="https://helimac.pl/en/">
 <meta property="og:title" content="HELIMAC — open-source single-seat electric helicopter">
-<meta property="og:description" content="A coaxial electric helicopter built in the open: drawings, calculations, software and test results.">
+<meta property="og:description" content="A radically simple electric coaxial helicopter steered by weight shift. Open-source project.">
 <meta property="og:url" content="https://helimac.pl/en/">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#e6eaec">
@@ -28,6 +28,7 @@
   <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
   <nav id="menu" aria-label="Main">
     <ul>
+      <li><a href="#inspiration">Inspiration</a></li>
       <li><a href="#design">Design</a></li>
       <li><a href="#plan">Plan</a></li>
       <li><a href="#log">Build log</a></li>
@@ -41,8 +42,8 @@
 
 <main id="content">
   <div class="wrap hero">
-    <h1>A single-seat electric helicopter, built in the open.</h1>
-    <p class="lede">HELIMAC is a coaxial helicopter with an electric powertrain, designed from scratch in Bydgoszcz, Poland. We publish everything: drawings, calculations, software, test results — and mistakes.</p>
+    <h1>A single-seat electric helicopter, steered like a hang glider.</h1>
+    <p class="lede">HELIMAC is a coaxial helicopter with an electric powertrain, designed in Bydgoszcz, Poland, to be as simple as possible: easy to transport, to fly and to maintain. The pilot steers by shifting body weight. The project is open — we publish drawings, calculations, software, test results and mistakes.</p>
     <div class="actions">
       <a class="btn btn-primary" href="https://github.com/mactom75/helimac">Repository on GitHub</a>
       <a class="btn" href="#history">Project history</a>
@@ -169,6 +170,54 @@
       <figcaption>Side view, design rev J2. Dimensions in millimetres: rotor diameter and rotor heights above ground. The pilot is drawn as a phantom line.</figcaption>
     </figure>
   </div>
+
+  <section id="inspiration" class="wrap">
+    <h2>Inspiration: Franz Schöffmann’s backpack helicopter</h2>
+    <div class="split">
+      <div>
+        <p class="intro">HELIMAC draws on one of the simplest helicopters ever flown: the single-person machine built by Dr. Franz Schöffmann of Stockerau, Austria, flying since around 2004.</p>
+        <p>Two counter-rotating rotors above the pilot’s head, the drive right below them, and a frame of three tubes that serve as both landing gear and handles. No cabin, no tail rotor. The pilot hangs in a harness and steers by shifting body weight — just like a hang glider. Built in a home workshop, it inspired amateur builders around the world.</p>
+        <p class="note">Sources: <a href="https://www.youtube.com/watch?v=aWG-rq8X1Mg">flight video on YouTube</a>, <a href="https://www.rotaryforum.com/threads/another-attempt-back-pack-helicopter.6647/page-58">“Another attempt, back-pack helicopter” thread on RotaryForum</a>.</p>
+      </div>
+      <div>
+        <h3>What we take from it</h3>
+        <dl class="principles">
+          <div><dt>Simplicity</dt><dd>As few parts and mechanisms as possible. A part that isn’t there can’t fail.</dd></div>
+          <div><dt>Weight-shift flying</dt><dd>You change direction by leaning your body, intuitively, as on a hang glider.</dd></div>
+          <div><dt>Easy transport</dt><dd>A machine you can take apart and carry in an ordinary car.</dd></div>
+          <div><dt>Safety</dt><dd>Fly low and slow, test in stages. Safety is a design goal in its own right, not an assumption.</dd></div>
+        </dl>
+        <p class="note">The difference: instead of a combustion engine, HELIMAC has an electric powertrain and in-house electronics — fewer parts, less noise, no exhaust.</p>
+      </div>
+    </div>
+    <ul class="gallery">
+      <li><figure>
+        <a href="/assets/img/schoffmann/maszyna-na-statywie.webp" aria-label="open full-size photo"><img src="/assets/img/schoffmann/maszyna-na-statywie-700.webp" srcset="/assets/img/schoffmann/maszyna-na-statywie-700.webp 700w, /assets/img/schoffmann/maszyna-na-statywie.webp 1400w" sizes="(min-width: 60rem) 23rem, (min-width: 40rem) 45vw, 92vw" width="1400" height="1294" loading="lazy" decoding="async" alt="The machine on the ground: rotors, drive and three frame tubes."></a>
+        <figcaption>The machine on the ground: rotors, drive and three frame tubes.</figcaption>
+      </figure></li>
+      <li><figure>
+        <a href="/assets/img/schoffmann/glowica-wirnikow.webp" aria-label="open full-size photo"><img src="/assets/img/schoffmann/glowica-wirnikow-700.webp" srcset="/assets/img/schoffmann/glowica-wirnikow-700.webp 700w, /assets/img/schoffmann/glowica-wirnikow.webp 1400w" sizes="(min-width: 60rem) 23rem, (min-width: 40rem) 45vw, 92vw" width="1400" height="872" loading="lazy" decoding="async" alt="Two counter-rotating rotors with the drive right below."></a>
+        <figcaption>Two counter-rotating rotors with the drive right below.</figcaption>
+      </figure></li>
+      <li><figure>
+        <a href="/assets/img/schoffmann/przygotowanie.webp" aria-label="open full-size photo"><img src="/assets/img/schoffmann/przygotowanie-700.webp" srcset="/assets/img/schoffmann/przygotowanie-700.webp 700w, /assets/img/schoffmann/przygotowanie.webp 1400w" sizes="(min-width: 60rem) 23rem, (min-width: 40rem) 45vw, 92vw" width="1400" height="1262" loading="lazy" decoding="async" alt="The pilot steps under the rotors and clips into the harness."></a>
+        <figcaption>The pilot steps under the rotors and clips into the harness.</figcaption>
+      </figure></li>
+      <li><figure>
+        <a href="/assets/img/schoffmann/start.webp" aria-label="open full-size photo"><img src="/assets/img/schoffmann/start-700.webp" srcset="/assets/img/schoffmann/start-700.webp 700w, /assets/img/schoffmann/start.webp 1400w" sizes="(min-width: 60rem) 23rem, (min-width: 40rem) 45vw, 92vw" width="1400" height="1201" loading="lazy" decoding="async" alt="Running take-off: the pilot leaves the ground."></a>
+        <figcaption>Running take-off: the pilot leaves the ground.</figcaption>
+      </figure></li>
+      <li><figure>
+        <a href="/assets/img/schoffmann/lot.webp" aria-label="open full-size photo"><img src="/assets/img/schoffmann/lot-700.webp" srcset="/assets/img/schoffmann/lot-700.webp 700w, /assets/img/schoffmann/lot.webp 1400w" sizes="(min-width: 60rem) 23rem, (min-width: 40rem) 45vw, 92vw" width="1400" height="1020" loading="lazy" decoding="async" alt="In flight. The pilot holds the frame tubes and steers by weight shift."></a>
+        <figcaption>In flight. The pilot holds the frame tubes and steers by weight shift.</figcaption>
+      </figure></li>
+      <li><figure>
+        <a href="/assets/img/schoffmann/zawis.webp" aria-label="open full-size photo"><img src="/assets/img/schoffmann/zawis-700.webp" srcset="/assets/img/schoffmann/zawis-700.webp 700w, /assets/img/schoffmann/zawis.webp 1400w" sizes="(min-width: 60rem) 23rem, (min-width: 40rem) 45vw, 92vw" width="1400" height="1245" loading="lazy" decoding="async" alt="Hovering low above the ground."></a>
+        <figcaption>Hovering low above the ground.</figcaption>
+      </figure></li>
+    </ul>
+    <p class="note">Photos: frames from Franz Schöffmann’s flight video, cleaned up and upscaled. Rights belong to the original authors. <a href="https://www.youtube.com/watch?v=aWG-rq8X1Mg">Watch the full video</a>.</p>
+  </section>
 
   <section id="design" class="wrap">
     <div class="split">
