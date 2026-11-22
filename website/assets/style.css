@@ -368,3 +368,5 @@ p { max-width: var(--measure); margin: 0 0 1rem; }
 .cad-gallery li.wide img { aspect-ratio: auto; padding: 1.5rem 1rem; }
 @media (min-width: 40rem) { .cad-gallery.quad { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 60rem) { .cad-gallery.quad { grid-template-columns: repeat(4, 1fr); } }
+.cad-gallery li.sketch img { padding: 0; }
+.gallery figcaption a { display: inline; background: none; border: 0; overflow: visible; text-decoration: underline; text-decoration-color: var(--red); text-underline-offset: 3px; color: var(--red-deep); font-weight: 700; white-space: nowrap; }
