@@ -297,13 +297,14 @@ p { max-width: var(--measure); margin: 0 0 1rem; }
 /* kontakt */
 .contact { display: grid; gap: 1rem 3rem; grid-template-columns: 1fr; margin-top: 1rem; }
 @media (min-width: 45rem) { .contact { grid-template-columns: repeat(2, minmax(0, 22rem)); } }
-@media (min-width: 64rem) { .contact { grid-template-columns: repeat(3, minmax(0, 20rem)); } }
+@media (min-width: 64rem) { .contact { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .contact dt { font-size: var(--step--1); color: var(--ink-soft); }
 .contact dd { margin: 0.15rem 0 0; font-size: var(--step-1); font-weight: 800; font-style: italic; overflow-wrap: anywhere; }
 
 /* stopka */
 .site-foot { margin-top: clamp(4rem, 9vw, 7rem); padding-top: 2rem; padding-bottom: 2.5rem; font-size: var(--step--1); color: #aab2bb; display: grid; gap: 1rem 2rem; align-items: center; }
-@media (min-width: 50rem) { .site-foot { grid-template-columns: auto 1fr 1fr; } }
+@media (min-width: 50rem) { .site-foot { grid-template-columns: auto 1fr 1fr auto; } }
+.site-foot a { color: var(--white); }
 .site-foot p { margin: 0; }
 .foot-logo { display: inline-block; justify-self: start; line-height: 0; }
 .foot-logo img { height: 72px; width: auto; }
