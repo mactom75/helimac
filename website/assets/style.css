@@ -448,3 +448,12 @@ ul.ticks li::before { content: ""; position: absolute; left: 0; top: 0.6em; widt
 .compare tbody td:nth-child(2) { background: #fff5f5; }
 .compare strong { color: var(--red-deep); }
 .compare .note { margin-top: 0.8rem; }
+.arch { display: inline-block; margin-left: 0.5rem; padding: 0.1rem 0.5rem; font-size: 0.7em; font-style: normal; font-weight: 600; color: #fff; background: var(--ink-soft); transform: skewX(var(--skew)); vertical-align: middle; }
+.layout-sketch { margin: 2.5rem 0 0; }
+.layout-sketch > a { display: block; border: 2px solid var(--ink); border-bottom: 5px solid var(--red); background: #fff; }
+.layout-sketch img { width: 100%; height: auto; display: block; }
+.layout-sketch figcaption { margin-top: 0.6rem; font-size: var(--step--1); color: var(--ink-soft); max-width: var(--measure); }
+.layout-sketch figcaption a { color: var(--red-deep); font-weight: 700; }
+.d-tube.al { stroke: #5b646f; stroke-width: 8; }
+.d-tube.al.thin { stroke-width: 7; }
+.d-tube-hi.al { stroke: #e3e7eb; stroke-width: 2; }
