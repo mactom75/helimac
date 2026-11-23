@@ -14,6 +14,8 @@ wirniki współosiowe · sterowanie balansem ciała · napęd elektryczny 400 V 
   <a href="README.md">🇬🇧 English</a> · 🇵🇱 Polski · 🌐 <a href="https://helimac.pl/">helimac.pl</a> · ▶️ <a href="https://www.youtube.com/@Helimac-pl">YouTube</a> · ☕ <a href="https://buycoffee.to/helimac">Wesprzyj</a>
 </p>
 
+> **Aktualna wersja projektu: J2.** Wszystkie pliki w [`production/`](production/README.pl.md) są aktualne. Starsze wersje są opisane tylko w historii zmian ([BUILD_LOG.md](BUILD_LOG.md)) — nie budować według nich.
+
 ---
 
 ## Od czego zacząć
@@ -41,7 +43,7 @@ Nazwa łączy słowa **HELI**kopter i **MAC**iąg — nazwisko założyciela, **
 
 Docelowa kategoria: jednomiejscowy śmigłowiec ultralekki, MTOM ≤ 300 kg ([Aneks I do rozporządzenia (UE) 2018/1139](docs/regulations.md) — przepisy krajowe zamiast certyfikacji EASA).
 
-## Aktualna konstrukcja — rev J2
+## Aktualna konstrukcja — wersja J2
 
 | | |
 |---|---|

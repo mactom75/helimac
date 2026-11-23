@@ -14,6 +14,8 @@ coaxial rotors · weight-shift control · 400 V electric drive · built in the o
   🇬🇧 English · <a href="README.pl.md">🇵🇱 Polski</a> · 🌐 <a href="https://helimac.pl/en/">helimac.pl</a> · ▶️ <a href="https://www.youtube.com/@Helimac-pl">YouTube</a> · ☕ <a href="https://buycoffee.to/helimac">Support</a>
 </p>
 
+> **Current design version: J2.** Everything in [`production/`](production/README.md) is current. Older versions appear only in the change history ([BUILD_LOG.md](BUILD_LOG.md)) — do not build from them.
+
 ---
 
 ## Start here
@@ -41,7 +43,7 @@ The name combines **HELI**copter and **MAC**iąg — the surname of the founder,
 
 Target category: single-seat ultralight helicopter, MTOM ≤ 300 kg ([Annex I to Regulation (EU) 2018/1139](docs/regulations.md) — national rules instead of EASA certification).
 
-## Current design — rev J2
+## Current design — version J2
 
 | | |
 |---|---|
