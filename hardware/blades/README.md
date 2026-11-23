@@ -10,7 +10,16 @@
 
 Blade drawings W-00…W-05 (lower D, mirrored upper G), manufacturing process WL-01, CNC section data, 3D-print STL of ASA core segments and jigs (ZIP).
 
-## CAD graphics (rev J2)
+## CAD graphics (rev K — current)
+
+From the rev K concept model (23 Nov 2026) — calculated, not measured.
+
+[![Blade: foam core, carbon-fibre spar, approx. 2.2 kg](../../docs/graphics/revK/helimac_K07_lopata_budowa.webp)](../../docs/graphics/revK/helimac_K07_lopata_budowa.webp)  
+*Blade: foam core, carbon-fibre spar, approx. 2.2 kg*
+
+PDF: [HELIMAC_revK_4_lopaty.pdf](../../docs/graphics/revK/HELIMAC_revK_4_lopaty.pdf)
+
+## CAD graphics (rev J2 — archive)
 
 From the rev J2 CAD model (design chat, 22.11.2026). Click an image for full size.
 

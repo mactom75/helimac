@@ -1,7 +1,9 @@
 # HELIMAC rev K — redesign from scratch (concept, stage 2)
 
 Status: **in progress (23 Nov 2026)**. Rev K replaces rev J2. Do not manufacture rev J2 parts (`production/`, packages J1–J3). The MC-P rev D1 inverter stays.
-All values are **calculated, not measured**. Calculation scripts: [`calc/revK/`](../calc/revK/).
+All values are **calculated, not measured**. Calculation scripts: [`calc/revK/`](../calc/revK/). Graphics: [`docs/graphics/revK/`](graphics/revK/) · [layout sketch](graphics/HELIMAC_revK_szkic_ukladu.pdf).
+
+[![HELIMAC rev K – complete machine (concept model)](graphics/revK/helimac_K01_maszyna.webp)](graphics/revK/)
 
 ## Why rev K
 Rev J2 came out at 74.9 kg without battery. Most of this was the drive: the cycloidal gearbox plus the bevel reversing gearbox weighed about 20 kg, and the blades about 17 kg (3D-printed ASA cores). The owner set a target of about 40 kg without battery (decision D14), so the whole design was recalculated from the beginning: mass → power → rotor → motor → transmission → controls → electronics → frame.

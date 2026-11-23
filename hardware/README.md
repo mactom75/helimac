@@ -7,6 +7,16 @@ File formats: source CAD + `.step` + `.pdf` drawing.
 
 **Production files rev J2 (drawings, DXF, STEP, STL — ZIP downloads): [../production/](../production/)**
 
+## Rev K (current)
+
+<a href="../docs/graphics/revK/helimac_K01_maszyna.webp"><img src="../docs/graphics/revK/helimac_K01_maszyna.webp" alt="HELIMAC rev K – complete machine (concept model)" width="560"></a><br>
+<sub>HELIMAC rev K – complete machine (concept model)</sub>
+
+<a href="../docs/graphics/revK/helimac_K03_naped.webp"><img src="../docs/graphics/revK/helimac_K03_naped.webp" alt="Drive unit: motor, 16:1 belt drive, reversing gears, lower rotor hub" width="380"></a><br>
+<sub>Drive unit: motor, 16:1 belt drive, reversing gears, lower rotor hub</sub>
+
+PDFs: [machine](../docs/graphics/revK/HELIMAC_revK_1_maszyna.pdf) · [drive](../docs/graphics/revK/HELIMAC_revK_2_naped.pdf) · [motor](../docs/graphics/revK/HELIMAC_revK_3_silnik.pdf) · [blades](../docs/graphics/revK/HELIMAC_revK_4_lopaty.pdf) · [electronics](../docs/graphics/revK/HELIMAC_revK_5_elektronika.pdf)
+
 ## Drive unit (rev J2 — archive)
 
 Motor → cycloidal transmission 10:1 → reversing bevel gearbox → coaxial rotors. Assemblies: [motor](motor/), [transmission](transmission/), [rotor head & controls](rotor-head-and-controls/), [blades](blades/).

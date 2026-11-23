@@ -9,7 +9,9 @@ Revisions B, C and D are withdrawn — do not build.
 
 KiCad 7 project, Gerbers, BOM and CPL (LCSC part numbers), schematic PDF, mechanical drawing, STEP, DRC report, heatsink calculation.
 
-## CAD graphics (rev J2)
+**Rev K:** MC-P rev D1 is unchanged; in rev K the heatsink sits in the rotor downwash (no fans). Graphics and wiring diagram: [HELIMAC_revK_5_elektronika.pdf](../../docs/graphics/revK/HELIMAC_revK_5_elektronika.pdf).
+
+## CAD graphics (rev J2 board — still current)
 
 From the rev J2 CAD model (design chat, 22.11.2026). Click an image for full size.
 

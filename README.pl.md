@@ -22,7 +22,7 @@ wirniki współosiowe · sterowanie balansem ciała · napęd elektryczny 400 V 
 
 | Chcę… | Przejdź do |
 |---|---|
-| 👀 **zobaczyć konstrukcję** | [Konstrukcja rev K](docs/design-rev-K.md) (EN) · [szkic układu](docs/graphics/HELIMAC_revK_szkic_ukladu.pdf) · [parametry](docs/parameters.md) (EN) · [strona](https://helimac.pl/) |
+| 👀 **zobaczyć konstrukcję** | [Konstrukcja rev K](docs/design-rev-K.md) (EN) · [grafiki](docs/graphics/revK/) · [szkic układu](docs/graphics/HELIMAC_revK_szkic_ukladu.pdf) · [parametry](docs/parameters.md) (EN) · [strona](https://helimac.pl/) |
 | 📦 **pobrać pliki** | rev K: [obliczenia](calc/revK/) · rev J2 (archiwalna): [wydanie](../../releases/latest), [pliki produkcyjne](production/README.pl.md) · falownik MC-P rev D1 (aktualny): [pliki](production/electronics/MC-P-inverter-revD1/) |
 | 🛠️ **pomóc w budowie** | [Otwarte zadania (Issues)](../../issues) · [Discussions](../../discussions) · [Jak współtworzyć](CONTRIBUTING.md) |
 | ▶️ **śledzić budowę** | [YouTube @Helimac-pl](https://www.youtube.com/@Helimac-pl) · [dziennik budowy](BUILD_LOG.md) · [plan prac](ROADMAP.md) |
@@ -31,8 +31,8 @@ wirniki współosiowe · sterowanie balansem ciała · napęd elektryczny 400 V 
 > ⚠️ **Prototyp w fazie projektu — nie jest to dopuszczony statek powietrzny.** Wszystkie wartości są obliczone, jeszcze nie zmierzone. Przed budową przeczytaj [SAFETY.pl.md](SAFETY.pl.md).
 
 <p align="center">
-  <a href="docs/design-rev-K.md"><img src="docs/graphics/HELIMAC_revK_szkic_ukladu.png" alt="HELIMAC rev K — szkic układu, widok z boku i z przodu" width="760"></a><br>
-  <sub>Szkic układu rev K (koncepcja): pilot 110 kg, akumulator 40 kg, masa startowa ok. 194 kg, przekładnia pasowa 16:1, rama z trzech rur Al 7075-T6</sub>
+  <a href="docs/graphics/revK/"><img src="docs/graphics/revK/helimac_K01_maszyna.webp" alt="HELIMAC rev K — cała maszyna, model koncepcyjny" width="720"></a><br>
+  <sub>HELIMAC rev K — cała maszyna (model koncepcyjny): wirniki współosiowe Ø 4,5 m, przekładnia pasowa 16:1 nad głową pilota, rama z trzech rur aluminiowych · <a href="docs/graphics/HELIMAC_revK_szkic_ukladu.pdf">szkic układu z wymiarami</a> · <a href="docs/graphics/revK/">wszystkie grafiki rev K</a></sub>
 </p>
 
 ## Czym jest HELIMAC?

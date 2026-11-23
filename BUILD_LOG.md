@@ -11,6 +11,7 @@ Rev J2 weighed 74.9 kg without the battery – too much. We recalculated the who
 
 - Weight reductions applied the same day (48.5 → 43.7 kg): 8000 rpm motor with a 37 mm stack, belt drive 16:1 with 10-spoke milled pulleys, hubs integrated with blade grips, inverter heatsink in the rotor downwash, smaller blade tip masses with a faster automatic collective drop, carbon column, lighter seat, shorter 400 V cables.
 
+- CAD graphics of the rev K concept model: complete machine, frame, drive unit, belt drive, 10-spoke pulley, blade, motor and 2D FEM — [docs/graphics/revK/](docs/graphics/revK/).
 - New: [docs/design-rev-K.md](docs/design-rev-K.md), layout sketch [docs/graphics/HELIMAC_revK_szkic_ukladu.pdf](docs/graphics/HELIMAC_revK_szkic_ukladu.pdf), calculations [calc/revK/](calc/revK/).
 - Rev J2 production packages J1–J3 are now archive (do not build); MC-P inverter rev D1 stays current.
 - Rev J2 re-checked with the new model: hover 21.4 kW, flight time ≈ 15.5 / 20.5 min.

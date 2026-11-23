@@ -10,6 +10,15 @@
 
 Seat with harness points, CFRP spine Ø45 × 2, footrest 450 mm, battery mount 50 mm aft — drawings in J3 `01_RYSUNKI/`, STEP in the ZIP.
 
+## CAD graphics (rev K — current)
+
+From the rev K concept model (23 Nov 2026) — calculated, not measured.
+
+[![Frame of 3 aluminium tubes: front triangle, rear leg curved towards the feet carrying seat, footrest and battery](../../docs/graphics/revK/helimac_K02_rama_pilot.webp)](../../docs/graphics/revK/helimac_K02_rama_pilot.webp)  
+*Frame of 3 aluminium tubes: front triangle, rear leg curved towards the feet carrying seat, footrest and battery*
+
+PDF: [HELIMAC_revK_1_maszyna.pdf](../../docs/graphics/revK/HELIMAC_revK_1_maszyna.pdf)
+
 ## Notes
 
 ## Open questions

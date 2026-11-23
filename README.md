@@ -22,7 +22,7 @@ coaxial rotors · weight-shift control · 400 V electric drive · built in the o
 
 | I want to… | Go to |
 |---|---|
-| 👀 **see the design** | [Design rev K](docs/design-rev-K.md) · [layout sketch](docs/graphics/HELIMAC_revK_szkic_ukladu.pdf) · [parameters](docs/parameters.md) · [website](https://helimac.pl/en/) |
+| 👀 **see the design** | [Design rev K](docs/design-rev-K.md) · [graphics](docs/graphics/revK/) · [layout sketch](docs/graphics/HELIMAC_revK_szkic_ukladu.pdf) · [parameters](docs/parameters.md) · [website](https://helimac.pl/en/) |
 | 📦 **download the files** | rev K: [calculations](calc/revK/) · rev J2 (archive): [release](../../releases/latest), [production files](production/) · MC-P inverter rev D1 (current): [files](production/electronics/MC-P-inverter-revD1/) |
 | 🛠️ **help build it** | [Open tasks (Issues)](../../issues) · [Discussions](../../discussions) · [How to contribute](CONTRIBUTING.md) |
 | ▶️ **follow the build** | [YouTube @Helimac-pl](https://www.youtube.com/@Helimac-pl) · [build log](BUILD_LOG.md) · [roadmap](ROADMAP.md) |
@@ -31,8 +31,8 @@ coaxial rotors · weight-shift control · 400 V electric drive · built in the o
 > ⚠️ **Prototype in design — not an approved aircraft.** All values are calculated, not yet measured. Read [SAFETY.md](SAFETY.md) before building anything.
 
 <p align="center">
-  <a href="docs/design-rev-K.md"><img src="docs/graphics/HELIMAC_revK_szkic_ukladu.png" alt="HELIMAC rev K — layout sketch, side and front view" width="760"></a><br>
-  <sub>Rev K layout sketch (concept): pilot 110 kg, battery 40 kg, take-off mass ≈ 194 kg, belt drive 16:1, frame of three Al 7075-T6 tubes (labels in Polish)</sub>
+  <a href="docs/graphics/revK/"><img src="docs/graphics/revK/helimac_K01_maszyna.webp" alt="HELIMAC rev K — complete machine, concept model" width="720"></a><br>
+  <sub>HELIMAC rev K — complete machine (concept model): coaxial rotors Ø 4.5 m, belt drive 16:1 above the pilot, frame of three aluminium tubes · <a href="docs/graphics/HELIMAC_revK_szkic_ukladu.pdf">layout sketch with dimensions</a> · <a href="docs/graphics/revK/">all rev K graphics</a></sub>
 </p>
 
 ## What is HELIMAC?

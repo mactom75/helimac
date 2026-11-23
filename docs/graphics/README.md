@@ -20,5 +20,6 @@ Not yet available: frame (new layout being calculated, D12), reversing bevel gea
 | File | Contents |
 |---|---|
 | [HELIMAC_revK_szkic_ukladu.pdf](HELIMAC_revK_szkic_ukladu.pdf) · [PNG](HELIMAC_revK_szkic_ukladu.png) | rev K layout sketch — side and front view, main dimensions (concept, stage 2, labels in Polish) |
+| **[revK/](revK/)** | **rev K CAD graphics: complete machine, frame, drive, belt drive, spoked pulley, blade, motor and 2D FEM — 5 PDFs + 11 images** |
 
 All other graphics in this folder show **rev J2 (archive)**; the motor (laminations, magnets) and the MC-P inverter remain valid for rev K.

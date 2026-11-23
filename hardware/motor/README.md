@@ -10,7 +10,25 @@
 
 Motor parts S01–S08: laminations S01/S02 (DXF, NO20 0.20 mm), stator, rotor, magnets — drawings in `drawings/`, cutting files in `dxf/`.
 
-## CAD graphics (rev J2)
+## CAD graphics (rev K — current)
+
+From the rev K concept model (23 Nov 2026) — calculated, not measured.
+
+[![24/20 motor, 37 mm stack – wound stator, magnets, rotor](../../docs/graphics/revK/helimac_K08_silnik.webp)](../../docs/graphics/revK/helimac_K08_silnik.webp)  
+*24/20 motor, 37 mm stack – wound stator, magnets, rotor*
+
+[![Magnetic field at hover, 53 A (2D FEM)](../../docs/graphics/revK/helimac_K51_silnik_MES_pole_zawis.webp)](../../docs/graphics/revK/helimac_K51_silnik_MES_pole_zawis.webp)  
+*Magnetic field at hover, 53 A (2D FEM)*
+
+[![Magnetic field – close-up (2D FEM)](../../docs/graphics/revK/helimac_K52_silnik_MES_zblizenie.webp)](../../docs/graphics/revK/helimac_K52_silnik_MES_zblizenie.webp)  
+*Magnetic field – close-up (2D FEM)*
+
+[![Back-EMF and torque (2D FEM)](../../docs/graphics/revK/helimac_K54_silnik_MES_SEM_moment.webp)](../../docs/graphics/revK/helimac_K54_silnik_MES_SEM_moment.webp)  
+*Back-EMF and torque (2D FEM)*
+
+PDF: [HELIMAC_revK_3_silnik.pdf](../../docs/graphics/revK/HELIMAC_revK_3_silnik.pdf)
+
+## CAD graphics (rev J2 — archive)
 
 From the rev J2 CAD model (design chat, 22.11.2026). Click an image for full size.
 
