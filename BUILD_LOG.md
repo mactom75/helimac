@@ -7,13 +7,15 @@ Project progress — newest entries first. Entries may be in English and/or Poli
 
 ## 2026-11-23 — Rev K: recalculating the design from scratch
 
-Rev J2 weighed 74.9 kg without the battery – too much. We recalculated the whole design from the beginning: mass, power, rotors, motor, transmission, controls, electronics and frame. Main changes: a toothed-belt drive instead of the cycloidal and bevel gearboxes (no oil, about 15 kg lighter), foam-core blades with a carbon-fibre spar (about 7 kg lighter), and a frame made of three aluminium tubes. Machine without battery: about 48.5 kg (−35 %), take-off mass about 198 kg, flight time about 19 min hovering and about 25 min in mixed flight. Next step: 3D model and drawings for rev K.
+Rev J2 weighed 74.9 kg without the battery – too much. We recalculated the whole design from the beginning: mass, power, rotors, motor, transmission, controls, electronics and frame. Main changes: a toothed-belt drive instead of the cycloidal and bevel gearboxes (no oil, about 15 kg lighter), foam-core blades with a carbon-fibre spar (about 7 kg lighter), and a frame made of three aluminium tubes. Machine without battery: about 43.7 kg (−42 %), take-off mass about 194 kg, flight time about 20 min hovering and about 26 min in mixed flight. Next step: 3D model and drawings for rev K.
+
+- Weight reductions applied the same day (48.5 → 43.7 kg): 8000 rpm motor with a 37 mm stack, belt drive 16:1 with 10-spoke milled pulleys, hubs integrated with blade grips, inverter heatsink in the rotor downwash, smaller blade tip masses with a faster automatic collective drop, carbon column, lighter seat, shorter 400 V cables.
 
 - New: [docs/design-rev-K.md](docs/design-rev-K.md), layout sketch [docs/graphics/HELIMAC_revK_szkic_ukladu.pdf](docs/graphics/HELIMAC_revK_szkic_ukladu.pdf), calculations [calc/revK/](calc/revK/).
 - Rev J2 production packages J1–J3 are now archive (do not build); MC-P inverter rev D1 stays current.
 - Rev J2 re-checked with the new model: hover 21.4 kW, flight time ≈ 15.5 / 20.5 min.
 
-*PL: Rev J2 ważyła 74,9 kg bez akumulatora – za dużo. Przeliczyliśmy cały projekt od początku. Przekładnia pasowa zamiast cykloidalnej i stożkowej (bez oleju, ok. 15 kg mniej), łopaty z pianki z dźwigarem węglowym (ok. 7 kg mniej), rama z trzech rur aluminiowych. Maszyna bez akumulatora ok. 48,5 kg (−35 %), masa startowa ok. 198 kg, czas lotu ok. 19 / 25 min. Następny krok: model 3D i rysunki rev K.*
+*PL: Rev J2 ważyła 74,9 kg bez akumulatora – za dużo. Przeliczyliśmy cały projekt od początku. Przekładnia pasowa zamiast cykloidalnej i stożkowej (bez oleju, ok. 15 kg mniej), łopaty z pianki z dźwigarem węglowym (ok. 7 kg mniej), rama z trzech rur aluminiowych. Maszyna bez akumulatora ok. 43,7 kg (−42 %), masa startowa ok. 194 kg, czas lotu ok. 20 / 26 min. Następny krok: model 3D i rysunki rev K.*
 
 ## 2026-11-22 — Drive unit mass corrected on ZS-00
 

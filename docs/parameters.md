@@ -6,15 +6,15 @@ Current design: **rev K — in design (2026-11-23)**. Details: [design-rev-K.md]
 
 | Parameter | rev J2 (archive) | **rev K (current)** |
 |---|---|---|
-| Machine without battery | 74.9 kg | **≈ 48.5 kg** (target ≈ 44 kg) |
+| Machine without battery | 74.9 kg | **≈ 43.7 kg** (−42 %) |
 | Battery | 40.3 kg | **40 kg** (112S4P Li-ion, ≈ 8 kWh) |
-| Take-off mass (pilot 110 kg) | 225.2 kg | **≈ 198 kg** |
-| Hover power (rotors) | 21.4 kW (re-checked; was 20.7) | **17.8 kW**, FM 0.77 |
-| Minimum cruise power | ≈ 14 kW | **11.7 kW** at 16 m/s |
-| Flight time hover / mixed | 15.5 / 20.5 min (re-checked; was 14 / 25) | **≈ 19 / 25 min** |
-| Transmission | cycloidal 10:1 + bevel reversing gearbox, oil | **toothed-belt 12:1**, carbon cord, no oil |
-| Motor | 4970 rpm, 56 mm stack, 8 turns | **6000 rpm, 50 mm stack, 7 turns** (same laminations and magnets) |
-| Blades | 4.25 kg, ASA core; chord 198 → 125.4 mm | **≈ 2.5 kg**, PMI foam core + carbon D-spar; chord 170 → 115 mm |
+| Take-off mass (pilot 110 kg) | 225.2 kg | **≈ 194 kg** |
+| Hover power (rotors) | 21.4 kW (re-checked; was 20.7) | **17.3 kW**, FM 0.77 |
+| Minimum cruise power | ≈ 14 kW | **11.4 kW** at 16 m/s |
+| Flight time hover / mixed | 15.5 / 20.5 min (re-checked; was 14 / 25) | **≈ 19.7 / 25.8 min** |
+| Transmission | cycloidal 10:1 + bevel reversing gearbox, oil | **toothed-belt 16:1** (4 × 4), carbon cord, 10-spoke Al pulleys, no oil |
+| Motor | 4970 rpm, 56 mm stack, 8 turns | **8000 rpm, 37 mm stack, 7 turns**, ≈ 7.1 kg (same laminations and magnets) |
+| Blades | 4.25 kg, ASA core; chord 198 → 125.4 mm | **≈ 2.2 kg**, PMI foam core + carbon D-spar; chord 170 → 115 mm |
 | Frame | CFRP tripod | **3 Al 7075-T6 tubes** (front Ø40×1.5 ×2, rear Ø50×2) |
 | Rotor heights | 2395 / 2785 mm | **2350 / 2730 mm** |
 | Rotors | coaxial, 2 × 2 blades, Ø 4.5 m, 500 rpm | unchanged |
@@ -54,7 +54,7 @@ Status: 💭 idea · 📐 calculated · 🧪 measured · ✅ approved
 
 | Date | Parameter | Was → Now | Reason |
 |---|---|---|---|
-| 2026-11-23 | Design revision | rev J2 → **rev K**: belt drive, foam-core blades, Al frame; machine 74.9 → ≈ 48.5 kg | mass target ≈ 40 kg (decision D14), recalculated from scratch |
+| 2026-11-23 | Design revision | rev J2 → **rev K**: belt drive, foam-core blades, Al frame; machine 74.9 → ≈ 48.5 kg (stage 2), then ≈ 43.7 kg after weight reductions (8000 rpm motor, 16:1 spoked pulleys, lighter blades) | mass target ≈ 40 kg (decision D14), recalculated from scratch |
 | 2026-11-23 | rev J2 re-check | hover 20.7 → 21.4 kW; flight time 14 / 25 → 15.5 / 20.5 min | rev K model applied to rev J2 |
 | 2026-11-21 | Pilot mass | 90 → 110 kg | rev J |
 | 2026-11-21 | Mass without battery | 69.7 → 74.9 kg | rev J / J2 changes |

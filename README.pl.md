@@ -14,7 +14,7 @@ wirniki współosiowe · sterowanie balansem ciała · napęd elektryczny 400 V 
   <a href="README.md">🇬🇧 English</a> · 🇵🇱 Polski · 🌐 <a href="https://helimac.pl/">helimac.pl</a> · ▶️ <a href="https://www.youtube.com/@Helimac-pl">YouTube</a> · ☕ <a href="https://buycoffee.to/helimac">Wesprzyj</a>
 </p>
 
-> **Aktualna konstrukcja: rev K — w projektowaniu (koncepcja, etap 2, 23.11.2026).** Maszynę przeliczono od zera, żeby zmniejszyć masę z 74,9 do ok. 48,5 kg. Pliki w [`production/`](production/README.pl.md) to **rev J2 — wersja archiwalna, nie budować** (wyjątek: falownik MC-P rev D1 jest aktualny). Paczki produkcyjne rev K pojawią się po etapie 3 (model CAD i rysunki).
+> **Aktualna konstrukcja: rev K — w projektowaniu (koncepcja, etap 2, 23.11.2026).** Maszynę przeliczono od zera, żeby zmniejszyć masę z 74,9 do ok. 43,7 kg. Pliki w [`production/`](production/README.pl.md) to **rev J2 — wersja archiwalna, nie budować** (wyjątek: falownik MC-P rev D1 jest aktualny). Paczki produkcyjne rev K pojawią się po etapie 3 (model CAD i rysunki).
 
 ---
 
@@ -32,7 +32,7 @@ wirniki współosiowe · sterowanie balansem ciała · napęd elektryczny 400 V 
 
 <p align="center">
   <a href="docs/design-rev-K.md"><img src="docs/graphics/HELIMAC_revK_szkic_ukladu.png" alt="HELIMAC rev K — szkic układu, widok z boku i z przodu" width="760"></a><br>
-  <sub>Szkic układu rev K (koncepcja): pilot 110 kg, akumulator 40 kg, masa startowa ok. 198 kg, przekładnia pasowa 12:1, rama z trzech rur Al 7075-T6</sub>
+  <sub>Szkic układu rev K (koncepcja): pilot 110 kg, akumulator 40 kg, masa startowa ok. 194 kg, przekładnia pasowa 16:1, rama z trzech rur Al 7075-T6</sub>
 </p>
 
 ## Czym jest HELIMAC?
@@ -50,14 +50,14 @@ Docelowa kategoria: jednomiejscowy śmigłowiec ultralekki, MTOM ≤ 300 kg ([An
 | Układ | współosiowy, 2 wirniki dwułopatowe Ø 4,5 m, 500 obr/min, bez wirnika ogonowego |
 | Sterowanie | kierunek – balans ciała pilota (bez skoku cyklicznego) · skok ogólny – siłowniki elektryczne · kurs – różnica skoku wirnika górnego i dolnego |
 | Pilot | do 110 kg |
-| Masa startowa | ok. 198 kg (maszyna bez akumulatora ok. 48,5 kg — cel ok. 44 kg, akumulator 40 kg) |
-| Moc zawisu | 17,8 kW (1,3 g w upalny dzień: 27 kW) |
-| Napęd | silnik PMSM z wirnikiem zewnętrznym, 6000 obr/min → **przekładnia pasowa 12:1** (pasy zębate z włóknem węglowym, bez oleju) → wały współosiowe |
-| Łopaty | rdzeń z pianki PMI, dźwigar i pokrycie z włókna węglowego, ok. 2,5 kg |
+| Masa startowa | ok. 194 kg (maszyna bez akumulatora ok. 43,7 kg, akumulator 40 kg) |
+| Moc zawisu | 17,3 kW (1,3 g w upalny dzień: 26 kW) |
+| Napęd | silnik PMSM z wirnikiem zewnętrznym, 8000 obr/min, ok. 7 kg → **przekładnia pasowa 16:1** (pasy zębate z włóknem węglowym, koła z 10 szprychami, bez oleju) → wały współosiowe |
+| Łopaty | rdzeń z pianki PMI, dźwigar i pokrycie z włókna węglowego, ok. 2,2 kg |
 | Rama | trzy rury Al 7075-T6: dwie nogi przednie (trójkąt) + jedna wygięta tylna z siodełkiem, podnóżkiem i akumulatorem |
 | Elektronika | własny falownik SiC **MC-P** rev D1 (KiCad) · płytka sterująca **MC-C** w projekcie |
 | Akumulator | 112S4P Li-ion, ≈ 400 V, ok. 8 kWh, 40 kg |
-| Czas lotu (obliczony) | ok. 19 min zawis / ok. 25 min lot mieszany |
+| Czas lotu (obliczony) | ok. 20 min zawis / ok. 26 min lot mieszany |
 | **Obecny etap** | **rev K, etap 3 — model CAD i rysunki**, potem paczki produkcyjne i hamownia |
 
 Poprzednia wersja: [rev J2](docs/design-rev-J2.md) (archiwalna) — 74,9 kg bez akumulatora, przekładnia cykloidalna i stożkowa.

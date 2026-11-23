@@ -1,6 +1,6 @@
 # Coaxial rotor head, air-guide ring (PK), collective
 
-**Status:** 🔄 **rev K in design** — hubs and pitch bearings recalculated; collective with 5 electric actuators as before ([rev K](../../docs/design-rev-K.md)). Rev J2 files below are **archive**.
+**Status:** 🔄 **rev K in design** — hubs integrated with blade grips, pitch bearings recalculated; collective with 5 electric actuators as before ([rev K](../../docs/design-rev-K.md)). Rev J2 files below are **archive**.
 
 **Onshape document:** _link to be added_
 

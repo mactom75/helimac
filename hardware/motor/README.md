@@ -1,6 +1,6 @@
 # Electric motor (radial flux)
 
-**Status:** 🔄 **rev K in design** — same laminations and magnets, 50 mm stack, 7 turns, 6000 rpm ([rev K](../../docs/design-rev-K.md)). Rev J2 files below are **archive**.
+**Status:** 🔄 **rev K in design** — same laminations and magnets, 37 mm stack, 7 turns, 8000 rpm, ≈ 7.1 kg, cooled by rotor downwash ([rev K](../../docs/design-rev-K.md)). Rev J2 files below are **archive**.
 
 **Onshape document:** _link to be added_
 

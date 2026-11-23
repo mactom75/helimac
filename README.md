@@ -14,7 +14,7 @@ coaxial rotors · weight-shift control · 400 V electric drive · built in the o
   🇬🇧 English · <a href="README.pl.md">🇵🇱 Polski</a> · 🌐 <a href="https://helimac.pl/en/">helimac.pl</a> · ▶️ <a href="https://www.youtube.com/@Helimac-pl">YouTube</a> · ☕ <a href="https://buycoffee.to/helimac">Support</a>
 </p>
 
-> **Current design: rev K — in design (concept stage 2, 23 Nov 2026).** The machine was recalculated from scratch to cut the mass from 74.9 to ≈ 48.5 kg. Files in [`production/`](production/README.md) are **rev J2 — archive, do not build** (exception: MC-P inverter rev D1 is current). Rev K production packages will follow after stage 3 (CAD + drawings).
+> **Current design: rev K — in design (concept stage 2, 23 Nov 2026).** The machine was recalculated from scratch to cut the mass from 74.9 to ≈ 43.7 kg. Files in [`production/`](production/README.md) are **rev J2 — archive, do not build** (exception: MC-P inverter rev D1 is current). Rev K production packages will follow after stage 3 (CAD + drawings).
 
 ---
 
@@ -32,7 +32,7 @@ coaxial rotors · weight-shift control · 400 V electric drive · built in the o
 
 <p align="center">
   <a href="docs/design-rev-K.md"><img src="docs/graphics/HELIMAC_revK_szkic_ukladu.png" alt="HELIMAC rev K — layout sketch, side and front view" width="760"></a><br>
-  <sub>Rev K layout sketch (concept): pilot 110 kg, battery 40 kg, take-off mass ≈ 198 kg, belt drive 12:1, frame of three Al 7075-T6 tubes (labels in Polish)</sub>
+  <sub>Rev K layout sketch (concept): pilot 110 kg, battery 40 kg, take-off mass ≈ 194 kg, belt drive 16:1, frame of three Al 7075-T6 tubes (labels in Polish)</sub>
 </p>
 
 ## What is HELIMAC?
@@ -50,14 +50,14 @@ Target category: single-seat ultralight helicopter, MTOM ≤ 300 kg ([Annex I to
 | Configuration | coaxial, 2 × 2-blade rotors Ø 4.5 m, 500 rpm, no tail rotor |
 | Control | direction by pilot weight shift (no cyclic) · collective by electric actuators · yaw by upper/lower collective difference |
 | Pilot | up to 110 kg |
-| Take-off mass | ≈ 198 kg (machine without battery ≈ 48.5 kg — target ≈ 44 kg, battery 40 kg) |
-| Hover power | 17.8 kW (1.3 g on a hot day: 27 kW) |
-| Drive | outer-rotor PMSM motor, 6000 rpm → **toothed-belt drive 12:1** (carbon-cord belts, no oil) → coaxial shafts |
-| Blades | PMI foam core, carbon D-spar and skin, ≈ 2.5 kg each |
+| Take-off mass | ≈ 194 kg (machine without battery ≈ 43.7 kg, battery 40 kg) |
+| Hover power | 17.3 kW (1.3 g on a hot day: 26 kW) |
+| Drive | outer-rotor PMSM motor, 8000 rpm, ≈ 7 kg → **toothed-belt drive 16:1** (carbon-cord belts, 10-spoke pulleys, no oil) → coaxial shafts |
+| Blades | PMI foam core, carbon D-spar and skin, ≈ 2.2 kg each |
 | Frame | three Al 7075-T6 tubes: two front legs (triangle) + one curved rear leg with seat, footrest and battery |
 | Electronics | in-house SiC inverter **MC-P** rev D1 (KiCad) · control board **MC-C** in design |
 | Battery | 112S4P Li-ion, ≈ 400 V, ≈ 8 kWh, 40 kg |
-| Flight time (calc.) | ≈ 19 min hover / ≈ 25 min mixed |
+| Flight time (calc.) | ≈ 20 min hover / ≈ 26 min mixed |
 | **Current stage** | **rev K stage 3 — CAD model and drawings**, then production packages and the dynamometer |
 
 Previous version: [rev J2](docs/design-rev-J2.md) (archive) — 74.9 kg without battery, cycloidal + bevel gearbox.

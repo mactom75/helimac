@@ -1,6 +1,6 @@
 # Cycloidal transmission
 
-**Status:** 🛑 **Rev J2 cycloidal + bevel gearbox — archive, do not build.** Rev K uses a **toothed-belt drive 12:1** (carbon-cord belts, no oil) — in design ([rev K](../../docs/design-rev-K.md)).
+**Status:** 🛑 **Rev J2 cycloidal + bevel gearbox — archive, do not build.** Rev K uses a **toothed-belt drive 16:1** (carbon-cord belts, 10-spoke milled Al pulleys, no oil) — in design ([rev K](../../docs/design-rev-K.md)).
 
 **Onshape document:** _link to be added_
 

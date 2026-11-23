@@ -1,6 +1,6 @@
 # Rotor blades
 
-**Status:** 🛑 **Rev J (ASA core, 4.25 kg) — archive, do not build.** Rev K blades: PMI foam core, carbon D-spar and ±45° skin, ≈ 2.5 kg — in design ([rev K](../../docs/design-rev-K.md)).
+**Status:** 🛑 **Rev J (ASA core, 4.25 kg) — archive, do not build.** Rev K blades: PMI foam core, carbon D-spar and ±45° skin, ≈ 2.2 kg — in design ([rev K](../../docs/design-rev-K.md)).
 
 **Onshape document:** _link to be added_
 
