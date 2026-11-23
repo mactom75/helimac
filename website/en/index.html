@@ -200,6 +200,7 @@
           <div><dt>Simplicity</dt><dd>As few parts and mechanisms as possible. A part that isn’t there can’t fail.</dd></div>
           <div><dt>Weight-shift flying</dt><dd>You change direction by leaning your body, intuitively, as on a hang glider.</dd></div>
           <div><dt>Easy transport</dt><dd>A machine you can take apart and carry in an ordinary car.</dd></div>
+          <div><dt>A big rotor</dt><dd>A 4.5&nbsp;m rotor spreads the weight over a large area, so hovering takes less power. The gain can go into a longer flight or a heavier pilot.</dd></div>
           <div><dt>Safety</dt><dd>Fly low and slow, test in stages. Safety is a design goal in its own right, not an assumption.</dd></div>
         </dl>
         <p class="note">The differences: HELIMAC has an electric powertrain instead of a combustion engine — fewer parts, less noise, no exhaust. It also has variable blade pitch set by electric actuators. On loss of power the pitch drops automatically, which by calculation allows an autorotative landing.</p>
@@ -274,6 +275,27 @@
         <article><h3>Why not each blade separately</h3><ul><li>HELIMAC changes only collective pitch – the same angle for all blades of a rotor. More pitch gives more thrust; less pitch gives less thrust or autorotation.</li><li>There is no cyclic pitch, which in a conventional helicopter tilts the rotor to steer. That job is done by the pilot shifting body weight.</li><li>An actuator per blade would mean actuators on the spinning hub fed through a slip ring, about 10 times faster operation (at 500&nbsp;rpm the angle would change 8 times a second) and far more complex safety systems – more mass, cost and risk for no benefit.</li><li>Yaw comes from a pitch difference between the upper and lower rotor, set by the same actuators. No tail rotor or fin is needed.</li></ul></article>
       </div>
       <p class="callout"><strong>In short:</strong> 5 actuators set just 2 angles, one per rotor. The extra actuators are a reserve in case of failure.</p>
+    </div>
+    <div class="compare">
+      <h3>Compared with Jetson ONE</h3>
+      <p>Jetson ONE is a flying, commercially available single-seat multicopter with eight propellers. HELIMAC has one large coaxial rotor – more than 3.5 times the rotor area of Jetson’s entire outline. That is why, by our calculations, it will fly longer on a smaller battery and carry a heavier pilot.</p>
+      <div class="table-scroll">
+      <table>
+        <thead><tr><th scope="col"></th><th scope="col">HELIMAC <small>calculated, not yet measured</small></th><th scope="col">Jetson ONE <small>manufacturer data</small></th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Layout</th><td>2 coaxial rotors, Ø&nbsp;4.5&nbsp;m</td><td>8 propellers (4 pairs)</td></tr>
+          <tr><th scope="row">Rotor area</th><td>15.9&nbsp;m²</td><td>under 4.3&nbsp;m² (whole outline 2.7 × 1.6&nbsp;m)</td></tr>
+          <tr><th scope="row">Disk loading</th><td>about 14&nbsp;kg/m²</td><td>over 48&nbsp;kg/m²</td></tr>
+          <tr><th scope="row">Max pilot weight</th><td><strong>110&nbsp;kg</strong></td><td>95&nbsp;kg</td></tr>
+          <tr><th scope="row">Mass with battery</th><td>115.2&nbsp;kg</td><td>115&nbsp;kg</td></tr>
+          <tr><th scope="row">Battery</th><td><strong>40.3&nbsp;kg</strong></td><td>about 60&nbsp;kg</td></tr>
+          <tr><th scope="row">Flight time</th><td>90&nbsp;kg pilot: about <strong>27–28&nbsp;min</strong> (16&nbsp;min in pure hover)<br>110&nbsp;kg pilot: about <strong>25&nbsp;min</strong> (14&nbsp;min in hover)</td><td>about 20&nbsp;min (pilot about 85&nbsp;kg)</td></tr>
+          <tr><th scope="row">Top speed</th><td>about 90&nbsp;km/h</td><td>102&nbsp;km/h</td></tr>
+          <tr><th scope="row">Status</th><td>design, stage 1 – drive</td><td>flying, on sale</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p class="note">HELIMAC flight time: 200&nbsp;Wh/kg cells, mixed flight = 30&nbsp;% hover, 70&nbsp;% cruise. Jetson ONE figures from the manufacturer: 20&nbsp;min, 115&nbsp;kg with batteries, 55&nbsp;kg without, pilot up to 95&nbsp;kg. Jetson also has features HELIMAC does not have yet: flight after losing one motor and a ballistic parachute. Only our tests will confirm the comparison.</p>
     </div>
   </section>
 

@@ -434,3 +434,17 @@ ul.ticks li::before { content: ""; position: absolute; left: 0; top: 0.6em; widt
 .version-note strong { color: var(--red-deep); font-style: italic; }
 .version-note { margin: -0.25rem 0 1rem; font-size: var(--step--1); color: var(--ink-soft); }
 .version-note strong { color: var(--red-deep); font-style: italic; }
+
+/* porównanie z Jetson ONE */
+.compare { margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--ink); }
+.compare > h3 { font-size: var(--step-2); margin-bottom: 0.5rem; }
+.compare > p { max-width: var(--measure); }
+.table-scroll { overflow-x: auto; margin-top: 1.25rem; border: 2px solid var(--ink); background: var(--white); }
+.compare table { width: 100%; min-width: 34rem; border-collapse: collapse; font-size: var(--step--1); }
+.compare th, .compare td { text-align: left; vertical-align: top; padding: 0.6rem 0.9rem; border-bottom: 1px solid var(--line-soft); }
+.compare thead th { background: var(--carbon, #121519); color: #fff; font-style: italic; font-weight: 800; border-bottom: 4px solid var(--red); }
+.compare thead th small { display: block; font-style: normal; font-weight: 400; color: #c9ced4; font-size: 0.85em; }
+.compare tbody th { font-weight: 500; color: var(--ink-soft); width: 26%; }
+.compare tbody td:nth-child(2) { background: #fff5f5; }
+.compare strong { color: var(--red-deep); }
+.compare .note { margin-top: 0.8rem; }
