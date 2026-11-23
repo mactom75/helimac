@@ -457,3 +457,8 @@ ul.ticks li::before { content: ""; position: absolute; left: 0; top: 0.6em; widt
 .d-tube.al { stroke: #5b646f; stroke-width: 8; }
 .d-tube.al.thin { stroke-width: 7; }
 .d-tube-hi.al { stroke: #e3e7eb; stroke-width: 2; }
+
+/* bilans masy */
+.mass-block { margin-top: 1.5rem; }
+.mass-block td { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.mass-block tr.sum th, .mass-block tr.sum td { font-weight: 700; border-top: 2px solid currentColor; }

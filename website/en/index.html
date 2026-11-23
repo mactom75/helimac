@@ -253,7 +253,7 @@
               <tr><th scope="row">Machine mass</th><td>about 43.7&nbsp;kg without battery<br>about 83.7&nbsp;kg with battery (no pilot)</td></tr>
               <tr><th scope="row">Battery</th><td>40&nbsp;kg, 112S Li-ion, about 400&nbsp;V, about 8&nbsp;kWh</td></tr>
               <tr><th scope="row">Hover power (rotors)</th><td>about 17&nbsp;kW, FM 0.77 (peak about 26&nbsp;kW)</td></tr>
-              <tr><th scope="row">Motor</th><td>one brushless outer-rotor motor, 8000&nbsp;rpm, about 7&nbsp;kg, cooled by rotor downwash</td></tr>
+              <tr><th scope="row">Motor</th><td>one brushless outer-rotor motor, 8000&nbsp;rpm, about 7.1&nbsp;kg, cooled by rotor downwash</td></tr>
               <tr><th scope="row">Transmission</th><td>toothed belts 16:1, carbon cord, 10-spoke pulleys, no oil</td></tr>
               <tr><th scope="row">Blades</th><td>foam core, carbon spar and skin, about 2.2&nbsp;kg</td></tr>
               <tr><th scope="row">Frame</th><td>3 aluminium 7075 tubes: 2 in front (A-frame), 1 curved rear leg with seat, footrest and battery</td></tr>
@@ -264,6 +264,31 @@
           </table>
         </div>
         <p class="note">All values are calculated, not yet measured. Details and change history: <a href="https://github.com/mactom75/helimac/blob/main/docs/design-rev-K.md">design-rev-K.md</a>, <a href="/assets/docs/HELIMAC_revK_szkic_ukladu.pdf">layout sketch (PDF, Polish)</a>, <a href="https://github.com/mactom75/helimac/blob/main/docs/parameters.md">parameters.md</a>.</p>
+        <div class="title-block mass-block">
+          <table>
+            <caption>Mass breakdown <span>version K, kg</span></caption>
+            <tbody>
+              <tr><th scope="row">Blades (4 × 2.2&nbsp;kg)</th><td>8.8</td></tr>
+              <tr><th scope="row">Motor</th><td>7.1</td></tr>
+              <tr><th scope="row">16:1 belt drive</th><td>7.5</td></tr>
+              <tr><th scope="row">Frame (3 Al tubes)</th><td>6.2</td></tr>
+              <tr><th scope="row">Column, shafts, bearings</th><td>3.3</td></tr>
+              <tr><th scope="row">Hubs</th><td>2.8</td></tr>
+              <tr><th scope="row">Seat and footrest</th><td>1.8</td></tr>
+              <tr><th scope="row">Controls (5 actuators)</th><td>1.8</td></tr>
+              <tr><th scope="row">MC-P inverter</th><td>1.5</td></tr>
+              <tr><th scope="row">400&nbsp;V wiring</th><td>1.1</td></tr>
+              <tr><th scope="row">Avionics</th><td>1.0</td></tr>
+              <tr><th scope="row">Battery mount</th><td>0.8</td></tr>
+              <tr class="sum"><th scope="row">Machine without battery</th><td>43.7</td></tr>
+              <tr><th scope="row">+ battery</th><td>40.0</td></tr>
+              <tr class="sum"><th scope="row">Machine with battery</th><td>83.7</td></tr>
+              <tr><th scope="row">+ pilot</th><td>110.0</td></tr>
+              <tr class="sum"><th scope="row">Take-off mass</th><td>193.7 ≈ 194</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">From the calculation <a href="https://github.com/mactom75/helimac/blob/main/calc/revK/final3.py">final3.py</a>. Version J2 weighed 74.9&nbsp;kg without the battery; the biggest savings came from the belt drive (7.5 instead of about 20&nbsp;kg) and the foam-core blades (8.8 instead of 17&nbsp;kg). With carbon-fibre frame tubes the machine would weigh about 41.5&nbsp;kg – for now we stay with aluminium.</p>
       </div>
     </div>
     <figure class="layout-sketch">
@@ -309,8 +334,8 @@
     <h2>Now: designing the drive</h2>
     <p class="intro">At this stage we are working on the mechanical and electronic design. We start with the drive — the heart of the machine — which will be tested on a dynamometer first.</p>
     <div class="parts">
-      <article><h3>Electric motor</h3><p>One outer-rotor permanent-magnet motor at 8000&nbsp;rpm: about 17&nbsp;kW in hover, about 26&nbsp;kW peak. The same laminations and magnets as before, 37&nbsp;mm stack, 7 turns, about 7&nbsp;kg. It is cooled by the rotor downwash.</p></article>
-      <article><h3>Belt drive 16:1</h3><p>A carbon-cord toothed belt takes power from the motor to an intermediate shaft, and two final belts drive the coaxial rotor shafts. Large pulleys milled from aluminium with 10 spokes. No oil or fans, about 97&nbsp;% efficient, several times lighter than the version J2 gearboxes (about 20&nbsp;kg).</p></article>
+      <article><h3>Electric motor</h3><p>One outer-rotor permanent-magnet motor at 8000&nbsp;rpm: about 17&nbsp;kW in hover, about 26&nbsp;kW peak. The same laminations and magnets as before, 37&nbsp;mm stack, 7 turns, about 7.1&nbsp;kg. It is cooled by the rotor downwash.</p></article>
+      <article><h3>Belt drive 16:1</h3><p>A carbon-cord toothed belt takes power from the motor to an intermediate shaft, and two final belts drive the coaxial rotor shafts. Large pulleys milled from aluminium with 10 spokes. No oil or fans, about 97&nbsp;% efficient, about 7.5&nbsp;kg instead of about 20&nbsp;kg for the version J2 gearboxes.</p></article>
       <article><h3>Reversing the direction</h3><p>A 1:1 spur-gear pair on the intermediate shaft reverses the direction for one rotor, so a single motor drives both rotors and their speeds are mechanically linked.</p></article>
       <article><h3>MC-P inverter</h3><p>An in-house 400&nbsp;V inverter with SiC MOSFETs on a 215&nbsp;×&nbsp;116&nbsp;mm board designed in KiCad, cooled in version K by a heatsink in the rotor downwash, without fans.</p></article>
       <article><h3>MC-C controller</h3><p>Control board (in design): motor control (FOC), fans, temperature sensors and data logging.</p></article>
@@ -333,7 +358,7 @@
         <li><figure><a href="/assets/img/cad/73-revK-kolo-pasowe-1400.webp"><img src="/assets/img/cad/73-revK-kolo-pasowe-700.webp" srcset="/assets/img/cad/73-revK-kolo-pasowe-700.webp 700w, /assets/img/cad/73-revK-kolo-pasowe-1400.webp 1400w" sizes="(min-width: 60rem) 30vw, (min-width: 40rem) 46vw, 92vw" width="700" height="505" alt="120-tooth pulley with 10 spokes" loading="lazy" decoding="async"></a><figcaption>120-tooth pulley with 10 spokes milled from 7075-T6 aluminium, about 1.4&nbsp;kg – with fewer spokes the rim would have to be thicker and the pulley heavier</figcaption></figure></li>
       </ul>
       <h4>Motor</h4>
-      <p>Brushless 24/20 outer-rotor motor with permanent magnets. The same laminations and magnets as in version J2, a shorter 37&nbsp;mm stack, 7 turns, 8000&nbsp;rpm, about 7&nbsp;kg. It is cooled by the rotor downwash. <a href="/assets/docs/HELIMAC_revK_3_silnik.pdf">PDF</a></p>
+      <p>Brushless 24/20 outer-rotor motor with permanent magnets. The same laminations and magnets as in version J2, a shorter 37&nbsp;mm stack, 7 turns, 8000&nbsp;rpm, about 7.1&nbsp;kg. It is cooled by the rotor downwash. <a href="/assets/docs/HELIMAC_revK_3_silnik.pdf">PDF</a></p>
       <ul class="gallery cad-gallery">
         <li><figure><a href="/assets/img/cad/76-revK-silnik-1400.webp"><img src="/assets/img/cad/76-revK-silnik-700.webp" srcset="/assets/img/cad/76-revK-silnik-700.webp 700w, /assets/img/cad/76-revK-silnik-1400.webp 1400w" sizes="(min-width: 60rem) 30vw, (min-width: 40rem) 46vw, 92vw" width="700" height="537" alt="Version K motor: wound stator and outer rotor with magnets" loading="lazy" decoding="async"></a><figcaption>24-slot wound stator (copper) and outer rotor with 20 magnets (red)</figcaption></figure></li>
       </ul>
@@ -448,7 +473,7 @@
           <h3>Version K: recalculating the design from scratch</h3>
           <ul>
             <li>Version J2 weighed 74.9&nbsp;kg without the battery – too much. We recalculated the whole design from the beginning: mass, power, rotors, motor, transmission, controls, electronics and frame.</li>
-            <li>A toothed-belt drive instead of the cycloidal and bevel gearboxes (no oil, about 15&nbsp;kg lighter), foam-core blades with a carbon-fibre spar (about 7&nbsp;kg lighter), and a frame of three aluminium tubes.</li>
+            <li>A toothed-belt drive instead of the cycloidal and bevel gearboxes (no oil, about 12.5&nbsp;kg lighter), foam-core blades with a carbon-fibre spar (about 8&nbsp;kg lighter), and a frame of three aluminium tubes.</li>
             <li>Machine without battery: about 43.7&nbsp;kg (−42&nbsp;%), take-off mass about 194&nbsp;kg, flight time about 20&nbsp;min hovering and about 26&nbsp;min in mixed flight.</li>
             <li>Weight savings: a lighter 8000&nbsp;rpm motor, hubs integrated with the blade grips, spoked pulleys, an inverter heatsink without fans, lighter blades, a carbon column.</li>
             <li>Version J2 re-checked with the new model: hover 21.4&nbsp;kW rather than 20.7, flight time about 15.5 / 20.5&nbsp;min rather than 14 / 25 – pilot and frame drag in cruise had been left out.</li>

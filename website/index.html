@@ -253,7 +253,7 @@
               <tr><th scope="row">Masa maszyny</th><td>ok. 43,7&nbsp;kg bez akumulatora<br>ok. 83,7&nbsp;kg z akumulatorem (bez pilota)</td></tr>
               <tr><th scope="row">Akumulator</th><td>40&nbsp;kg, 112S Li-ion, ok. 400&nbsp;V, ok. 8&nbsp;kWh</td></tr>
               <tr><th scope="row">Moc zawisu (wirniki)</th><td>ok. 17&nbsp;kW, FM 0,77 (szczytowo ok. 26&nbsp;kW)</td></tr>
-              <tr><th scope="row">Silnik</th><td>jeden, bezszczotkowy, wirnik zewnętrzny; 8000&nbsp;obr/min, ok. 7&nbsp;kg, chłodzony strumieniem wirnika</td></tr>
+              <tr><th scope="row">Silnik</th><td>jeden, bezszczotkowy, wirnik zewnętrzny; 8000&nbsp;obr/min, ok. 7,1&nbsp;kg, chłodzony strumieniem wirnika</td></tr>
               <tr><th scope="row">Przekładnia</th><td>pasowa 16:1, pasy zębate z włóknem węglowym, koła z 10 szprychami, bez oleju</td></tr>
               <tr><th scope="row">Łopaty</th><td>rdzeń z pianki, dźwigar i pokrycie z włókna węglowego, ok. 2,2&nbsp;kg</td></tr>
               <tr><th scope="row">Rama</th><td>3 rury aluminiowe 7075: 2 z przodu (trójkąt), 1 wygięta z tyłu z siodełkiem, podnóżkiem i akumulatorem</td></tr>
@@ -264,6 +264,31 @@
           </table>
         </div>
         <p class="note">Wszystkie wartości są obliczone, jeszcze nie zmierzone. Szczegóły i historia zmian: <a href="https://github.com/mactom75/helimac/blob/main/docs/design-rev-K.md">design-rev-K.md</a>, <a href="/assets/docs/HELIMAC_revK_szkic_ukladu.pdf">szkic układu (PDF)</a>, <a href="https://github.com/mactom75/helimac/blob/main/docs/parameters.md">parameters.md</a>.</p>
+        <div class="title-block mass-block">
+          <table>
+            <caption>Bilans masy <span>wersja K, kg</span></caption>
+            <tbody>
+              <tr><th scope="row">Łopaty (4 × 2,2&nbsp;kg)</th><td>8,8</td></tr>
+              <tr><th scope="row">Silnik</th><td>7,1</td></tr>
+              <tr><th scope="row">Przekładnia pasowa 16:1</th><td>7,5</td></tr>
+              <tr><th scope="row">Rama (3 rury Al)</th><td>6,2</td></tr>
+              <tr><th scope="row">Kolumna, wały, łożyska</th><td>3,3</td></tr>
+              <tr><th scope="row">Piasty</th><td>2,8</td></tr>
+              <tr><th scope="row">Siodełko i podnóżek</th><td>1,8</td></tr>
+              <tr><th scope="row">Sterowanie (5 siłowników)</th><td>1,8</td></tr>
+              <tr><th scope="row">Falownik MC-P</th><td>1,5</td></tr>
+              <tr><th scope="row">Instalacja 400&nbsp;V</th><td>1,1</td></tr>
+              <tr><th scope="row">Awionika</th><td>1,0</td></tr>
+              <tr><th scope="row">Mocowanie akumulatora</th><td>0,8</td></tr>
+              <tr class="sum"><th scope="row">Maszyna bez akumulatora</th><td>43,7</td></tr>
+              <tr><th scope="row">+ akumulator</th><td>40,0</td></tr>
+              <tr class="sum"><th scope="row">Maszyna z akumulatorem</th><td>83,7</td></tr>
+              <tr><th scope="row">+ pilot</th><td>110,0</td></tr>
+              <tr class="sum"><th scope="row">Masa startowa</th><td>193,7 ≈ 194</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">Z obliczeń <a href="https://github.com/mactom75/helimac/blob/main/calc/revK/final3.py">final3.py</a>. Wersja J2 ważyła 74,9&nbsp;kg bez akumulatora; najwięcej dały przekładnia pasowa (7,5 zamiast ok.&nbsp;20&nbsp;kg) i łopaty z pianki (8,8 zamiast 17&nbsp;kg). Z rurami ramy z włókna węglowego maszyna ważyłaby ok.&nbsp;41,5&nbsp;kg – na razie zostajemy przy aluminium.</p>
       </div>
     </div>
     <figure class="layout-sketch">
@@ -309,8 +334,8 @@
     <h2>Teraz: projekt napędu</h2>
     <p class="intro">Na tym etapie zajmujemy się projektem mechanicznym i elektronicznym. Zaczynamy od napędu — serca maszyny — który najpierw przejdzie próby na hamowni.</p>
     <div class="parts">
-      <article><h3>Silnik elektryczny</h3><p>Jeden silnik z magnesami trwałymi i wirnikiem zewnętrznym, 8000&nbsp;obr/min: ok.&nbsp;17&nbsp;kW w zawisie, szczytowo ok.&nbsp;26&nbsp;kW. Te same blachy i magnesy co wcześniej, pakiet 37&nbsp;mm, 7 zwojów, ok.&nbsp;7&nbsp;kg. Chłodzi go strumień powietrza z wirnika.</p></article>
-      <article><h3>Przekładnia pasowa 16:1</h3><p>Pas zębaty z włóknem węglowym przenosi napęd z silnika na wałek pośredni, a dwa pasy końcowe na współosiowe wały wirników. Duże koła frezowane z aluminium, z 10 szprychami. Bez oleju i wentylatorów, sprawność ok.&nbsp;97&nbsp;%, kilka razy lżejsza niż przekładnie wersji J2 (ok.&nbsp;20&nbsp;kg).</p></article>
+      <article><h3>Silnik elektryczny</h3><p>Jeden silnik z magnesami trwałymi i wirnikiem zewnętrznym, 8000&nbsp;obr/min: ok.&nbsp;17&nbsp;kW w zawisie, szczytowo ok.&nbsp;26&nbsp;kW. Te same blachy i magnesy co wcześniej, pakiet 37&nbsp;mm, 7 zwojów, ok.&nbsp;7,1&nbsp;kg. Chłodzi go strumień powietrza z wirnika.</p></article>
+      <article><h3>Przekładnia pasowa 16:1</h3><p>Pas zębaty z włóknem węglowym przenosi napęd z silnika na wałek pośredni, a dwa pasy końcowe na współosiowe wały wirników. Duże koła frezowane z aluminium, z 10 szprychami. Bez oleju i wentylatorów, sprawność ok.&nbsp;97&nbsp;%, ok.&nbsp;7,5&nbsp;kg zamiast ok.&nbsp;20&nbsp;kg przekładni wersji J2.</p></article>
       <article><h3>Odwrócenie kierunku</h3><p>Para kół zębatych 1:1 na wałku pośrednim odwraca kierunek obrotów dla jednego z wirników. Dzięki temu oba wirniki napędza jeden silnik, a ich obroty są sprzężone mechanicznie.</p></article>
       <article><h3>Falownik MC-P</h3><p>Własny falownik 400&nbsp;V na tranzystorach SiC, płytka 215&nbsp;×&nbsp;116&nbsp;mm projektowana w KiCad. W wersji K radiator chłodzi strumień powietrza z wirnika, bez wentylatorów.</p></article>
       <article><h3>Sterownik MC-C</h3><p>Płytka sterująca (w projekcie): sterowanie silnikiem (FOC), wentylatorami, czujniki temperatury i rejestracja pomiarów.</p></article>
@@ -333,7 +358,7 @@
         <li><figure><a href="/assets/img/cad/73-revK-kolo-pasowe-1400.webp"><img src="/assets/img/cad/73-revK-kolo-pasowe-700.webp" srcset="/assets/img/cad/73-revK-kolo-pasowe-700.webp 700w, /assets/img/cad/73-revK-kolo-pasowe-1400.webp 1400w" sizes="(min-width: 60rem) 30vw, (min-width: 40rem) 46vw, 92vw" width="700" height="505" alt="Koło pasowe 120 zębów z 10 szprychami" loading="lazy" decoding="async"></a><figcaption>Koło 120 zębów z 10 szprychami frezowanymi z Al 7075-T6, ok.&nbsp;1,4&nbsp;kg – przy mniejszej liczbie szprych wieniec musiałby być grubszy i koło cięższe</figcaption></figure></li>
       </ul>
       <h4>Silnik</h4>
-      <p>Bezszczotkowy silnik 24/20 z wirnikiem zewnętrznym i magnesami trwałymi. Te same blachy i magnesy co w wersji J2, krótszy pakiet 37&nbsp;mm, 7 zwojów, 8000&nbsp;obr/min, ok.&nbsp;7&nbsp;kg. Chłodzi go strumień powietrza z wirnika. <a href="/assets/docs/HELIMAC_revK_3_silnik.pdf">PDF</a></p>
+      <p>Bezszczotkowy silnik 24/20 z wirnikiem zewnętrznym i magnesami trwałymi. Te same blachy i magnesy co w wersji J2, krótszy pakiet 37&nbsp;mm, 7 zwojów, 8000&nbsp;obr/min, ok.&nbsp;7,1&nbsp;kg. Chłodzi go strumień powietrza z wirnika. <a href="/assets/docs/HELIMAC_revK_3_silnik.pdf">PDF</a></p>
       <ul class="gallery cad-gallery">
         <li><figure><a href="/assets/img/cad/76-revK-silnik-1400.webp"><img src="/assets/img/cad/76-revK-silnik-700.webp" srcset="/assets/img/cad/76-revK-silnik-700.webp 700w, /assets/img/cad/76-revK-silnik-1400.webp 1400w" sizes="(min-width: 60rem) 30vw, (min-width: 40rem) 46vw, 92vw" width="700" height="537" alt="Silnik wersji K: stojan z uzwojeniem i wirnik zewnętrzny z magnesami" loading="lazy" decoding="async"></a><figcaption>Stojan 24 żłobki z uzwojeniem (miedź) i wirnik zewnętrzny z 20 magnesami (czerwone)</figcaption></figure></li>
       </ul>
@@ -448,7 +473,7 @@
           <h3>Wersja K: przeliczamy projekt od zera</h3>
           <ul>
             <li>Wersja J2 ważyła 74,9&nbsp;kg bez akumulatora – za dużo. Przeliczyliśmy cały projekt od początku: masa, moc, wirniki, silnik, przekładnia, sterowanie, elektronika i rama.</li>
-            <li>Przekładnia pasowa zamiast cykloidalnej i stożkowej (bez oleju, ok.&nbsp;15&nbsp;kg mniej), łopaty z pianki z dźwigarem z włókna węglowego (ok.&nbsp;7&nbsp;kg mniej), rama z trzech rur aluminiowych.</li>
+            <li>Przekładnia pasowa zamiast cykloidalnej i stożkowej (bez oleju, ok.&nbsp;12,5&nbsp;kg mniej), łopaty z pianki z dźwigarem z włókna węglowego (ok.&nbsp;8&nbsp;kg mniej), rama z trzech rur aluminiowych.</li>
             <li>Maszyna bez akumulatora: ok.&nbsp;43,7&nbsp;kg (−42&nbsp;%), masa startowa ok.&nbsp;194&nbsp;kg, czas lotu ok.&nbsp;20&nbsp;min w zawisie i ok.&nbsp;26&nbsp;min w locie mieszanym.</li>
             <li>Odchudzanie: lżejszy silnik 8000&nbsp;obr/min, piasty zintegrowane z uchwytami łopat, koła pasowe ze szprychami, radiator falownika bez wentylatorów, lżejsze łopaty, kolumna z włókna węglowego.</li>
             <li>Sprawdzenie wersji J2 nowym modelem: zawis 21,4&nbsp;kW zamiast 20,7, czas lotu ok.&nbsp;15,5 / 20,5&nbsp;min zamiast 14 / 25 – wcześniej pominięto opór pilota i ramy w przelocie.</li>
