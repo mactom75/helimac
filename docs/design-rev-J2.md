@@ -1,11 +1,15 @@
 # HELIMAC design — revision J2 (2026-11-21)
 
-**Status:** current design revision. Revisions H / H1 are withdrawn.
+> 🛑 **Superseded by [rev K](design-rev-K.md) (23 Nov 2026).** Do not manufacture rev J2 parts. Kept as the design history and as the basis for the MC-P inverter rev D1 (still current).
+>
+> **Rev J2 re-checked with the rev K model:** hover power **21.4 kW** (not 20.7), minimum cruise power ≈ 14 kW, flight time ≈ **15.5 min hover / 20.5 min mixed** (not 14 / 25).
+
+**Status:** archive (was the current revision 21–23 Nov 2026). Revisions H / H1 are withdrawn.
 Rev J was created when the standard pilot mass was raised from 90 kg to **110 kg** (height 1.70–1.90 m).
 
 ## CAD graphics
 
-Rendered views and sections from the rev J2 CAD model: [drive unit](../hardware/README.md#drive-unit-rev-j2) · [motor](../hardware/motor/README.md) · [cycloidal transmission](../hardware/transmission/README.md) · [blades](../hardware/blades/README.md) · [MC-P inverter](../electronics/mc-p-inverter/README.md). Also shown on [helimac.pl](https://helimac.pl/en/#drive).
+Rendered views and sections from the rev J2 CAD model: [drive unit](../hardware/README.md#drive-unit-rev-j2--archive) · [motor](../hardware/motor/README.md) · [cycloidal transmission](../hardware/transmission/README.md) · [blades](../hardware/blades/README.md) · [MC-P inverter](../electronics/mc-p-inverter/README.md). Also shown on [helimac.pl](https://helimac.pl/en/#drive).
 
 ## Key figures
 

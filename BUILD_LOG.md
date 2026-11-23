@@ -5,6 +5,16 @@ Project progress — newest entries first. Entries may be in English and/or Poli
 
 ---
 
+## 2026-11-23 — Rev K: recalculating the design from scratch
+
+Rev J2 weighed 74.9 kg without the battery – too much. We recalculated the whole design from the beginning: mass, power, rotors, motor, transmission, controls, electronics and frame. Main changes: a toothed-belt drive instead of the cycloidal and bevel gearboxes (no oil, about 15 kg lighter), foam-core blades with a carbon-fibre spar (about 7 kg lighter), and a frame made of three aluminium tubes. Machine without battery: about 48.5 kg (−35 %), take-off mass about 198 kg, flight time about 19 min hovering and about 25 min in mixed flight. Next step: 3D model and drawings for rev K.
+
+- New: [docs/design-rev-K.md](docs/design-rev-K.md), layout sketch [docs/graphics/HELIMAC_revK_szkic_ukladu.pdf](docs/graphics/HELIMAC_revK_szkic_ukladu.pdf), calculations [calc/revK/](calc/revK/).
+- Rev J2 production packages J1–J3 are now archive (do not build); MC-P inverter rev D1 stays current.
+- Rev J2 re-checked with the new model: hover 21.4 kW, flight time ≈ 15.5 / 20.5 min.
+
+*PL: Rev J2 ważyła 74,9 kg bez akumulatora – za dużo. Przeliczyliśmy cały projekt od początku. Przekładnia pasowa zamiast cykloidalnej i stożkowej (bez oleju, ok. 15 kg mniej), łopaty z pianki z dźwigarem węglowym (ok. 7 kg mniej), rama z trzech rur aluminiowych. Maszyna bez akumulatora ok. 48,5 kg (−35 %), masa startowa ok. 198 kg, czas lotu ok. 19 / 25 min. Następny krok: model 3D i rysunki rev K.*
+
 ## 2026-11-22 — Drive unit mass corrected on ZS-00
 
 - General assembly drawing ZS-00 (package J1): drive unit mass corrected from "approx. 27.7 kg" to **approx. 38.5 kg** (without blades and frame adapter), matching the parts list (rev H 35.4 kg + rev J/J2 changes +3.05 kg). With the frame adapter and two upper collective servos ≈ 40 kg; machine mass 74.9 kg unchanged.

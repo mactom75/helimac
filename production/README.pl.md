@@ -2,7 +2,9 @@
 
 English: [README.md](README.md)
 
-Komplet do wykonania aktualnej konstrukcji (rev J2, pilot do 110 kg, masa startowa 225 kg): rysunki, pliki DXF do cięcia, modele STEP, pliki STL do druku 3D, dane CNC łopat oraz pełny projekt KiCad falownika MC-P z gerberami, BOM i plikami pozycji.
+> 🛑 **Rev J2 to wersja archiwalna — nie produkować J1, J2 ani J3.** Obowiązuje **rev K** (w projektowaniu, [docs/design-rev-K.md](../docs/design-rev-K.md)); paczki produkcyjne rev K po etapie 3 (model CAD i rysunki). **Wyjątek: falownik MC-P rev D1 jest aktualny** i zostaje w rev K.
+
+Komplet do wykonania konstrukcji rev J2 (wersja archiwalna; pilot do 110 kg, masa startowa 225 kg): rysunki, pliki DXF do cięcia, modele STEP, pliki STL do druku 3D, dane CNC łopat oraz pełny projekt KiCad falownika MC-P z gerberami, BOM i plikami pozycji.
 
 > ⚠️ **Prototyp, a nie certyfikowany statek powietrzny.** Wszystkie wartości są obliczone, jeszcze nie zmierzone. Przed budową przeczytaj [SAFETY.pl.md](../SAFETY.pl.md). Budujemy i badamy etapami: najpierw napęd na hamowni (395 N·m przez 30 min, potem 50 h), potem wirniki na uwięzi, potem loty bez pilota. Rysunki i elektronikę 400 V daj do przeglądu doświadczonym inżynierom, zanim zamówisz części.
 

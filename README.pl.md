@@ -14,7 +14,7 @@ wirniki współosiowe · sterowanie balansem ciała · napęd elektryczny 400 V 
   <a href="README.md">🇬🇧 English</a> · 🇵🇱 Polski · 🌐 <a href="https://helimac.pl/">helimac.pl</a> · ▶️ <a href="https://www.youtube.com/@Helimac-pl">YouTube</a> · ☕ <a href="https://buycoffee.to/helimac">Wesprzyj</a>
 </p>
 
-> **Aktualna wersja projektu: J2.** Wszystkie pliki w [`production/`](production/README.pl.md) są aktualne. Starsze wersje są opisane tylko w historii zmian ([BUILD_LOG.md](BUILD_LOG.md)) — nie budować według nich.
+> **Aktualna konstrukcja: rev K — w projektowaniu (koncepcja, etap 2, 23.11.2026).** Maszynę przeliczono od zera, żeby zmniejszyć masę z 74,9 do ok. 48,5 kg. Pliki w [`production/`](production/README.pl.md) to **rev J2 — wersja archiwalna, nie budować** (wyjątek: falownik MC-P rev D1 jest aktualny). Paczki produkcyjne rev K pojawią się po etapie 3 (model CAD i rysunki).
 
 ---
 
@@ -22,8 +22,8 @@ wirniki współosiowe · sterowanie balansem ciała · napęd elektryczny 400 V 
 
 | Chcę… | Przejdź do |
 |---|---|
-| 👀 **zobaczyć konstrukcję** | [Konstrukcja rev J2](docs/design-rev-J2.md) (EN) · [parametry](docs/parameters.md) (EN) · [strona](https://helimac.pl/) |
-| 📦 **pobrać pliki** | [Najnowsze wydanie (4 paczki ZIP)](../../releases/latest) · [przeglądaj pliki produkcyjne](production/README.pl.md) — rysunki, DXF, STEP, STL, KiCad, gerbery |
+| 👀 **zobaczyć konstrukcję** | [Konstrukcja rev K](docs/design-rev-K.md) (EN) · [szkic układu](docs/graphics/HELIMAC_revK_szkic_ukladu.pdf) · [parametry](docs/parameters.md) (EN) · [strona](https://helimac.pl/) |
+| 📦 **pobrać pliki** | rev K: [obliczenia](calc/revK/) · rev J2 (archiwalna): [wydanie](../../releases/latest), [pliki produkcyjne](production/README.pl.md) · falownik MC-P rev D1 (aktualny): [pliki](production/electronics/MC-P-inverter-revD1/) |
 | 🛠️ **pomóc w budowie** | [Otwarte zadania (Issues)](../../issues) · [Discussions](../../discussions) · [Jak współtworzyć](CONTRIBUTING.md) |
 | ▶️ **śledzić budowę** | [YouTube @Helimac-pl](https://www.youtube.com/@Helimac-pl) · [dziennik budowy](BUILD_LOG.md) · [plan prac](ROADMAP.md) |
 | ☕ **wesprzeć projekt** | [buycoffee.to/helimac](https://buycoffee.to/helimac) — każda kawa to wkład w części i próby na hamowni |
@@ -31,8 +31,8 @@ wirniki współosiowe · sterowanie balansem ciała · napęd elektryczny 400 V 
 > ⚠️ **Prototyp w fazie projektu — nie jest to dopuszczony statek powietrzny.** Wszystkie wartości są obliczone, jeszcze nie zmierzone. Przed budową przeczytaj [SAFETY.pl.md](SAFETY.pl.md).
 
 <p align="center">
-  <a href="hardware/README.md#drive-unit-rev-j2"><img src="website/assets/img/cad/01-naped-izometria-1400.webp" alt="Zespół napędowy HELIMAC — model CAD rev J2" width="640"></a><br>
-  <sub>Zespół napędowy rev J2: silnik, przekładnia cykloidalna 10:1, przekładnia nawrotna i piasty wirników (model CAD)</sub>
+  <a href="docs/design-rev-K.md"><img src="docs/graphics/HELIMAC_revK_szkic_ukladu.png" alt="HELIMAC rev K — szkic układu, widok z boku i z przodu" width="760"></a><br>
+  <sub>Szkic układu rev K (koncepcja): pilot 110 kg, akumulator 40 kg, masa startowa ok. 198 kg, przekładnia pasowa 12:1, rama z trzech rur Al 7075-T6</sub>
 </p>
 
 ## Czym jest HELIMAC?
@@ -43,30 +43,34 @@ Nazwa łączy słowa **HELI**kopter i **MAC**iąg — nazwisko założyciela, **
 
 Docelowa kategoria: jednomiejscowy śmigłowiec ultralekki, MTOM ≤ 300 kg ([Aneks I do rozporządzenia (UE) 2018/1139](docs/regulations.md) — przepisy krajowe zamiast certyfikacji EASA).
 
-## Aktualna konstrukcja — wersja J2
+## Aktualna konstrukcja — rev K (w projektowaniu)
 
 | | |
 |---|---|
 | Układ | współosiowy, 2 wirniki dwułopatowe Ø 4,5 m, 500 obr/min, bez wirnika ogonowego |
 | Sterowanie | kierunek – balans ciała pilota (bez skoku cyklicznego) · skok ogólny – siłowniki elektryczne · kurs – różnica skoku wirnika górnego i dolnego |
 | Pilot | do 110 kg |
-| Masa startowa | 225,2 kg (maszyna bez akumulatora 74,9 kg, akumulator 40,3 kg) |
-| Moc zawisu | 20,7 kW |
-| Napęd | silnik PMSM z wirnikiem zewnętrznym (≈ 21 kW w zawisie) → przekładnia cykloidalna 10:1 → przekładnia nawrotna stożkowa |
+| Masa startowa | ok. 198 kg (maszyna bez akumulatora ok. 48,5 kg — cel ok. 44 kg, akumulator 40 kg) |
+| Moc zawisu | 17,8 kW (1,3 g w upalny dzień: 27 kW) |
+| Napęd | silnik PMSM z wirnikiem zewnętrznym, 6000 obr/min → **przekładnia pasowa 12:1** (pasy zębate z włóknem węglowym, bez oleju) → wały współosiowe |
+| Łopaty | rdzeń z pianki PMI, dźwigar i pokrycie z włókna węglowego, ok. 2,5 kg |
+| Rama | trzy rury Al 7075-T6: dwie nogi przednie (trójkąt) + jedna wygięta tylna z siodełkiem, podnóżkiem i akumulatorem |
 | Elektronika | własny falownik SiC **MC-P** rev D1 (KiCad) · płytka sterująca **MC-C** w projekcie |
-| Akumulator | 112S Li-ion, ≈ 400 V |
-| Czas lotu (obliczony) | ≈ 14 min zawis / ≈ 25 min lot mieszany (ogniwa 200 Wh/kg) |
-| **Obecny etap** | **Etap 1 — napęd + zasilanie** → hamownia 395 N·m / 30 min, potem 50 h |
+| Akumulator | 112S4P Li-ion, ≈ 400 V, ok. 8 kWh, 40 kg |
+| Czas lotu (obliczony) | ok. 19 min zawis / ok. 25 min lot mieszany |
+| **Obecny etap** | **rev K, etap 3 — model CAD i rysunki**, potem paczki produkcyjne i hamownia |
+
+Poprzednia wersja: [rev J2](docs/design-rev-J2.md) (archiwalna) — 74,9 kg bez akumulatora, przekładnia cykloidalna i stożkowa.
 
 ## Co gdzie jest
 
 | Folder | Zawartość |
 |---|---|
-| [production/](production/README.pl.md) | **pliki do wykonania** rev J2 — 4 paczki ZIP (J1 napęd, J2 łopaty, J3 rama i siedzisko, falownik MC-P) |
+| [production/](production/README.pl.md) | pliki produkcyjne — **rev J2 archiwalna** (J1, J2, J3: nie budować) i **falownik MC-P rev D1 (aktualny)** |
 | [hardware/](hardware/) | opisy zespołów z grafikami CAD: rama, siedzisko, głowica i sterowanie, łopaty, przekładnia, silnik |
 | [electronics/](electronics/) | falownik MC-P, sterownik MC-C, akumulator + BMS, awionika |
-| [docs/](docs/) | konstrukcja, parametry, przepisy, [grafiki (PDF)](docs/graphics/) |
-| [calc/](calc/) | kalkulator osiągów (Python) |
+| [docs/](docs/) | [konstrukcja rev K](docs/design-rev-K.md), [rev J2 (archiwalna)](docs/design-rev-J2.md), parametry, przepisy, [grafiki (PDF)](docs/graphics/) |
+| [calc/](calc/) | kalkulator osiągów i [obliczenia projektowe rev K](calc/revK/) (Python) |
 | [firmware/](firmware/) | oprogramowanie (w przyszłości) |
 
 ## Jak dołączyć

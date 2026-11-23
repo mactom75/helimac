@@ -8,3 +8,7 @@ pytest -q calc/tests
 ```
 
 Defaults = HELIMAC rev J2 (coaxial, no tail rotor: `--tail 0`). Results are rough estimates only — see comments in the code.
+
+## Rev K design calculations
+
+The full rev K design loop and stage 2 checks are in [revK/](revK/) (`helimac_calc.py` above is a simple hover estimate with rev J2 defaults).

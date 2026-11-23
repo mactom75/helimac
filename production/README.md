@@ -2,7 +2,9 @@
 
 Polska wersja: [README.pl.md](README.pl.md)
 
-Everything needed to manufacture the current design (rev J2, pilot up to 110 kg, MTOW 225 kg): drawings, DXF cutting files, STEP models, 3D-print STL files, blade CNC data, and the complete KiCad project of the MC-P inverter with Gerbers, BOM and placement files.
+> 🛑 **Rev J2 is an archive version — do not manufacture J1, J2 or J3.** The current design is **rev K** (in design, [docs/design-rev-K.md](../docs/design-rev-K.md)); rev K production packages will follow after stage 3 (CAD + drawings). **Exception: the MC-P inverter rev D1 is current** and stays in rev K.
+
+Everything needed to manufacture design rev J2 (archive; pilot up to 110 kg, MTOW 225 kg): drawings, DXF cutting files, STEP models, 3D-print STL files, blade CNC data, and the complete KiCad project of the MC-P inverter with Gerbers, BOM and placement files.
 
 > ⚠️ **Prototype, not an approved aircraft.** All values are calculated, not yet measured. Read [SAFETY.md](../SAFETY.md) before building anything. Build and test in stages: drive on the test bench first (395 N·m / 30 min, then 50 h), then tethered rotor tests, then uncrewed flights. Have drawings and the 400 V electronics reviewed by qualified engineers before you make parts.
 

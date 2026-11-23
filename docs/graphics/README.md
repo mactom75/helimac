@@ -14,3 +14,11 @@ PDF sheets generated from the CAD model and calculations (Polish captions). Valu
 | [HELIMAC_silnik_MES_pole_magnetyczne.pdf](HELIMAC_silnik_MES_pole_magnetyczne.pdf) | Motor FEM — magnetic flux density (no load / hover 57 A), close-up, mesh, back-EMF and torque |
 
 Not yet available: frame (new layout being calculated, D12), reversing bevel gearbox (gear teeth not modelled yet).
+
+## Rev K (current, in design)
+
+| File | Contents |
+|---|---|
+| [HELIMAC_revK_szkic_ukladu.pdf](HELIMAC_revK_szkic_ukladu.pdf) · [PNG](HELIMAC_revK_szkic_ukladu.png) | rev K layout sketch — side and front view, main dimensions (concept, stage 2, labels in Polish) |
+
+All other graphics in this folder show **rev J2 (archive)**; the motor (laminations, magnets) and the MC-P inverter remain valid for rev K.

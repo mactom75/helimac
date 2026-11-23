@@ -1,12 +1,12 @@
 # Cycloidal transmission
 
-**Status:** 📦 production files ready (rev J2)
+**Status:** 🛑 **Rev J2 cycloidal + bevel gearbox — archive, do not build.** Rev K uses a **toothed-belt drive 12:1** (carbon-cord belts, no oil) — in design ([rev K](../../docs/design-rev-K.md)).
 
 **Onshape document:** _link to be added_
 
 ## Files
 
-**Production files:** [J1 – drive unit rev J2](../../production/mechanical/J1-drive-revJ2/) · [ZIP](../../production/downloads/HELIMAC_J1_drive_revJ2.zip)
+**Production files (rev J2 — archive):** [J1 – drive unit rev J2](../../production/mechanical/J1-drive-revJ2/) · [ZIP](../../production/downloads/HELIMAC_J1_drive_revJ2.zip)
 
 Cycloidal transmission P01–P17 (cams P01 as DXF, 100Cr6) and reversing bevel gearbox N01–N12 — part drawings, assembly drawings, change notes ECN-J01…J03.
 

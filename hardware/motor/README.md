@@ -1,12 +1,12 @@
 # Electric motor (radial flux)
 
-**Status:** 📦 production files ready (rev J2)
+**Status:** 🔄 **rev K in design** — same laminations and magnets, 50 mm stack, 7 turns, 6000 rpm ([rev K](../../docs/design-rev-K.md)). Rev J2 files below are **archive**.
 
 **Onshape document:** _link to be added_
 
 ## Files
 
-**Production files:** [J1 – drive unit rev J2](../../production/mechanical/J1-drive-revJ2/) · [ZIP](../../production/downloads/HELIMAC_J1_drive_revJ2.zip)
+**Production files (rev J2 — archive):** [J1 – drive unit rev J2](../../production/mechanical/J1-drive-revJ2/) · [ZIP](../../production/downloads/HELIMAC_J1_drive_revJ2.zip)
 
 Motor parts S01–S08: laminations S01/S02 (DXF, NO20 0.20 mm), stator, rotor, magnets — drawings in `drawings/`, cutting files in `dxf/`.
 

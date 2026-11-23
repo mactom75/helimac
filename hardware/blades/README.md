@@ -1,12 +1,12 @@
 # Rotor blades
 
-**Status:** 📦 production files ready (rev J)
+**Status:** 🛑 **Rev J (ASA core, 4.25 kg) — archive, do not build.** Rev K blades: PMI foam core, carbon D-spar and ±45° skin, ≈ 2.5 kg — in design ([rev K](../../docs/design-rev-K.md)).
 
 **Onshape document:** _link to be added_
 
 ## Files
 
-**Production files:** [J2 – rotor blades rev J](../../production/mechanical/J2-blades-revJ/) · [ZIP](../../production/downloads/HELIMAC_J2_blades_revJ.zip)
+**Production files (rev J2 — archive):** [J2 – rotor blades rev J](../../production/mechanical/J2-blades-revJ/) · [ZIP](../../production/downloads/HELIMAC_J2_blades_revJ.zip)
 
 Blade drawings W-00…W-05 (lower D, mirrored upper G), manufacturing process WL-01, CNC section data, 3D-print STL of ASA core segments and jigs (ZIP).
 
