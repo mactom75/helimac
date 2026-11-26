@@ -1,25 +1,25 @@
 # Design parameters
 
-Current design: **rev K — in design (2026-11-23)**. Details: [design-rev-K.md](design-rev-K.md), calculations: [calc/revK/](../calc/revK/). SI units. All values calculated, not measured.
+Current design: **rev K — in design (updated 2026-11-26)**. Details: [design-rev-K.md](design-rev-K.md) and [update 26 Nov](design-rev-K-2026-11-26.md) (motor B approved — D19; D20–D26 recommendations), calculations: [calc/revK/](../calc/revK/). SI units. All values calculated, not measured.
 
 ## Rev K vs rev J2
 
 | Parameter | rev J2 (archive) | **rev K (current)** |
 |---|---|---|
-| Machine without battery | 74.9 kg | **≈ 43.7 kg** (−42 %) |
+| Machine without battery | 74.9 kg | **≈ 43.4 kg** (−42 %) |
 | Battery | 40.3 kg | **40 kg** (112S4P Li-ion, ≈ 8 kWh) |
-| Take-off mass (pilot 110 kg) | 225.2 kg | **≈ 194 kg** |
-| Hover power (rotors) | 21.4 kW (re-checked; was 20.7) | **17.3 kW**, FM 0.77 |
+| Take-off mass (pilot 110 kg) | 225.2 kg | **≈ 193 kg** |
+| Hover power (rotors) | 21.4 kW (re-checked; was 20.7) | **≈ 16–16.6 kW** (1.3 g hot day ≈ 25 kW) |
 | Minimum cruise power | ≈ 14 kW | **11.4 kW** at 16 m/s |
-| Flight time hover / mixed | 15.5 / 20.5 min (re-checked; was 14 / 25) | **≈ 19.7 / 25.8 min** |
-| Transmission | cycloidal 10:1 + bevel reversing gearbox, oil | **toothed-belt 16:1** (4 × 4), carbon cord, 10-spoke Al pulleys, no oil |
-| Motor | 4970 rpm, 56 mm stack, 8 turns | **8000 rpm, 37 mm stack, 7 turns**, ≈ 7.1 kg (same laminations and magnets) |
-| Blades | 4.25 kg, ASA core; chord 198 → 125.4 mm | **≈ 2.2 kg**, PMI foam core + carbon D-spar; chord 170 → 115 mm |
+| Flight time hover / mixed | 15.5 / 20.5 min (re-checked; was 14 / 25) | **≈ 21 / 28–29 min** |
+| Transmission | cycloidal 10:1 + bevel reversing gearbox, oil | **toothed-belt 20:1** (24/96 + 2 × 24/120, 8M carbon cord), one-way clutch, 8.55 kg, no oil *(D21, recommended)* |
+| Motor | 4970 rpm, 56 mm stack, 8 turns | **motor B: 30 kW continuous, 10 000 rpm**, 18/16, Ø 214 mm, 24 mm stack, Halbach N48SH, 28.5 N·m at 84 A, η ≈ 97 %, ≈ 6 kg *(D19, approved)* |
+| Blades | 4.25 kg, ASA core; chord 198 → 125.4 mm | **2.04 kg**, VR-7 with 4° tab, foam core + carbon D-spar, tungsten tip mass 0.665 kg; chord 150 → 102 mm, twist −8° *(D20, recommended)* |
 | Frame | CFRP tripod | **3 Al 7075-T6 tubes** (front Ø40×1.5 ×2, rear Ø50×2) |
-| Rotor heights | 2395 / 2785 mm | **2350 / 2730 mm** |
+| Rotor heights | 2395 / 2785 mm | **≈ 2450 / 2830 mm** (compact drive D18; drive plate 2150 mm) |
 | Rotors | coaxial, 2 × 2 blades, Ø 4.5 m, 500 rpm | unchanged |
-| Controls | weight shift, 5 collective actuators | unchanged |
-| Inverter | MC-P rev D1 | unchanged (current) |
+| Controls | weight shift, 5 collective actuators | both rotors variable pitch −2…+15°, 5 × STS3250, non-tilting collective rings *(D22, D25, recommended)* |
+| Inverter | MC-P rev D1 | MC-P rev D1, PCB unchanged; ±150 A current sensors, firmware 16 poles / 32 kHz / field weakening; heatsink in rotor downwash *(D26, recommended)* |
 
 ## Rev J2 — detailed parameters (archive)
 
@@ -54,6 +54,7 @@ Status: 💭 idea · 📐 calculated · 🧪 measured · ✅ approved
 
 | Date | Parameter | Was → Now | Reason |
 |---|---|---|---|
+| 2026-11-26 | Motor, drive, blades, controls, inverter | motor 8000 rpm 7.1 kg → **motor B 30 kW, 10 000 rpm, Halbach, ≈ 6 kg**; drive 16:1 → **20:1**; blades 2.2 → **2.04 kg (VR-7)**; machine 43.7 → **≈ 43.4 kg**; flight time → ≈ 21 / 28–29 min | D19 (approved), D20–D26 (recommended) — [update 26 Nov](design-rev-K-2026-11-26.md) |
 | 2026-11-23 | Design revision | rev J2 → **rev K**: belt drive, foam-core blades, Al frame; machine 74.9 → ≈ 48.5 kg (stage 2), then ≈ 43.7 kg after weight reductions (8000 rpm motor, 16:1 spoked pulleys, lighter blades) | mass target ≈ 40 kg (decision D14), recalculated from scratch |
 | 2026-11-23 | rev J2 re-check | hover 20.7 → 21.4 kW; flight time 14 / 25 → 15.5 / 20.5 min | rev K model applied to rev J2 |
 | 2026-11-21 | Pilot mass | 90 → 110 kg | rev J |

@@ -1,5 +1,7 @@
 # HELIMAC rev K — redesign from scratch (concept, stage 2)
 
+> 🔄 **Updated 26 Nov 2026:** motor B (30 kW, 10 000 rpm, Halbach — approved), VR-7 blades 2.04 kg, belt drive 20:1, collective control, hub, inverter — see **[design-rev-K-2026-11-26.md](design-rev-K-2026-11-26.md)**. Where the numbers differ, the update applies (machine ≈ 43.4 kg, take-off ≈ 193 kg).
+
 Status: **in progress (23 Nov 2026)**. Rev K replaces rev J2. Do not manufacture rev J2 parts (`production/`, packages J1–J3). The MC-P rev D1 inverter stays.
 All values are **calculated, not measured**. Calculation scripts: [`calc/revK/`](../calc/revK/). Graphics: [`docs/graphics/revK/`](graphics/revK/) · [layout sketch](graphics/HELIMAC_revK_szkic_ukladu.pdf).
 

@@ -1,6 +1,6 @@
 # Electric motor (radial flux)
 
-**Status:** 🔄 **rev K in design** — same laminations and magnets, 37 mm stack, 7 turns, 8000 rpm, ≈ 7.1 kg, cooled by rotor downwash ([rev K](../../docs/design-rev-K.md)). Rev J2 files below are **archive**.
+**Status:** ✅ **rev K motor B approved (D19)** — 30 kW continuous, 10 000 rpm, outer rotor with Halbach magnets, 18/16, Ø 214 mm, 24 mm stack, ≈ 6 kg ([update 26 Nov](../../docs/design-rev-K-2026-11-26.md#2-motor-b--30-kw-10-000-rpm-halbach-magnets-d19-d19a--approved)). The 8000 rpm / 37 mm motor below is superseded.
 
 **Onshape document:** _link to be added_
 
@@ -10,7 +10,21 @@
 
 Motor parts S01–S08: laminations S01/S02 (DXF, NO20 0.20 mm), stator, rotor, magnets — drawings in `drawings/`, cutting files in `dxf/`.
 
-## CAD graphics (rev K — current)
+## Drawings 26 Nov 2026 (motor B — approved)
+
+PDF (A3): [HELIMAC_revK_silnik_B_30kW.pdf](../../docs/graphics/revK/2026-11-26/HELIMAC_revK_silnik_B_30kW.pdf) · [HELIMAC_revK_silnik_B_i_wirnik.pdf](../../docs/graphics/revK/2026-11-26/HELIMAC_revK_silnik_B_i_wirnik.pdf)
+
+[![Motor B data sheet](../../docs/graphics/revK/2026-11-26/02a_silnik_B_karta_1.webp)](../../docs/graphics/revK/2026-11-26/02a_silnik_B_karta_1.webp)  
+*Motor B data sheet*
+
+[![Magnetic field under load (FEM)](../../docs/graphics/revK/2026-11-26/01a_silnik_B_pole_magnetyczne.webp)](../../docs/graphics/revK/2026-11-26/01a_silnik_B_pole_magnetyczne.webp)  
+*Magnetic field under load (FEM)*
+
+[![Torque and back-EMF (FEM)](../../docs/graphics/revK/2026-11-26/01b_silnik_B_moment_SEM.webp)](../../docs/graphics/revK/2026-11-26/01b_silnik_B_moment_SEM.webp)  
+*Torque and back-EMF (FEM)*
+
+
+## CAD graphics (rev K concept, 23 Nov 2026)
 
 From the rev K concept model (23 Nov 2026) — calculated, not measured.
 

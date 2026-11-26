@@ -1,6 +1,8 @@
 # MC-P — inverter power board
 
 **Current revision: rev D1** (design rev J2, pilot 110 kg) · **Status:** 📐 designed, DRC clean — 400 V design review pending before manufacture
+
+> 🔄 **Rev K, motor B (26 Nov 2026) — recommendation D26:** the PCB stays unchanged. Changes: current sensors **ACS758LCB-150B** (±150 A) and confirm DC capacitors ≥ 600 V / ≥ 55 A rms at 32 kHz; MC-C firmware — 16 poles, **FOC/PWM 32 kHz**, field weakening, power derating above 90 °C heatsink. Hover 48 A rms / 210 W / junction ≈ 78 °C; 1.3 g hot day 74 A / briefly ≈ 127 °C. Heatsink with vertical fins in the rotor downwash + 2 fans; mounted on the battery box behind the rear leg; 2.23 kg with cables. Drawings: [FL-01…03](../../docs/graphics/revK/2026-11-26/HELIMAC_revK_FL_falownik.pdf) · [details](../../docs/design-rev-K-2026-11-26.md#10-inverter-d26--recommendation)
 Revisions B, C and D are withdrawn — do not build.
 
 ## Files

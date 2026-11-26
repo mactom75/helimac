@@ -3,6 +3,8 @@
 From the rev K **concept model** and calculations (23 Nov 2026). Calculated, not measured. Labels inside the PDFs are in Polish.
 *Z modelu koncepcyjnego rev K i obliczeń (23.11.2026). Obliczenia, nie pomiary.*
 
+> 🔄 **Newer drawings (26 Nov 2026):** motor B, rotor, blades, belt drive 20:1, collective control, hub, actuators, rings, inverter — **[2026-11-26/](2026-11-26/)**. The concept graphics below show the 23 Nov state (motor 8000 rpm, drive 16:1).
+
 ## PDF (A4)
 
 | PDF | Contents · Zawartość |

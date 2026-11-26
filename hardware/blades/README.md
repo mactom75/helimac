@@ -1,6 +1,6 @@
 # Rotor blades
 
-**Status:** 🛑 **Rev J (ASA core, 4.25 kg) — archive, do not build.** Rev K blades: PMI foam core, carbon D-spar and ±45° skin, ≈ 2.2 kg — in design ([rev K](../../docs/design-rev-K.md)).
+**Status:** 🔄 **rev K blade — recommended (D20)**: VR-7 with 4° tab, chord 150 → 102 mm, twist −8°, foam core + carbon D-spar, tungsten tip mass, 2.04 kg; hot-wire templates in [revK-templates/](revK-templates/) ([update 26 Nov](../../docs/design-rev-K-2026-11-26.md#4-blades-drawings-łop-0103)). Rev J (ASA core) — archive, do not build.
 
 **Onshape document:** _link to be added_
 
@@ -10,7 +10,26 @@
 
 Blade drawings W-00…W-05 (lower D, mirrored upper G), manufacturing process WL-01, CNC section data, 3D-print STL of ASA core segments and jigs (ZIP).
 
-## CAD graphics (rev K — current)
+## Drawings 26 Nov 2026 (blades ŁOP-01…03 — recommended)
+
+Hot-wire templates (DXF) and VR-7 coordinates: [revK-templates/](revK-templates/).
+
+PDF (A3): [HELIMAC_revK_LOP_rysunki_lopaty.pdf](../../docs/graphics/revK/2026-11-26/HELIMAC_revK_LOP_rysunki_lopaty.pdf)
+
+[![ŁOP-01](../../docs/graphics/revK/2026-11-26/03_lopata_LOP-01.webp)](../../docs/graphics/revK/2026-11-26/03_lopata_LOP-01.webp)  
+*ŁOP-01*
+
+[![ŁOP-02](../../docs/graphics/revK/2026-11-26/03_lopata_LOP-02.webp)](../../docs/graphics/revK/2026-11-26/03_lopata_LOP-02.webp)  
+*ŁOP-02*
+
+[![ŁOP-03](../../docs/graphics/revK/2026-11-26/03_lopata_LOP-03.webp)](../../docs/graphics/revK/2026-11-26/03_lopata_LOP-03.webp)  
+*ŁOP-03*
+
+[![Rotor airfoil and speed (D20)](../../docs/graphics/revK/2026-11-26/02c_wirnik_profil_i_obroty.webp)](../../docs/graphics/revK/2026-11-26/02c_wirnik_profil_i_obroty.webp)  
+*Rotor airfoil and speed (D20)*
+
+
+## CAD graphics (rev K concept, 23 Nov 2026)
 
 From the rev K concept model (23 Nov 2026) — calculated, not measured.
 

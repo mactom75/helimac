@@ -14,7 +14,7 @@ wirniki współosiowe · sterowanie balansem ciała · napęd elektryczny 400 V 
   <a href="README.md">🇬🇧 English</a> · 🇵🇱 Polski · 🌐 <a href="https://helimac.pl/">helimac.pl</a> · ▶️ <a href="https://www.youtube.com/@Helimac-pl">YouTube</a> · ☕ <a href="https://buycoffee.to/helimac">Wesprzyj</a>
 </p>
 
-> **Aktualna konstrukcja: rev K — w projektowaniu (koncepcja, etap 2, 23.11.2026).** Maszynę przeliczono od zera, żeby zmniejszyć masę z 74,9 do ok. 43,7 kg. Pliki w [`production/`](production/README.pl.md) to **rev J2 — wersja archiwalna, nie budować** (wyjątek: falownik MC-P rev D1 jest aktualny). Paczki produkcyjne rev K pojawią się po etapie 3 (model CAD i rysunki).
+> **Aktualna konstrukcja: rev K — w projektowaniu (aktualizacja 26.11.2026: [silnik B, wirnik, napęd, sterowanie, falownik](docs/design-rev-K-2026-11-26.md)).** Maszynę przeliczono od zera, żeby zmniejszyć masę z 74,9 do ok. 43,4 kg. Pliki w [`production/`](production/README.pl.md) to **rev J2 — wersja archiwalna, nie budować** (wyjątek: falownik MC-P rev D1 jest aktualny). Paczki produkcyjne rev K pojawią się po etapie 3 (model CAD i rysunki).
 
 ---
 
@@ -22,8 +22,8 @@ wirniki współosiowe · sterowanie balansem ciała · napęd elektryczny 400 V 
 
 | Chcę… | Przejdź do |
 |---|---|
-| 👀 **zobaczyć konstrukcję** | [Konstrukcja rev K](docs/design-rev-K.md) (EN) · [grafiki](docs/graphics/revK/) · [szkic układu](docs/graphics/HELIMAC_revK_szkic_ukladu.pdf) · [parametry](docs/parameters.md) (EN) · [strona](https://helimac.pl/) |
-| 📦 **pobrać pliki** | rev K: [obliczenia](calc/revK/) · rev J2 (archiwalna): [wydanie](../../releases/latest), [pliki produkcyjne](production/README.pl.md) · falownik MC-P rev D1 (aktualny): [pliki](production/electronics/MC-P-inverter-revD1/) |
+| 👀 **zobaczyć konstrukcję** | [Konstrukcja rev K](docs/design-rev-K.md) + [aktualizacja 26.11](docs/design-rev-K-2026-11-26.md) (EN) · [rysunki 26.11](docs/graphics/revK/2026-11-26/) · [grafiki](docs/graphics/revK/) · [szkic układu](docs/graphics/HELIMAC_revK_szkic_ukladu.pdf) · [parametry](docs/parameters.md) (EN) · [strona](https://helimac.pl/) |
+| 📦 **pobrać pliki** | rev K: [obliczenia](calc/revK/), [rysunki (PDF)](docs/graphics/revK/2026-11-26/), [szablony łopat (DXF)](hardware/blades/revK-templates/) · rev J2 (archiwalna): [wydanie](../../releases/latest), [pliki produkcyjne](production/README.pl.md) · falownik MC-P rev D1 (aktualny): [pliki](production/electronics/MC-P-inverter-revD1/) |
 | 🛠️ **pomóc w budowie** | [Otwarte zadania (Issues)](../../issues) · [Discussions](../../discussions) · [Jak współtworzyć](CONTRIBUTING.md) |
 | ▶️ **śledzić budowę** | [YouTube @Helimac-pl](https://www.youtube.com/@Helimac-pl) · [dziennik budowy](BUILD_LOG.md) · [plan prac](ROADMAP.md) |
 | ☕ **wesprzeć projekt** | [buycoffee.to/helimac](https://buycoffee.to/helimac) — każda kawa to wkład w części i próby na hamowni |
@@ -32,7 +32,7 @@ wirniki współosiowe · sterowanie balansem ciała · napęd elektryczny 400 V 
 
 <p align="center">
   <a href="docs/graphics/revK/"><img src="docs/graphics/revK/helimac_K01_maszyna.webp" alt="HELIMAC rev K — cała maszyna, model koncepcyjny" width="720"></a><br>
-  <sub>HELIMAC rev K — cała maszyna (model koncepcyjny): wirniki współosiowe Ø 4,5 m, przekładnia pasowa 16:1 nad głową pilota, rama z trzech rur aluminiowych · <a href="docs/graphics/HELIMAC_revK_szkic_ukladu.pdf">szkic układu z wymiarami</a> · <a href="docs/graphics/revK/">wszystkie grafiki rev K</a></sub>
+  <sub>HELIMAC rev K — cała maszyna (model koncepcyjny): wirniki współosiowe Ø 4,5 m, przekładnia pasowa nad głową pilota, rama z trzech rur aluminiowych · <a href="docs/graphics/HELIMAC_revK_szkic_ukladu.pdf">szkic układu z wymiarami</a> · <a href="docs/graphics/revK/">wszystkie grafiki rev K</a></sub>
 </p>
 
 ## Czym jest HELIMAC?
@@ -50,14 +50,14 @@ Docelowa kategoria: jednomiejscowy śmigłowiec ultralekki, MTOM ≤ 300 kg ([An
 | Układ | współosiowy, 2 wirniki dwułopatowe Ø 4,5 m, 500 obr/min, bez wirnika ogonowego |
 | Sterowanie | kierunek – balans ciała pilota (bez skoku cyklicznego) · skok ogólny – siłowniki elektryczne · kurs – różnica skoku wirnika górnego i dolnego |
 | Pilot | do 110 kg |
-| Masa startowa | ok. 194 kg (maszyna bez akumulatora ok. 43,7 kg, akumulator 40 kg) |
-| Moc zawisu | 17,3 kW (1,3 g w upalny dzień: 26 kW) |
-| Napęd | silnik PMSM z wirnikiem zewnętrznym, 8000 obr/min, ok. 7 kg → **przekładnia pasowa 16:1** (pasy zębate z włóknem węglowym, koła z 10 szprychami, bez oleju) → wały współosiowe |
-| Łopaty | rdzeń z pianki PMI, dźwigar i pokrycie z włókna węglowego, ok. 2,2 kg |
+| Masa startowa | ok. 193 kg (maszyna bez akumulatora ok. 43,4 kg, akumulator 40 kg) |
+| Moc zawisu | ok. 16–16,6 kW (1,3 g w upalny dzień: ok. 25 kW) |
+| Napęd | **silnik B**: 30 kW ciągle, 10 000 obr/min, wirnik zewnętrzny z magnesami Halbacha, ok. 6 kg → **przekładnia pasowa 20:1** (pasy zębate z włóknem węglowym, sprzęgło jednokierunkowe do autorotacji, bez oleju) → wały współosiowe |
+| Łopaty | profil VR-7 z klapką, rdzeń z pianki, dźwigar i pokrycie z włókna węglowego, ciężarek wolframowy na końcu, ok. 2,04 kg |
 | Rama | trzy rury Al 7075-T6: dwie nogi przednie (trójkąt) + jedna wygięta tylna z siodełkiem, podnóżkiem i akumulatorem |
 | Elektronika | własny falownik SiC **MC-P** rev D1 (KiCad) · płytka sterująca **MC-C** w projekcie |
 | Akumulator | 112S4P Li-ion, ≈ 400 V, ok. 8 kWh, 40 kg |
-| Czas lotu (obliczony) | ok. 20 min zawis / ok. 26 min lot mieszany |
+| Czas lotu (obliczony) | ok. 21 min zawis / ok. 28–29 min lot mieszany |
 | **Obecny etap** | **rev K, etap 3 — model CAD i rysunki**, potem paczki produkcyjne i hamownia |
 
 Poprzednia wersja: [rev J2](docs/design-rev-J2.md) (archiwalna) — 74,9 kg bez akumulatora, przekładnia cykloidalna i stożkowa.

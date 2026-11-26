@@ -14,7 +14,7 @@ coaxial rotors · weight-shift control · 400 V electric drive · built in the o
   🇬🇧 English · <a href="README.pl.md">🇵🇱 Polski</a> · 🌐 <a href="https://helimac.pl/en/">helimac.pl</a> · ▶️ <a href="https://www.youtube.com/@Helimac-pl">YouTube</a> · ☕ <a href="https://buycoffee.to/helimac">Support</a>
 </p>
 
-> **Current design: rev K — in design (concept stage 2, 23 Nov 2026).** The machine was recalculated from scratch to cut the mass from 74.9 to ≈ 43.7 kg. Files in [`production/`](production/README.md) are **rev J2 — archive, do not build** (exception: MC-P inverter rev D1 is current). Rev K production packages will follow after stage 3 (CAD + drawings).
+> **Current design: rev K — in design (update 26 Nov 2026: [motor B, rotor, drive, controls, inverter](docs/design-rev-K-2026-11-26.md)).** The machine was recalculated from scratch to cut the mass from 74.9 to ≈ 43.4 kg. Files in [`production/`](production/README.md) are **rev J2 — archive, do not build** (exception: MC-P inverter rev D1 is current). Rev K production packages will follow after stage 3 (CAD + drawings).
 
 ---
 
@@ -22,8 +22,8 @@ coaxial rotors · weight-shift control · 400 V electric drive · built in the o
 
 | I want to… | Go to |
 |---|---|
-| 👀 **see the design** | [Design rev K](docs/design-rev-K.md) · [graphics](docs/graphics/revK/) · [layout sketch](docs/graphics/HELIMAC_revK_szkic_ukladu.pdf) · [parameters](docs/parameters.md) · [website](https://helimac.pl/en/) |
-| 📦 **download the files** | rev K: [calculations](calc/revK/) · rev J2 (archive): [release](../../releases/latest), [production files](production/) · MC-P inverter rev D1 (current): [files](production/electronics/MC-P-inverter-revD1/) |
+| 👀 **see the design** | [Design rev K](docs/design-rev-K.md) + [update 26 Nov](docs/design-rev-K-2026-11-26.md) · [drawings 26 Nov](docs/graphics/revK/2026-11-26/) · [graphics](docs/graphics/revK/) · [layout sketch](docs/graphics/HELIMAC_revK_szkic_ukladu.pdf) · [parameters](docs/parameters.md) · [website](https://helimac.pl/en/) |
+| 📦 **download the files** | rev K: [calculations](calc/revK/), [drawings (PDF)](docs/graphics/revK/2026-11-26/), [blade templates (DXF)](hardware/blades/revK-templates/) · rev J2 (archive): [release](../../releases/latest), [production files](production/) · MC-P inverter rev D1 (current): [files](production/electronics/MC-P-inverter-revD1/) |
 | 🛠️ **help build it** | [Open tasks (Issues)](../../issues) · [Discussions](../../discussions) · [How to contribute](CONTRIBUTING.md) |
 | ▶️ **follow the build** | [YouTube @Helimac-pl](https://www.youtube.com/@Helimac-pl) · [build log](BUILD_LOG.md) · [roadmap](ROADMAP.md) |
 | ☕ **support the project** | [buycoffee.to/helimac](https://buycoffee.to/helimac) — every coffee goes to parts and dynamometer tests |
@@ -32,7 +32,7 @@ coaxial rotors · weight-shift control · 400 V electric drive · built in the o
 
 <p align="center">
   <a href="docs/graphics/revK/"><img src="docs/graphics/revK/helimac_K01_maszyna.webp" alt="HELIMAC rev K — complete machine, concept model" width="720"></a><br>
-  <sub>HELIMAC rev K — complete machine (concept model): coaxial rotors Ø 4.5 m, belt drive 16:1 above the pilot, frame of three aluminium tubes · <a href="docs/graphics/HELIMAC_revK_szkic_ukladu.pdf">layout sketch with dimensions</a> · <a href="docs/graphics/revK/">all rev K graphics</a></sub>
+  <sub>HELIMAC rev K — complete machine (concept model): coaxial rotors Ø 4.5 m, belt drive above the pilot, frame of three aluminium tubes · <a href="docs/graphics/HELIMAC_revK_szkic_ukladu.pdf">layout sketch with dimensions</a> · <a href="docs/graphics/revK/">all rev K graphics</a></sub>
 </p>
 
 ## What is HELIMAC?
@@ -50,14 +50,14 @@ Target category: single-seat ultralight helicopter, MTOM ≤ 300 kg ([Annex I to
 | Configuration | coaxial, 2 × 2-blade rotors Ø 4.5 m, 500 rpm, no tail rotor |
 | Control | direction by pilot weight shift (no cyclic) · collective by electric actuators · yaw by upper/lower collective difference |
 | Pilot | up to 110 kg |
-| Take-off mass | ≈ 194 kg (machine without battery ≈ 43.7 kg, battery 40 kg) |
-| Hover power | 17.3 kW (1.3 g on a hot day: 26 kW) |
-| Drive | outer-rotor PMSM motor, 8000 rpm, ≈ 7 kg → **toothed-belt drive 16:1** (carbon-cord belts, 10-spoke pulleys, no oil) → coaxial shafts |
-| Blades | PMI foam core, carbon D-spar and skin, ≈ 2.2 kg each |
+| Take-off mass | ≈ 193 kg (machine without battery ≈ 43.4 kg, battery 40 kg) |
+| Hover power | ≈ 16–16.6 kW (1.3 g on a hot day: ≈ 25 kW) |
+| Drive | **motor B**: 30 kW continuous, 10 000 rpm, outer rotor with Halbach magnets, ≈ 6 kg → **toothed-belt drive 20:1** (carbon-cord belts, one-way clutch for autorotation, no oil) → coaxial shafts |
+| Blades | VR-7 airfoil with trailing-edge tab, foam core, carbon D-spar and skin, tungsten tip mass, ≈ 2.04 kg each |
 | Frame | three Al 7075-T6 tubes: two front legs (triangle) + one curved rear leg with seat, footrest and battery |
 | Electronics | in-house SiC inverter **MC-P** rev D1 (KiCad) · control board **MC-C** in design |
 | Battery | 112S4P Li-ion, ≈ 400 V, ≈ 8 kWh, 40 kg |
-| Flight time (calc.) | ≈ 20 min hover / ≈ 26 min mixed |
+| Flight time (calc.) | ≈ 21 min hover / ≈ 28–29 min mixed |
 | **Current stage** | **rev K stage 3 — CAD model and drawings**, then production packages and the dynamometer |
 
 Previous version: [rev J2](docs/design-rev-J2.md) (archive) — 74.9 kg without battery, cycloidal + bevel gearbox.

@@ -5,6 +5,15 @@ Project progress — newest entries first. Entries may be in English and/or Poli
 
 ---
 
+## 2026-11-26 — Rev K: motor B, rotor, drive, controls, inverter
+
+- **Motor B approved:** 30 kW continuous, 10 000 rpm, outer rotor with Halbach magnets, ≈ 6 kg (FEM: 28.5 N·m at 84 A, efficiency ≈ 97 %).
+- Recommended (awaiting approval): VR-7 rotor airfoil with trailing-edge tab (566 variants compared), blades 2.04 kg, belt drive 20:1 with a one-way clutch, both rotors with variable pitch, hub with integrated pitch spindle, collision-free actuator mounting (35 parts, min. clearance 9.5 mm), MC-P inverter unchanged with new current sensors and firmware.
+- Machine ≈ 43.4 kg, take-off ≈ 193 kg, flight time ≈ 21 / 28–29 min (calculated).
+- New: [design update](docs/design-rev-K-2026-11-26.md), [9 A3 drawing sets + 27 graphics](docs/graphics/revK/2026-11-26/), [blade hot-wire templates](hardware/blades/revK-templates/).
+
+*PL: Zatwierdzony silnik B (30 kW, 10 000 obr/min, magnesy Halbacha, ok. 6 kg). Rekomendacje: profil VR-7, łopaty 2,04 kg, przekładnia pasowa 20:1, sterowanie skokiem obu wirników, piasta, montaż siłowników bez kolizji, falownik MC-P bez zmian w płytce. Maszyna ok. 43,4 kg, czas lotu ok. 21 / 28–29 min (obliczone).*
+
 ## 2026-11-23 — Rev K: recalculating the design from scratch
 
 Rev J2 weighed 74.9 kg without the battery – too much. We recalculated the whole design from the beginning: mass, power, rotors, motor, transmission, controls, electronics and frame. Main changes: a toothed-belt drive instead of the cycloidal and bevel gearboxes (no oil, about 15 kg lighter), foam-core blades with a carbon-fibre spar (about 7 kg lighter), and a frame made of three aluminium tubes. Machine without battery: about 43.7 kg (−42 %), take-off mass about 194 kg, flight time about 20 min hovering and about 26 min in mixed flight. Next step: 3D model and drawings for rev K.

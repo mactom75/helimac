@@ -1,6 +1,6 @@
 # Cycloidal transmission
 
-**Status:** 🛑 **Rev J2 cycloidal + bevel gearbox — archive, do not build.** Rev K uses a **toothed-belt drive 16:1** (carbon-cord belts, 10-spoke milled Al pulleys, no oil) — in design ([rev K](../../docs/design-rev-K.md)).
+**Status:** 🔄 **rev K belt drive 20:1 — recommended (D21), awaiting approval** — 24/96 + 2 × 24/120 carbon-cord 8M belts, one-way clutch for autorotation, 8.55 kg, no oil ([update 26 Nov](../../docs/design-rev-K-2026-11-26.md#5-belt-drive-201-d21--recommendation)). Rev J2 cycloidal + bevel gearbox — archive, do not build.
 
 **Onshape document:** _link to be added_
 
@@ -10,7 +10,21 @@
 
 Cycloidal transmission P01–P17 (cams P01 as DXF, 100Cr6) and reversing bevel gearbox N01–N12 — part drawings, assembly drawings, change notes ECN-J01…J03.
 
-## CAD graphics (rev K — current)
+## Drawings 26 Nov 2026 (belt drive 20:1 — recommended)
+
+PDF (A3): [HELIMAC_revK_PP_przekladnia_pasowa.pdf](../../docs/graphics/revK/2026-11-26/HELIMAC_revK_PP_przekladnia_pasowa.pdf)
+
+[![PP-01 — top view, all belt planes](../../docs/graphics/revK/2026-11-26/04_przekladnia_PP-01.webp)](../../docs/graphics/revK/2026-11-26/04_przekladnia_PP-01.webp)  
+*PP-01 — top view, all belt planes*
+
+[![PP-02](../../docs/graphics/revK/2026-11-26/04_przekladnia_PP-02.webp)](../../docs/graphics/revK/2026-11-26/04_przekladnia_PP-02.webp)  
+*PP-02*
+
+[![PP-03](../../docs/graphics/revK/2026-11-26/04_przekladnia_PP-03.webp)](../../docs/graphics/revK/2026-11-26/04_przekladnia_PP-03.webp)  
+*PP-03*
+
+
+## CAD graphics (rev K concept, 23 Nov 2026)
 
 From the rev K concept model (23 Nov 2026) — calculated, not measured.
 

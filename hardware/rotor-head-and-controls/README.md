@@ -1,6 +1,6 @@
 # Coaxial rotor head, air-guide ring (PK), collective
 
-**Status:** 🔄 **rev K in design** — hubs integrated with blade grips, pitch bearings recalculated; collective with 5 electric actuators as before ([rev K](../../docs/design-rev-K.md)). Rev J2 files below are **archive**.
+**Status:** 🔄 **rev K — recommended (D22–D25), awaiting approval**: hub with integrated pitch spindle (2 × HK4020 + 51107, no elastomers), both rotors variable pitch −2…+15°, 5 × STS3250, non-tilting collective rings, 3D check 0 collisions ([update 26 Nov](../../docs/design-rev-K-2026-11-26.md#6-collective-pitch-control-d22--recommendation)). Rev J2 files below are **archive**.
 
 **Onshape document:** _link to be added_
 
@@ -10,7 +10,26 @@
 
 Rotor hubs and upper collective (C07 rod) are in J1; lower collective (C10 ring, actuators) and the PK air-guide ring (6 printable segments) are in J3.
 
-## CAD graphics (rev K — current)
+## Drawings 26 Nov 2026 (hub, collective control, actuators, rings — recommended)
+
+⚠️ Drawings SK-01 and SK-02 still show a joint radius of 100 mm — correct value **116.6 mm at 31°** (see MS and TS).
+
+PDF (A3): [HELIMAC_revK_PD_piasta_mocowanie_lopaty.pdf](../../docs/graphics/revK/2026-11-26/HELIMAC_revK_PD_piasta_mocowanie_lopaty.pdf) · [HELIMAC_revK_SK_sterowanie_skokiem.pdf](../../docs/graphics/revK/2026-11-26/HELIMAC_revK_SK_sterowanie_skokiem.pdf) · [HELIMAC_revK_MS_montaz_silownikow.pdf](../../docs/graphics/revK/2026-11-26/HELIMAC_revK_MS_montaz_silownikow.pdf) · [HELIMAC_revK_TS_tarcze_skoku.pdf](../../docs/graphics/revK/2026-11-26/HELIMAC_revK_TS_tarcze_skoku.pdf)
+
+[![PD-01 — hub and blade attachment](../../docs/graphics/revK/2026-11-26/06_piasta_PD-01.webp)](../../docs/graphics/revK/2026-11-26/06_piasta_PD-01.webp)  
+*PD-01 — hub and blade attachment*
+
+[![SK-03 — collective control](../../docs/graphics/revK/2026-11-26/05_sterowanie_skokiem_SK-03.webp)](../../docs/graphics/revK/2026-11-26/05_sterowanie_skokiem_SK-03.webp)  
+*SK-03 — collective control*
+
+[![MS-01 — actuator mounting, collision check](../../docs/graphics/revK/2026-11-26/07_montaz_silownikow_MS-01.webp)](../../docs/graphics/revK/2026-11-26/07_montaz_silownikow_MS-01.webp)  
+*MS-01 — actuator mounting, collision check*
+
+[![TS-01 — lower rotor collective ring](../../docs/graphics/revK/2026-11-26/08_tarcze_skoku_TS-01.webp)](../../docs/graphics/revK/2026-11-26/08_tarcze_skoku_TS-01.webp)  
+*TS-01 — lower rotor collective ring*
+
+
+## CAD graphics (rev K concept, 23 Nov 2026)
 
 From the rev K concept model (23 Nov 2026) — calculated, not measured.
 
